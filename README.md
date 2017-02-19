@@ -1,0 +1,2 @@
+# fun
+Functional javascript library
