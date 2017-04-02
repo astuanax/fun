@@ -3,7 +3,7 @@
  */
 
 import chai from 'chai'
-import is from '../src/is'
+import is from '../src/util/is'
 
 describe("is", function() {
     beforeEach(function() {

@@ -3,7 +3,7 @@
  */
 import toArray from '../array/to'
 import not from '../util/not'
-import is from '../is'
+import is from '../util/is'
 
 export default function (str) { //use function(), arrow function doesn't bind arguments
     let args = toArray(arguments)
