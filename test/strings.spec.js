@@ -2,7 +2,7 @@
  * Created by dierickx.len on 26/03/2017.
  */
 import chai from 'chai'
-import formatString from '../src/strings/formatString'
+import formatString from '../src/string/formatString'
 
 describe("strings", function() {
     beforeEach(function () {

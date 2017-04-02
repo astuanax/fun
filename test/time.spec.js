@@ -8,7 +8,7 @@ import timeToHour from '../src/time/toHour'
 import timeToDay from '../src/time/toDay'
 import timeToMinutes from '../src/time/toMinutes'
 import timeToSeconds from '../src/time/toSeconds'
-import diffDate from '../src/dates/diffDate'
+import diffDate from '../src/date/diffDate'
 
 describe("time", function() {
     beforeEach(function () {

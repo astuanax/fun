@@ -3,7 +3,7 @@
  */
 
 import chai from 'chai'
-import isFutureDate from '../src/dates/isFutureDate'
+import isFutureDate from '../src/date/isFutureDate'
 
 
 describe("Dates", function() {
