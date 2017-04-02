@@ -1,5 +1,5 @@
 /**
- * Created by dierickx.l on 27/03/2017.
+ * Created by dierickx.len on 27/03/2017.
  */
 
 import chai from 'chai'

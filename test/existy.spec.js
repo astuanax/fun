@@ -1,5 +1,5 @@
 /**
- * Created by dierickx.l on 14/02/2017.
+ * Created by dierickx.len on 14/02/2017.
  */
 import chai from 'chai'
 import existy from '../src/util/exists'

@@ -1,5 +1,7 @@
 /**
- * Created by dierickx.l on 09/03/2017.
+ * Created by dierickx.len on 09/03/2017.
  */
 import diffDate from './diffDate'
-export default (d) => { return  diffDate(new Date())(d) < 0 }
+export default (d) => {
+  return diffDate(new Date())(d) < 0
+}

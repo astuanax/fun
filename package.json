@@ -4,7 +4,9 @@
   "description": "Functional tools",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --require babel-register"
+    "test": "mocha --require babel-register",
+    "lint": "eslint src/**",
+    "lint-fix": "eslint --ext .js --fix src src/**"
   },
   "author": "Len Dierickx",
   "license": "MIT",
@@ -13,7 +15,12 @@
     "babel-preset-es2015": "^6.24.0",
     "babel-register": "^6.24.0",
     "chai": "^3.5.0",
+    "eslint": "^3.19.0",
+    "eslint-config-standard": "^7.1.0",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^2.1.1",
     "mocha": "^3.2.0"
   },
-  "dependencies": {}
+  "dependencies": {
+  }
 }

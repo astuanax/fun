@@ -5,5 +5,5 @@ import curry from './curry'
 import type from './type'
 
 export default curry((Ctor, val) => {
-    return type(val) === Ctor
+  return type(val) === Ctor
 })
