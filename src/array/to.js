@@ -3,5 +3,5 @@
  */
 
 export default (x) => {
-  return Array.prototype.slice.call(x)
+  return x.length === 1 ? [x[0]] : Array.apply(null, x)
 }
