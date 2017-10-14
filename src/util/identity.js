@@ -1,8 +1,8 @@
 /**
- * Created by len dierickx
+ * @author Len Dierickx
+ * Returns the value supplied to the function
  */
-import curry from './curry'
 
-export default curry((a, b) => {
-  return !!a && !!b && !(a < b || b < a)
-})
+export default (x) => {
+  return x
+}
