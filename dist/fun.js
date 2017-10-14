@@ -4,24 +4,28 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _isArray = require('./isArray');
+var _is = require('./is');
 
-var _isArray2 = _interopRequireDefault(_isArray);
+var _is2 = _interopRequireDefault(_is);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = function (x) {
-  return (0, _isArray2.default)(x) ? [] : void 0;
+  return (0, _is2.default)(x) ? [] : void 0;
 }; /**
     * Created by dierickx.len on 01/04/2017.
     */
+/**
+ * Created by len dierickx 2017-04-02
+ */
+"use strict";
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _is = require('../is');
+var _is = require('../util/is');
 
 var _is2 = _interopRequireDefault(_is);
 
@@ -30,23 +34,6 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = (0, _is2.default)('Array'); /**
                                                * Created by dierickx.len on 01/04/2017.
                                                */
-'use strict';
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _empty = require('./empty');
-
-var _empty2 = _interopRequireDefault(_empty);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.default = function (x) {
-  return (0, _empty2.default)(x) === x;
-}; /**
-    * Created by dierickx.len on 01/04/2017.
-    */
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -58,7 +45,7 @@ Object.defineProperty(exports, "__esModule", {
  */
 
 exports.default = function (x) {
-  return Array.prototype.slice.call(x);
+  return x.length === 1 ? [x[0]] : Array.apply(null, x);
 };
 'use strict';
 
@@ -224,11 +211,10 @@ var tokens = {
   Q: function Q(d) {
     return Math.ceil((d.getMonth() + 1) / 3);
   }
-};
 
-// date/time regex
-// eslint-disable-next-line no-useless-escape
-var DATE_TOKENS = /(\[[^\[]*\])|(\\)?(Mo|MM?M?M?|Do|DDDo|DD?D?D?|ddd?d?|do?|w[o|w]?|W[o|W]?|Q|YYYYYY|YYYYY|YYYY|YY|gg(ggg?)?|GG(GGG?)?|e|E|a|A|hh?|HH?|mm?|ss?|S{1,9}|x|X|zz?|ZZ?|.)/g;
+  // date/time regex
+  // eslint-disable-next-line no-useless-escape
+};var DATE_TOKENS = /(\[[^\[]*\])|(\\)?(Mo|MM?M?M?|Do|DDDo|DD?D?D?|ddd?d?|do?|w[o|w]?|W[o|W]?|Q|YYYYYY|YYYYY|YYYY|YY|gg(ggg?)?|GG(GGG?)?|e|E|a|A|hh?|HH?|mm?|ss?|S{1,9}|x|X|zz?|ZZ?|.)/g;
 
 var modCeiling = function modCeiling(mod, val) {
   return val % mod || mod;
@@ -296,23 +282,61 @@ exports.default = function (x) {
 }; /**
     * Created by dierickx.len on 18/03/2017.
     */
-"use strict";
+'use strict';
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+var _is = require('../util/is');
+
+var _is2 = _interopRequireDefault(_is);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = (0, _is2.default)('Number'); /**
+                                                * @author Len Dierickx
+                                                */
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _is = require('./is');
+
+var _is2 = _interopRequireDefault(_is);
+
+var _and = require('../util/and');
+
+var _and2 = _interopRequireDefault(_and);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
 /**
- * Created by dierickx.len on 18/03/2017.
+ * isNaN
+ * Checks if number is NAN
+ * @author Len Dierickx
  */
 exports.default = function (x) {
-  for (var prop in x) {
-    if (x.hasOwnProperty(prop)) {
-      return false;
-    }
-  }
-  return true;
+  return (0, _and2.default)((0, _is2.default)(x), isNaN(x));
 };
+"use strict";
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _is = require('../util/is');
+
+var _is2 = _interopRequireDefault(_is);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = (0, _is2.default)('Object'); /**
+                                                * @author Len Dierickx
+                                                */
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -358,6 +382,21 @@ var _is = require('../util/is');
 var _is2 = _interopRequireDefault(_is);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _is = require('../util/is');
+
+var _is2 = _interopRequireDefault(_is);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = (0, _is2.default)('String'); /**
+                                                * @author Len Dierickx
+                                                */
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -406,6 +445,25 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = function (d) {
   return d / 1000;
 };
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _curry = require('./curry');
+
+var _curry2 = _interopRequireDefault(_curry);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = (0, _curry2.default)(function (x, y) {
+  return x && y;
+}); /**
+     * @author Len Dierickx
+     * empty
+     * Returns the empty equivalent of the first argument
+     */
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -463,6 +521,163 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+var _is = require('../array/is');
+
+var _is2 = _interopRequireDefault(_is);
+
+var _is3 = require('../object/is');
+
+var _is4 = _interopRequireDefault(_is3);
+
+var _is5 = require('../string/is');
+
+var _is6 = _interopRequireDefault(_is5);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = function (x) {
+  if ((0, _is2.default)(x)) {
+    return [];
+  }
+  if ((0, _is6.default)(x)) {
+    return '';
+  }
+  if ((0, _is4.default)(x)) {
+    return {};
+  }
+  return void 0;
+}; /**
+    * @author Len Dierickx
+    * empty
+    * Returns the empty equivalent of the first argument
+    */
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _curry = require('./curry');
+
+var _curry2 = _interopRequireDefault(_curry);
+
+var _exists = require('./exists');
+
+var _exists2 = _interopRequireDefault(_exists);
+
+var _identical = require('./identical');
+
+var _identical2 = _interopRequireDefault(_identical);
+
+var _type = require('./type');
+
+var _type2 = _interopRequireDefault(_type);
+
+var _not = require('./not');
+
+var _not2 = _interopRequireDefault(_not);
+
+var _is = require('../object/is');
+
+var _is2 = _interopRequireDefault(_is);
+
+var _is3 = require('../array/is');
+
+var _is4 = _interopRequireDefault(_is3);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var equals = (0, _curry2.default)(function (x, y) {
+  if ((0, _identical2.default)(x, y)) {
+    return true;
+  }
+  if ((0, _not2.default)((0, _exists2.default)(x)) || (0, _not2.default)((0, _exists2.default)(y))) {
+    return false;
+  }
+  if ((0, _type2.default)(x) !== (0, _type2.default)(y)) {
+    return false;
+  }
+  if (x.constructor !== y.constructor) {
+    return false;
+  }
+  if ((0, _is2.default)(x)) {
+    if (Object.keys(x).length === 0 && Object.keys(y).length === 0) {
+      return true;
+    } else {
+      console.warn('No object comparison');
+    }
+  }
+  if ((0, _is4.default)(x)) {
+    var len1 = x.length;
+    var len2 = y.length;
+    if (len1 === 0 && len2 === 0) {
+      return true;
+    }
+    if (len1 === len2) {
+      for (var key = 0; key < len1; key++) {
+        // not sorted
+        if ((0, _not2.default)((0, _identical2.default)(x[key], y[key]))) {
+          return false;
+        }
+        return true;
+      }
+    }
+  }
+  return false;
+}); /**
+     * @author Len Dierickx
+     * equals
+     * checks for equality
+     */
+exports.default = equals;
+// export default curry((x, y) = > {
+//     if (identical(x, y)) {
+//         return true
+//     }
+// if (x == null || y == null) {
+//         return false
+//     }
+//     if (type(x) !== type(y)) {
+//         return false
+//     }
+//     if (x.constructor !== y.constructor) {
+//         return false;
+//     }
+// for (var p in x) {
+//         if (not(x.hasOwnProperty(p))) {
+//             continue
+//         }
+//
+//         if (not(y.hasOwnProperty(p))) {
+//           // other properties were tested using x.constructor === y.constructor
+//           return false
+//         }
+//
+//         if (identical(x[p],y[p])) {
+//             // allows to compare x[ p ] and y[ p ] when set to undefined
+//             continue
+//         }
+//
+//         if (not(isObject(x[p]))) {
+//           return false
+//         }
+//         // Numbers, Strings, Functions, Booleans must be strictly equal
+//         if () return false;
+//         // Objects and Arrays must be tested recursively
+//     }
+//
+//     for (p in y) {
+//         if (y.hasOwnProperty(p) && !x.hasOwnProperty(p)) return false;
+//         // allows x[ p ] to be set to undefined
+//     }
+//     return false
+// })
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
 var _null2 = require('./null');
 
 var _null3 = _interopRequireDefault(_null2);
@@ -473,12 +688,58 @@ var _not2 = _interopRequireDefault(_not);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-/* tests for null and undefined     */
 /**
- * Created by dierickx.len on 06/02/2017.
+ * @author Len Dierickx
  */
 exports.default = function (x) {
   return (0, _not2.default)((0, _null3.default)(x));
+};
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _curry = require('./curry');
+
+var _curry2 = _interopRequireDefault(_curry);
+
+var _isNan = require('../number/isNan');
+
+var _isNan2 = _interopRequireDefault(_isNan);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+/**
+ * @author Len Dierickx
+ * identical
+ * checks for identintical items
+ */
+exports.default = (0, _curry2.default)(function (x, y) {
+  if (x === 0 && y === 0) {
+    return 1 / x === 1 / y;
+  }
+  if (x === y) {
+    return true;
+  }
+  if ((0, _isNan2.default)(x) && (0, _isNan2.default)(y)) {
+    return true;
+  }
+  return false;
+});
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+/**
+ * @author Len Dierickx
+ * Returns the value supplied to the function
+ */
+
+exports.default = function (x) {
+  return x;
 };
 'use strict';
 
@@ -502,6 +763,33 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = (0, _curry2.default)(function (Ctor, val) {
   return (0, _type2.default)(val) === Ctor;
 });
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _empty = require('./empty');
+
+var _empty2 = _interopRequireDefault(_empty);
+
+var _exists = require('./exists');
+
+var _exists2 = _interopRequireDefault(_exists);
+
+var _equals = require('./equals');
+
+var _equals2 = _interopRequireDefault(_equals);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = function (x) {
+  return (0, _exists2.default)(x) && (0, _equals2.default)(x, (0, _empty2.default)(x));
+}; /**
+    * @author Len Dierickx
+    * empty
+    * Returns the empty equivalent of the first argument
+    */
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -550,7 +838,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 
 /**
- * Created by dierickx.len on 01/04/2017.
+ * @author Len Dierickx
  */
 exports.default = function (x) {
   return Object.prototype.toString.call(x).slice(8, -1);
