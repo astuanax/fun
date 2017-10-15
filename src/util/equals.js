@@ -24,14 +24,17 @@ const equals = curry((x, y) => {
   if (x.constructor !== y.constructor) {
     return false
   }
-  if (isObject(x)) {
-    if (Object.keys(x).length === 0 && Object.keys(y).length === 0) {
-      return true
-    } else {
-      console.warn('No object comparison')
-    }
-  }
   if (isArray(x)) {
+    var len = x.length
+    if (len !== y.length) {
+      return false
+    }
+    for (var i = 0; i < len; i++) {
+      if (equals(x[i], y[i])) {
+        return true
+      }
+    }
+
     var len1 = x.length
     var len2 = y.length
     if (len1 === 0 && len2 === 0) {
@@ -46,50 +49,23 @@ const equals = curry((x, y) => {
         return true
       }
     }
+  } else if (isObject(x)) {
+    if (Object.keys(x).length === 0 && Object.keys(y).length === 0) {
+      return true
+    }
+    for (var keyX in x) {
+      if (equals(x[keyX], y[keyX])) {
+        return true
+      }
+    }
+    for (var keyY in y) {
+      if (not(exists(x[keyY])) && not(exists(y[keyY]))) {
+        return false
+      }
+    }
   }
+
   return false
 })
 
 export default equals
-// export default curry((x, y) = > {
-//     if (identical(x, y)) {
-//         return true
-//     }
-    // if (x == null || y == null) {
-    //         return false
-    //     }
-    //     if (type(x) !== type(y)) {
-    //         return false
-    //     }
-    //     if (x.constructor !== y.constructor) {
-    //         return false;
-    //     }
-    // for (var p in x) {
-    //         if (not(x.hasOwnProperty(p))) {
-    //             continue
-    //         }
-    //
-    //         if (not(y.hasOwnProperty(p))) {
-    //           // other properties were tested using x.constructor === y.constructor
-    //           return false
-    //         }
-    //
-    //         if (identical(x[p],y[p])) {
-    //             // allows to compare x[ p ] and y[ p ] when set to undefined
-    //             continue
-    //         }
-    //
-    //         if (not(isObject(x[p]))) {
-    //           return false
-    //         }
-    //         // Numbers, Strings, Functions, Booleans must be strictly equal
-    //         if () return false;
-    //         // Objects and Arrays must be tested recursively
-    //     }
-    //
-    //     for (p in y) {
-    //         if (y.hasOwnProperty(p) && !x.hasOwnProperty(p)) return false;
-    //         // allows x[ p ] to be set to undefined
-    //     }
-//     return false
-// })
