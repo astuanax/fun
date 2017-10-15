@@ -59,7 +59,7 @@ const equals = curry((x, y) => {
       }
     }
     for (var keyY in y) {
-      if (not(exists(x[keyY])) && not(exists(y[keyY]))) {
+      if (not(exists(x[keyY])) && exists(y[keyY])) {
         return false
       }
     }
