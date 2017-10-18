@@ -10,6 +10,7 @@ import type from './type'
 import not from './not'
 import isObject from '../object/is'
 import isArray from '../array/is'
+import isBoolean from '../boolean/is'
 
 const equals = curry((x, y) => {
   if (identical(x, y)) {
@@ -24,6 +25,10 @@ const equals = curry((x, y) => {
   if (x.constructor !== y.constructor) {
     return false
   }
+  if(isBoolean(x)) {
+    return identical(x.valueOf(),y.valueOf())
+  }
+  
   if (isArray(x)) {
     var len = x.length
     if (len !== y.length) {

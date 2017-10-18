@@ -52,6 +52,24 @@ exports.default = function (x) {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+
+var _is = require('../util/is');
+
+var _is2 = _interopRequireDefault(_is);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = (0, _is2.default)('Boolean'); /**
+                                                 * Created by dierickx.len on 01/04/2017.
+                                                 */
+/**
+ * Created by dierickx.len on 01/04/2017.
+ */
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
 /**
  * Created by dierickx.len on 18/03/2017.
  */
@@ -236,7 +254,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _is = require('../is');
+var _is = require('../util/is');
 
 var _is2 = _interopRequireDefault(_is);
 
@@ -585,8 +603,17 @@ var _is3 = require('../array/is');
 
 var _is4 = _interopRequireDefault(_is3);
 
+var _is5 = require('../boolean/is');
+
+var _is6 = _interopRequireDefault(_is5);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+/**
+ * @author Len Dierickx
+ * equals
+ * checks for equality
+ */
 var equals = (0, _curry2.default)(function (x, y) {
   if ((0, _identical2.default)(x, y)) {
     return true;
@@ -600,14 +627,21 @@ var equals = (0, _curry2.default)(function (x, y) {
   if (x.constructor !== y.constructor) {
     return false;
   }
-  if ((0, _is2.default)(x)) {
-    if (Object.keys(x).length === 0 && Object.keys(y).length === 0) {
-      return true;
-    } else {
-      console.warn('No object comparison');
-    }
+  if ((0, _is6.default)(x)) {
+    return (0, _identical2.default)(x.valueOf(), y.valueOf());
   }
+
   if ((0, _is4.default)(x)) {
+    var len = x.length;
+    if (len !== y.length) {
+      return false;
+    }
+    for (var i = 0; i < len; i++) {
+      if (equals(x[i], y[i])) {
+        return true;
+      }
+    }
+
     var len1 = x.length;
     var len2 = y.length;
     if (len1 === 0 && len2 === 0) {
@@ -622,56 +656,26 @@ var equals = (0, _curry2.default)(function (x, y) {
         return true;
       }
     }
+  } else if ((0, _is2.default)(x)) {
+    if (Object.keys(x).length === 0 && Object.keys(y).length === 0) {
+      return true;
+    }
+    for (var keyX in x) {
+      if (equals(x[keyX], y[keyX])) {
+        return true;
+      }
+    }
+    for (var keyY in y) {
+      if ((0, _not2.default)((0, _exists2.default)(x[keyY])) && (0, _exists2.default)(y[keyY])) {
+        return false;
+      }
+    }
   }
+
   return false;
-}); /**
-     * @author Len Dierickx
-     * equals
-     * checks for equality
-     */
+});
+
 exports.default = equals;
-// export default curry((x, y) = > {
-//     if (identical(x, y)) {
-//         return true
-//     }
-// if (x == null || y == null) {
-//         return false
-//     }
-//     if (type(x) !== type(y)) {
-//         return false
-//     }
-//     if (x.constructor !== y.constructor) {
-//         return false;
-//     }
-// for (var p in x) {
-//         if (not(x.hasOwnProperty(p))) {
-//             continue
-//         }
-//
-//         if (not(y.hasOwnProperty(p))) {
-//           // other properties were tested using x.constructor === y.constructor
-//           return false
-//         }
-//
-//         if (identical(x[p],y[p])) {
-//             // allows to compare x[ p ] and y[ p ] when set to undefined
-//             continue
-//         }
-//
-//         if (not(isObject(x[p]))) {
-//           return false
-//         }
-//         // Numbers, Strings, Functions, Booleans must be strictly equal
-//         if () return false;
-//         // Objects and Arrays must be tested recursively
-//     }
-//
-//     for (p in y) {
-//         if (y.hasOwnProperty(p) && !x.hasOwnProperty(p)) return false;
-//         // allows x[ p ] to be set to undefined
-//     }
-//     return false
-// })
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
