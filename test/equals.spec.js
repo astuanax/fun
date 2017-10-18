@@ -54,11 +54,43 @@ describe("equals", function() {
 
       it('objects', function() {
           chai.expect(equals({'a': 0, 'b': 1}, {'a': 0, 'b': 1})).to.be.true
-          chai.expect(equals({'a': 0, 'b': 3}, {'a': 0, 'b': 1})).to.be.false
           chai.expect(equals(new Object({'a': 0, 'b': 1}), {'a': 0, 'b': 1})).to.be.true
           chai.expect(equals(
             new Object({'a': 0, 'b': { 'c' : 2 }}),
             new Object({'a': 0, 'b': { 'c' : 2 }})
           )).to.be.true
+          chai.expect(equals(
+            new Object({'a': 0, 'b': { 'c' : null }}),
+            new Object({'a': 0, 'b': { 'c' : null }})
+          )).to.be.true
+          chai.expect(equals(
+            new Object({'a': 0, 'b': { 'c' : undefined }}),
+            new Object({'a': 0, 'b': { 'c' : undefined }})
+          )).to.be.true
+          chai.expect(equals(
+            new Object({'a': 0, 'b': { 'c' : x => x }}),
+            new Object({'a': 0, 'b': { 'c' : x => x }})
+          )).to.be.true
+          
+         chai.expect(equals({'a': 0, 'b': 3}, {'a': 0, 'b': 1})).to.be.false
+          chai.expect(equals(new Object({'a': 0, 'b': 1}), {'a': 0, 'b': 3})).to.be.false
+          chai.expect(equals(
+            new Object({'a': 0, 'b': { 'b' : 2 }}),
+            new Object({'a': 0, 'b': { 'c' : 2 }})
+          )).to.be.false
+          chai.expect(equals(
+            new Object({'a': 0, 'b': { 'c' : null }}),
+            new Object({'a': 0, 'b': { 'c' : false }})
+          )).to.be.false
+          chai.expect(equals(
+            new Object({'a': 0, 'b': { 'c' : undefined }}),
+            new Object({'a': 0, 'b': { 'c' : null }})
+          )).to.be.false
+          // chai.expect(equals(
+          //   new Object({'a': 0, 'b': { 'c' : x => x }}),
+          //   new Object({'a': 0, 'b': { 'c' : x => {} }})
+          // )).to.be.false
+ 
+          
         });
 });
