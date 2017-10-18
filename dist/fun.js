@@ -607,13 +607,12 @@ var _is5 = require('../boolean/is');
 
 var _is6 = _interopRequireDefault(_is5);
 
+var _is7 = require('../number/is');
+
+var _is8 = _interopRequireDefault(_is7);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-/**
- * @author Len Dierickx
- * equals
- * checks for equality
- */
 var equals = (0, _curry2.default)(function (x, y) {
   if ((0, _identical2.default)(x, y)) {
     return true;
@@ -627,10 +626,9 @@ var equals = (0, _curry2.default)(function (x, y) {
   if (x.constructor !== y.constructor) {
     return false;
   }
-  if ((0, _is6.default)(x)) {
+  if ((0, _is6.default)(x) || (0, _is8.default)(x)) {
     return (0, _identical2.default)(x.valueOf(), y.valueOf());
   }
-
   if ((0, _is4.default)(x)) {
     var len = x.length;
     if (len !== y.length) {
@@ -641,7 +639,6 @@ var equals = (0, _curry2.default)(function (x, y) {
         return true;
       }
     }
-
     var len1 = x.length;
     var len2 = y.length;
     if (len1 === 0 && len2 === 0) {
@@ -661,8 +658,8 @@ var equals = (0, _curry2.default)(function (x, y) {
       return true;
     }
     for (var keyX in x) {
-      if (equals(x[keyX], y[keyX])) {
-        return true;
+      if ((0, _not2.default)(equals(x[keyX], y[keyX]))) {
+        return false;
       }
     }
     for (var keyY in y) {
@@ -672,9 +669,12 @@ var equals = (0, _curry2.default)(function (x, y) {
     }
   }
 
-  return false;
-});
-
+  return true;
+}); /**
+     * @author Len Dierickx
+     * equals
+     * checks for equality
+     */
 exports.default = equals;
 'use strict';
 

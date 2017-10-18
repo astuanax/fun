@@ -11,6 +11,7 @@ import not from './not'
 import isObject from '../object/is'
 import isArray from '../array/is'
 import isBoolean from '../boolean/is'
+import isNumber from '../number/is'
 
 const equals = curry((x, y) => {
   if (identical(x, y)) {
@@ -25,10 +26,9 @@ const equals = curry((x, y) => {
   if (x.constructor !== y.constructor) {
     return false
   }
-  if(isBoolean(x)) {
-    return identical(x.valueOf(),y.valueOf())
+  if (isBoolean(x) || isNumber(x)) {
+    return identical(x.valueOf(), y.valueOf())
   }
-  
   if (isArray(x)) {
     var len = x.length
     if (len !== y.length) {
@@ -39,7 +39,6 @@ const equals = curry((x, y) => {
         return true
       }
     }
-
     var len1 = x.length
     var len2 = y.length
     if (len1 === 0 && len2 === 0) {
@@ -59,8 +58,8 @@ const equals = curry((x, y) => {
       return true
     }
     for (var keyX in x) {
-      if (equals(x[keyX], y[keyX])) {
-        return true
+      if (not(equals(x[keyX], y[keyX]))) {
+        return false
       }
     }
     for (var keyY in y) {
@@ -70,7 +69,7 @@ const equals = curry((x, y) => {
     }
   }
 
-  return false
+  return true
 })
 
 export default equals
