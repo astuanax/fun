@@ -3,15 +3,14 @@
  * equals
  * checks for equality
  */
-import curry from './curry'
-import exists from './exists'
-import identical from './identical'
-import type from './type'
-import not from './not'
-import and from '../util/and'
-import isObject from './is'
+import curry from '../util/curry'
 
-const omit = curry((names, obj) => {
-  // TODO 
-  return undefined
-}
+export default curry((obj, names) => {
+  let result = {}
+  Object.keys(obj).filter((key) => { 
+    return names.indexOf(key) === -1 
+  }).forEach((key) => {
+    result[key] = obj[key]
+  })
+  return result
+})
