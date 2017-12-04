@@ -53,6 +53,25 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+var _curry = require('../util/curry');
+
+var _curry2 = _interopRequireDefault(_curry);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = (0, _curry2.default)(function (arrayL, arrayR) {
+  return Array.from(new Set(arrayL.concat(arrayR)));
+}); /**
+     * @author Len Dierickx
+     * equals
+     * checks for equality
+     */
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
 var _is = require('../util/is');
 
 var _is2 = _interopRequireDefault(_is);
@@ -300,6 +319,95 @@ exports.default = function (x) {
 }; /**
     * Created by dierickx.len on 18/03/2017.
     */
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var Just = function Just(val) {
+  this._value = val;
+  return this;
+};
+Just.prototype.isJust = function () {
+  return true;
+};
+Just.prototype.isNothing = function () {
+  return false;
+};
+
+exports.default = Just;
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _Just = require('./Just');
+
+var _Just2 = _interopRequireDefault(_Just);
+
+var _Nothing = require('./Nothing');
+
+var _Nothing2 = _interopRequireDefault(_Nothing);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Maybe = function Maybe(val) {
+  this.__value = val;
+};
+
+Maybe.of = function (val) {
+  if (val instanceof Maybe) return val;
+  if (this instanceof Maybe) {
+    this.__value = val;
+  } else {
+    return new Maybe(val);
+  }
+};
+
+Maybe.prototype.getOrElse = function (n) {
+  return this.isNothing() ? n : this.__value;
+};
+
+Maybe.prototype.map = function (f) {
+  if (this.isNothing()) {
+    return Maybe.of(null);
+  }
+  return Maybe.of(f(this.__value));
+};
+
+Maybe.prototype.isNothing = function () {
+  return this.__value == null;
+};
+
+Maybe.prototype.isJust = function () {
+  return !this.isNothing();
+};
+
+Maybe.prototype.Nothing = function () {
+  return new _Nothing2.default();
+};
+
+Maybe.prototype.Just = function () {
+  return new _Just2.default(this._value);
+};
+
+exports.default = Maybe;
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var Nothing = function Nothing() {};
+Nothing.prototype.isJust = function () {
+  return false;
+};
+Nothing.prototype.isNothing = function () {
+  return true;
+};
+
+exports.default = Nothing;
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -339,7 +447,6 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = function (x) {
   return (0, _and2.default)((0, _is2.default)(x), isNaN(x));
 };
-"use strict";
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -355,6 +462,86 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = (0, _is2.default)('Object'); /**
                                                 * @author Len Dierickx
                                                 */
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _curry = require('../util/curry');
+
+var _curry2 = _interopRequireDefault(_curry);
+
+var _identical = require('../util/identical');
+
+var _identical2 = _interopRequireDefault(_identical);
+
+var _is = require('../object/is');
+
+var _is2 = _interopRequireDefault(_is);
+
+var _is3 = require('../array/is');
+
+var _is4 = _interopRequireDefault(_is3);
+
+var _union = require('../array/union');
+
+var _union2 = _interopRequireDefault(_union);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var merge = (0, _curry2.default)(function (objL, objR) {
+  var result = Object.assign({}, objL);
+  if ((0, _identical2.default)(objL, objR)) {
+    return Object.assign({}, objL);
+  }
+  for (var key in objR) {
+    if (!Object.prototype.hasOwnProperty.call(objR, key)) {
+      continue;
+    }
+    var oldValue = objR[key];
+    var newValue = objL[key];
+
+    if ((0, _is2.default)(oldValue) && (0, _is2.default)(newValue)) {
+      result[key] = merge(oldValue, newValue);
+    } else if ((0, _is4.default)(newValue)) {
+      result[key] = (0, _union2.default)(newValue, oldValue);
+    } else {
+      result[key] = oldValue; // TODO: this is a reference, should be clone
+    }
+  }
+  return result;
+}); /**
+     * @author Len Dierickx
+     * equals
+     * checks for equality
+     */
+exports.default = merge;
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _curry = require('../util/curry');
+
+var _curry2 = _interopRequireDefault(_curry);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = (0, _curry2.default)(function (obj, names) {
+  var result = {};
+  Object.keys(obj).filter(function (key) {
+    return names.indexOf(key) === -1;
+  }).forEach(function (key) {
+    result[key] = obj[key];
+  });
+  return result;
+}); /**
+     * @author Len Dierickx
+     * equals
+     * checks for equality
+     */
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
