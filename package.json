@@ -2,7 +2,7 @@
   "name": "fun.js",
   "version": "1.0.1",
   "description": "Functional tools",
-  "main": "index.js",
+  "main": "dist/fun.js",
   "scripts": {
     "test": "mocha --require babel-register",
     "lint": "eslint src/**",
