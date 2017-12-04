@@ -10,7 +10,7 @@ Maybe.of = function (val) {
   if (this instanceof Maybe) {
     this.__value = val
   } else {
-      return new Maybe(val)
+    return new Maybe(val)
   }
 }
 
