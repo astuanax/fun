@@ -4,10 +4,10 @@
 
 import chai from 'chai'
 import compose from '../src/util/compose'
-import timeToHour from '../src/time/toHour'
-import timeToDay from '../src/time/toDay'
-import timeToMinutes from '../src/time/toMinutes'
-import timeToSeconds from '../src/time/toSeconds'
+import timeToHour from '../src/date/toHour'
+import timeToDay from '../src/date/toDay'
+import timeToMinutes from '../src/date/toMinutes'
+import timeToSeconds from '../src/date/toSeconds'
 import diffDate from '../src/date/diffDate'
 
 describe("time", function() {
