@@ -9,17 +9,25 @@ import and from '../src/util/and'
 describe("equals", function() {
   beforeEach(function() {});
   afterEach(function() {});
-  
+
+  it('null and undefined', function() {
+    chai.expect(equals(null,null)).to.be.true
+    chai.expect(equals(undefined,undefined)).to.be.true
+    chai.expect(equals(undefined,null)).to.be.false
+    chai.expect(equals(0,null)).to.be.false
+    chai.expect(equals(0,undefined)).to.be.false
+  });
+
   it('numbers', function() {
     chai.expect(equals(0,0)).to.be.true
     chai.expect(equals(1,1)).to.be.true
     chai.expect(equals(-1,-1)).to.be.true
-    chai.expect(equals(Number(10),10)).to.be.true
-    chai.expect(equals(Number(10),Number(10))).to.be.true
-    chai.expect(equals(0x010101,0x010101)).to.be.true
-    chai.expect(equals(0b11,0b11)).to.be.true
-    chai.expect(equals(0o10,0o10)).to.be.true
-    
+    chai.expect(equals(Number(10), 10)).to.be.true
+    chai.expect(equals(Number(10), Number(10))).to.be.true
+    chai.expect(equals(0x010101, 0x010101)).to.be.true
+    chai.expect(equals(0b11, 0b11)).to.be.true
+    chai.expect(equals(0o10, 0o10)).to.be.true
+
   });
   it('String equals String', function() {
     const string1 = ''
@@ -32,16 +40,33 @@ describe("equals", function() {
       const arr1 = [1,2,3]
       const arr2 = [1,2,3]
       const arr3 = [2,3,1]
-      const arr4 = [{}, []]
-      const arr5 = [{}, []]
+      const arr4 = [{}, [0]]
+      const arr5 = [{}, [0]]
       const arr6 = [{}, null]
-      const arr7 = [{}, null]      
+      const arr7 = [{}, null]
+      const arr8 = [1,2]
+
+    const arr9 = [1,undefined]
+    const arr10 = [1,undefined]
+
+
       const test = equals(arr1, arr2)
-      const test2 = equals(arr1, arr3)      
+      const test2 = equals(arr1, arr3)
+      const test3 = equals(arr4, arr5)
+      const test4 = equals(arr6, arr7)
+      const test5 = equals(arr5, arr6)
+      const test6 = equals(arr1, arr8)
+    const test7 = equals(arr9, arr10)
+
       chai.expect(test).to.be.true
       chai.expect(test2).to.be.false
+      chai.expect(test3).to.be.true
+      chai.expect(test4).to.be.true
+      chai.expect(test5).to.be.false
+      chai.expect(test6).to.be.false
+    chai.expect(test7).to.be.true
     });
-    
+
     it('booleans', function() {
         chai.expect(equals(true, true)).to.be.true
         chai.expect(equals(new Boolean(true), new Boolean(true))).to.be.true
@@ -50,7 +75,7 @@ describe("equals", function() {
         chai.expect(equals(new Boolean(false), new Boolean(true))).to.be.false
         chai.expect(equals(new Boolean(false), true)).to.be.false
       });
-    
+
 
       it('objects', function() {
           chai.expect(equals({'a': 0, 'b': 1}, {'a': 0, 'b': 1})).to.be.true
@@ -67,11 +92,6 @@ describe("equals", function() {
             new Object({'a': 0, 'b': { 'c' : undefined }}),
             new Object({'a': 0, 'b': { 'c' : undefined }})
           )).to.be.true
-          chai.expect(equals(
-            new Object({'a': 0, 'b': { 'c' : x => x }}),
-            new Object({'a': 0, 'b': { 'c' : x => x }})
-          )).to.be.true
-          
          chai.expect(equals({'a': 0, 'b': 3}, {'a': 0, 'b': 1})).to.be.false
           chai.expect(equals(new Object({'a': 0, 'b': 1}), {'a': 0, 'b': 3})).to.be.false
           chai.expect(equals(
@@ -89,8 +109,8 @@ describe("equals", function() {
           // chai.expect(equals(
           //   new Object({'a': 0, 'b': { 'c' : x => x }}),
           //   new Object({'a': 0, 'b': { 'c' : x => {} }})
-          // )).to.be.false
- 
-          
+          // )).to.be.true
+
+
         });
 });
