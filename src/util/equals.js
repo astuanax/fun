@@ -30,31 +30,25 @@ const equals = curry((x, y) => {
     return identical(x.valueOf(), y.valueOf())
   }
 
+  let res = true
   if (isArray(x)) {
     if (x.length !== y.length) {
       return false
     }
     for (var i = 0; i < x.length; i++) {
-      if (not(equals(x[i], y[i]))) {
-        return false
-      }
+      if (not(equals(x[i], y[i]))) res = false
     }
-    return true
+    return res
   } else if (isObject(x)) {
-    if (and(isEmptyObject(x), isEmptyObject(y))) {
-      return true
-    }
+    if (and(isEmptyObject(x), isEmptyObject(y))) return true
+
     for (var keyX in x) {
-      if (not(equals(x[keyX], y[keyX]))) {
-        return false
-      }
+      if (not(equals(x[keyX], y[keyX]))) res = false
     }
     for (var keyY in y) {
-      if (not(exists(x[keyY])) && exists(y[keyY])) {
-        return false
-      }
+      if (not(exists(x[keyY])) && exists(y[keyY])) res = false
     }
-    return true
+    return res
   }
 })
 
