@@ -8,14 +8,14 @@ import exists from './exists'
 import identical from './identical'
 import type from './type'
 import not from './not'
-import and from './and'
 import or from './or'
 import isObject from '../object/is'
-import isEmptyObject from '../object/isEmpty'
 import isArray from '../array/is'
 import isBoolean from '../boolean/is'
 import isNumber from '../number/is'
 import isDate from '../date/is'
+import equalsArray from '../array/equals'
+import equalsObject from '../object/equals'
 
 const equals = curry((x, y) => {
   if (identical(x, y)) return true
@@ -29,26 +29,10 @@ const equals = curry((x, y) => {
   if (isBoolean(x) || isNumber(x) || isDate(x)) {
     return identical(x.valueOf(), y.valueOf())
   }
-
-  let res = true
   if (isArray(x)) {
-    if (x.length !== y.length) {
-      return false
-    }
-    for (var i = 0; i < x.length; i++) {
-      if (not(equals(x[i], y[i]))) res = false
-    }
-    return res
+    return equalsArray(x, y)
   } else if (isObject(x)) {
-    if (and(isEmptyObject(x), isEmptyObject(y))) return true
-
-    for (var keyX in x) {
-      if (not(equals(x[keyX], y[keyX]))) res = false
-    }
-    for (var keyY in y) {
-      if (not(exists(x[keyY])) && exists(y[keyY])) res = false
-    }
-    return res
+    return equalsObject(x, y)
   }
 })
 
