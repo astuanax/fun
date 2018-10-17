@@ -5,8 +5,9 @@
  */
 import curry from '../util/curry'
 import not from '../util/not'
+import equals from '../util/equals'
 
-const equals = curry((x, y) => {
+export default curry((x, y) => {
   if (x.length !== y.length) {
     return false
   }
@@ -15,5 +16,3 @@ const equals = curry((x, y) => {
   }
   return true
 })
-
-export default equals

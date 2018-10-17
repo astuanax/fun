@@ -8,8 +8,9 @@ import exists from '../util/exists'
 import not from '../util/not'
 import and from '../util/and'
 import isEmptyObject from './isEmpty'
+import equals from '../util/equals'
 
-const equals = curry((x, y) => {
+export default curry((x, y) => {
   if (and(isEmptyObject(x), isEmptyObject(y))) return true
 
   for (var keyX in x) {
@@ -22,5 +23,3 @@ const equals = curry((x, y) => {
 
   return true
 })
-
-export default equals

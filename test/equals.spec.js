@@ -64,7 +64,7 @@ describe("equals", function() {
       chai.expect(test4).to.be.true
       chai.expect(test5).to.be.false
       chai.expect(test6).to.be.false
-    chai.expect(test7).to.be.true
+      chai.expect(test7).to.be.true
     });
 
     it('booleans', function() {
