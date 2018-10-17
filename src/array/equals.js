@@ -3,8 +3,8 @@
  * equals
  * checks for equality
  */
-import curry from './curry'
-import not from './not'
+import curry from '../util/curry'
+import not from '../util/not'
 
 const equals = curry((x, y) => {
   if (x.length !== y.length) {

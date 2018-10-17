@@ -3,11 +3,11 @@
  * equals
  * checks for equality
  */
-import curry from './curry'
-import exists from './exists'
-import not from './not'
-import and from './and'
-import isEmptyObject from '../object/isEmpty'
+import curry from '../util/curry'
+import exists from '../util/exists'
+import not from '../util/not'
+import and from '../util/and'
+import isEmptyObject from './isEmpty'
 
 const equals = curry((x, y) => {
   if (and(isEmptyObject(x), isEmptyObject(y))) return true
