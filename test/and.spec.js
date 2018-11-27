@@ -8,14 +8,14 @@ import and from '../src/util/and'
 describe("and", function() {
     beforeEach(function() {});
     afterEach(function() { });
-    
+
     it('true and true return true', function() {
-        const test = and(true)(true)
+        const test = and(true, true)
         chai.expect(test).to.be.true
     });
-    
+
     it('true and true and true return true', function() {
-        const test = and(true, and(true)(true))
+        const test = and(true)(true)
         chai.expect(test).to.be.true
     });
 

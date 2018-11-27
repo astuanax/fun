@@ -5,6 +5,5 @@
  */
 import curry from './curry'
 
-export default curry((x, y) => {
-  return x || y
-})
+export default curry((x, y) => x || y)
+

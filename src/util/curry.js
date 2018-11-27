@@ -1,8 +1,11 @@
 /**
  * Created by dierickx.len on 25/03/2017.
  */
-export const curry = function (fun) {
+export default function (fun) {
   let argslen = fun.length
+  if (argslen === 0) {
+    return fun
+  }
   return createRecurser([])
 
   function createRecurser (acc) {
@@ -21,4 +24,3 @@ export const curry = function (fun) {
     }
   }
 }
-export default curry

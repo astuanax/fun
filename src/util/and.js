@@ -1,10 +1,8 @@
 /**
  * @author Len Dierickx
- * empty
- * Returns the empty equivalent of the first argument
+ * x, y
+ * Returns boolean
  */
 import curry from './curry'
 
-export default curry((x, y) => {
-  return x && y
-})
+export default curry((x, y) => x && y)
