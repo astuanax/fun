@@ -15,10 +15,39 @@ exports.default = function (x) {
 }; /**
     * Created by dierickx.len on 01/04/2017.
     */
-/**
- * Created by len dierickx 2017-04-02
- */
-"use strict";
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _curry = require('../util/curry');
+
+var _curry2 = _interopRequireDefault(_curry);
+
+var _not = require('../util/not');
+
+var _not2 = _interopRequireDefault(_not);
+
+var _equals = require('../util/equals');
+
+var _equals2 = _interopRequireDefault(_equals);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = (0, _curry2.default)(function (x, y) {
+  if (x.length !== y.length) {
+    return false;
+  }
+  for (var i = 0; i < x.length; i++) {
+    if ((0, _not2.default)((0, _equals2.default)(x[i], y[i]))) return false;
+  }
+  return true;
+}); /**
+     * @author Len Dierickx
+     * equals
+     * checks for equality
+     */
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -324,6 +353,54 @@ exports.default = function (x) {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+
+/**
+ * Created by dierickx.len on 26/03/2017.
+ */
+exports.default = function (d) {
+  return d / 86400000;
+}; // 24*60*60*1000 = 86400000
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+/**
+ * Created by dierickx.len on 26/03/2017.
+ */
+exports.default = function (d) {
+  return d / 3600000;
+}; // 60*60*1000 = 3600000
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+/**
+ * Created by dierickx.len on 26/03/2017.
+ */
+exports.default = function (d) {
+  return d / 60000;
+}; // 60*1000 = 60000
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+/**
+ * Created by dierickx.len on 26/03/2017.
+ */
+exports.default = function (d) {
+  return d / 1000;
+};
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
 var Just = function Just(val) {
   this._value = val;
   return this;
@@ -374,6 +451,10 @@ Maybe.prototype.map = function (f) {
     return Maybe.of(null);
   }
   return Maybe.of(f(this.__value));
+};
+
+Maybe.prototype.ap = function (m) {
+  return m.map(this.__value);
 };
 
 Maybe.prototype.isNothing = function () {
@@ -453,6 +534,73 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
+var _is = require('./is');
+
+var _is2 = _interopRequireDefault(_is);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = function (x) {
+  return (0, _is2.default)(x) ? {} : void 0;
+}; /**
+    * Created by dierickx.len on 01/04/2017.
+    */
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _curry = require('../util/curry');
+
+var _curry2 = _interopRequireDefault(_curry);
+
+var _exists = require('../util/exists');
+
+var _exists2 = _interopRequireDefault(_exists);
+
+var _not = require('../util/not');
+
+var _not2 = _interopRequireDefault(_not);
+
+var _and = require('../util/and');
+
+var _and2 = _interopRequireDefault(_and);
+
+var _isEmpty = require('./isEmpty');
+
+var _isEmpty2 = _interopRequireDefault(_isEmpty);
+
+var _equals = require('../util/equals');
+
+var _equals2 = _interopRequireDefault(_equals);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+/**
+ * @author Len Dierickx
+ * equals
+ * checks for equality
+ */
+exports.default = (0, _curry2.default)(function (x, y) {
+  if ((0, _and2.default)((0, _isEmpty2.default)(x), (0, _isEmpty2.default)(y))) return true;
+
+  for (var keyX in x) {
+    if ((0, _not2.default)((0, _equals2.default)(x[keyX], y[keyX]))) return false;
+  }
+
+  for (var keyY in y) {
+    if ((0, _not2.default)((0, _exists2.default)(x[keyY])) && (0, _exists2.default)(y[keyY])) return false;
+  }
+
+  return true;
+});
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
 var _is = require('../util/is');
 
 var _is2 = _interopRequireDefault(_is);
@@ -462,6 +610,24 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = (0, _is2.default)('Object'); /**
                                                 * @author Len Dierickx
                                                 */
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+/**
+ * Created by dierickx.len on 01/04/2017.
+ */
+
+exports.default = function (x) {
+  for (var key in x) {
+    if (x.hasOwnProperty(key)) {
+      return false;
+    }
+  }
+  return true;
+};
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -602,54 +768,6 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = (0, _is2.default)('String'); /**
                                                 * @author Len Dierickx
                                                 */
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-/**
- * Created by dierickx.len on 26/03/2017.
- */
-exports.default = function (d) {
-  return d / 86400000;
-}; // 24*60*60*1000 = 86400000
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-/**
- * Created by dierickx.len on 26/03/2017.
- */
-exports.default = function (d) {
-  return d / 3600000;
-}; // 60*60*1000 = 3600000
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-/**
- * Created by dierickx.len on 26/03/2017.
- */
-exports.default = function (d) {
-  return d / 60000;
-}; // 60*1000 = 60000
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-/**
- * Created by dierickx.len on 26/03/2017.
- */
-exports.default = function (d) {
-  return d / 1000;
-};
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -666,8 +784,8 @@ exports.default = (0, _curry2.default)(function (x, y) {
   return x && y;
 }); /**
      * @author Len Dierickx
-     * empty
-     * Returns the empty equivalent of the first argument
+     * x, y
+     * Returns boolean
      */
 "use strict";
 
@@ -696,11 +814,12 @@ exports.default = compose;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-/**
- * Created by dierickx.len on 25/03/2017.
- */
-var curry = exports.curry = function curry(fun) {
+
+exports.default = function (fun) {
   var argslen = fun.length;
+  if (argslen === 0) {
+    return fun;
+  }
   return createRecurser([]);
 
   function createRecurser(acc) {
@@ -719,7 +838,6 @@ var curry = exports.curry = function curry(fun) {
     }
   }
 };
-exports.default = curry;
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -782,6 +900,10 @@ var _not = require('./not');
 
 var _not2 = _interopRequireDefault(_not);
 
+var _or = require('./or');
+
+var _or2 = _interopRequireDefault(_or);
+
 var _is = require('../object/is');
 
 var _is2 = _interopRequireDefault(_is);
@@ -798,65 +920,37 @@ var _is7 = require('../number/is');
 
 var _is8 = _interopRequireDefault(_is7);
 
+var _is9 = require('../date/is');
+
+var _is10 = _interopRequireDefault(_is9);
+
+var _equals = require('../array/equals');
+
+var _equals2 = _interopRequireDefault(_equals);
+
+var _equals3 = require('../object/equals');
+
+var _equals4 = _interopRequireDefault(_equals3);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var equals = (0, _curry2.default)(function (x, y) {
-  if ((0, _identical2.default)(x, y)) {
-    return true;
-  }
-  if ((0, _not2.default)((0, _exists2.default)(x)) || (0, _not2.default)((0, _exists2.default)(y))) {
-    return false;
-  }
-  if ((0, _type2.default)(x) !== (0, _type2.default)(y)) {
-    return false;
-  }
-  if (x.constructor !== y.constructor) {
-    return false;
-  }
-  if ((0, _is6.default)(x) || (0, _is8.default)(x)) {
+  if ((0, _identical2.default)(x, y)) return true;
+
+  if ((0, _type2.default)(x) !== (0, _type2.default)(y)) return false;
+
+  if ((0, _or2.default)((0, _not2.default)((0, _exists2.default)(x)), (0, _not2.default)((0, _exists2.default)(y)))) return false;
+
+  if (x.constructor !== y.constructor) return false;
+
+  if ((0, _is6.default)(x) || (0, _is8.default)(x) || (0, _is10.default)(x)) {
     return (0, _identical2.default)(x.valueOf(), y.valueOf());
   }
   if ((0, _is4.default)(x)) {
-    var len = x.length;
-    if (len !== y.length) {
-      return false;
-    }
-    for (var i = 0; i < len; i++) {
-      if (equals(x[i], y[i])) {
-        return true;
-      }
-    }
-    var len1 = x.length;
-    var len2 = y.length;
-    if (len1 === 0 && len2 === 0) {
-      return true;
-    }
-    if (len1 === len2) {
-      for (var key = 0; key < len1; key++) {
-        // not sorted
-        if ((0, _not2.default)((0, _identical2.default)(x[key], y[key]))) {
-          return false;
-        }
-        return true;
-      }
-    }
+    return (0, _equals2.default)(x, y);
   } else if ((0, _is2.default)(x)) {
-    if (Object.keys(x).length === 0 && Object.keys(y).length === 0) {
-      return true;
-    }
-    for (var keyX in x) {
-      if ((0, _not2.default)(equals(x[keyX], y[keyX]))) {
-        return false;
-      }
-    }
-    for (var keyY in y) {
-      if ((0, _not2.default)((0, _exists2.default)(x[keyY])) && (0, _exists2.default)(y[keyY])) {
-        return false;
-      }
-    }
+    return (0, _equals4.default)(x, y);
   }
-
-  return true;
 }); /**
      * @author Len Dierickx
      * equals
@@ -1005,6 +1099,25 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = function (x) {
   return x == null;
 };
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _curry = require('./curry');
+
+var _curry2 = _interopRequireDefault(_curry);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = (0, _curry2.default)(function (x, y) {
+  return x || y;
+}); /**
+     * @author Len Dierickx
+     * or
+     * Returns true if one or the other is true
+     */
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
