@@ -25,6 +25,10 @@ Maybe.prototype.map = function (f) {
   return Maybe.of(f(this.__value))
 }
 
+Maybe.prototype.ap = function (m) {
+  return m.map(this.__value)
+}
+
 Maybe.prototype.isNothing = function () {
   return (this.__value == null)
 }
