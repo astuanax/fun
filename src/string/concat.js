@@ -3,8 +3,9 @@
  */
 
 export const concat = function (separator = ',') { // use function(), arrow function doesn't bind arguments
-  var args = Array.prototype.slice.call(arguments, 1)
-  return args.join(separator)
-}
+  let args = Array.prototype.slice.call(arguments, 1);
 
-export default concat
+  return args.join(separator);
+};
+
+export default concat;

@@ -1,9 +1,9 @@
 /**
  * @author Len Dierickx
  */
-import _null from './null'
-import not from './not'
+import _null from './null';
+import not from './not';
 
 export default (x) => {
-  return not(_null(x))
-}
+  return not(_null(x));
+};

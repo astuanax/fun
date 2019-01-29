@@ -4,5 +4,5 @@
  */
 
 export default (x) => {
-  return x
-}
+  return x;
+};

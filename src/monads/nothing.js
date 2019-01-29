@@ -1,6 +1,7 @@
 
-let Nothing = function () {}
-Nothing.prototype.isJust = function () { return false }
-Nothing.prototype.isNothing = function () { return true }
+let Nothing = function () {};
 
-export default Nothing
+Nothing.prototype.isJust = function () { return false; };
+Nothing.prototype.isNothing = function () { return true; };
+
+export default Nothing;

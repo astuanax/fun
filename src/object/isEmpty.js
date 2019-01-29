@@ -3,8 +3,8 @@
  */
 
 export default (x) => {
-  for (var key in x) {
-    if (x.hasOwnProperty(key)) { return false }
+  for (let key in x) {
+    if (x.hasOwnProperty(key)) { return false; }
   }
-  return true
-}
+  return true;
+};
