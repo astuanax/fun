@@ -1,5 +1,5 @@
 {
-  "name": "fun",
+  "name": "fun.js",
   "version": "1.0.2",
   "description": "Functional tools for javascript development",
   "main": "lib/fun.js",

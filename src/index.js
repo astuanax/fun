@@ -1,61 +1,61 @@
 /* eslint-disable no-unused-vars */
 // array
-import emptyArray from 'array/empty';
-import equalsArray from 'array/equals';
-import isArray from 'array/is';
-import toArray from 'array/to';
-import unionArray from 'array/union';
+export {emptyArray} from 'array/empty';
+export {equalsArray} from 'array/equals';
+export {isArray} from 'array/is';
+export {toArray} from 'array/to';
+export {unionArray} from 'array/union';
 // boolean
-import isBoolean from 'boolean/is';
+export {isBoolean} from 'boolean/is';
 
-import constants from 'constants';
+export {constants} from 'constants';
 
 // monads
-import just from 'monads/Just';
-import maybe from 'monads/Maybe';
-import nothing from 'monads/Nothing';
+export {just} from 'monads/Just';
+export {maybe} from 'monads/Maybe';
+export {nothing} from 'monads/Nothing';
 
 // number
-import isNumber from 'number/is';
-import isNan from 'number/isNan';
+export {isNumber} from 'number/is';
+export {isNan} from 'number/isNan';
 
 // object
-import emptyObject from 'object/empty';
-import equalsObject from 'object/equals';
-import isObject from 'object/is';
-import isEmptyObject from 'object/isEmpty';
-import mergeObject from 'object/merge';
-import omitFromObject from 'object/omit';
+export {emptyObject} from 'object/empty';
+export {equalsObject} from 'object/equals';
+export {isObject} from 'object/is';
+export {isEmptyObject} from 'object/isEmpty';
+export {mergeObject} from 'object/merge';
+export {omitFromObject} from 'object/omit';
 
 // string
-import concatString from 'string/concat';
-import formatString from 'string/formatString';
-import isString from 'string/is';
+export {concatString} from 'string/concat';
+export {formatString} from 'string/formatString';
+export {isString} from 'string/is';
 
 // util
-// import and from 'util/and';
-import compose from 'util/compose';
-import curry from 'util/curry';
-import empty from 'util/empty';
-import equals from 'util/equals';
-import exists from 'util/exists';
-import identical from 'util/identical';
-import identity from 'util/identity';
-import is from 'util/is';
-import isEmpty from 'util/isEmpty';
-import not from 'util/not';
-// import null from 'null';
-import or from 'util/or';
-import truthy from 'util/truthy';
-import type from 'util/type';
+// export {and} from 'util/and'
+export {compose} from 'util/compose';
+export {curry} from 'util/curry';
+export {empty} from 'util/empty';
+export {equals} from 'util/equals';
+export {exists} from 'util/exists';
+export {identical} from 'util/identical';
+export {identity} from 'util/identity';
+export {is} from 'util/is';
+export {isEmpty} from 'util/isEmpty';
+export {not} from 'util/not';
+// export {null} from 'null'
+export {or} from 'util/or';
+export {truthy} from 'util/truthy';
+export {type} from 'util/type';
 
 // date
-import diffDate from 'date/diffDate';
-import formatDateTime from 'date/formatDateTime';
-import dateIs from 'date/is';
-import isFutureDate from 'date/isFutureDate';
-import isValid from 'date/isValid';
-import toDay from 'date/toDay';
-import toHour from 'date/toHour';
-import toMinutes from 'date/toMinutes';
-import toSeconds from 'date/toSeconds';
+export {diffDate} from 'date/diffDate';
+export {formatDateTime} from 'date/formatDateTime';
+export {dateIs} from 'date/is';
+export {isFutureDate} from 'date/isFutureDate';
+export {isValid} from 'date/isValid';
+export {toDay} from 'date/toDay';
+export {toHour} from 'date/toHour';
+export {toMinutes} from 'date/toMinutes';
+export {toSeconds} from 'date/toSeconds';
