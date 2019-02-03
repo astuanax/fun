@@ -6,6 +6,6 @@
 import isNumber from './is';
 import and from '../util/and';
 
-export default (x) => {
+export default function isNan(x) {
   return and(isNumber(x), isNaN(x));
 };

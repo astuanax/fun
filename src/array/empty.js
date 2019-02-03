@@ -3,6 +3,6 @@
  */
 import isArray from './is';
 
-export default (x) => {
+export default function is(x) {
   return isArray(x) ? [] : void 0;
 };

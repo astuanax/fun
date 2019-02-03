@@ -7,7 +7,7 @@ import curry from '../util/curry';
 import not from '../util/not';
 import equals from '../util/equals';
 
-export default curry((x, y) => {
+export default curry(function equalsArray(x, y) {
   if (x.length !== y.length) {
     return false;
   }

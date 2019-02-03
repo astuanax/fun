@@ -2,7 +2,7 @@
 /**
  * Created by dierickx.len on 25/03/2017.
  */
-export default function (fun) {
+export default function curry(fun) {
   let argslen = fun.length;
 
   if (argslen === 0) {

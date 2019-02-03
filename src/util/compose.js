@@ -1,7 +1,7 @@
 /**
  * Created by dierickx.len on 25/03/2017.
  */
-export const compose = function () {
+export default function compose() {
   let funs = Array.prototype.slice.call(arguments);
 
   return function () {
@@ -17,4 +17,4 @@ export const compose = function () {
     return result[0];
   };
 };
-export default compose;
+

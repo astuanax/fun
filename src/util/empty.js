@@ -7,7 +7,7 @@ import isArray from '../array/is';
 import isObject from '../object/is';
 import isString from '../string/is';
 
-export default (x) => {
+export default function empty(x) {
   if (isArray(x)) {
     return [];
   }

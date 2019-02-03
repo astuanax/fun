@@ -17,7 +17,7 @@ import isDate from '../date/is';
 import equalsArray from '../array/equals';
 import equalsObject from '../object/equals';
 
-const equals = curry((x, y) => {
+export default curry(function equals(x, y) {
   if (identical(x, y)) return true;
 
   if (type(x) !== type(y)) return false;
@@ -36,5 +36,3 @@ const equals = curry((x, y) => {
   }
   return false;
 });
-
-export default equals;

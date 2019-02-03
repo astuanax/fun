@@ -3,6 +3,6 @@
  * Returns the value supplied to the function
  */
 
-export default (x) => {
+export default function identity(x) {
   return x;
 };

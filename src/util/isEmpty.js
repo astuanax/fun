@@ -7,6 +7,6 @@ import empty from './empty';
 import exists from './exists';
 import equals from './equals';
 
-export default (x) => {
+export default function isEmpty(x) {
   return exists(x) && equals(x, empty(x));
 };

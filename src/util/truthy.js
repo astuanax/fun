@@ -3,6 +3,6 @@
  */
 import exists from './exists';
 
-export default (x) => {
+export default function truthy(x) {
   return (x !== false) && exists(x);
 };

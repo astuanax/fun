@@ -1,10 +1,9 @@
 /**
  * @author Len Dierickx
- * equals
- * checks for equality
+ * union
  */
 import curry from '../util/curry';
 
-export default curry((arrayL, arrayR) => {
+export default curry(function unionArray(arrayL, arrayR) {
   return Array.from(new Set(arrayL.concat(arrayR)));
 });

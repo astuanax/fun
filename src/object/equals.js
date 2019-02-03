@@ -14,6 +14,7 @@ export default curry((x, y) => {
   if (and(isEmptyObject(x), isEmptyObject(y))) return true;
 
   for (let keyX in x) {
+    // noinspection JSUnfilteredForInLoop
     if (not(equals(x[keyX], y[keyX]))) return false;
   }
 

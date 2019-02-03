@@ -5,4 +5,6 @@
  */
 import curry from './curry';
 
-export default curry((x, y) => x && y);
+export default curry(function and(x, y) {
+  return x && y;
+});

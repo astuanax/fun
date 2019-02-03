@@ -3,6 +3,6 @@
  */
 import isObject from './is';
 
-export default (x) => {
+export default function emptyObject(x) {
   return isObject(x) ? {} : void 0;
 };

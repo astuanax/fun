@@ -5,5 +5,7 @@
  */
 import curry from './curry';
 
-export default curry((x, y) => x || y);
+export default curry(function or(x, y) {
+  return x || y;
+});
 
