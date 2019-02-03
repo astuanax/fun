@@ -9,7 +9,7 @@ export {default as unionArray} from 'array/union';
 // boolean
 export {default as isBoolean} from 'boolean/is';
 
-export constants from 'constants';
+export {constants} from 'constants';
 
 // monads
 export {default as just} from 'monads/Just';
