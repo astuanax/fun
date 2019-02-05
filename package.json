@@ -5,13 +5,20 @@
   "main": "lib/fun.js",
   "module": "src/index.js",
   "scripts": {
-    "build": "webpack --env dev && webpack --env build && npm run test",
+    "build": "webpack --env dev && webpack --env build && npm run test && npm run size",
     "dev": "webpack --progress --colors --watch --env dev",
     "test": "mocha --require babel-register --colors ./test/*.spec.js",
     "test:watch": "mocha --require babel-register --colors -w ./test/*.spec.js",
     "test:cover": "cross-env NODE_ENV=test nyc mocha --require babel-register --colors test/*.js",
-    "repl": "node -i -e \"$(< ./lib/fun.js)\""
+    "repl": "node -i -e \"$(< ./lib/fun.js)\"",
+    "size": "size-limit"
   },
+  "size-limit": [
+    {
+      "path": "./lib/fun.js.js",
+      "webpack": "./webpack.config.js"
+    }
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/astuanax/fun.git"
@@ -50,11 +57,13 @@
     "jsdom": "11.11.0",
     "jsdom-global": "3.0.2",
     "mocha": "^4.0.1",
+    "nyc": "^13.1.0",
+    "size-limit": "^0.21.1",
+    "standard": "^12.0.1",
     "uglifyjs-webpack-plugin": "^1.2.7",
     "webpack": "^4.12.2",
     "webpack-cli": "^3.0.8",
-    "yargs": "^10.0.3",
-    "nyc": "^13.1.0"
+    "yargs": "^10.0.3"
   },
   "nyc": {
     "sourceMap": false,

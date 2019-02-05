@@ -1,11 +1,11 @@
 let Nothing = function () {
-};
+}
 
 Nothing.prototype.isJust = function () {
-  return false;
-};
+  return false
+}
 Nothing.prototype.isNothing = function () {
-  return true;
-};
+  return true
+}
 
-export default Nothing;
+export default Nothing

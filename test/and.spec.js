@@ -2,34 +2,34 @@
  * Created by dierickx.len on 26/03/2017.
  */
 
-import chai from 'chai';
-import and from '../src/util/and';
+import chai from 'chai'
+import and from '../src/util/and'
 
 describe('and', function () {
-  beforeEach(function () {});
-  afterEach(function () { });
+  beforeEach(function () {})
+  afterEach(function () { })
 
   it('true and true return true', function () {
-    const test = and(true, true);
+    const test = and(true, true)
 
-    chai.expect(test).to.be.true;
-  });
+    chai.expect(test).to.be.true
+  })
 
   it('true and true and true return true', function () {
-    const test = and(true)(true);
+    const test = and(true)(true)
 
-    chai.expect(test).to.be.true;
-  });
+    chai.expect(test).to.be.true
+  })
 
   it('true and false return false', function () {
-    const test = and(true, false);
+    const test = and(true, false)
 
-    chai.expect(test).to.be.false;
-  });
+    chai.expect(test).to.be.false
+  })
 
   it('false and false return false', function () {
-    const test = and(false, false);
+    const test = and(false, false)
 
-    chai.expect(test).to.be.false;
-  });
-});
+    chai.expect(test).to.be.false
+  })
+})

@@ -3,19 +3,19 @@
  * empty
  * Returns the empty equivalent of the first argument
  */
-import isArray from '../array/is';
-import isObject from '../object/is';
-import isString from '../string/is';
+import isArray from '../array/is'
+import isObject from '../object/is'
+import isString from '../string/is'
 
-export default function empty(x) {
+export default function empty (x) {
   if (isArray(x)) {
-    return [];
+    return []
   }
   if (isString(x)) {
-    return '';
+    return ''
   }
   if (isObject(x)) {
-    return {};
+    return {}
   }
-  return void 0;
+  return void 0
 };

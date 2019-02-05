@@ -1,13 +1,13 @@
 let Just = function (val) {
-  this._value = val;
-  return this;
-};
+  this._value = val
+  return this
+}
 
 Just.prototype.isJust = function () {
-  return true;
-};
+  return true
+}
 Just.prototype.isNothing = function () {
-  return false;
-};
+  return false
+}
 
-export default Just;
+export default Just

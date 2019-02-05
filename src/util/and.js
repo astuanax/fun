@@ -3,8 +3,8 @@
  * x, y
  * Returns boolean
  */
-import curry from './curry';
+import curry from './curry'
 
-export default curry(function and(x, y) {
-  return x && y;
-});
+export default curry(function and (x, y) {
+  return x && y
+})

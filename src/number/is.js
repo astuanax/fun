@@ -1,6 +1,6 @@
 /**
  * @author Len Dierickx
  */
-import is from '../util/is';
+import is from '../util/is'
 
-export default is('Number');
+export default is('Number')

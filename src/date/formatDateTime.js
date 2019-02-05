@@ -2,40 +2,38 @@
 /**
  * Created by dierickx.len on 20/01/2017.
  */
-import curry from '../util/curry';
-import isValidDate from './isValid';
-import {
-  WEEKDAYS,
-  MONTHS
-} from '../constants';
+import curry from '../util/curry'
+import isValidDate from './isValid'
+import { WEEKDAYS } from '../constants/WEEKDAYS'
+import { MONTHS } from '../constants/MONTHS'
 
 const getWeek = (d) => {
   // Copy date so don't modify original
-  d = new Date(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()));
+  d = new Date(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()))
   // Set to nearest Thursday: current date + 4 - current day number
   // Make Sunday's day number 7
-  d.setUTCDate(d.getUTCDate() + 4 - (d.getUTCDay() || 7));
+  d.setUTCDate(d.getUTCDate() + 4 - (d.getUTCDay() || 7))
   // Get first day of year
-  let yearStart = new Date(Date.UTC(d.getUTCFullYear(), 0, 1));
+  let yearStart = new Date(Date.UTC(d.getUTCFullYear(), 0, 1))
 
   // Calculate full weeks to nearest Thursday
-  let weekNo = Math.ceil((((d - yearStart) / 86400000) + 1) / 7);
+  let weekNo = Math.ceil((((d - yearStart) / 86400000) + 1) / 7)
 
   // Return array of year and week number
-  return [d.getUTCFullYear(), weekNo];
-};
+  return [d.getUTCFullYear(), weekNo]
+}
 
 // utility functions for the date formatting
-const ZEROS = '00000000';
-const lastN = curry((n, str) => str.substring(str.length - n, str.length));
-const firstN = curry((n, str) => str.substring(0, n));
-const fill = curry((digits, n) => lastN(digits, ZEROS + n));
+const ZEROS = '00000000'
+const lastN = curry((n, str) => str.substring(str.length - n, str.length))
+const firstN = curry((n, str) => str.substring(0, n))
+const fill = curry((digits, n) => lastN(digits, ZEROS + n))
 
 // date/time regex
 // eslint-disable-next-line no-useless-escape
-const DATE_TOKENS = /(\[[^\[]*\])|(\\)?(Mo|MM?M?M?|Do|DDDo|DD?D?D?|ddd?d?|do?|w[o|w]?|W[o|W]?|Q|YYYYYY|YYYYY|YYYY|YY|gg(ggg?)?|GG(GGG?)?|e|E|a|A|hh?|HH?|mm?|ss?|S{1,9}|x|X|zz?|ZZ?|.)/g;
+const DATE_TOKENS = /(\[[^\[]*\])|(\\)?(Mo|MM?M?M?|Do|DDDo|DD?D?D?|ddd?d?|do?|w[o|w]?|W[o|W]?|Q|YYYYYY|YYYYY|YYYY|YY|gg(ggg?)?|GG(GGG?)?|e|E|a|A|hh?|HH?|mm?|ss?|S{1,9}|x|X|zz?|ZZ?|.)/g
 
-const modCeiling = (mod, val) => val % mod || mod;
+const modCeiling = (mod, val) => val % mod || mod
 
 // tokens map to get parts of the date /time
 const tokens = {
@@ -67,15 +65,15 @@ const tokens = {
   SS: d => firstN(2, fill(3, d.getMilliseconds())),
   S: d => firstN(1, fill(3, d.getMilliseconds())),
   Q: d => Math.ceil((d.getMonth() + 1) / 3)
-};
+}
 
 // map this function to get the actual time/date value for each token
 const swapTokenWithValue = curry((date, token) => {
-  return tokens[token] ? tokens[token](date) : token;
-});
+  return tokens[token] ? tokens[token](date) : token
+})
 
 export default curry((format, date) => {
   // check for valid date
-  if (!isValidDate(date)) return 'Invalid Date'; // return string
-  return format.match(DATE_TOKENS).map(swapTokenWithValue(date)).join(''); // return joined string
-});
+  if (!isValidDate(date)) return 'Invalid Date' // return string
+  return format.match(DATE_TOKENS).map(swapTokenWithValue(date)).join('') // return joined string
+})
