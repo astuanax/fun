@@ -31,6 +31,5 @@ describe('all', function () {
     chai.expect(all(cb3, c)).to.equal(true)
     chai.expect(all(cb4, a)).to.equal(true)
     chai.expect(all(cb4, d)).to.equal(false)
-
   })
 })

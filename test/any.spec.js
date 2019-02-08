@@ -31,6 +31,5 @@ describe('any', function () {
     chai.expect(any(cb3, c)).to.equal(true)
     chai.expect(any(cb4, a)).to.equal(true)
     chai.expect(any(cb4, d)).to.equal(true)
-
   })
 })

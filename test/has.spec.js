@@ -3,7 +3,7 @@
  */
 
 import chai from 'chai'
-import has from '../src/util/has'
+import has from '../src/object/has'
 
 describe('has', function () {
   it('checks if the object has a property', function () {

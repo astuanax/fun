@@ -1,6 +1,5 @@
 /* eslint-disable no-unused-vars */
 // array
-export { default as emptyArray } from 'array/empty'
 export { default as equalsArray } from 'array/equals'
 export { default as isArray } from 'array/is'
 export { default as toArray } from 'array/to'
@@ -8,6 +7,8 @@ export { default as unionArray } from 'array/union'
 
 // boolean
 export { default as isBoolean } from 'boolean/is'
+export { default as F } from 'boolean/F'
+export { default as T } from 'boolean/T'
 
 // monads
 export { default as just } from 'monads/Just'
@@ -19,12 +20,15 @@ export { default as isNumber } from 'number/is'
 export { default as isNan } from 'number/isNan'
 
 // object
-export { default as emptyObject } from 'object/empty'
 export { default as equalsObject } from 'object/equals'
 export { default as isObject } from 'object/is'
 export { default as isEmptyObject } from 'object/isEmpty'
 export { default as mergeObject } from 'object/merge'
 export { default as omitFromObject } from 'object/omit'
+export { default as has } from 'object/has'
+export { default as hasIn } from 'object/hasIn'
+export { default as keys } from 'object/keys'
+export { default as keysIn } from 'object/keysIn'
 
 // string
 export { default as concatString } from 'string/concat'
@@ -33,6 +37,9 @@ export { default as isString } from 'string/is'
 
 // util
 export { default as and } from 'util/and'
+export { default as all } from 'util/all'
+export { default as any } from 'util/any'
+export { default as always } from 'util/always'
 export { default as curry } from 'util/curry'
 export { default as compose } from 'util/compose'
 export { default as empty } from 'util/empty'
@@ -47,6 +54,9 @@ export { default as or } from 'util/or'
 export { default as truthy } from 'util/truthy'
 export { default as type } from 'util/type'
 export { default as max } from 'util/max'
+export { default as map } from 'util/map'
+export { default as zipWith } from 'util/zipWith'
+export { default as zip } from 'util/zip'
 
 // date
 export { default as diffDate } from 'date/diffDate'

@@ -56,6 +56,7 @@ describe('equals', function () {
     const test5 = equals(arr5, arr6)
     const test6 = equals(arr1, arr8)
     const test7 = equals(arr9, arr10)
+    const test8 = equals([], new Array())
 
     chai.expect(test).to.be.true
     chai.expect(test2).to.be.false
@@ -64,6 +65,7 @@ describe('equals', function () {
     chai.expect(test5).to.be.false
     chai.expect(test6).to.be.false
     chai.expect(test7).to.be.true
+    chai.expect(test8).to.be.true
   })
 
   it('booleans', function () {
@@ -104,9 +106,9 @@ describe('equals', function () {
       new Object({ 'a': 0, 'b': { 'c': undefined } }),
       new Object({ 'a': 0, 'b': { 'c': null } })
     )).to.be.false
-    // chai.expect(equals(
-    //   new Object({'a': 0, 'b': { 'c' : x => x }}),
-    //   new Object({'a': 0, 'b': { 'c' : x => {} }})
-    // )).to.be.true
+    chai.expect(equals(
+      new Object(),
+      {}
+    )).to.be.true
   })
 })

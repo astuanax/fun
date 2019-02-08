@@ -13,6 +13,7 @@ import isObject from '../object/is'
 import isArray from '../array/is'
 import isBoolean from '../boolean/is'
 import isNumber from '../number/is'
+import isString from '../string/is'
 import isDate from '../date/is'
 import equalsArray from '../array/equals'
 import equalsObject from '../object/equals'
@@ -26,7 +27,7 @@ export default curry(function equals (x, y) {
 
   if (x.constructor !== y.constructor) return false
 
-  if (isBoolean(x) || isNumber(x) || isDate(x)) {
+  if (isString(x) || isBoolean(x) || isNumber(x) || isDate(x)) {
     return identical(x.valueOf(), y.valueOf())
   }
   if (isArray(x)) {
