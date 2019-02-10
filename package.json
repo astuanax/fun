@@ -41,8 +41,8 @@
   },
   "homepage": "https://github.com/astuanax/fun",
   "devDependencies": {
-    "@babel/cli": "^7.0.0-beta.51",
-    "@babel/core": "^7.0.0-beta.51",
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
     "@babel/preset-env": "^7.0.0-beta.51",
     "babel-eslint": "^8.0.3",
     "babel-loader": "^8.0.0-beta.4",
