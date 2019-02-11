@@ -56,6 +56,7 @@ export { default as type } from 'util/type'
 export { default as max } from 'util/max'
 export { default as map } from 'util/map'
 export { default as fold } from 'util/fold'
+export { default as findIndex } from 'util/findIndex'
 export { default as zipWith } from 'util/zipWith'
 export { default as zip } from 'util/zip'
 

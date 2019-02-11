@@ -13,7 +13,7 @@ describe('zipWith', function () {
     const add = function (a, b) { return a + b }
     const x = function (a, b) { return a * b }
     const s = function (a, b) { return a + ' cow ' + b }
-    
+
     chai.expect(zipWith(add, a, b)).to.deep.equal([101, 202, 303])
     chai.expect(zipWith(x, a, b)).to.deep.equal([100, 400, 900])
     chai.expect(zipWith(s, a, b)).to.deep.equal(['1 cow 100', '2 cow 200', '3 cow 300'])

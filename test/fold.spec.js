@@ -58,7 +58,6 @@ describe('fold', function () {
   //   }
   //   chai.expect(fold(sum, 0, obj)).to.equal(10)
   // })
-
 })
 
 //
