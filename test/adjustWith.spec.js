@@ -36,7 +36,7 @@ describe('adjustWith', function () {
   })
 
   it('accepts an array-like object', function () {
-    function args() {
+    function args () {
       return arguments
     }
 
