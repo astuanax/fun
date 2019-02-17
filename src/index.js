@@ -18,6 +18,9 @@ export { default as nothing } from 'monads/Nothing'
 // number
 export { default as isNumber } from 'number/is'
 export { default as isNan } from 'number/isNan'
+export { default as add } from 'number/add'
+export { default as multiply } from 'number/multiply'
+export { default as divide } from 'number/divide'
 
 // object
 export { default as equalsObject } from 'object/equals'
@@ -39,6 +42,7 @@ export { default as isString } from 'string/is'
 export { default as and } from 'util/and'
 export { default as all } from 'util/all'
 export { default as any } from 'util/any'
+export { default as adjustWith } from 'util/adjustWith'
 export { default as always } from 'util/always'
 export { default as curry } from 'util/curry'
 export { default as compose } from 'util/compose'
