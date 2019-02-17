@@ -12,13 +12,13 @@ import curry from '../util/curry'
 import empty from '../util/empty'
 import keys from './keys'
 
-export default curry(function map (cb, a) {
+export default curry(function map(cb, a) {
   const k = keys(a)
   let i = -1
   const l = k.length
   const r = empty(a)
   while (++i < l) {
-    r[k[i]] = cb(a[k[i]])
+    r[k[i]] = cb(a[k[i]], k[i], a)
   }
   return r
 })

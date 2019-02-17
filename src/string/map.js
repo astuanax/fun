@@ -10,12 +10,12 @@
  **/
 import curry from '../util/curry'
 
-export default curry(function map (cb, a) {
+export default curry(function map(cb, a) {
   let i = -1
   const l = a.length
   let r = ''
   while (++i < l) {
-    r += cb(a.charAt(i))
+    r += cb(a.charAt(i), i, a)
   }
   return r
 })
