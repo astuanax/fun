@@ -12,7 +12,7 @@ import curry from '../util/curry'
 import empty from '../util/empty'
 import keys from './keys'
 
-export default curry(function map(cb, a) {
+export default curry(function map (cb, a) {
   const k = keys(a)
   let i = -1
   const l = k.length
