@@ -1,5 +1,8 @@
 # fun
-Functional javascript library
+Functional javascript library / YARC (Yet Another Ramda Clone)
+
+Package size: 5.2 KB
+With all dependencies, minified and gzipped
 
 [![Build Status](https://travis-ci.org/astuanax/fun.svg?branch=master)](https://travis-ci.org/astuanax/fun)
 

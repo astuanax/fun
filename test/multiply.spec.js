@@ -55,6 +55,6 @@ describe('multiplies objects', () => {
   })
 
   it('non-empty', () => {
-    chai.expect(multiply({a: 1})({b: 2})).to.be.NaN
+    chai.expect(multiply({ a: 1 })({ b: 2 })).to.be.NaN
   })
 })
