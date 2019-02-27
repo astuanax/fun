@@ -24,7 +24,7 @@
 <label for="nav-trigger" class="overlay"></label>
 
 <nav>
-    <li class="nav-link nav-home-link"><a href="index.html">Home</a></li><li class="nav-heading"><a href="global.html">Globals</a></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#concat">concat</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#DATE_UNITS">DATE_UNITS</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#equalsArray">equalsArray</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#isArray">isArray</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#MONTHS">MONTHS</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#WEEKDAYS">WEEKDAYS</a></span></li>
+    <li class="nav-link nav-home-link"><a href="index.html">Home</a></li><li class="nav-heading"><a href="global.html">Globals</a></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#concat">concat</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#DATE_UNITS">DATE_UNITS</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#equalsArray">equalsArray</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#fold">fold</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#isArray">isArray</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#isEmptyArray">isEmptyArray</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#MONTHS">MONTHS</a></span></li><li class="nav-item"><span class="nav-item-type type-member">M</span><span class="nav-item-name"><a href="global.html#WEEKDAYS">WEEKDAYS</a></span></li>
 </nav>
 
 <div id="main">
@@ -566,14 +566,14 @@
 
     
 
-    <h4 class="name" id="isArray"><span class="type-signature"></span>isArray<span class="signature">(x)</span><span class="type-signature"> &rarr; {boolean}</span></h4>
+    <h4 class="name" id="fold"><span class="type-signature"></span>fold<span class="signature">(cb, init, a)</span><span class="type-signature"></span></h4>
 
     
 
 
 
 <div class="description">
-    Verify if the provided object is an array
+    Returns a single item by mapping over the provided array and calling an iterator function
 </div>
 
 
@@ -584,6 +584,9 @@
 
     
 
+    
+    <dt class="tag-since">Since:</dt>
+    <dd class="tag-since"><ul class="dummy"><li>1.0.2</li></ul></dd>
     
 
     
@@ -616,7 +619,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="array_empty.js.html">array/empty.js</a>, <a href="array_empty.js.html#line1">line 1</a>
+        <a href="array_fold.js.html">array/fold.js</a>, <a href="array_fold.js.html#line1">line 1</a>
     </li></ul></dd>
     
 
@@ -660,7 +663,33 @@
 
         <tr>
             
-                <td class="name"><code>x</code></td>
+                <td class="name"><code>cb</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>function</code></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                Callback function to modify the item
+                
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>init</code></td>
             
 
             <td class="type">
@@ -677,7 +706,186 @@
             
 
             <td class="description last">
-                Object to verify
+                Initial value
+                
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>a</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>Array</code></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                Array with items to modify by the cb function
+                
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="section-examples">
+<h5>Example</h5>
+
+    <pre class="prettyprint"><code>const result = fold(add, 0, [1,1,1])
+// result = 3</code></pre>
+
+</div>
+
+</div>
+        
+            
+<div class="section-method">
+
+    
+
+    <h4 class="name" id="isArray"><span class="type-signature"></span>isArray<span class="signature">(Object)</span><span class="type-signature"> &rarr; {boolean}</span></h4>
+
+    
+
+
+
+<div class="description">
+    Checks if the provided object is an array, autocurried function
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+    <dt class="tag-since">Since:</dt>
+    <dd class="tag-since"><ul class="dummy"><li>1.0.2</li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-author">Author:</dt>
+    <dd class="tag-author">
+        <ul>
+            <li>Len Dierickx</li>
+        </ul>
+    </dd>
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="array_is.js.html">array/is.js</a>, <a href="array_is.js.html#line1">line 1</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>Object</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>*</code></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                to verifiy
                 
             </td>
         </tr>
@@ -722,6 +930,161 @@
 
 
 
+<div class="section-examples">
+<h5>Example</h5>
+
+    <pre class="prettyprint"><code>const result = isArray([1,1,1])// result = true</code></pre>
+
+</div>
+
+</div>
+        
+            
+<div class="section-method">
+
+    
+
+    <h4 class="name" id="isEmptyArray"><span class="type-signature"></span>isEmptyArray<span class="signature">(a)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+<div class="description">
+    Verifies if the provided array is empty
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+    <dt class="tag-since">Since:</dt>
+    <dd class="tag-since"><ul class="dummy"><li>1.0.2</li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="array_isEmpty.js.html">array/isEmpty.js</a>, <a href="array_isEmpty.js.html#line1">line 1</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>a</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>*</code></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                Object to verify
+                
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="section-examples">
+<h5>Example</h5>
+
+    <pre class="prettyprint"><code>const result = isEmptyArray([0,1,2])
+// result = false
+const result1 = isEmptyArray([])
+// result1 = true</code></pre>
+
+</div>
+
 </div>
         
     
@@ -741,7 +1104,7 @@
 <br class="clear">
 
 <footer>
-    Generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Wed Feb 27 2019 15:58:53 GMT+0100 (Central European Standard Time) using the Minami theme.
+    Generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Wed Feb 27 2019 17:39:29 GMT+0100 (Central European Standard Time) using the Minami theme.
 </footer>
 
 <script>prettyPrint();</script>
