@@ -1,5 +1,9 @@
 /**
- * Created by dierickx.len on 01/04/2017.
+ * @function isArray
+ * @description Verify if the provided object is an array
+ * @author Len Dierickx
+ * @param {*} x - Object to verify
+ * @returns {boolean}
  */
 import isArray from './is'
 
