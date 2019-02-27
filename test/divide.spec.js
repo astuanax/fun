@@ -18,6 +18,20 @@ describe('divides numbers', () => {
     chai.expect(divide(1)(0)).to.equal(Infinity)
     chai.expect(divide(-1)(0)).to.equal(-Infinity)
   })
+
+  it('works for docs', () => {
+    chai.expect(divide(1, 1)).to.equal(1)
+    chai.expect(divide(1)(1)).to.equal(1)
+    chai.expect(divide('1')(1)).to.equal(1)
+    chai.expect(divide('1')('1')).to.equal(1)
+    chai.expect(divide(-1)(0)).to.equal(-Infinity)
+    chai.expect(divide(1)('a')).to.be.NaN
+    chai.expect(divide(null)(null)).to.be.NaN
+    chai.expect(divide(false)(false)).to.be.NaN
+    chai.expect(divide(true)(true)).to.equal(1)
+    chai.expect(divide([])([])).to.be.NaN
+    chai.expect(divide([2])([2])).to.equal(1)
+  })
 })
 
 describe('divides strings', () => {
@@ -62,18 +76,4 @@ describe('divides objects', () => {
   it('non-empty', () => {
     chai.expect(divide({ a: 1 })({ b: 2 })).to.be.NaN
   })
-})
-
-it('works for docs', () => {
-  chai.expect(divide(1, 1)).to.equal(1)
-  chai.expect(divide(1)(1)).to.equal(1)
-  chai.expect(divide('1')(1)).to.equal(1)
-  chai.expect(divide('1')('1')).to.equal(1)
-  chai.expect(divide(-1)(0)).to.equal(-Infinity)
-  chai.expect(divide(1)('a')).to.be.NaN
-  chai.expect(divide(null)(null)).to.be.NaN
-  chai.expect(divide(false)(false)).to.be.NaN
-  chai.expect(divide(true)(true)).to.equal(1)
-  chai.expect(divide([])([])).to.be.NaN
-  chai.expect(divide([2])([2])).to.equal(1)
 })

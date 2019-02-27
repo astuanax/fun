@@ -11,8 +11,6 @@ import fold from '../util/fold'
 import ap from '../util/ap'
 import map from '../util/map'
 
-
-
 export default curry(function lift (fn) {
   const lifted = curry1(curry(fn))
   return curry(function anon () {
