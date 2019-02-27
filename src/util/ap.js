@@ -9,6 +9,7 @@
  * @return {Iterable} [a]
  **/
 import curry from '../util/curry'
+import curry1 from '../_private/curry1'
 import is from '../util/is'
 import fold from '../array/fold'
 import map from '../array/map'
@@ -22,5 +23,5 @@ export default curry(function ap (fns, vals) {
   if (isFunction(fns)) {
     return x => fns(x)(vals(x))
   }
-  return fold((acc, f) => acc.concat(map(f, vals)), [], fns)
+  return fold((acc, f) => acc.concat(map(curry1(f), vals)), [], fns)
 })
