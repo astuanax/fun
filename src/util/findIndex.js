@@ -3,10 +3,10 @@
  *
  * @function
  * @since v1.0.2
- * @sig (a -> Boolean) -> [a] -> Number
+ * @sig (a -> boolean) -> [a] -> number
  * @param {Function} Predicate function returns a boolean
- * @param {[*]} An array like object
- * @return
+ * @param {Array} An array like object
+ * @return {number}
  **/
 
 import curry from '../util/curry'

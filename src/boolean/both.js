@@ -3,9 +3,9 @@
  *
  * @function
  * @since v1.0.2
- * @sig
- * @param
- * @return
+ * @param {Function} fn1 A predicate function
+ * @param {Function} fn2 A predicate function
+ * @return {Boolean}
  **/
 import curry from '../util/curry'
 

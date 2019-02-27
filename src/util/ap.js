@@ -4,8 +4,8 @@
  * @function
  * @since v1.0.2
  * @sig @sig [a -> b] -> [a] -> [b]
- * @param {[Function] | {Function} | {Applicative}} fns - An array of functions or a function or an applicative
- * @param {[*]} vals - An array of values
+ * @param {(Function[]|Function|Applicative)} fns - An array of functions or a function or an applicative
+ * @param {Array} vals - An array of values
  * @return {Iterable} [a]
  **/
 import curry from '../util/curry'
