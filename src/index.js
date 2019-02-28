@@ -11,9 +11,9 @@ export { default as F } from 'boolean/F'
 export { default as T } from 'boolean/T'
 
 // monads
-export { default as just } from 'monads/Just'
-export { default as maybe } from 'monads/Maybe'
-export { default as nothing } from 'monads/Nothing'
+export { default as Just } from 'monads/Just'
+export { default as Maybe } from 'monads/Maybe'
+export { default as Nothing } from 'monads/Nothing'
 
 // number
 export { default as isNumber } from 'number/is'

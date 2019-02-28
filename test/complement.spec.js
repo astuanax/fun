@@ -4,7 +4,7 @@
 
 import chai from 'chai'
 import complement from '../src/util/complement'
-import Maybe from '../src/monads/maybe'
+import Maybe from '../src/monads/Maybe'
 
 describe('complement', function () {
   // it('creates boolean-returning function that reverses another', function () {

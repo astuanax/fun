@@ -6,7 +6,7 @@ import chai from 'chai'
 import curry from '../src/util/curry'
 import lift from '../src/util/lift'
 import add from '../src/number/add'
-import Maybe from '../src/monads/maybe'
+import Maybe from '../src/monads/Maybe'
 
 describe('lift', function () {
   const add3 = curry(function add3 (a, b, c) {

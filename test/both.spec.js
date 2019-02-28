@@ -4,7 +4,7 @@
 
 import chai from 'chai'
 import both from '../src/boolean/both'
-import Maybe from '../src/monads/maybe'
+import Maybe from '../src/monads/Maybe'
 
 describe('both', function () {
   it('confirms that both of functions returns true', () => {
