@@ -47,5 +47,4 @@ describe('lift', function () {
     const addM = lift(add)
     chai.expect(addM(Maybe.of(3), Maybe.of(5)), Maybe.of(8))
   })
-
 })

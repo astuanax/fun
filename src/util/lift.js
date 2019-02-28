@@ -1,7 +1,7 @@
 /**
  * "lifts" a function of arity > 1 so that it may "map over" a list, Function
  *
- * @function
+ * @function lift
  * @since v1.0.2
  * @sig (*... -> *) -> ([*]... -> [*])
  **/
@@ -12,7 +12,7 @@ import ap from '../util/ap'
 import map from '../util/map'
 
 export default curry(function lift (fn) {
-  const lifted = curry1(curry(fn))
+  const lifted = x => curry(fn)(x)
   return curry(function anon () {
     return fold(ap, map(lifted, arguments[0]), Array.prototype.slice.call(arguments, 1))
   })

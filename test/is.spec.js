@@ -6,9 +6,6 @@ import chai from 'chai'
 import is from '../src/util/is'
 
 describe('is', function () {
-  beforeEach(function () {
-  })
-  afterEach(function () { })
   it('0 is a Number', function () {
     const test = is('Number', 0)
 
