@@ -6,7 +6,6 @@
  * @sig (*... -> *) -> ([*]... -> [*])
  **/
 import curry from '../util/curry'
-import curry1 from '../_private/curry1'
 import fold from '../util/fold'
 import ap from '../util/ap'
 import map from '../util/map'
