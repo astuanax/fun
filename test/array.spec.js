@@ -6,8 +6,6 @@ import chai from 'chai'
 import isArray from '../src/array/is'
 
 describe('Array', function () {
-  beforeEach(function () {})
-  afterEach(function () {})
   it('new Array() is an Array', function () {
     const test = isArray([])
     const test2 = isArray(null)

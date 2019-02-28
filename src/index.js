@@ -25,7 +25,6 @@ export { default as divide } from 'number/divide'
 // object
 export { default as equalsObject } from 'object/equals'
 export { default as isObject } from 'object/is'
-export { default as isEmptyObject } from 'object/isEmpty'
 export { default as mergeObject } from 'object/merge'
 export { default as omitFromObject } from 'object/omit'
 export { default as has } from 'object/has'
