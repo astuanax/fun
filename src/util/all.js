@@ -1,7 +1,8 @@
 /**
  * Returns true if all items in the enumerable match the predicate
  *
- * @function
+ * @function all
+ * @description Returns true if all items in the enumerable match the predicate
  * @since v1.0.2
  * @sig (a -> Boolean) -> [a] -> Boolean
  * @param {Function} cb

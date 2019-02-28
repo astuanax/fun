@@ -1,7 +1,8 @@
 /**
  * Modifies an item in an array using the provided function
  *
- * @function
+ * @function adjustWith
+ * @description Modifies an item in an array using the provided function
  * @since v1.0.2
  * @sig (a -> a) -> ((a -> [a]) -> [a] -> num) -> [a] -> [a]
  * @param {Function} fn - to modify the item at the specified index

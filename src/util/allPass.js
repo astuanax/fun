@@ -1,7 +1,8 @@
 /**
  * Applies a list of predicates to the data and returns true if all pass
  *
- * @function
+ * @function allPass
+ * @description Applies a list of predicates to the data and returns true if all pass
  * @since v1.0.2
  * @sig [(*... -> Boolean)] -> (*... -> Boolean
  * @param {Array} predicates An array of predicates to check
