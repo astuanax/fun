@@ -8,4 +8,4 @@ With all dependencies, minified and gzipped
 
 [![Code Climate](https://codeclimate.com/github/astuanax/fun/badges/gpa.svg)](https://codeclimate.com/github/astuanax/fun)
 
-![GitHub file size in bytes](https://img.shields.io/github/size/astuanax/fun/lib/fun.min.js.svg)
+![GitHub file size in bytes](https://img.shields.io/github/astuanax/fun/lib/fun.min.js.svg)
