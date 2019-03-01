@@ -63,5 +63,4 @@ describe('lift', function () {
     chai.expect(typeL([])).to.equal('Array')
     chai.expect(notM(true)).to.equal(false)
   })
-
 })
