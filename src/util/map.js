@@ -25,10 +25,5 @@ export default curry(function map (cb, a) {
       return cb.call(this, a.apply(this, arguments))
     })
   }
-  console.log(type(a))
-  console.log(cb)
-  console.log(a)
-  console.log(r[type(a)](cb, a))
-
   return r[type(a)](cb, a)
 })
