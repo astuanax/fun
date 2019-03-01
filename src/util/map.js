@@ -20,8 +20,15 @@ export default curry(function map (cb, a) {
     'Object': objectMap,
     'String': stringMap,
     'Array': arrayMap,
-    'Map': mapMap
-    // 'Set': setMap
+    'Map': mapMap,
+    'Function': curry(function _fnMap () {
+      return cb.call(this, a.apply(this, arguments))
+    })
   }
+  console.log(type(a))
+  console.log(cb)
+  console.log(a)
+  console.log(r[type(a)](cb, a))
+
   return r[type(a)](cb, a)
 })

@@ -17,8 +17,6 @@
  */
 import lift from './lift'
 import not from './not'
-import curry1 from '../_private/curry1'
-import curry from '../util/curry'
 
 const complement = lift(not)
 export default complement

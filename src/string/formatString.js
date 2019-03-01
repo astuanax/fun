@@ -5,7 +5,7 @@ import toArray from '../array/to'
 import not from '../util/not'
 import is from '../util/is'
 
-export default function (str) { // use function(), arrow function doesn't bind arguments
+export default function formatString (str) { // use function(), arrow function doesn't bind arguments
   let args = toArray(arguments)
 
   args.shift()

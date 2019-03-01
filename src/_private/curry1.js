@@ -7,7 +7,7 @@
 export default function curry1 (fn) {
   return function curried (a) {
     return arguments.length === 0
-      ? fn
+      ? this
       : fn(a)
   }
 }

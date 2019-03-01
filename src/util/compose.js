@@ -4,7 +4,7 @@
 export default function compose () {
   let funs = Array.prototype.slice.call(arguments)
 
-  return function () {
+  return function _compose () {
     let init = funs[funs.length - 1]
     let result = [init.apply(init, arguments)]
     let i = funs.length - 2
