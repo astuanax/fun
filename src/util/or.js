@@ -1,5 +1,5 @@
 /**
- * @author Len Dierickx
+
  * or
  * Returns true if one or the other is true
  */

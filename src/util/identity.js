@@ -1,5 +1,5 @@
 /**
- * @author Len Dierickx
+
  * Returns the value supplied to the function
  */
 

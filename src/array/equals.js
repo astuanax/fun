@@ -1,7 +1,7 @@
 /**
  * @function equalsArray
  * @description Autocurried function for deep comparison of arrays
- * @author Len Dierickx
+
  * @param {a} x - Object to compare of type a
  * @param {a} y - Object x to compare with object x
  * @return {boolean}

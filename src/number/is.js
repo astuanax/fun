@@ -1,5 +1,5 @@
 /**
- * @author Len Dierickx
+
  */
 import is from '../util/is'
 
