@@ -1,7 +1,8 @@
 /**
  * Returns a single item bz iterating over an array like object and calla function on each iteé
  *
- * @function
+ * @function fold
+ * @description Returns a single item bz iterating over an array like object and calla function on each iteé
  * @since v1.0.2
  * @sig ((a, b, c, a) → a) → a → [b] → a
  * @param {Function} cb receives 4 values: the accumulator, the item, the index, and the initial value.

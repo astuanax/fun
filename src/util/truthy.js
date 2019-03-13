@@ -1,5 +1,5 @@
 /**
- * Created by dierickx.len on 06/02/2017.
+ * @function truthy
  */
 import exists from './exists'
 

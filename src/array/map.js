@@ -5,7 +5,6 @@
  * @param {Iterable} a
  * @return {Iterable}
  * @since v1.0.2
- * @sig (currentValue, idx, [a]) -> [a] -> [a]
  * @example
  *
  *  const result = map(identity, [0,2,3])

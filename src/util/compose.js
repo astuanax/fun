@@ -1,5 +1,6 @@
 /**
- * Created by dierickx.len on 25/03/2017.
+ * @function compose
+ * @returns {function(): *}
  */
 export default function compose () {
   let funs = Array.prototype.slice.call(arguments)

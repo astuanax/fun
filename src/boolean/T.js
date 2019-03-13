@@ -1,9 +1,9 @@
 /**
- * Always returns a function with a True boolean
+ * Always returns a function with a False boolean
  *
- * @function
+ * @function T
+ * @description Always returns a function with a False boolean
  * @since v1.0.2
- * @sig a -> (* -> true)
  * @param {*} a
  * @return {Function}
  **/

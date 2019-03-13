@@ -1,7 +1,8 @@
 /**
  * Applies a list of functions to a list of values and returns a combined result array
  *
- * @function
+ * @function ap
+ * @description Applies a list of functions to a list of values and returns a combined result array
  * @since v1.0.2
  * @sig @sig [a -> b] -> [a] -> [b]
  * @param {(Function[]|Function|Applicative)} fns - An array of functions or a function or an applicative

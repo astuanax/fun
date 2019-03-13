@@ -1,7 +1,7 @@
 /**
 
- * equals
- * checks for equality
+ * @function equals
+ * @description checks for equality
  */
 import curry from './curry'
 import exists from './exists'

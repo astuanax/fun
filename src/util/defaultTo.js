@@ -1,7 +1,8 @@
 /**
  * Returns true if all items in the enumerable match the predicate
  *
- * @function
+ * @function defaultTo
+ * @description Returns true if all items in the enumerable match the predicate
  * @since v1.0.2
  * @sig a -> b -> a | b
  * @param {a} default The default value.

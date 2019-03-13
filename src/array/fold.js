@@ -7,7 +7,6 @@
  * @return {Array}
  * @alias reduce
  * @since 1.0.2
-
  * @example
  *
  * const result = fold(add, 0, [1,1,1])

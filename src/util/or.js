@@ -1,7 +1,6 @@
 /**
-
- * or
- * Returns true if one or the other is true
+ * @function or
+ * @description Returns true if one or the other is true
  */
 import curry from './curry'
 

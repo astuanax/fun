@@ -1,7 +1,7 @@
 /**
 
- * empty
- * Returns the empty equivalent of the first argument
+ * @function empty
+ * @description Returns the empty equivalent of the first argument
  */
 
 export default function empty (x) {

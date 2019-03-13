@@ -1,5 +1,5 @@
 /**
- *
+ * @private
  */
 
 export const DATE_UNITS = {

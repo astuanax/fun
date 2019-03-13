@@ -1,7 +1,7 @@
 /**
 
- * identical
- * checks for identintical items
+ * @function identical
+ * @description checks for identintical items
  */
 import curry from './curry'
 import isNan from '../number/isNan'

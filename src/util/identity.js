@@ -1,6 +1,7 @@
 /**
 
- * Returns the value supplied to the function
+ * @function identity
+ * @description Returns the value supplied to the function
  */
 
 export default function identity (x) {

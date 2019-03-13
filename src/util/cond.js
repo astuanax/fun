@@ -1,3 +1,8 @@
+/**
+ * @function cond
+ * @param conds
+ * @returns {Function}
+ */
 export default function cond (conds) {
   return function (value) {
     for (var i = 0; i < conds.length; i++) {

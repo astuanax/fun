@@ -1,6 +1,7 @@
 /* eslint-disable no-use-before-define */
 /**
- * Created by dierickx.len on 25/03/2017.
+ * @function curry
+ * @description Autocurries the provided function
  */
 export default function curry (fun) {
   const argslen = fun.length

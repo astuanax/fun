@@ -1,5 +1,5 @@
 /**
- *
+ * @function
  */
 
 export const concat = function _concat (separator = ',') { // use function(), arrow function doesn't bind arguments

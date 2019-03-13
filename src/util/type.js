@@ -1,5 +1,5 @@
 /**
-
+ * @function type
  */
 import curry1 from '../_private/curry1'
 

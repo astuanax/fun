@@ -1,7 +1,8 @@
 /**
  * Find the index matching a predicate
  *
- * @function
+ * @function findIndex
+ * @description Find the index matching a predicate
  * @since v1.0.2
  * @sig (a -> boolean) -> [a] -> number
  * @param {Function} Predicate function returns a boolean

@@ -1,7 +1,8 @@
 /**
  * Returns true if at least on of the items in the enumerable match the predicate
  *
- * @function
+ * @function any
+ * @description Returns true if at least on of the items in the enumerable match the predicate
  * @since v1.0.2
  * @sig (TODO)
  * @param {Function} cb

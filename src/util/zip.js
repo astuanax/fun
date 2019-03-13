@@ -2,6 +2,7 @@
 
  * zip
  *
+ * @function zip
  */
 import curry from './curry'
 import zipWith from './zipWith'

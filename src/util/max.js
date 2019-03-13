@@ -1,9 +1,8 @@
 /**
  * Returns the largest of the 2 arguments provided
  *
- * @function
+ * @function max
  * @since v1.0.2
- * @sig Ord a => a -> a -> a
  * @param {*} a
  * @param {*} b
  * @return {*}
