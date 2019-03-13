@@ -5,13 +5,14 @@
   "main": "lib/fun.js",
   "module": "src/index.js",
   "scripts": {
-    "build": "webpack --env dev && webpack --env build && npm run test && npm run size",
+    "build": "./node_modules/.bin/eslint ./src --fix && webpack --env dev && webpack --env build && npm run test && npm run size",
     "dev": "webpack --progress --colors --watch --env dev",
     "test": "mocha --require babel-register --colors ./test/*.spec.js",
     "test:watch": "mocha --require babel-register --colors -w ./test/*.spec.js",
     "test:cover": "cross-env NODE_ENV=test nyc mocha --require babel-register --colors test/*.js",
     "repl": "node -i -e \"$(< ./lib/fun.js)\"",
-    "size": "size-limit"
+    "size": "size-limit",
+    "jsdocs": "jsdoc ./src -r -t ./node_modules/minami"
   },
   "size-limit": [
     {
@@ -69,5 +70,6 @@
   "nyc": {
     "sourceMap": false,
     "instrument": false
-  }
+  },
+  "dependencies": {  }
 }

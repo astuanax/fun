@@ -50,17 +50,4 @@ describe('lift', function () {
     const addM = lift(add)
     chai.expect(addM(Maybe.of(3), Maybe.of(5)), Maybe.of(8))
   })
-
-  it('works only with curried functions, or partial applied functions"', function () {
-    const notM = lift(x => not)(x => false)
-    const alwaysL = lift(always)(x => false)
-    const typeL = lift(x => type)(x => {})
-
-    chai.expect(alwaysL(true)).to.equal(false)
-    chai.expect(alwaysL(false)).to.equal(false)
-    chai.expect(alwaysL(0)).to.equal(false)
-
-    chai.expect(typeL([])).to.equal('Array')
-    chai.expect(notM(true)).to.equal(false)
-  })
 })

@@ -1,7 +1,8 @@
 /**
- * Maps over an array and applies a function
+ * Maps over an iterable and applies a function
  *
- * @function
+ * @function map
+ * @description Autocurried function which maps over an iterable.
  * @since v1.0.2
  * @sig (currentValue, idx, [a]) -> b -> b
  * @param {Function} cb
@@ -16,14 +17,19 @@ import stringMap from '../string/map'
 import type from '../util/type'
 
 export default curry(function map (cb, a) {
-  const r = {
-    'Object': objectMap,
-    'String': stringMap,
-    'Array': arrayMap,
-    'Map': mapMap,
-    'Function': curry(function _fnMap () {
-      return cb.call(this, a.apply(this, arguments))
-    })
+  switch (type(a)) {
+  // switch (Object.prototype.toString.call(a)) {
+    case 'Function':
+      return curry(function () {
+        return cb.call(this, a.apply(this, arguments))
+      })
+    case 'Object':
+      return objectMap(cb, a)
+    case 'String':
+      return stringMap(cb, a)
+    case 'Map':
+      return mapMap(cb, a)
+    default:
+      return arrayMap(cb, a)
   }
-  return r[type(a)](cb, a)
 })

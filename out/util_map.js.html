@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>util/lift.js - Documentation</title>
+    <title>util/map.js - Documentation</title>
 
     <script src="scripts/prettify/prettify.js"></script>
     <script src="scripts/prettify/lang-css.js"></script>
@@ -29,7 +29,7 @@
 
 <div id="main">
     
-    <h1 class="page-title">util/lift.js</h1>
+    <h1 class="page-title">util/map.js</h1>
     
 
     
@@ -40,23 +40,39 @@
     <section>
         <article>
             <pre class="prettyprint source linenums"><code>/**
- * "lifts" a function of arity > 1 so that it may "map over" a list, Function
+ * Maps over an iterable and applies a function
  *
- * @function lift
+ * @function map
+ * @description Autocurried function which maps over an iterable.
  * @since v1.0.2
- * @sig (*... -> *) -> ([*]... -> [*])
+ * @sig (currentValue, idx, [a]) -> b -> b
+ * @param {Function} cb
+ * @param {Iterable} a
+ * @return {Iterable}
  **/
 import curry from '../util/curry'
-import curry1 from '../_private/curry1'
-import fold from '../util/fold'
-import ap from '../util/ap'
-import map from '../util/map'
+import arrayMap from '../array/map'
+import objectMap from '../object/map'
+import mapMap from '../map/map'
+import stringMap from '../string/map'
+import type from '../util/type'
 
-export default curry(function lift (fn) {
-  const lifted = curry1(curry(fn))
-  return curry(function _lift () {
-    return fold(ap, map(lifted, arguments[0]), Array.prototype.slice.call(arguments, 1))
-  })
+export default curry(function map (cb, a) {
+  switch (type(a)) {
+  // switch (Object.prototype.toString.call(a)) {
+    case 'Function':
+      return curry(function () {
+        return cb.call(this, a.apply(this, arguments))
+      })
+    case 'Object':
+      return objectMap(cb, a)
+    case 'String':
+      return stringMap(cb, a)
+    case 'Map':
+      return mapMap(cb, a)
+    default:
+      return arrayMap(cb, a)
+  }
 })
 </code></pre>
         </article>
