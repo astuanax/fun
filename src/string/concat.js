@@ -1,5 +1,5 @@
 /**
- * Created by dierickx.len on 18/03/2017.
+ *
  */
 
 export const concat = function _concat (separator = ',') { // use function(), arrow function doesn't bind arguments

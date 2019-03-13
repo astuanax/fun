@@ -1,5 +1,5 @@
 /**
- * @author Len Dierickx
+
  * empty
  * Returns the empty equivalent of the first argument
  */

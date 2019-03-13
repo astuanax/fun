@@ -1,5 +1,5 @@
 /**
- * @author Len Dierickx
+
  * equals
  * checks for equality
  */

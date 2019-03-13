@@ -1,5 +1,5 @@
 /**
- * @author Len Dierickx
+
  */
 import curry1 from '../_private/curry1'
 

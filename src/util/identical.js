@@ -1,5 +1,5 @@
 /**
- * @author Len Dierickx
+
  * identical
  * checks for identintical items
  */

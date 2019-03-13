@@ -1,5 +1,5 @@
 /**
- * @author Len Dierickx
+
  * fold
  *
  */
