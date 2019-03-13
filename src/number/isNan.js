@@ -1,6 +1,6 @@
 /**
- * isNaN
- * Checks if number is NAN
+ * @function isNaN
+ * @description Checks if number is NAN
 
  */
 import isNumber from './is'

@@ -1,7 +1,8 @@
 /**
  * Returns the sum of the 2 arguments
  *
- * @function
+ * @function add
+ * @description Returns the sum of the 2 arguments
  * @since v1.0.2
  * @sig Number -> Number -> Number
  * @param {Number} a

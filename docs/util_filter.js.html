@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>util/compose.js - Documentation</title>
+    <title>util/filter.js - Documentation</title>
 
     <script src="scripts/prettify/prettify.js"></script>
     <script src="scripts/prettify/lang-css.js"></script>
@@ -29,7 +29,7 @@
 
 <div id="main">
     
-    <h1 class="page-title">util/compose.js</h1>
+    <h1 class="page-title">util/filter.js</h1>
     
 
     
@@ -40,25 +40,37 @@
     <section>
         <article>
             <pre class="prettyprint source linenums"><code>/**
- * @function compose
- * @returns {function(): *}
+ * @function filter
+ * @description Autocurried fucntion that filters Objects, Arrays and Maps
+ *
  */
-export default function compose () {
-  let funs = Array.prototype.slice.call(arguments)
+import curry from './curry'
+import arrayFilter from '../array/filter'
+import objectFilter from '../object/filter'
+import mapFilter from '../map/filter'
+// TODO
+// import setFilter from '../set/filter'
+import type from './type'
 
-  return function _compose () {
-    let init = funs[funs.length - 1]
-    let result = [init.apply(init, arguments)]
-    let i = funs.length - 2
-
-    for (i; i >= 0; --i) {
-      const fun = funs[i]
-
-      result = [fun.apply(fun, result)]
-    }
-    return result[0]
+export default curry(function filter (fn, a) {
+  switch (type(a)) {
+    // switch (Object.prototype.toString.call(a)) {
+    // case 'Function':
+    //   return curry(function () {
+    //     return cb.call(this, a.apply(this, arguments))
+    //   })
+    case 'Object':
+      return objectFilter(fn, a)
+    // case 'String':
+    //   return stringMap(cb, a)
+    case 'Map':
+      return mapFilter(fn, a)
+    // case 'Set':
+    //   return setFilter(fn, a)
+    default:
+      return arrayFilter(fn, a)
   }
-};
+})
 </code></pre>
         </article>
     </section>

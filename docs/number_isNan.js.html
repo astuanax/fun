@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>util/compose.js - Documentation</title>
+    <title>number/isNan.js - Documentation</title>
 
     <script src="scripts/prettify/prettify.js"></script>
     <script src="scripts/prettify/lang-css.js"></script>
@@ -29,7 +29,7 @@
 
 <div id="main">
     
-    <h1 class="page-title">util/compose.js</h1>
+    <h1 class="page-title">number/isNan.js</h1>
     
 
     
@@ -40,24 +40,15 @@
     <section>
         <article>
             <pre class="prettyprint source linenums"><code>/**
- * @function compose
- * @returns {function(): *}
+ * @function isNaN
+ * @description Checks if number is NAN
+
  */
-export default function compose () {
-  let funs = Array.prototype.slice.call(arguments)
+import isNumber from './is'
+import and from '../util/and'
 
-  return function _compose () {
-    let init = funs[funs.length - 1]
-    let result = [init.apply(init, arguments)]
-    let i = funs.length - 2
-
-    for (i; i >= 0; --i) {
-      const fun = funs[i]
-
-      result = [fun.apply(fun, result)]
-    }
-    return result[0]
-  }
+export default function isNan (x) {
+  return and(isNumber(x), isNaN(x))
 };
 </code></pre>
         </article>

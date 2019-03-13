@@ -1,6 +1,6 @@
 /**
-
- * fold
+ * @function fold
+ * @private
  *
  */
 import curry from '../util/curry'

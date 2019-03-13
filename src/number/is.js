@@ -1,5 +1,5 @@
 /**
-
+ * @private
  */
 import is from '../util/is'
 
