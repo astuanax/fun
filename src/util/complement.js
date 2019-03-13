@@ -17,6 +17,7 @@
  */
 import lift from './lift'
 import not from './not'
+import R from 'ramda'
 
-const complement = lift(not)
+const complement = R.lift(not)
 export default complement
