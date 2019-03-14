@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>util/adjust.js - Documentation</title>
+    <title>util/apply.js - Documentation</title>
 
     <script src="scripts/prettify/prettify.js"></script>
     <script src="scripts/prettify/lang-css.js"></script>
@@ -29,7 +29,7 @@
 
 <div id="main">
     
-    <h1 class="page-title">util/adjust.js</h1>
+    <h1 class="page-title">util/apply.js</h1>
     
 
     
@@ -40,25 +40,23 @@
     <section>
         <article>
             <pre class="prettyprint source linenums"><code>/**
- * Modifies an item in an array using the provided function
+ * @function apply
+ * @description The apply() method calls a function with the given arguments provided as an array, and the function as context.
+ * @param fn
+ * @param args
+ * @return {*}
+ * @example
  *
- * @function adjust
- * @description Modifies an item in an array using the provided function
- * @since v1.0.2
- * @sig (a -> a) -> num -> [a] -> [a]
- * @param {Function} fn - to modify the item at the specified index
- * @param {Number} i - The index at which to modify the array, accepts postitive and negative indexes
- * @param {Iterable} [a] - Array with data
- * @return {Iterable} [a]
- **/
-import curry from '../util/curry'
+ * var a = apply(function () {
+ *      return [].slice.call(arguments).map(x => x * 2)
+ *   })
+ * a([1, 2, 3])
+ * // [2, 4, 6]
+ */
+import curry from './curry'
 
-export default curry(function adjust (fn, i, a) {
-  const r = Array.prototype.slice.call(a)
-  const idx = i &lt; 0 ? r.length + i : i
-  if (!a[idx]) return r
-  r[idx] = fn(r[idx])
-  return r
+export default curry(function apply (fn, args) {
+  return fn.apply(fn, args)
 })
 </code></pre>
         </article>
