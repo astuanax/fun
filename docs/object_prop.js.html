@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>util/allPass.js - Documentation</title>
+    <title>object/prop.js - Documentation</title>
 
     <script src="scripts/prettify/prettify.js"></script>
     <script src="scripts/prettify/lang-css.js"></script>
@@ -29,7 +29,7 @@
 
 <div id="main">
     
-    <h1 class="page-title">util/allPass.js</h1>
+    <h1 class="page-title">object/prop.js</h1>
     
 
     
@@ -40,22 +40,12 @@
     <section>
         <article>
             <pre class="prettyprint source linenums"><code>/**
- * Applies a list of predicates to the data and returns true if all pass
- *
- * @function allPass
- * @description Applies a list of predicates to the data and returns true if all pass
- * @since v1.0.2
- * @sig [(*... -> Boolean)] -> (*... -> Boolean
- * @param {Array} predicates An array of predicates to check
- * @return {Function} The combined predicate
- **/
+ * @function prop
+ */
 import curry from '../util/curry'
 
-export default curry(function allPass (cbs, a) {
-  for (let i = 0; i &lt; cbs.length; i++) {
-    if (!cbs[i](a)) return false
-  }
-  return true
+export default curry(function prop (p, obj) {
+  return obj[p]
 })
 </code></pre>
         </article>
