@@ -31,11 +31,22 @@ export { default as has } from 'object/has'
 export { default as hasIn } from 'object/hasIn'
 export { default as keys } from 'object/keys'
 export { default as keysIn } from 'object/keysIn'
+export { default as filterObject } from 'object/filter'
+export { default as foldObject } from 'object/fold'
+export { default as mapObject } from 'object/map'
+export { default as path } from 'object/path'
+export { default as prop } from 'object/prop'
 
 // string
 export { default as concatString } from 'string/concat'
 export { default as formatString } from 'string/formatString'
 export { default as isString } from 'string/is'
+
+//map
+export {default as mapFilter} from 'map/filter'
+export {default as isMap} from 'map/is'
+export {default as mapKeys} from 'map/keys'
+export {default as mapMap} from 'map/map'
 
 // util
 export { default as adjust } from 'util/adjust'
