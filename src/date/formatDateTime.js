@@ -4,34 +4,16 @@
  */
 import curry from '../util/curry'
 import isValidDate from './isValid'
-import { WEEKDAYS } from '../constants/WEEKDAYS'
-import { MONTHS } from '../constants/MONTHS'
-
-const getWeek = (d) => {
-  // Copy date so don't modify original
-  d = new Date(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()))
-  // Set to nearest Thursday: current date + 4 - current day number
-  // Make Sunday's day number 7
-  d.setUTCDate(d.getUTCDate() + 4 - (d.getUTCDay() || 7))
-  // Get first day of year
-  let yearStart = new Date(Date.UTC(d.getUTCFullYear(), 0, 1))
-
-  // Calculate full weeks to nearest Thursday
-  let weekNo = Math.ceil((((d - yearStart) / 86400000) + 1) / 7)
-
-  // Return array of year and week number
-  return [d.getUTCFullYear(), weekNo]
-}
+import getWeek from './getWeek'
+import {WEEKDAYS} from '../constants/WEEKDAYS'
+import {MONTHS} from '../constants/MONTHS'
+import {DATE_TOKENS} from '../constants/DATE_TOKENS'
 
 // utility functions for the date formatting
 const ZEROS = '00000000'
 const lastN = curry((n, str) => str.substring(str.length - n, str.length))
 const firstN = curry((n, str) => str.substring(0, n))
 const fill = curry((digits, n) => lastN(digits, ZEROS + n))
-
-// date/time regex
-// eslint-disable-next-line no-useless-escape
-const DATE_TOKENS = /(\[[^\[]*\])|(\\)?(Mo|MM?M?M?|Do|DDDo|DD?D?D?|ddd?d?|do?|w[o|w]?|W[o|W]?|Q|YYYYYY|YYYYY|YYYY|YY|gg(ggg?)?|GG(GGG?)?|e|E|a|A|hh?|HH?|mm?|ss?|S{1,9}|x|X|zz?|ZZ?|.)/g
 
 const modCeiling = (mod, val) => val % mod || mod
 
@@ -72,7 +54,18 @@ const swapTokenWithValue = curry((date, token) => {
   return tokens[token] ? tokens[token](date) : token
 })
 
-export default curry((format, date) => {
+/**
+ * @function formatDateTime
+ * @description Formats a date object using a format string
+ * @param {string} format - Format date string
+ * @param {date} date - Date object to format
+ * @return {string}
+ * @example
+ *
+ * const formattedDate = formatDateTime('DD-MM-YYYY', new Date('1999-12-31'))
+ * console.log(formattedDate) // 31-12-1999
+ */
+export default curry(function formatDateTime (format, date) {
   // check for valid date
   if (!isValidDate(date)) return 'Invalid Date' // return string
   return format.match(DATE_TOKENS).map(swapTokenWithValue(date)).join('') // return joined string
