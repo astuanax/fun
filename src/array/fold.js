@@ -1,4 +1,5 @@
 /**
+ * @private
  * @function fold
  * @description Returns a single item by mapping over the provided array and calling an iterator function
  * @param {cbFunction} cb - Callback function to modify the item

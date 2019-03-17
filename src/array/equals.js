@@ -1,4 +1,5 @@
 /**
+ * @private
  * @function equalsArray
  * @description Autocurried function for deep comparison of arrays
  * @param {a} x - Object to compare of type a
