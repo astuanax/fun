@@ -1,6 +1,6 @@
 {
   "name": "fun.js",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Functional tools for javascript development",
   "main": "lib/fun.js",
   "module": "src/index.js",
