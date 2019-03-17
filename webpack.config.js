@@ -11,10 +11,10 @@ let outputFile, mode
 
 if (env === 'build') {
   mode = 'production'
-  outputFile = libraryName + '.min.js'
+  outputFile = libraryName.split('.')[0] + '.min.js'
 } else {
   mode = 'development'
-  outputFile = libraryName + '.js'
+  outputFile = libraryName
 }
 
 const config = {
