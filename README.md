@@ -15,9 +15,10 @@ Git repo: https://github.com/astuanax/fun
 
 The documentation is done using jsdocs and can be found in the /docs folder or at the url [https://astuanax.github.io/fun/](https://astuanax.github.io/fun/)
 
-## Functional?
+## Functional library?
 
-This library is an attempt to build a number of functional items, compatible with Ramda (which works great, though it is a bit heavy).
+The fun.js is a functional library which supports monads and follows mostly he ramda specifications but tries to keep the bite size down.
+The focus is to provide helpful functions for react development with a small footprint. 
 
 
 ## Examples
