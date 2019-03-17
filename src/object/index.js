@@ -1,0 +1,16 @@
+// @create-index
+
+export { default as equals } from './equals.js'
+export { default as filter } from './filter.js'
+export { default as fold } from './fold.js'
+export { default as has } from './has.js'
+export { default as hasIn } from './hasIn.js'
+export { default as is } from './is.js'
+export { default as keys } from './keys.js'
+export { default as keysIn } from './keysIn.js'
+export { default as map } from './map.js'
+export { default as merge } from './merge.js'
+export { default as omit } from './omit.js'
+export { default as path } from './path.js'
+export { default as pick } from './pick.js'
+export { default as prop } from './prop.js'

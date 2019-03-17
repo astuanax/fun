@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>array/fold.js - Documentation</title>
+    <title>object/pick.js - Documentation</title>
 
     <script src="scripts/prettify/prettify.js"></script>
     <script src="scripts/prettify/lang-css.js"></script>
@@ -29,7 +29,7 @@
 
 <div id="main">
     
-    <h1 class="page-title">array/fold.js</h1>
+    <h1 class="page-title">object/pick.js</h1>
     
 
     
@@ -40,37 +40,22 @@
     <section>
         <article>
             <pre class="prettyprint source linenums"><code>/**
- * @private
- * @function fold
- * @description Returns a single item by mapping over the provided array and calling an iterator function
- * @param {cbFunction} cb - Callback function to modify the item
- * @param {*} init - Initial value
- * @param {Array} a - Array with items to modify by the cb function
- * @return {Array}
- * @alias reduce
- * @since 1.0.2
- * @example
- *
- * const result = fold(add, 0, [1,1,1])
- * // result = 3
- */
-
-/**
- * @callback cbFunction
- * @param {*} r - Accumulator which accumulates the callback's return values
- * @param {*} item - the current element being processed
- * @param {number} index - the indey of the item being processed
- * @param {Array} a - The initial array
- * @return {*}
+ * @function pick
+ * @description returns a new bject with only the props that are provided
+ * @param {Array} props - Array of property names
+ * @param {Object} obj - The object from which to take the properties
+ * @return {Object}
  */
 import curry from '../util/curry'
 
-export default curry(function fold (cb, init, a) {
-  let i = -1
-  const l = a.length
-  let r = init
-  while (++i &lt; l) {
-    r = cb(r, a[i], i, a)
+export default curry(function pick (props, obj) {
+  const r = {}
+  let i = 0
+  while (i &lt; props.length) {
+    if (props[i] in obj) {
+      r[props[i]] = obj[props[i]]
+    }
+    i += 1
   }
   return r
 })
