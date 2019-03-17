@@ -20,7 +20,7 @@ if (env === 'build') {
 const config = {
   mode: mode,
   entry: __dirname + '/src',
-  devtool: 'inline-source-map',
+  devtool: 'source-map',
   output: {
     path: __dirname + '/lib',
     filename: outputFile,
