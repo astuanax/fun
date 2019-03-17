@@ -6,6 +6,7 @@
   "module": "src/index.js",
   "scripts": {
     "build": "./node_modules/.bin/eslint ./src --fix && webpack --env dev && webpack --env build && npm run test && npm run jsdocs && npm run size",
+    "compile": "webpack --env dev",
     "dev": "webpack --progress --colors --watch --env dev",
     "test": "mocha --require babel-register --colors ./test/*.spec.js",
     "test:watch": "mocha --require babel-register --colors -w ./test/*.spec.js",
@@ -71,5 +72,5 @@
     "sourceMap": false,
     "instrument": false
   },
-  "dependencies": {  }
+  "dependencies": {}
 }

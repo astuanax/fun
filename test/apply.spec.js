@@ -7,7 +7,7 @@ describe('apply', function () {
   })
 
   it('provides no way to specify context', function () {
-    const obj = {method: function () { return this === obj }}
+    const obj = { method: function () { return this === obj } }
     chai.expect(apply(obj.method, [])).to.be.false
   })
 
@@ -17,5 +17,4 @@ describe('apply', function () {
     })
     chai.expect(a([1, 2, 3])).to.deep.equal([2, 4, 6])
   })
-
 })

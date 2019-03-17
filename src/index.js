@@ -35,6 +35,7 @@ export { default as filterObject } from 'object/filter'
 export { default as foldObject } from 'object/fold'
 export { default as mapObject } from 'object/map'
 export { default as path } from 'object/path'
+export { default as pick } from 'object/pick'
 export { default as prop } from 'object/prop'
 
 // string
@@ -90,3 +91,4 @@ export { default as toDay } from 'date/toDay'
 export { default as toHour } from 'date/toHour'
 export { default as toMinutes } from 'date/toMinutes'
 export { default as toSeconds } from 'date/toSeconds'
+export { default as getWeek } from 'date/getWeek'

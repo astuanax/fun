@@ -5,9 +5,9 @@
 import curry from '../util/curry'
 import isValidDate from './isValid'
 import getWeek from './getWeek'
-import {WEEKDAYS} from '../constants/WEEKDAYS'
-import {MONTHS} from '../constants/MONTHS'
-import {DATE_TOKENS} from '../constants/DATE_TOKENS'
+import { WEEKDAYS } from '../constants/WEEKDAYS'
+import { MONTHS } from '../constants/MONTHS'
+import { DATE_TOKENS } from '../constants/DATE_TOKENS'
 
 // utility functions for the date formatting
 const ZEROS = '00000000'
