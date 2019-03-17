@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>util/and.js - Documentation</title>
+    <title>date/diffDate.js - Documentation</title>
 
     <script src="scripts/prettify/prettify.js"></script>
     <script src="scripts/prettify/lang-css.js"></script>
@@ -29,7 +29,7 @@
 
 <div id="main">
     
-    <h1 class="page-title">util/and.js</h1>
+    <h1 class="page-title">date/diffDate.js</h1>
     
 
     
@@ -40,20 +40,16 @@
     <section>
         <article>
             <pre class="prettyprint source linenums"><code>/**
- * Checks if both predicates are true
- *
- * @function and
- * @description Checks if both predicates are true
- * @since v1.0.2
- * @sig (x, y) -> boolean
- * @param {*} x - A predicate
- * @param {*} y - A predicate
- * @return {boolean}
- **/
-import curry from './curry'
+ * @function diffDate
+ * @description Returns the difference between 2 dates in millisecond
+ * @param {Date} start - Start date
+ * @param {Date} end - End date
+ * @return {number} REturn the difference in milliseconds
+ */
+import curry from '../util/curry'
 
-export default curry(function and (x, y) {
-  return x &amp;&amp; y
+export default curry(function diffDate (start, end) {
+  return (new Date(start).getTime() - new Date(end).getTime())
 })
 </code></pre>
         </article>
