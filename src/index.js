@@ -42,11 +42,11 @@ export { default as concatString } from 'string/concat'
 export { default as formatString } from 'string/formatString'
 export { default as isString } from 'string/is'
 
-//map
-export {default as mapFilter} from 'map/filter'
-export {default as isMap} from 'map/is'
-export {default as mapKeys} from 'map/keys'
-export {default as mapMap} from 'map/map'
+// map
+export { default as mapFilter } from 'map/filter'
+export { default as isMap } from 'map/is'
+export { default as mapKeys } from 'map/keys'
+export { default as mapMap } from 'map/map'
 
 // util
 export { default as adjust } from 'util/adjust'
