@@ -9,11 +9,11 @@
  * @param {Array} vals - An array of values
  * @return {Iterable} [a]
  **/
-import curry from '../util/curry'
-import curry1 from '../_private/curry1'
-import is from '../util/is'
-import fold from '../array/fold'
-import map from '../array/map'
+import curry from './curry'
+import curry1 from './_private/curry1'
+import is from './is'
+import fold from './array/fold'
+import map from './array/map'
 
 const isFunction = is('Function')
 

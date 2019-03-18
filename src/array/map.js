@@ -13,7 +13,7 @@
  *  const result = map(add2, [0,2,3])
  *  // result = [2,4,5]
  **/
-import curry from '../util/curry'
+import curry from '../curry'
 
 export default curry(function map (cb, a) {
   let i = -1

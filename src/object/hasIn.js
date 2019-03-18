@@ -8,7 +8,7 @@
  * @param {Object} obj
  * @return {Boolean}
  **/
-import curry from '../util/curry'
+import curry from '../curry'
 
 export default curry(function hasIn (prop, obj) {
   return prop in obj

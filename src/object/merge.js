@@ -3,8 +3,8 @@
  * equals
  * checks for equality
  */
-import curry from '../util/curry'
-import identical from '../util/identical'
+import curry from '../curry'
+import identical from '../identical'
 import isObject from '../object/is'
 import isArray from '../array/is'
 import union from '../array/union'

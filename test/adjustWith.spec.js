@@ -3,7 +3,7 @@
  */
 
 import chai from 'chai'
-import adjustWith from '../src/util/adjustWith'
+import adjustWith from '../src/adjustWith'
 import add from '../src/number/add'
 import multiply from '../src/number/multiply'
 

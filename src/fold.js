@@ -11,9 +11,9 @@
  * @return {*} a is the accumulated value
  **/
 
-import curry from '../util/curry'
-import arrayFold from '../array/fold'
-import objectFold from '../object/fold'
+import curry from './curry'
+import arrayFold from './array/fold'
+import objectFold from './object/fold'
 import type from './type'
 
 export default curry(function fold (cb, init, a) {

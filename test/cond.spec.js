@@ -1,7 +1,7 @@
 import chai from 'chai'
-import cond from '../src/util/cond'
-import always from '../src/util/always'
-import equals from '../src/util/equals'
+import cond from '../src/cond'
+import always from '../src/always'
+import equals from '../src/equals'
 import T from '../src/boolean/T'
 
 describe('cond', function () {

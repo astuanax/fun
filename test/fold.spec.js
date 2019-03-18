@@ -3,10 +3,10 @@
  */
 
 import chai from 'chai'
-import fold from '../src/util/fold'
+import fold from '../src/fold'
 import arrayFold from '../src/array/fold'
 import objectFold from '../src/object/fold'
-import identity from '../src/util/identity'
+import identity from '../src/identity'
 
 const sum = (acc, cur) => acc + cur
 

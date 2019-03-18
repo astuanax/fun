@@ -10,7 +10,7 @@
  * @return {number}
  **/
 
-import curry from '../util/curry'
+import curry from './curry'
 
 export default curry(function findIndex (fn, a) {
   let i = 0

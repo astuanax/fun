@@ -8,7 +8,7 @@
  * @param {Iterable} a
  * @return {Iterable}
  **/
-import curry from '../util/curry'
+import curry from '../curry'
 
 export default curry(function map (cb, a) {
   let i = -1

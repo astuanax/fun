@@ -4,7 +4,7 @@
  * @description checks for identintical items
  */
 import curry from './curry'
-import isNan from '../number/isNan'
+import isNan from './number/isNan'
 
 export default curry(function identical (x, y) {
   if (x === 0 && y === 0) {

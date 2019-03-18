@@ -3,7 +3,7 @@
  */
 
 import chai from 'chai'
-import compose from '../src/util/compose'
+import compose from '../src/compose'
 import timeToHour from '../src/date/toHour'
 import timeToDay from '../src/date/toDay'
 import timeToMinutes from '../src/date/toMinutes'

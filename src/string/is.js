@@ -1,6 +1,6 @@
 /**
 
  */
-import is from '../util/is'
+import is from '../is'
 
 export default is('String')

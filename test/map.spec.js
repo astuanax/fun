@@ -3,8 +3,8 @@
  */
 
 import chai from 'chai'
-import map from '../src/util/map'
-import identity from '../src/util/identity'
+import map from '../src/map'
+import identity from '../src/identity'
 const identityMap = map(identity)
 
 describe('map', function () {

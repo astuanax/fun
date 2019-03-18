@@ -8,7 +8,7 @@
  * @param {*} a
  * @return {Function}
  **/
-import curry from '../util/curry'
+import curry from './curry'
 
 export default curry(function always (x) {
   return function () { return x }

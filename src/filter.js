@@ -4,9 +4,9 @@
  *
  */
 import curry from './curry'
-import arrayFilter from '../array/filter'
-import objectFilter from '../object/filter'
-import mapFilter from '../map/filter'
+import arrayFilter from './array/filter'
+import objectFilter from './object/filter'
+import mapFilter from './map/filter'
 // TODO
 // import setFilter from '../set/filter'
 import type from './type'

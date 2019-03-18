@@ -10,7 +10,7 @@
  * @param {Iterable} [a] - Array with data
  * @return {Iterable} [a]
  **/
-import curry from '../util/curry'
+import curry from './curry'
 
 export default curry(function adjust (fn, i, a) {
   const r = Array.prototype.slice.call(a)

@@ -3,7 +3,7 @@
  */
 
 import chai from 'chai'
-import zipWith from '../src/util/zipWith'
+import zipWith from '../src/zipWith'
 
 describe('zipWith', function () {
   it('it comkbines 2 arrays', function () {

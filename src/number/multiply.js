@@ -8,7 +8,7 @@
  * @param {Number} b
  * @return {Number}
  **/
-import curry from '../util/curry'
+import curry from '../curry'
 
 export default curry(function multiply (a, b) {
   return +a * +b

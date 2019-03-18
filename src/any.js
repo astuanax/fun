@@ -9,7 +9,7 @@
  * @param {Iterable} a
  * @return {Boolean}
  **/
-import curry from '../util/curry'
+import curry from './curry'
 
 export default curry(function any (cb, a) {
   let res = false

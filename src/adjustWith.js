@@ -10,8 +10,8 @@
  * @param {Iterable} [a]
  * @return {Iterable} [a]
  **/
-import curry from '../util/curry'
-import map from '../util/map'
+import curry from './curry'
+import map from './map'
 
 export default curry(function adjustWith (fn, pred, a) {
   const _fn = x => {

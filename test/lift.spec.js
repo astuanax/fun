@@ -3,11 +3,11 @@
  */
 
 import chai from 'chai'
-import curry from '../src/util/curry'
-import lift from '../src/util/lift'
-import not from '../src/util/not'
-import always from '../src/util/always'
-import type from '../src/util/type'
+import curry from '../src/curry'
+import lift from '../src/lift'
+import not from '../src/not'
+import always from '../src/always'
+import type from '../src/type'
 import add from '../src/number/add'
 import Maybe from '../src/monads/Maybe'
 

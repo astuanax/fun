@@ -7,10 +7,10 @@
  * @param {Function} fn2 A predicate function
  * @return {Boolean}
  **/
-import curry from '../util/curry'
-import lift from '../util/lift'
-import and from '../util/and'
-import is from '../util/is'
+import curry from '../curry'
+import lift from '../lift'
+import and from '../and'
+import is from '../is'
 
 export default curry(function both (fn1, fn2) {
   return is('Function')(fn1)

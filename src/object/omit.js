@@ -3,7 +3,7 @@
  * equals
  * checks for equality
  */
-import curry from '../util/curry'
+import curry from '../curry'
 
 export default curry((obj, names) => {
   let result = {}

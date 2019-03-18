@@ -7,7 +7,7 @@
  * @param {Array} a
  * @return {Number}
  **/
-import curry from '../util/curry'
+import curry from '../curry'
 import add from './add'
 
 export default curry(function sum (a) {

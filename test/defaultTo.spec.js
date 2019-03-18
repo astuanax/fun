@@ -3,7 +3,7 @@
  */
 
 import chai from 'chai'
-import defaultTo from '../src/util/defaultTo'
+import defaultTo from '../src/defaultTo'
 
 describe('defaultTo', function () {
   it('return default value (first argument), if value (second argument) is null, undefined or NaN', () => {

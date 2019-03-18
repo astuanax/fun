@@ -2,7 +2,7 @@
  * Created by dierickx.len on 14/02/2017.
  */
 import chai from 'chai'
-import existy from '../src/util/exists'
+import existy from '../src/exists'
 
 describe('Utils', function () {
   beforeEach(function () { })

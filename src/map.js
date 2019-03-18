@@ -9,16 +9,17 @@
  * @param {Iterable} a
  * @return {Iterable}
  **/
-import curry from '../util/curry'
-import arrayMap from '../array/map'
-import objectMap from '../object/map'
-import mapMap from '../map/map'
-import stringMap from '../string/map'
-import type from '../util/type'
+import curry from './curry'
+import arrayMap from './array/map'
+import objectMap from './object/map'
+import mapMap from './map/map'
+import stringMap from './string/map'
+import iteratorMap from './iterator/map'
+import type from './type'
+import isIterator from './iterator/is'
 
 export default curry(function map (cb, a) {
   switch (type(a)) {
-  // switch (Object.prototype.toString.call(a)) {
     case 'Function':
       return curry(function () {
         return cb.call(this, a.apply(this, arguments))
@@ -29,7 +30,11 @@ export default curry(function map (cb, a) {
       return stringMap(cb, a)
     case 'Map':
       return mapMap(cb, a)
-    default:
+    case 'Array':
       return arrayMap(cb, a)
+    default:
+      return isIterator(a)
+        ? iteratorMap(cb, a)
+        : arrayMap(cb, a)
   }
 })

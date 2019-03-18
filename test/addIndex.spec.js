@@ -1,7 +1,7 @@
 
 import chai from 'chai'
-import addIndex from '../src/util/addIndex'
-import map from '../src/util/map'
+import addIndex from '../src/addIndex'
+import map from '../src/map'
 // import filter from '../util/filter'
 
 describe('addIndex', function () {

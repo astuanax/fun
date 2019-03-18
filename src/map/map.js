@@ -8,8 +8,8 @@
  * @param {Map} a
  * @return {Map}
  **/
-import curry from '../util/curry'
-import empty from '../util/empty'
+import curry from '../curry'
+import empty from '../empty'
 
 export default curry(function map (cb, a) {
   const r = empty(a)

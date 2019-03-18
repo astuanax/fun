@@ -3,7 +3,7 @@
  */
 
 import chai from 'chai'
-import any from '../src/util/any'
+import any from '../src/any'
 import isString from '../src/string/is'
 import isNumber from '../src/number/is'
 

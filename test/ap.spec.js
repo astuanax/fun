@@ -3,7 +3,7 @@
  */
 
 import chai from 'chai'
-import ap from '../src/util/ap'
+import ap from '../src/ap'
 import add from '../src/number/add'
 
 describe('ap', function () {

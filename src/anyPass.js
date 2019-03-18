@@ -7,7 +7,7 @@
  * @param {Array} predicates An array of predicates to check
  * @return {Function} The combined predicate
  **/
-import curry from '../util/curry'
+import curry from './curry'
 
 export default curry(function anyPass (cbs, a) {
   for (let i = 0; i < cbs.length; i++) {

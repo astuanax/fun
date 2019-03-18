@@ -5,11 +5,11 @@
  * @since v1.0.2
  * @sig (*... -> *) -> ([*]... -> [*])
  **/
-import curry from '../util/curry'
-import curry1 from '../_private/curry1'
-import fold from '../util/fold'
-import ap from '../util/ap'
-import map from '../util/map'
+import curry from './curry'
+import curry1 from './_private/curry1'
+import fold from './fold'
+import ap from './ap'
+import map from './map'
 
 export default curry(function lift (fn) {
   const lifted = curry1(curry(fn))

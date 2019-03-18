@@ -6,9 +6,9 @@
  * @param {a} y - Object x to compare with object x
  * @return {boolean}
  */
-import curry from '../util/curry'
-import not from '../util/not'
-import equals from '../util/equals'
+import curry from '../curry'
+import not from '../not'
+import equals from '../equals'
 
 export default curry(function equalsArray (x, y) {
   if (x.length !== y.length) {

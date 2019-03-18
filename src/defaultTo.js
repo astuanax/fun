@@ -9,7 +9,7 @@
  * @param {b} val `val` will be returned instead of `default` unless `val` is `null`, `undefined` or `NaN`.
  * @return {*} The second value if it is not `null`, `undefined` or `NaN`, otherwise the default value
  **/
-import curry from '../util/curry'
+import curry from './curry'
 
 export default curry(function defaultTo (d, v) {
 // eslint-disable-next-line no-self-compare

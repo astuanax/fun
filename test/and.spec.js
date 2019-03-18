@@ -3,7 +3,7 @@
  */
 
 import chai from 'chai'
-import and from '../src/util/and'
+import and from '../src/and'
 
 describe('and', function () {
   beforeEach(function () {})

@@ -3,7 +3,7 @@
  * @private
  *
  */
-import curry from '../util/curry'
+import curry from '../curry'
 import keys from './keys'
 
 export default curry(function objectFilter (fn, o) {

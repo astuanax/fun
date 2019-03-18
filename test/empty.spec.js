@@ -3,7 +3,7 @@
  */
 
 import chai from 'chai'
-import empty from '../src/util/empty'
+import empty from '../src/empty'
 
 describe('empty', function () {
   it('returns an empty array', function () {

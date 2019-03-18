@@ -3,7 +3,7 @@
  */
 
 import chai from 'chai'
-import is from '../src/util/is'
+import is from '../src/is'
 
 describe('is', function () {
   it('0 is a Number', function () {

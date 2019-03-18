@@ -2,7 +2,7 @@
 /**
  * Created by dierickx.len on 20/01/2017.
  */
-import curry from '../util/curry'
+import curry from '../curry'
 import isValidDate from './isValid'
 import getWeek from './getWeek'
 import { WEEKDAYS } from '../constants/WEEKDAYS'

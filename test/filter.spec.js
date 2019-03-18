@@ -1,4 +1,4 @@
-import filter from '../src/util/filter'
+import filter from '../src/filter'
 import chai from 'chai'
 
 describe('filter', function () {

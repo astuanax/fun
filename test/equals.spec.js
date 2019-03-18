@@ -3,8 +3,8 @@
  */
 
 import chai from 'chai'
-import equals from '../src/util/equals'
-import and from '../src/util/and'
+import equals from '../src/equals'
+import and from '../src/and'
 
 describe('equals', function () {
   beforeEach(function () {})

@@ -8,6 +8,6 @@
  * @param {*} Item to verify
  * @return {boolean}
  **/
-import is from '../util/is'
+import is from '../is'
 
 export default is('Boolean')
