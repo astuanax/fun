@@ -622,6 +622,41 @@ module.exports = exports["default"];
 
 /***/ }),
 
+/***/ "./src/array/concat.js":
+/*!*****************************!*\
+  !*** ./src/array/concat.js ***!
+  \*****************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _curry = _interopRequireDefault(__webpack_require__(/*! ../curry */ "./src/curry.js"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+/**
+ * @private
+ * @function arrayConcat
+ * @param a1
+ * @param a2
+ * @returns {T[]}
+ */
+var _default = (0, _curry.default)(function concat(a, b) {
+  return Array.prototype.concat(a, b);
+});
+
+exports.default = _default;
+module.exports = exports["default"];
+
+/***/ }),
+
 /***/ "./src/array/equals.js":
 /*!*****************************!*\
   !*** ./src/array/equals.js ***!
@@ -1173,6 +1208,54 @@ function compose() {
 }
 
 ;
+module.exports = exports["default"];
+
+/***/ }),
+
+/***/ "./src/concat.js":
+/*!***********************!*\
+  !*** ./src/concat.js ***!
+  \***********************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _curry = _interopRequireDefault(__webpack_require__(/*! ./curry */ "./src/curry.js"));
+
+var _concat = _interopRequireDefault(__webpack_require__(/*! ./array/concat */ "./src/array/concat.js"));
+
+var _concat2 = _interopRequireDefault(__webpack_require__(/*! ./string/concat */ "./src/string/concat.js"));
+
+var _type = _interopRequireDefault(__webpack_require__(/*! ./type */ "./src/type.js"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+/**
+ * Concatenates 2 items together
+ *
+ * @function concat
+ * @description Concatenates 2 items together
+ * @since v1.0.4
+ * @param {a} a - Left side of the concatenation
+ * @param {a} b - right side of the concatenation
+ * @return {a} Concatenated item
+ **/
+var _default = (0, _curry.default)(function concat(a, b) {
+  var typeMap = {
+    'String': _concat2.default,
+    'Array': _concat.default
+  };
+  return typeMap[(0, _type.default)(a)](a, b);
+});
+
+exports.default = _default;
 module.exports = exports["default"];
 
 /***/ }),
@@ -2474,7 +2557,7 @@ var _complement = _interopRequireDefault(__webpack_require__(/*! ./complement */
 
 var _compose = _interopRequireDefault(__webpack_require__(/*! ./compose */ "./src/compose.js"));
 
-var _concat = _interopRequireDefault(__webpack_require__(/*! ./string/concat */ "./src/string/concat.js"));
+var _concat = _interopRequireDefault(__webpack_require__(/*! ./concat */ "./src/concat.js"));
 
 var _cond = _interopRequireDefault(__webpack_require__(/*! ./cond */ "./src/cond.js"));
 
@@ -4243,20 +4326,18 @@ module.exports = exports["default"];
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.concat = void 0;
+exports.default = concat;
 
 /**
- * @function
+ * @private
+ * @function stringConcat
  */
-var concat = function _concat() {
-  var separator = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : ',';
+function concat(a, b) {
   // use function(), arrow function doesn't bind arguments
-  return Array.prototype.slice.call(arguments, 1).join(separator);
-};
+  return String(a) + String(b);
+}
 
-exports.concat = concat;
-var _default = concat;
-exports.default = _default;
+module.exports = exports["default"];
 
 /***/ }),
 

@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>keys.js - Documentation</title>
+    <title>concat.js - Documentation</title>
 
     <script src="scripts/prettify/prettify.js"></script>
     <script src="scripts/prettify/lang-css.js"></script>
@@ -29,7 +29,7 @@
 
 <div id="main">
     
-    <h1 class="page-title">keys.js</h1>
+    <h1 class="page-title">concat.js</h1>
     
 
     
@@ -40,27 +40,27 @@
     <section>
         <article>
             <pre class="prettyprint source linenums"><code>/**
- * Returns the keys of the provided object or iterator
+ * Concatenates 2 items together
  *
- * @function keys
- * @description Autocurried function which returns the keys of the provided object or iterator
- * @since v1.0.2
- * @sig obj -> [*]
- * @param {Object} obj - Obj from zhich to take the keys
- * @return {Iterable}
+ * @function concat
+ * @description Concatenates 2 items together
+ * @since v1.0.4
+ * @param {a} a - Left side of the concatenation
+ * @param {a} b - right side of the concatenation
+ * @return {a} Concatenated item
  **/
+
 import curry from './curry'
-import objectKeys from './object/keys'
-import mapKeys from './map/keys'
+import arrayConcat from './array/concat'
+import stringConcat from './string/concat'
 import type from './type'
 
-export default curry(function map (obj) {
-  switch (type(obj)) {
-    case 'Map':
-      return mapKeys(obj)
-    default:
-      return objectKeys(obj)
+export default curry(function concat (a, b) {
+  const typeMap = {
+    'String': stringConcat,
+    'Array': arrayConcat
   }
+  return typeMap[type(a)](a, b)
 })
 </code></pre>
         </article>
