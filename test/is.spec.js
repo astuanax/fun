@@ -3,7 +3,7 @@
  */
 
 import chai from 'chai'
-import is from '../src/is'
+import { is } from '../lib/fun'
 
 describe('is', function () {
   it('0 is a Number', function () {

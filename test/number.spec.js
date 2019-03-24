@@ -2,8 +2,8 @@
  * Created by dierickx.len on 26/03/2017.
  */
 import chai from 'chai'
-import isNumber from '../src/number/is'
-import isNan from '../src/number/isNan'
+import { isNumber } from '../lib/fun'
+import { isNan } from '../lib/fun'
 
 describe('number objects', function () {
   beforeEach(function () {

@@ -1,5 +1,5 @@
 import chai from 'chai'
-import prop from '../src/object/prop'
+import { prop } from '../lib/fun'
 
 describe('prop', function () {
   const fred = { name: 'Fred', age: 23 }

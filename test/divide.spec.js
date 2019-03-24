@@ -3,7 +3,7 @@
  */
 
 import chai from 'chai'
-import divide from '../src/number/divide'
+import { divide } from '../lib/fun'
 
 describe('divides numbers', () => {
   it('positive', () => {

@@ -1,8 +1,5 @@
-
 import chai from 'chai'
-import addIndex from '../src/addIndex'
-import map from '../src/map'
-// import filter from '../util/filter'
+import { map, addIndex } from '../lib/fun'
 
 describe('addIndex', function () {
   it('add index with map', () => {

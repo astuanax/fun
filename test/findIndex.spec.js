@@ -2,7 +2,7 @@
  * Created by dierickx.len on 14/02/2017.
  */
 import chai from 'chai'
-import findIndex from '../src/findIndex'
+import { findIndex } from '../lib/fun'
 
 describe('findIndex', function () {
   var obj1 = { x: 100 }

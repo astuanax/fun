@@ -1,5 +1,4 @@
 
-
 // export { default as __ } from './__';
 // export { default as aperture } from './aperture'
 // export { default as append } from './append'
@@ -111,7 +110,7 @@
 // export { default as o } from './o'
 // export { default as objOf } from './objOf'
 // export { default as of } from './of'
-// export { default as omit } from './omit'
+export { default as omit } from './object/omit'
 // export { default as once } from './once'
 // export { default as otherwise } from './otherwise'
 // export { default as over } from './over'
@@ -208,6 +207,7 @@
 export { default as add } from './number/add'
 export { default as addIndex } from './addIndex'
 export { default as adjust } from './adjust'
+export { default as adjustWith } from './adjustWith'
 export { default as all } from './all'
 export { default as allPass } from './allPass'
 export { default as always } from './always'
@@ -271,3 +271,13 @@ export { default as type } from './type'
 export { default as union } from './array/union'
 export { default as zip } from './zip'
 export { default as zipWith } from './zipWith'
+export { default as isFutureDate } from './date/isFutureDate'
+export { default as toHour } from './date/toHour'
+export { default as toDay } from './date/toDay'
+export { default as toMinutes } from './date/toMinutes'
+export { default as toSeconds } from './date/toSeconds'
+export { default as diffDate } from './date/diffDate'
+
+export { default as Maybe } from './monads/Maybe'
+export { default as Just } from './monads/Just'
+export { default as Nothing } from './monads/Nothing'

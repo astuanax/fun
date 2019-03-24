@@ -2,17 +2,7 @@
  * Created by dierickx.len on 26/03/2017.
  */
 import chai from 'chai'
-import sum from '../src/number/sum'
-import add from '../src/number/add'
-import compose from '../src/compose'
-import curry from '../src/curry'
-import map from '../src/map'
-import fold from '../src/fold'
-import keys from '../src/object/keys'
-
-import diffDate from '../src/date/diffDate'
-import isDate from '../src/date/is'
-import toSeconds from '../src/date/toSeconds'
+import { sum, add, compose, curry, map, fold, keys, diffDate, toSeconds } from '../lib/fun'
 
 describe('recipe', function () {
   it('returns the sum of the length of all the arrays in an array', function () {

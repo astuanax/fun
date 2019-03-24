@@ -3,12 +3,7 @@
  */
 
 import chai from 'chai'
-import compose from '../src/compose'
-import timeToHour from '../src/date/toHour'
-import timeToDay from '../src/date/toDay'
-import timeToMinutes from '../src/date/toMinutes'
-import timeToSeconds from '../src/date/toSeconds'
-import diffDate from '../src/date/diffDate'
+import { compose, toHour, toDay, toMinutes, toSeconds, diffDate } from '../lib/fun'
 
 describe('time', function () {
   beforeEach(function () {
@@ -16,23 +11,23 @@ describe('time', function () {
   afterEach(function () {
   })
   it('1000 is second', function () {
-    const test = timeToSeconds(1000)
+    const test = toSeconds(1000)
 
     chai.expect(test).to.equal(1)
   })
   it('60000 is minute', function () {
-    const test = timeToMinutes(60000)
+    const test = toMinutes(60000)
 
     chai.expect(test).to.equal(1)
   })
 
   it('3600000 is an hour', function () {
-    const test = timeToHour(3600000)
+    const test = toHour(3600000)
 
     chai.expect(test).to.equal(1)
   })
   it('343600000 is day', function () {
-    const test = timeToDay(24 * 3600000)
+    const test = toDay(24 * 3600000)
 
     chai.expect(test).to.equal(1)
   })
@@ -88,7 +83,7 @@ describe('time', function () {
     target.setUTCMinutes(target.getUTCMinutes() + 1)
     target.setUTCSeconds(target.getUTCSeconds() + 20)
 
-    const test = compose(Math.floor, Math.abs, timeToMinutes, diffDate)
+    const test = compose(Math.floor, Math.abs, toMinutes, diffDate)
 
     chai.expect(test(start, target)).to.equal(1)
   })

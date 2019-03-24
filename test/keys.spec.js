@@ -3,8 +3,8 @@
  */
 
 import chai from 'chai'
-import keys from '../src/keys'
-import map from '../src/map'
+import { keys } from '../lib/fun'
+import { map } from '../lib/fun'
 
 describe('keys', function () {
   it('returns the keys of all own properties of an object as an array', function () {

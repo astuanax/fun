@@ -1,8 +1,8 @@
 import chai from 'chai'
-import cond from '../src/cond'
-import always from '../src/always'
-import equals from '../src/equals'
-import T from '../src/boolean/T'
+import { cond } from '../lib/fun'
+import { always } from '../lib/fun'
+import { equals } from '../lib/fun'
+import { T } from '../lib/fun'
 
 describe('cond', function () {
   it('returns a function', function () {

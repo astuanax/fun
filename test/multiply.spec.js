@@ -3,7 +3,7 @@
  */
 
 import chai from 'chai'
-import multiply from '../src/number/multiply'
+import { multiply } from '../lib/fun'
 
 describe('multiplies numbers', () => {
   it('positive', () => {

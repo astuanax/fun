@@ -3,9 +3,7 @@
  */
 
 import chai from 'chai'
-import any from '../src/any'
-import isString from '../src/string/is'
-import isNumber from '../src/number/is'
+import { any, isString, isNumber } from '../lib/fun'
 
 describe('any', function () {
   it('always return the same value', function () {

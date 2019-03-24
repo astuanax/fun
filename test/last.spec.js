@@ -1,5 +1,5 @@
 import chai from 'chai'
-import last from '../src/last'
+import { last } from '../lib/fun'
 
 describe('last', function () {
   it('returns last element of array', () => {

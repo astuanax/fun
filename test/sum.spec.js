@@ -3,7 +3,7 @@
  */
 
 import chai from 'chai'
-import sum from '../src/number/sum'
+import { sum } from '../lib/fun'
 
 describe('sum', function () {
   it('returns the sum of the numbers in an array', function () {

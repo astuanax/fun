@@ -3,7 +3,7 @@
  */
 
 import chai from 'chai'
-import allPass from '../src/allPass'
+import { allPass } from '../lib/fun'
 
 describe('allPass', function () {
   it('checks if all array items conforms to cb', () => {

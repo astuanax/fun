@@ -3,9 +3,9 @@
  */
 
 import chai from 'chai'
-import equals from '../src/equals'
-import and from '../src/and'
-import merge from '../src/object/merge'
+import { equals } from '../lib/fun'
+import { and } from '../lib/fun'
+import { merge } from '../lib/fun'
 
 describe('merge', function () {
   beforeEach(function () {})

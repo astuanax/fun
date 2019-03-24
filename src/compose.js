@@ -3,17 +3,17 @@
  * @returns {function(): *}
  */
 export default function compose () {
-  let funs = Array.prototype.slice.call(arguments)
+  let fns = Array.prototype.slice.call(arguments)
 
   return function _compose () {
-    let init = funs[funs.length - 1]
+    let init = fns[fns.length - 1]
     let result = [init.apply(init, arguments)]
-    let i = funs.length - 2
+    let i = fns.length - 2
 
     for (i; i >= 0; --i) {
-      const fun = funs[i]
+      const fn = fns[i]
 
-      result = [fun.apply(fun, result)]
+      result = [fn.apply(fn, result)]
     }
     return result[0]
   }

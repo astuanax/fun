@@ -1,5 +1,5 @@
 import chai from 'chai'
-import apply from '../src/apply'
+import { apply } from '../lib/fun'
 
 describe('apply', function () {
   it('applies function to argument list', function () {

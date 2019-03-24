@@ -4,7 +4,7 @@
  */
 
 import chai from 'chai'
-import equals from '../src/equals'
+import { equals } from '../lib/fun'
 
 describe('equals', function () {
   it('equals special number values', function () {

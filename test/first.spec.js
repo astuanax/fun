@@ -1,5 +1,6 @@
 import chai from 'chai'
-import first from '../src/first'
+import fun from '../lib/fun'
+import { first } from '../lib/fun'
 
 describe('first', function () {
   it('returns first element of array', () => {
