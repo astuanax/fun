@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>keys.js - Documentation</title>
+    <title>first.js - Documentation</title>
 
     <script src="scripts/prettify/prettify.js"></script>
     <script src="scripts/prettify/lang-css.js"></script>
@@ -29,7 +29,7 @@
 
 <div id="main">
     
-    <h1 class="page-title">keys.js</h1>
+    <h1 class="page-title">first.js</h1>
     
 
     
@@ -40,27 +40,18 @@
     <section>
         <article>
             <pre class="prettyprint source linenums"><code>/**
- * Returns the keys of the provided object or iterator
+ * @function first
+ * @param [a]
+ * @return a | undefined
+ * @example
  *
- * @function keys
- * @description Autocurried function which returns the keys of the provided object or iterator
- * @since v1.0.2
- * @sig obj -> [*]
- * @param {Object} obj - Obj from zhich to take the keys
- * @return {Iterable}
- **/
-import curry from './curry'
-import objectKeys from './object/keys'
-import mapKeys from './map/keys'
-import type from './type'
+ * const arr = [1, 2, 4]
+ * first([1, 2, 4]) // returns 1
+ */
+import curry1 from './_private/curry1'
 
-export default curry(function map (obj) {
-  switch (type(obj)) {
-    case 'Map':
-      return mapKeys(obj)
-    default:
-      return objectKeys(obj)
-  }
+export default curry1(function first (a) {
+  return a &amp;&amp; a.length ? a[0] : undefined
 })
 </code></pre>
         </article>
