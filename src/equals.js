@@ -1,7 +1,21 @@
 /**
 
  * @function equals
- * @description checks for equality
+ * @description Autocurried function that checks for equality of 2 items
+ * @param {*} x - Left side of the equality check
+ * @param {*} y - Right side of the equality check
+ * @return {boolean}
+ * @example
+ *
+ * const nan = Number.NaN
+ * equal(nan, nan) // returns true
+ *
+ * const arr1 = [0, 1, 2, 3]
+ * const arr2 = [null, 1, 2, 3]
+ * equals(arr1, arr2) // returns false
+ *
+ * equals(new Object({'a': 0, 'b': 1}), {'a': 0, 'b': 1}) // true
+ *
  */
 import curry from './curry'
 import exists from './exists'

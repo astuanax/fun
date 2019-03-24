@@ -1,14 +1,29 @@
+/* eslint-disable no-array-constructor */
 /**
 
  */
 
 import chai from 'chai'
 import equals from '../src/equals'
-import and from '../src/and'
 
 describe('equals', function () {
-  beforeEach(function () {})
-  afterEach(function () {})
+  it('equals special number values', function () {
+    const nan = Number.NaN
+    chai.expect(equals(nan, nan)).to.be.true
+  })
+
+  it('equals if its indexes match', function () {
+    // eslint-disable-next-line quotes
+    const vals = [true, false, 1, 0, -1, "true", "false", "1", "0", "-1", "", null, undefined, Infinity, -Infinity, [], {}, [[]], [0], [1], NaN]
+
+    const check = (x, idx, arr) => {
+      const i = idx
+      const j = arr.length - idx
+      return chai.expect(equals(arr[i], arr[j])).to.equal(i === j)
+    }
+
+    vals.map(check)
+  })
 
   it('null and undefined', function () {
     chai.expect(equals(null, null)).to.be.true
@@ -44,7 +59,8 @@ describe('equals', function () {
     const arr5 = [{}, [0]]
     const arr6 = [{}, null]
     const arr7 = [{}, null]
-    const arr8 = [1, 2]
+    const arr8 = [null, 1, 2, 3]
+    const _arr8 = [0, 1, 2, 3]
 
     const arr9 = [1, undefined]
     const arr10 = [1, undefined]
@@ -56,7 +72,8 @@ describe('equals', function () {
     const test5 = equals(arr5, arr6)
     const test6 = equals(arr1, arr8)
     const test7 = equals(arr9, arr10)
-    const test8 = equals([], new Array())
+    const test8 = equals(arr8, _arr8)
+    const test9 = equals([], new Array())
 
     chai.expect(test).to.be.true
     chai.expect(test2).to.be.false
@@ -65,7 +82,8 @@ describe('equals', function () {
     chai.expect(test5).to.be.false
     chai.expect(test6).to.be.false
     chai.expect(test7).to.be.true
-    chai.expect(test8).to.be.true
+    chai.expect(test8).to.be.false
+    chai.expect(test9).to.be.true
   })
 
   it('booleans', function () {

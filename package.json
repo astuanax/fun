@@ -5,7 +5,7 @@
   "main": "lib/fun.js",
   "module": "src/index.js",
   "scripts": {
-    "build": "npm run index && ./node_modules/.bin/eslint ./src --fix && npm run compile && npm run test && npm run jsdocs && npm run size",
+    "build": "./node_modules/.bin/eslint ./src --fix && npm run compile && npm run test && npm run jsdocs && npm run size",
     "compile": "webpack --env dev && webpack --env build",
     "index": "npx create-index -r ./src && npx create-index ./src",
     "dev": "webpack --progress --colors --watch --env dev",

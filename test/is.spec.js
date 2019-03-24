@@ -163,4 +163,10 @@ describe('is', function () {
 
     chai.expect(test).to.be.true
   })
+
+  it('"+" is a string', function () {
+    const test = is('RegExp', /(.*)/)
+
+    chai.expect(test).to.be.true
+  })
 })
