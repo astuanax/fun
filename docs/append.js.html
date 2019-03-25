@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>date/getWeek.js - Documentation</title>
+    <title>append.js - Documentation</title>
 
     <script src="scripts/prettify/prettify.js"></script>
     <script src="scripts/prettify/lang-css.js"></script>
@@ -29,7 +29,7 @@
 
 <div id="main">
     
-    <h1 class="page-title">date/getWeek.js</h1>
+    <h1 class="page-title">append.js</h1>
     
 
     
@@ -40,27 +40,22 @@
     <section>
         <article>
             <pre class="prettyprint source linenums"><code>/**
- * @function getWeek
- * @description Returns the week number based on a given date
- * @param d
- * @returns {number[]}
- */
-import curry from '../curry'
+ * @function append
+ * @description Append an elment to a list
+ * @param {*} el - Element to add to a list
+ * @param {array} list - List to which to add the element
+ * @return {array}
+ * @example
+ *
+ * const l = [0, 1]
+ * append('a', l) // reutnr [0, 1, 'a']
+ *
+ **/
+import curry from './curry'
+import concat from './concat'
 
-export default curry(function getWeek (d) {
-  // Copy date so don't modify original
-  d = new Date(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()))
-  // Set to nearest Thursday: current date + 4 - current day number
-  // Make Sunday's day number 7
-  d.setUTCDate(d.getUTCDate() + 4 - (d.getUTCDay() || 7))
-  // Get first day of year
-  let yearStart = new Date(Date.UTC(d.getUTCFullYear(), 0, 1))
-
-  // Calculate full weeks to nearest Thursday
-  let weekNo = Math.ceil((((d - yearStart) / 86400000) + 1) / 7)
-
-  // Return array of year and week number
-  return [d.getUTCFullYear(), weekNo]
+export default curry(function append (el, list) {
+  return concat(list, [ el ])
 })
 </code></pre>
         </article>

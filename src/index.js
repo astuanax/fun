@@ -1,7 +1,7 @@
 
 // export { default as __ } from './__';
 // export { default as aperture } from './aperture'
-// export { default as append } from './append'
+export { default as append } from './append'
 // export { default as applySpec } from './applySpec'
 // export { default as applyTo } from './applyTo'
 // export { default as ascend } from './ascend'
