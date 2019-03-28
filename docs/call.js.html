@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>always.js - Documentation</title>
+    <title>call.js - Documentation</title>
 
     <script src="scripts/prettify/prettify.js"></script>
     <script src="scripts/prettify/lang-css.js"></script>
@@ -29,7 +29,7 @@
 
 <div id="main">
     
-    <h1 class="page-title">always.js</h1>
+    <h1 class="page-title">call.js</h1>
     
 
     
@@ -40,19 +40,15 @@
     <section>
         <article>
             <pre class="prettyprint source linenums"><code>/**
- * Returns a function with the initial value provided
- *
- * @function always
- * @description Returns a function with the initial value provided
- * @since v1.0.2
- * @sig a -> (* -> a)
- * @param {*} a
- * @return {Function}
- **/
+ * @function call
+ * @param fn
+ * @returns {*}
+ */
+// import curry1 from './_private/curry1'
 import curry from './curry'
 
-export default curry(function always (x) {
-  return function () { return x }
+export default curry(function call (fn) {
+  return fn.apply(fn, [].slice.call(arguments, 1))
 })
 </code></pre>
         </article>
