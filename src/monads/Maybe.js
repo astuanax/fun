@@ -1,6 +1,11 @@
 import Just from './Just'
 import Nothing from './Nothing'
 
+/**
+ * @function Maybe
+ * @param val
+ * @constructor
+ */
 let Maybe = function (val) {
   this.__value = val
 }
