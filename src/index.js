@@ -5,7 +5,7 @@
 // export { default as ascend } from './ascend'
 // export { default as assoc } from './assoc'
 // export { default as assocPath } from './assocPath'
-// export { default as binary } from './binary'
+export { default as binary } from './binary'
 // export { default as bind } from './bind'
 // export { default as chain } from './chain'
 // export { default as clamp } from './clamp'

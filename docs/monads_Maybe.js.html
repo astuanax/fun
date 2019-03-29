@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>date/toDay.js - Documentation</title>
+    <title>monads/Maybe.js - Documentation</title>
 
     <script src="scripts/prettify/prettify.js"></script>
     <script src="scripts/prettify/lang-css.js"></script>
@@ -29,7 +29,7 @@
 
 <div id="main">
     
-    <h1 class="page-title">date/toDay.js</h1>
+    <h1 class="page-title">monads/Maybe.js</h1>
     
 
     
@@ -39,10 +39,59 @@
     
     <section>
         <article>
-            <pre class="prettyprint source linenums"><code>/**
- * Created by dierickx.len on 26/03/2017.
+            <pre class="prettyprint source linenums"><code>import Just from './Just'
+import Nothing from './Nothing'
+
+/**
+ * @function Maybe
+ * @param val
+ * @constructor
  */
-export default (d) => d / 86400000 // 24*60*60*1000 = 86400000
+let Maybe = function (val) {
+  this.__value = val
+}
+
+Maybe.of = function (val) {
+  if (val instanceof Maybe) return val
+  if (this instanceof Maybe) {
+    this.__value = val
+    return this
+  }
+  return new Maybe(val)
+}
+
+Maybe.prototype.getOrElse = function (n) {
+  return this.isNothing() ? n : this.__value
+}
+
+Maybe.prototype.map = function (f) {
+  if (this.isNothing()) {
+    return Maybe.of(null)
+  }
+  return Maybe.of(f(this.__value))
+}
+
+Maybe.prototype.ap = function (m) {
+  return m.map(this.__value)
+}
+
+Maybe.prototype.isNothing = function () {
+  return (this.__value == null)
+}
+
+Maybe.prototype.isJust = function () {
+  return !this.isNothing()
+}
+
+Maybe.prototype.Nothing = function () {
+  return new Nothing()
+}
+
+Maybe.prototype.Just = function () {
+  return new Just(this._value)
+}
+
+export default Maybe
 </code></pre>
         </article>
     </section>

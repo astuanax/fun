@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>date/toDay.js - Documentation</title>
+    <title>binary.js - Documentation</title>
 
     <script src="scripts/prettify/prettify.js"></script>
     <script src="scripts/prettify/lang-css.js"></script>
@@ -29,7 +29,7 @@
 
 <div id="main">
     
-    <h1 class="page-title">date/toDay.js</h1>
+    <h1 class="page-title">binary.js</h1>
     
 
     
@@ -40,9 +40,18 @@
     <section>
         <article>
             <pre class="prettyprint source linenums"><code>/**
- * Created by dierickx.len on 26/03/2017.
+ * @function binary
+ * @param cb
+ * @returns {function(*=, *=): *}
  */
-export default (d) => d / 86400000 // 24*60*60*1000 = 86400000
+import curry1 from './_private/curry1'
+import curry from './curry'
+
+export default curry1(function binary (cb) {
+  return curry(function (a, b) {
+    return cb(a, b)
+  })
+})
 </code></pre>
         </article>
     </section>

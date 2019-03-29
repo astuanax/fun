@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>date/toDay.js - Documentation</title>
+    <title>monads/Just.js - Documentation</title>
 
     <script src="scripts/prettify/prettify.js"></script>
     <script src="scripts/prettify/lang-css.js"></script>
@@ -29,7 +29,7 @@
 
 <div id="main">
     
-    <h1 class="page-title">date/toDay.js</h1>
+    <h1 class="page-title">monads/Just.js</h1>
     
 
     
@@ -40,9 +40,24 @@
     <section>
         <article>
             <pre class="prettyprint source linenums"><code>/**
- * Created by dierickx.len on 26/03/2017.
+ * @function Just
+ * @param val
+ * @returns {Just}
+ * @constructor
  */
-export default (d) => d / 86400000 // 24*60*60*1000 = 86400000
+let Just = function (val) {
+  this._value = val
+  return this
+}
+
+Just.prototype.isJust = function () {
+  return true
+}
+Just.prototype.isNothing = function () {
+  return false
+}
+
+export default Just
 </code></pre>
         </article>
     </section>
