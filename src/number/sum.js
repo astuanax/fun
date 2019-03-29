@@ -9,7 +9,8 @@
  **/
 import curry from '../curry'
 import add from './add'
+import fold from '../fold'
 
 export default curry(function sum (a) {
-  return a.reduce(add, 0)
+  return fold(add, 0, a)
 })
