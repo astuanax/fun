@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>lift.js - Documentation</title>
+    <title>aperture.js - Documentation</title>
 
     <script src="scripts/prettify/prettify.js"></script>
     <script src="scripts/prettify/lang-css.js"></script>
@@ -29,7 +29,7 @@
 
 <div id="main">
     
-    <h1 class="page-title">lift.js</h1>
+    <h1 class="page-title">aperture.js</h1>
     
 
     
@@ -39,24 +39,21 @@
     
     <section>
         <article>
-            <pre class="prettyprint source linenums"><code>/**
- * "lifts" a function of arity > 1 so that it may "map over" a list, Function
- *
- * @function lift
- * @since v1.0.2
- * @sig (*... -> *) -> ([*]... -> [*])
- **/
-import curry from './curry'
-import curry1 from './_private/curry1'
-import fold from './fold'
-import ap from './ap'
+            <pre class="prettyprint source linenums"><code>import curry from './curry'
 import map from './map'
 
-export default curry(function lift (fn) {
-  const lifted = curry1(curry(fn))
-  return curry(function _lift () {
-    return fold(ap, map(lifted, arguments[0]), Array.prototype.slice.call(arguments, 1))
-  })
+/**
+ * @function aperture
+ * @param n
+ * @param arr
+ * @returns {*}
+ */
+export default curry(function aperture (n, a) {
+  if (a.length &lt; n) {
+    return []
+  }
+  const res = Array(a.length - n + 1)
+  return map((item, idx) => a.slice(idx, idx + n), res)
 })
 </code></pre>
         </article>
