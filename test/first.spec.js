@@ -1,5 +1,4 @@
 import chai from 'chai'
-import fun from '../lib/fun'
 import { first } from '../lib/fun'
 
 describe('first', function () {

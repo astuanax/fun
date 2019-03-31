@@ -8,6 +8,7 @@
 export { default as binary } from './binary'
 export { default as bind } from './bind'
 // export { default as chain } from './chain'
+export { default as flatMap } from './flatMap'
 // export { default as clamp } from './clamp'
 // export { default as clone } from './clone'
 // export { default as comparator } from './comparator'
