@@ -5,7 +5,7 @@
  * @param {Date} end - End date
  * @return {number} REturn the difference in milliseconds
  */
-import curry from '../util/curry'
+import curry from '../curry'
 
 export default curry(function diffDate (start, end) {
   return (new Date(start).getTime() - new Date(end).getTime())

@@ -24,7 +24,7 @@ const config = {
   output: {
     path: __dirname + '/lib',
     filename: outputFile,
-    library: libraryName,
+    library: libraryName.split('.')[0],
     libraryTarget: 'umd',
     umdNamedDefine: true,
     globalObject: "typeof self !== 'undefined' ? self : this"

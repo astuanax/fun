@@ -9,7 +9,7 @@
  * @param {Number} b
  * @return {Number}
  **/
-import curry from '../util/curry'
+import curry from '../curry'
 
 export default curry(function divide (a, b) {
   return +a / +b

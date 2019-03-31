@@ -3,7 +3,7 @@
  */
 
 import chai from 'chai'
-import pick from '../src/object/pick'
+import { pick } from '../lib/fun'
 
 describe('pick', function () {
   it('returns object with picked properties', () => {

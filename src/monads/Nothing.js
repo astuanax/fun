@@ -1,3 +1,7 @@
+/**
+ * @function Nothing
+ * @constructor
+ */
 let Nothing = function () {
 }
 

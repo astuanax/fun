@@ -5,7 +5,7 @@
  * @param {Object} obj - The object from which to take the properties
  * @return {Object}
  */
-import curry from '../util/curry'
+import curry from '../curry'
 
 export default curry(function pick (props, obj) {
   const r = {}

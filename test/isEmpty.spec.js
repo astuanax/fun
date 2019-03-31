@@ -3,7 +3,7 @@
  */
 
 import chai from 'chai'
-import isEmpty from '../src/util/isEmpty'
+import { isEmpty } from '../lib/fun'
 
 describe('isEmpty', function () {
   it('Empty object', function () {

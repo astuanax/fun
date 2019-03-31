@@ -3,7 +3,7 @@
  * @private
  *
  */
-import curry from '../util/curry'
+import curry from '../curry'
 
 export default curry(function arrayFilter (fn, a) {
   var r = []

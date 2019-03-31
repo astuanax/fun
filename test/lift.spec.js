@@ -3,13 +3,13 @@
  */
 
 import chai from 'chai'
-import curry from '../src/util/curry'
-import lift from '../src/util/lift'
-import not from '../src/util/not'
-import always from '../src/util/always'
-import type from '../src/util/type'
-import add from '../src/number/add'
-import Maybe from '../src/monads/Maybe'
+import { curry } from '../lib/fun'
+import { lift } from '../lib/fun'
+import { not } from '../lib/fun'
+import { always } from '../lib/fun'
+import { type } from '../lib/fun'
+import { add } from '../lib/fun'
+import { Maybe } from '../lib/fun'
 
 describe('lift', function () {
   const add3 = curry(function add3 (a, b, c) {

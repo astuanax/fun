@@ -3,8 +3,8 @@
  */
 
 import chai from 'chai'
-import both from '../src/boolean/both'
-import Maybe from '../src/monads/Maybe'
+import { both } from '../lib/fun'
+import { Maybe } from '../lib/fun'
 
 describe('both', function () {
   it('confirms that both of functions returns true', () => {

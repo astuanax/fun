@@ -3,7 +3,7 @@
  */
 
 import chai from 'chai'
-import isFutureDate from '../src/date/isFutureDate'
+import { isFutureDate } from '../lib/fun'
 
 describe('Dates', function () {
   beforeEach(function () {})

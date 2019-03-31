@@ -1,5 +1,5 @@
 import chai from 'chai'
-import path from '../src/object/path'
+import { path } from '../lib/fun'
 
 describe('paths', function () {
   var obj = {

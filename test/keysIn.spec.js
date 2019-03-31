@@ -3,7 +3,7 @@
  */
 
 import chai from 'chai'
-import keysIn from '../src/object/keysIn'
+import { keysIn } from '../lib/fun'
 
 describe('keysIn', function () {
   it('returns the keys of an object as an array', function () {

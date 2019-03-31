@@ -1,3 +1,9 @@
+/**
+ * @function Just
+ * @param val
+ * @returns {Just}
+ * @constructor
+ */
 let Just = function (val) {
   this._value = val
   return this

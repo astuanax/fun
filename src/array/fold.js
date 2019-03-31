@@ -22,7 +22,7 @@
  * @param {Array} a - The initial array
  * @return {*}
  */
-import curry from '../util/curry'
+import curry from '../curry'
 
 export default curry(function fold (cb, init, a) {
   let i = -1

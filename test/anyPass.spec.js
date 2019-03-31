@@ -3,7 +3,7 @@
  */
 
 import chai from 'chai'
-import anyPass from '../src/util/anyPass'
+import { anyPass } from '../lib/fun'
 
 describe('anyPass', function () {
   const odd = function (n) { return n % 2 !== 0 }

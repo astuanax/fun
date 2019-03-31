@@ -3,7 +3,7 @@
  */
 
 import chai from 'chai'
-import hasIn from '../src/object/hasIn'
+import { hasIn } from '../lib/fun'
 
 describe('hasIn', function () {
   it('checks if the object has an own or inherited property', function () {

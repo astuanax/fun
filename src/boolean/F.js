@@ -7,6 +7,6 @@
  * @param {*} a
  * @return {Function}
  **/
-import always from '../util/always'
+import always from '../always'
 
 export default always(false)

@@ -3,7 +3,7 @@
  */
 
 import chai from 'chai'
-import always from '../src/util/always'
+import { always } from '../lib/fun'
 
 describe('always', function () {
   it('always return the same value', function () {

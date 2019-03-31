@@ -3,7 +3,7 @@
  */
 
 import chai from 'chai'
-import F from '../src/boolean/F'
+import { F } from '../lib/fun'
 
 describe('false', function () {
   it('always return the false value', function () {

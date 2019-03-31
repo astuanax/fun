@@ -10,7 +10,7 @@
  * const result = unionArray([0,1,2], [3,4,5])
  * // result = [0.1.2.3.4.5]
  **/
-import curry from '../util/curry'
+import curry from '../curry'
 
 export default curry(function unionArray (aL, aR) {
   return Array.from(new Set(aL.concat(aR)))

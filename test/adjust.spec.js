@@ -3,9 +3,7 @@
  */
 
 import chai from 'chai'
-import adjust from '../src/util/adjust'
-import add from '../src/number/add'
-import multiply from '../src/number/multiply'
+import { adjust, add, multiply } from '../lib/fun'
 
 const addTen = add(10)
 const multiplyByTwo = multiply(2)

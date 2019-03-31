@@ -4,7 +4,7 @@
  * @param d
  * @returns {number[]}
  */
-import curry from '../util/curry'
+import curry from '../curry'
 
 export default curry(function getWeek (d) {
   // Copy date so don't modify original

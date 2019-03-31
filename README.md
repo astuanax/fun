@@ -1,9 +1,9 @@
 # fun.js
-Functional javascript library / YARC (Yet Another Ramda Clone)
+Functional javascript library / YARC (Yet Another Ramda Clone) [Fork on Github](https://github.com/astuanax/fun)
 
-[![Build Status](https://travis-ci.org/astuanax/fun.svg?branch=master)](https://travis-ci.org/astuanax/fun)  [![Code Climate](https://codeclimate.com/github/astuanax/fun/badges/gpa.svg)](https://codeclimate.com/github/astuanax/fun) ![GitHub file size in bytes](https://img.badgesize.io/astuanax/fun/master/lib/fun.min.js.svg?compression=gzip)
+[![Build Status](https://travis-ci.org/astuanax/fun.svg?branch=master)](https://travis-ci.org/astuanax/fun)  [![Code Climate](https://codeclimate.com/github/astuanax/fun/badges/gpa.svg)](https://codeclimate.com/github/astuanax/fun) ![GitHub file size in bytes](https://img.badgesize.io/astuanax/fun/master/lib/fun.min.js.svg?compression=gzip) 
 
-Git repo: https://github.com/astuanax/fun
+[Check bundle size on bundlephobia](https://bundlephobia.com/result?p=fun.js@1.0.3)
 
 
 ## Install fun.js

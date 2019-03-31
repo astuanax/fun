@@ -3,8 +3,8 @@
  */
 
 import chai from 'chai'
-import ap from '../src/util/ap'
-import add from '../src/number/add'
+import { ap } from '../lib/fun'
+import { add } from '../lib/fun'
 
 describe('ap', function () {
   function mult2 (x) { return x * 2 }

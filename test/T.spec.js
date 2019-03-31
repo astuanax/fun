@@ -3,7 +3,7 @@
  */
 
 import chai from 'chai'
-import T from '../src/boolean/T'
+import { T } from '../lib/fun'
 
 describe('true', function () {
   it('always return the true value', function () {

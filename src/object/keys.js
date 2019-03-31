@@ -7,7 +7,7 @@
  * @param {Object}
  * @return {Array}
  **/
-import curry from '../util/curry'
+import curry from '../curry'
 
 export default curry(function keys (a) {
   return Object.keys(Object(a))

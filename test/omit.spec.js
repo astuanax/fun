@@ -2,7 +2,7 @@
  * Created by dierickx.len on 26/03/2017.
  */
 import chai from 'chai'
-import omit from '../src/object/omit'
+import { omit } from '../lib/fun'
 
 describe('omit keys from object', function () {
   beforeEach(function () {

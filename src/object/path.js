@@ -1,7 +1,7 @@
 /**
  * @function path
  */
-import curry from '../util/curry'
+import curry from '../curry'
 
 export default curry(function path (path, obj) {
   let val = obj

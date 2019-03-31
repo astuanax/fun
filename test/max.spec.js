@@ -3,7 +3,7 @@
  */
 
 import chai from 'chai'
-import max from '../src/util/max'
+import { max } from '../lib/fun'
 
 describe('max', function () {
   it('returns the larger of its two arguments', function () {

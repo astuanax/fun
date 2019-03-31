@@ -3,7 +3,7 @@
  */
 
 import chai from 'chai'
-import compose from '../src/util/compose'
+import { compose } from '../lib/fun'
 
 const add = (x) => x + 1
 const m = (x, y) => x * y

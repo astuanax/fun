@@ -3,7 +3,7 @@
  */
 
 import chai from 'chai'
-import add from '../src/number/add'
+import { add } from '../lib/fun'
 
 describe('add', function () {
   it('returns the sum two arguments', function () {

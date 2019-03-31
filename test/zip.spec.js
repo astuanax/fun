@@ -3,7 +3,7 @@
  */
 
 import chai from 'chai'
-import zip from '../src/util/zip'
+import { zip } from '../lib/fun'
 
 describe('zip', function () {
   it('it combines 2 arrays', function () {

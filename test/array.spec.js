@@ -3,7 +3,7 @@
  */
 
 import chai from 'chai'
-import isArray from '../src/array/is'
+import { isArray } from '../lib/fun'
 
 describe('Array', function () {
   it('new Array() is an Array', function () {

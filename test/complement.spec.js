@@ -3,8 +3,8 @@
  */
 
 import chai from 'chai'
-import complement from '../src/util/complement'
-import Maybe from '../src/monads/Maybe'
+import { complement } from '../lib/fun'
+import { Maybe } from '../lib/fun'
 
 describe('complement', function () {
   it('creates boolean-returning function that reverses another', function () {

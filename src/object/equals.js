@@ -3,10 +3,10 @@
  * equals
  * checks for equality
  */
-import curry from '../util/curry'
-import exists from '../util/exists'
-import not from '../util/not'
-import equals from '../util/equals'
+import curry from '../curry'
+import exists from '../exists'
+import not from '../not'
+import equals from '../equals'
 
 export default curry((x, y) => {
   for (let keyX in x) {

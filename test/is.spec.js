@@ -3,7 +3,7 @@
  */
 
 import chai from 'chai'
-import is from '../src/util/is'
+import { is } from '../lib/fun'
 
 describe('is', function () {
   it('0 is a Number', function () {
@@ -159,6 +159,12 @@ describe('is', function () {
   })
 
   it('/(.*)/ is a RegExp', function () {
+    const test = is('RegExp', /(.*)/)
+
+    chai.expect(test).to.be.true
+  })
+
+  it('"+" is a string', function () {
     const test = is('RegExp', /(.*)/)
 
     chai.expect(test).to.be.true

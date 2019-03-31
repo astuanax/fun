@@ -3,10 +3,7 @@
  */
 
 import chai from 'chai'
-import fold from '../src/util/fold'
-import arrayFold from '../src/array/fold'
-import objectFold from '../src/object/fold'
-import identity from '../src/util/identity'
+import { fold, identity } from '../lib/fun'
 
 const sum = (acc, cur) => acc + cur
 
@@ -21,8 +18,8 @@ describe('fold', function () {
       result.push(identity(item))
       return result
     }
-    chai.expect(arrayFold(map, [])(b)).to.deep.equal(b)
-    chai.expect(arrayFold(map, [])(a)).to.deep.equal(a)
+    chai.expect(fold(map, [])(b)).to.deep.equal(b)
+    chai.expect(fold(map, [])(a)).to.deep.equal(a)
   })
 
   it('folds an object', function () {
@@ -35,8 +32,8 @@ describe('fold', function () {
       result[i] = identity(item)
       return result
     }
-    chai.expect(objectFold(map, {})(b)).to.deep.equal(b)
-    chai.expect(objectFold(map, {})(a)).to.deep.equal(a)
+    chai.expect(fold(map, {})(b)).to.deep.equal(b)
+    chai.expect(fold(map, {})(a)).to.deep.equal(a)
   })
 
   // it('reduces generators', function () {
