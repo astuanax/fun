@@ -1,6 +1,6 @@
 {
   "name": "fun.js",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Functional tools for javascript development",
   "main": "lib/fun.js",
   "module": "src/index.js",
@@ -63,7 +63,7 @@
     "minami": "^1.2.3",
     "mocha": "^4.0.1",
     "nyc": "^13.3.0",
-    "size-limit": "^0.21.1",
+    "size-limit": "^0.22.0",
     "standard": "^12.0.1",
     "uglifyjs-webpack-plugin": "^1.2.7",
     "webpack": "^4.29.6",
