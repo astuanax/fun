@@ -1,11 +1,18 @@
 /**
+ * Adds a specified index to iterate a collection
+ *
  * @function addIndex
  * @summary Adds a specified index to iterate a collection
- * @description The addIndex function is notnecessary for the map functions in the fun.js library as they behave the sa,e as the native javascript functions
  * @param {Function} f Iterator function
  * @param {Function} g Function to which to add the index
  * @param {Array} a The array on which to work
+ * @return {Array}
  * @since 1.0.2
+ * @example
+ *
+ * const array = [1, 2, 3, 4]
+ * addIndex(map, (v, i) => v + i, array) // [1, 3, 5, 7]
+ *
  */
 import curry from './curry'
 

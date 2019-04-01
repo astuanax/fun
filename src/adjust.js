@@ -9,6 +9,13 @@
  * @param {Number} i - The index at which to modify the array, accepts postitive and negative indexes
  * @param {Iterable} [a] - Array with data
  * @return {Iterable} [a]
+ * @example
+ *
+ * adjust(add(1), -3, [0, 1, 2, 3]) // [0, 2, 2, 3]
+ *
+ * const addTen = add(10)
+ * adjust(addTen, 2, [2, 3, 4, 5, 6]) // [2, 3, 14, 5, 6]
+ *
  **/
 import curry from './curry'
 
