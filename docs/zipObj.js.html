@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>identity.js - Documentation</title>
+    <title>zipObj.js - Documentation</title>
 
     <script src="scripts/prettify/prettify.js"></script>
     <script src="scripts/prettify/lang-css.js"></script>
@@ -29,7 +29,7 @@
 
 <div id="main">
     
-    <h1 class="page-title">identity.js</h1>
+    <h1 class="page-title">zipObj.js</h1>
     
 
     
@@ -39,15 +39,24 @@
     
     <section>
         <article>
-            <pre class="prettyprint source linenums"><code>/**
+            <pre class="prettyprint source linenums"><code>import curry from './curry'
 
- * @function identity
- * @description Returns the value supplied to the function
+/**
+ * @function zipObj
+ * @param {array} a
+ * @param {array} b
+ * @return {object}
  */
-
-export default function identity (x) {
-  return x
-};
+export default curry(function zipObj (a, b) {
+  var i = 0
+  var l = Math.min(a.length, b.length)
+  var r = {}
+  while (i &lt; l) {
+    r[a[i]] = b[i]
+    i += 1
+  }
+  return r
+})
 </code></pre>
         </article>
     </section>
