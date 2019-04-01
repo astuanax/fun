@@ -17,5 +17,12 @@ describe('zipObj', function() {
   it('last one in wins when there are duplicate keys', function() {
     chai.expect(zipObj(['a', 'b', 'c', 'a'], [1, 2, 3, 'LAST'])).to.deep.equal({a: 'LAST', b: 2, c: 3});
   });
+  
+  it('creates object with keys from 1st array and values from 2nd', () => {
+    chai.expect(zipObj(['a', 'b'], [1, 2])).to.deep.equal({ a: 1, b: 2 })
+  })
 
-});
+  it('ignores extra values', () => {
+    chai.expect(zipObj(['a', 'b'], [1, 2, 3])).to.deep.equal({ a: 1, b: 2 })
+  })
+})
