@@ -3,6 +3,7 @@ import Nothing from './Nothing'
 
 /**
  * @function Maybe
+ * @desc Maybe monad provides a way to safely wrap null values
  * @param val
  * @constructor
  */
@@ -10,6 +11,12 @@ let Maybe = function (val) {
   this.__value = val
 }
 
+/**
+ * @function of
+ * @desc Creates a Maybe monad from the provided argument
+ * @param val
+ * @returns {Maybe}
+ */
 Maybe.of = function (val) {
   if (val instanceof Maybe) return val
   if (this instanceof Maybe) {
@@ -19,6 +26,12 @@ Maybe.of = function (val) {
   return new Maybe(val)
 }
 
+/**
+ * @function getOrElse
+ * @desc Evaluates the Maybe monad and returns either the value from the Maybe or the default value
+ * @param n Default value to return if the Maybe evaluates to undefined or null
+ * @returns {*}
+ */
 Maybe.prototype.getOrElse = function (n) {
   return this.isNothing() ? n : this.__value
 }
@@ -30,8 +43,12 @@ Maybe.prototype.map = function (f) {
   return Maybe.of(f(this.__value))
 }
 
+Maybe.prototype.flatMap = function (f) {
+  return this.map(f)
+}
+
 Maybe.prototype.ap = function (m) {
-  return m.map(this.__value)
+  return Maybe.of(m).map(this.__value)
 }
 
 Maybe.prototype.isNothing = function () {
