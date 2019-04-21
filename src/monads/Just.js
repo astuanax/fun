@@ -9,9 +9,20 @@ let Just = function (val) {
   return this
 }
 
+/**
+ * @memberOf Just
+ * @function isJust
+ * @returns {boolean}
+ */
 Just.prototype.isJust = function () {
   return true
 }
+
+/**
+ * @memberOf Just
+ * @function isNothing
+ * @returns {boolean}
+ */
 Just.prototype.isNothing = function () {
   return false
 }

@@ -4,8 +4,11 @@ import Nothing from './Nothing'
 /**
  * @function Maybe
  * @desc Maybe monad provides a way to safely wrap null values
- * @param val
+ * @param {*} val - Value to be wrapped
  * @constructor
+ * @example
+ *
+ * const m = Maybe.of(props.customers).map(contract => customer[0]).getOrElse('No customer found')
  */
 let Maybe = function (val) {
   this.__value = val
@@ -17,7 +20,11 @@ let Maybe = function (val) {
  * @desc Creates a Maybe monad from the provided argument
  * @param val
  * @returns {Maybe}
+ * @example
+ *
+ * const m = Maybe.of(props.customers).map(customer => customer[0]).getOrElse('No customer found')
  */
+
 Maybe.of = function (val) {
   if (val instanceof Maybe) return val
   if (this instanceof Maybe) {
@@ -31,8 +38,15 @@ Maybe.of = function (val) {
  * @memberOf Maybe
  * @function getOrElse
  * @desc Evaluates the Maybe monad and returns either the value from the Maybe or the default value
- * @param n Default value to return if the Maybe evaluates to undefined or null
+ * @param {*} n - Default value to return if the Maybe evaluates to undefined or null
  * @returns {*}
+ * @example
+ *
+ * // Get customer from component props
+ * const m = Maybe.of(props.customers).map(customer => customer.filter(custObj => custObj.id = 'c001112')).getOrElse([])
+ * // Map over the provided array
+ * m.map(x => <div>Customer ID: {x.id} </div>)
+ *
  */
 Maybe.prototype.getOrElse = function (n) {
   return this.isNothing() ? n : this.__value
@@ -81,8 +95,8 @@ Maybe.prototype.isNothing = function () {
 }
 
 /**
- * @memberOf Maybe
- * @function isJust
+ * @methodOf Maybe
+ * @method isJust
  * @returns {boolean}
  */
 Maybe.prototype.isJust = function () {
@@ -90,8 +104,8 @@ Maybe.prototype.isJust = function () {
 }
 
 /**
+ * @private
  * @memberOf Maybe
- * @function Nothing
  * @returns {Nothing}
  * @constructor
  */
@@ -100,8 +114,8 @@ Maybe.prototype.Nothing = function () {
 }
 
 /**
+ * @private
  * @memberOf Maybe
- * @function Just
  * @returns {Just}
  * @constructor
  */
