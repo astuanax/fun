@@ -1,17 +1,17 @@
 /**
- * @function Just
+ * @class Just
  * @param val
  * @returns {Just}
  * @constructor
  */
 let Just = function (val) {
-  this._value = val
+  this.__value = val
   return this
 }
 
 /**
  * @memberOf Just
- * @function isJust
+ * @function Just#isJust
  * @returns {boolean}
  */
 Just.prototype.isJust = function () {
@@ -20,7 +20,7 @@ Just.prototype.isJust = function () {
 
 /**
  * @memberOf Just
- * @function isNothing
+ * @function Just#isNothing
  * @returns {boolean}
  */
 Just.prototype.isNothing = function () {

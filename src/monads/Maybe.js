@@ -2,7 +2,7 @@ import Just from './Just'
 import Nothing from './Nothing'
 
 /**
- * @function Maybe
+ * @class Maybe
  * @desc Maybe monad provides a way to safely wrap null values
  * @param {*} val - Value to be wrapped
  * @constructor
@@ -16,9 +16,9 @@ let Maybe = function (val) {
 
 /**
  * @memberOf Maybe
- * @function of
+ * @function Maybe.of
  * @desc Creates a Maybe monad from the provided argument
- * @param val
+ * @param {*} val - Val to turn in to a Maybe monad, can be a function
  * @returns {Maybe}
  * @example
  *
@@ -36,7 +36,18 @@ Maybe.of = function (val) {
 
 /**
  * @memberOf Maybe
- * @function getOrElse
+ * @property {String} type - Returns the string 'Maybe' for all Maybe objects
+ * @type {String}
+ * @example
+ *
+ * const m =  Maybe.of([[1,2],[2,3],[4,5]])
+ * m.type === 'Maybe'
+ */
+Maybe.prototype.type = 'Maybe'
+
+/**
+ * @memberOf Maybe
+ * @function Maybe#getOrElse
  * @desc Evaluates the Maybe monad and returns either the value from the Maybe or the default value
  * @param {*} n - Default value to return if the Maybe evaluates to undefined or null
  * @returns {*}
@@ -54,8 +65,8 @@ Maybe.prototype.getOrElse = function (n) {
 
 /**
  * @memberOf Maybe
- * @function map
- * @param f
+ * @function Maybe#map
+ * @param {Function} f
  * @returns {Maybe}
  */
 Maybe.prototype.map = function (f) {
@@ -67,8 +78,8 @@ Maybe.prototype.map = function (f) {
 
 /**
  * @memberOf Maybe
- * @function flatMap
- * @param f
+ * @function Maybe#flatMap
+ * @param {Function} f
  * @returns {Maybe}
  */
 Maybe.prototype.flatMap = function (f) {
@@ -77,8 +88,8 @@ Maybe.prototype.flatMap = function (f) {
 
 /**
  * @memberOf Maybe
- * @function ap
- * @param m
+ * @function Mayeb#ap
+ * @param {Maybe} m
  * @returns {Maybe}
  */
 Maybe.prototype.ap = function (m) {
@@ -87,7 +98,7 @@ Maybe.prototype.ap = function (m) {
 
 /**
  * @memberOf Maybe
- * @function isNothing
+ * @function Maybe#isNothing
  * @returns {boolean}
  */
 Maybe.prototype.isNothing = function () {
@@ -95,8 +106,8 @@ Maybe.prototype.isNothing = function () {
 }
 
 /**
- * @methodOf Maybe
- * @method isJust
+ * @memberOf Maybe
+ * @function Maybe#isJust
  * @returns {boolean}
  */
 Maybe.prototype.isJust = function () {
@@ -106,6 +117,7 @@ Maybe.prototype.isJust = function () {
 /**
  * @private
  * @memberOf Maybe
+ * @function Maybe#Nothing
  * @returns {Nothing}
  * @constructor
  */
@@ -116,6 +128,7 @@ Maybe.prototype.Nothing = function () {
 /**
  * @private
  * @memberOf Maybe
+ * @fucntion Maybe#Just
  * @returns {Just}
  * @constructor
  */

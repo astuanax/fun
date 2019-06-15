@@ -4,13 +4,11 @@
  * @function fold
  * @description Returns a single item by iterating over an array like object and call a function on each item
  * @since v1.0.2
- * @sig ((a, b, c, a) → a) → a → [b] → a
  * @param {Function} cb receives 4 values: the accumulator, the item, the index, and the initial value.
- * @param {*} a is the initial value
- * @param {*} [b] the array like item to iterate over
- * @return {*} a is the accumulated value
+ * @param {*} init - the the initial value
+ * @param {Array|Object} a the array like item to iterate over
+ * @return {*} The accumulated value
  **/
-
 import curry from './curry'
 import arrayFold from './array/fold'
 import objectFold from './object/fold'
@@ -21,20 +19,5 @@ export default curry(function fold (cb, init, a) {
     'Object': objectFold,
     'Array': arrayFold
   }
-  // if (a.next) {
-  //   return iterableFold(cb, init, a)
-  // }
-  // if (type(Symbol) !== 'undefined' && a[Symbol.iterator]) {
-  //   return iterableFold(cb, init, a[Symbol.iterator]())
-  // }
   return typeMap[type(a)](cb, init, a)
 })
-
-// function iterableFold (cb, acc, gen) {
-//   let step = gen.next()
-//   while (!step.done) {
-//     acc = cb(acc, step.value)
-//     step = gen.next()
-//   }
-//   return acc
-// }

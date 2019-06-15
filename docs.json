@@ -5657,7 +5657,7 @@
         "scope": "static"
     },
     {
-        "comment": "/**\n * Returns a single item by iterating over an array like object and call a function on each item\n *\n * @function fold\n * @description Returns a single item by iterating over an array like object and call a function on each item\n * @since v1.0.2\n * @sig ((a, b, c, a) → a) → a → [b] → a\n * @param {Function} cb receives 4 values: the accumulator, the item, the index, and the initial value.\n * @param {*} a is the initial value\n * @param {*} [b] the array like item to iterate over\n * @return {*} a is the accumulated value\n **/",
+        "comment": "/**\n * Returns a single item by iterating over an array like object and call a function on each item\n *\n * @function fold\n * @description Returns a single item by iterating over an array like object and call a function on each item\n * @since v1.0.2\n * @param {Function} cb receives 4 values: the accumulator, the item, the index, and the initial value.\n * @param {*} init - the the initial value\n * @param {Array|Object} a the array like item to iterate over\n * @return {*} The accumulated value\n **/",
         "meta": {
             "filename": "fold.js",
             "lineno": 1,
@@ -5669,14 +5669,6 @@
         "kind": "function",
         "name": "fold",
         "since": "v1.0.2",
-        "tags": [
-            {
-                "originalTitle": "sig",
-                "title": "sig",
-                "text": "((a, b, c, a) → a) → a → [b] → a",
-                "value": "((a, b, c, a) → a) → a → [b] → a"
-            }
-        ],
         "params": [
             {
                 "type": {
@@ -5693,18 +5685,18 @@
                         "*"
                     ]
                 },
-                "description": "is the initial value",
-                "name": "a"
+                "description": "the the initial value",
+                "name": "init"
             },
             {
                 "type": {
                     "names": [
-                        "*"
+                        "Array",
+                        "Object"
                     ]
                 },
-                "optional": true,
                 "description": "the array like item to iterate over",
-                "name": "b"
+                "name": "a"
             }
         ],
         "returns": [
@@ -5714,7 +5706,7 @@
                         "*"
                     ]
                 },
-                "description": "a is the accumulated value"
+                "description": "The accumulated value"
             }
         ],
         "longname": "fold",
@@ -5724,11 +5716,11 @@
         "comment": "",
         "meta": {
             "range": [
-                664,
-                1024
+                632,
+                797
             ],
             "filename": "fold.js",
-            "lineno": 19,
+            "lineno": 17,
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
@@ -5748,11 +5740,11 @@
         "comment": "",
         "meta": {
             "range": [
-                723,
-                787
+                691,
+                755
             ],
             "filename": "fold.js",
-            "lineno": 20,
+            "lineno": 18,
             "columnno": 8,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
@@ -5774,11 +5766,11 @@
         "comment": "",
         "meta": {
             "range": [
-                739,
-                759
+                707,
+                727
             ],
             "filename": "fold.js",
-            "lineno": 21,
+            "lineno": 19,
             "columnno": 4,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
@@ -5799,11 +5791,11 @@
         "comment": "",
         "meta": {
             "range": [
-                765,
-                783
+                733,
+                751
             ],
             "filename": "fold.js",
-            "lineno": 22,
+            "lineno": 20,
             "columnno": 4,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
@@ -5932,61 +5924,15 @@
         "comment": "",
         "meta": {
             "range": [
-                50,
-                69
+                9,
+                23
             ],
             "filename": "index.js",
-            "lineno": 2,
+            "lineno": 1,
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
                 "id": "astnode100002451",
-                "name": "exports.aperture",
-                "type": "Identifier"
-            }
-        },
-        "undocumented": true,
-        "name": "aperture",
-        "longname": "aperture",
-        "kind": "member",
-        "scope": "global"
-    },
-    {
-        "comment": "",
-        "meta": {
-            "range": [
-                9845,
-                9862
-            ],
-            "filename": "index.js",
-            "lineno": 196,
-            "columnno": 9,
-            "path": "/Volumes/BigOne/github/fun/src",
-            "code": {
-                "id": "astnode100002456",
-                "name": "exports.zipObj",
-                "type": "Identifier"
-            }
-        },
-        "undocumented": true,
-        "name": "zipObj",
-        "longname": "zipObj",
-        "kind": "member",
-        "scope": "global"
-    },
-    {
-        "comment": "",
-        "meta": {
-            "range": [
-                9890,
-                9904
-            ],
-            "filename": "index.js",
-            "lineno": 197,
-            "columnno": 9,
-            "path": "/Volumes/BigOne/github/fun/src",
-            "code": {
-                "id": "astnode100002461",
                 "name": "exports.add",
                 "type": "Identifier"
             }
@@ -6001,15 +5947,15 @@
         "comment": "",
         "meta": {
             "range": [
-                9936,
-                9955
+                55,
+                74
             ],
             "filename": "index.js",
-            "lineno": 198,
+            "lineno": 2,
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002466",
+                "id": "astnode100002456",
                 "name": "exports.addIndex",
                 "type": "Identifier"
             }
@@ -6024,15 +5970,15 @@
         "comment": "",
         "meta": {
             "range": [
-                9985,
-                10002
+                104,
+                121
             ],
             "filename": "index.js",
-            "lineno": 199,
+            "lineno": 3,
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002471",
+                "id": "astnode100002461",
                 "name": "exports.adjust",
                 "type": "Identifier"
             }
@@ -6047,15 +5993,15 @@
         "comment": "",
         "meta": {
             "range": [
-                10030,
-                10051
+                149,
+                170
             ],
             "filename": "index.js",
-            "lineno": 200,
+            "lineno": 4,
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002476",
+                "id": "astnode100002466",
                 "name": "exports.adjustWith",
                 "type": "Identifier"
             }
@@ -6070,15 +6016,15 @@
         "comment": "",
         "meta": {
             "range": [
-                10083,
-                10097
+                202,
+                216
             ],
             "filename": "index.js",
-            "lineno": 201,
+            "lineno": 5,
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002481",
+                "id": "astnode100002471",
                 "name": "exports.all",
                 "type": "Identifier"
             }
@@ -6093,15 +6039,15 @@
         "comment": "",
         "meta": {
             "range": [
-                10122,
-                10140
+                241,
+                259
             ],
             "filename": "index.js",
-            "lineno": 202,
+            "lineno": 6,
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002486",
+                "id": "astnode100002476",
                 "name": "exports.allPass",
                 "type": "Identifier"
             }
@@ -6116,15 +6062,15 @@
         "comment": "",
         "meta": {
             "range": [
-                10169,
-                10186
+                288,
+                305
             ],
             "filename": "index.js",
-            "lineno": 203,
+            "lineno": 7,
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002491",
+                "id": "astnode100002481",
                 "name": "exports.always",
                 "type": "Identifier"
             }
@@ -6139,15 +6085,15 @@
         "comment": "",
         "meta": {
             "range": [
-                10214,
-                10228
+                333,
+                347
             ],
             "filename": "index.js",
-            "lineno": 204,
+            "lineno": 8,
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002496",
+                "id": "astnode100002486",
                 "name": "exports.and",
                 "type": "Identifier"
             }
@@ -6162,15 +6108,15 @@
         "comment": "",
         "meta": {
             "range": [
-                10253,
-                10267
+                372,
+                386
             ],
             "filename": "index.js",
-            "lineno": 205,
+            "lineno": 9,
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002501",
+                "id": "astnode100002491",
                 "name": "exports.any",
                 "type": "Identifier"
             }
@@ -6185,15 +6131,15 @@
         "comment": "",
         "meta": {
             "range": [
-                10292,
-                10310
+                411,
+                429
             ],
             "filename": "index.js",
-            "lineno": 206,
+            "lineno": 10,
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002506",
+                "id": "astnode100002496",
                 "name": "exports.anyPass",
                 "type": "Identifier"
             }
@@ -6208,15 +6154,15 @@
         "comment": "",
         "meta": {
             "range": [
-                10339,
-                10352
+                458,
+                471
             ],
             "filename": "index.js",
-            "lineno": 207,
+            "lineno": 11,
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002511",
+                "id": "astnode100002501",
                 "name": "exports.ap",
                 "type": "Identifier"
             }
@@ -6231,15 +6177,38 @@
         "comment": "",
         "meta": {
             "range": [
-                10376,
-                10393
+                495,
+                514
             ],
             "filename": "index.js",
-            "lineno": 208,
+            "lineno": 12,
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002516",
+                "id": "astnode100002506",
+                "name": "exports.aperture",
+                "type": "Identifier"
+            }
+        },
+        "undocumented": true,
+        "name": "aperture",
+        "longname": "aperture",
+        "kind": "member",
+        "scope": "global"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                544,
+                561
+            ],
+            "filename": "index.js",
+            "lineno": 13,
+            "columnno": 9,
+            "path": "/Volumes/BigOne/github/fun/src",
+            "code": {
+                "id": "astnode100002511",
                 "name": "exports.append",
                 "type": "Identifier"
             }
@@ -6254,15 +6223,15 @@
         "comment": "",
         "meta": {
             "range": [
-                10421,
-                10437
+                589,
+                605
             ],
             "filename": "index.js",
-            "lineno": 209,
+            "lineno": 14,
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002521",
+                "id": "astnode100002516",
                 "name": "exports.apply",
                 "type": "Identifier"
             }
@@ -6277,15 +6246,15 @@
         "comment": "",
         "meta": {
             "range": [
-                10464,
-                10481
+                632,
+                649
             ],
             "filename": "index.js",
-            "lineno": 210,
+            "lineno": 15,
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002526",
+                "id": "astnode100002521",
                 "name": "exports.binary",
                 "type": "Identifier"
             }
@@ -6300,15 +6269,15 @@
         "comment": "",
         "meta": {
             "range": [
-                10509,
-                10524
+                677,
+                692
             ],
             "filename": "index.js",
-            "lineno": 211,
+            "lineno": 16,
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002531",
+                "id": "astnode100002526",
                 "name": "exports.bind",
                 "type": "Identifier"
             }
@@ -6323,15 +6292,15 @@
         "comment": "",
         "meta": {
             "range": [
-                10550,
-                10565
+                718,
+                733
             ],
             "filename": "index.js",
-            "lineno": 212,
+            "lineno": 17,
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002536",
+                "id": "astnode100002531",
                 "name": "exports.both",
                 "type": "Identifier"
             }
@@ -6346,15 +6315,15 @@
         "comment": "",
         "meta": {
             "range": [
-                10599,
-                10614
+                767,
+                782
             ],
             "filename": "index.js",
-            "lineno": 213,
+            "lineno": 18,
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002541",
+                "id": "astnode100002536",
                 "name": "exports.call",
                 "type": "Identifier"
             }
@@ -6369,15 +6338,15 @@
         "comment": "",
         "meta": {
             "range": [
-                10640,
-                10661
+                808,
+                829
             ],
             "filename": "index.js",
-            "lineno": 214,
+            "lineno": 19,
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002546",
+                "id": "astnode100002541",
                 "name": "exports.complement",
                 "type": "Identifier"
             }
@@ -6392,15 +6361,15 @@
         "comment": "",
         "meta": {
             "range": [
-                10693,
-                10711
+                861,
+                879
             ],
             "filename": "index.js",
-            "lineno": 215,
+            "lineno": 20,
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002551",
+                "id": "astnode100002546",
                 "name": "exports.compose",
                 "type": "Identifier"
             }
@@ -6415,15 +6384,15 @@
         "comment": "",
         "meta": {
             "range": [
-                10740,
-                10757
+                908,
+                925
             ],
             "filename": "index.js",
-            "lineno": 216,
+            "lineno": 21,
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002556",
+                "id": "astnode100002551",
                 "name": "exports.concat",
                 "type": "Identifier"
             }
@@ -6438,15 +6407,15 @@
         "comment": "",
         "meta": {
             "range": [
-                10785,
-                10800
+                953,
+                968
             ],
             "filename": "index.js",
-            "lineno": 217,
+            "lineno": 22,
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002561",
+                "id": "astnode100002556",
                 "name": "exports.cond",
                 "type": "Identifier"
             }
@@ -6461,15 +6430,15 @@
         "comment": "",
         "meta": {
             "range": [
-                10826,
-                10842
+                994,
+                1010
             ],
             "filename": "index.js",
-            "lineno": 218,
+            "lineno": 23,
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002566",
+                "id": "astnode100002561",
                 "name": "exports.curry",
                 "type": "Identifier"
             }
@@ -6484,15 +6453,15 @@
         "comment": "",
         "meta": {
             "range": [
-                10869,
-                10889
+                1037,
+                1057
             ],
             "filename": "index.js",
-            "lineno": 219,
+            "lineno": 24,
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002571",
+                "id": "astnode100002566",
                 "name": "exports.defaultTo",
                 "type": "Identifier"
             }
@@ -6507,15 +6476,15 @@
         "comment": "",
         "meta": {
             "range": [
-                10920,
-                10939
+                1088,
+                1107
             ],
             "filename": "index.js",
-            "lineno": 220,
+            "lineno": 25,
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002576",
+                "id": "astnode100002571",
                 "name": "exports.diffDate",
                 "type": "Identifier"
             }
@@ -6530,15 +6499,15 @@
         "comment": "",
         "meta": {
             "range": [
-                10974,
-                10991
+                1142,
+                1159
             ],
             "filename": "index.js",
-            "lineno": 221,
+            "lineno": 26,
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002581",
+                "id": "astnode100002576",
                 "name": "exports.divide",
                 "type": "Identifier"
             }
@@ -6553,15 +6522,84 @@
         "comment": "",
         "meta": {
             "range": [
-                11026,
-                11042
+                1194,
+                1211
             ],
             "filename": "index.js",
-            "lineno": 222,
+            "lineno": 27,
+            "columnno": 9,
+            "path": "/Volumes/BigOne/github/fun/src",
+            "code": {
+                "id": "astnode100002581",
+                "name": "exports.Either",
+                "type": "Identifier"
+            }
+        },
+        "undocumented": true,
+        "name": "Either",
+        "longname": "Either",
+        "kind": "member",
+        "scope": "global"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                1246,
+                1261
+            ],
+            "filename": "index.js",
+            "lineno": 28,
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
                 "id": "astnode100002586",
+                "name": "exports.Left",
+                "type": "Identifier"
+            }
+        },
+        "undocumented": true,
+        "name": "Left",
+        "longname": "Left",
+        "kind": "member",
+        "scope": "global"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                1294,
+                1310
+            ],
+            "filename": "index.js",
+            "lineno": 29,
+            "columnno": 9,
+            "path": "/Volumes/BigOne/github/fun/src",
+            "code": {
+                "id": "astnode100002591",
+                "name": "exports.Right",
+                "type": "Identifier"
+            }
+        },
+        "undocumented": true,
+        "name": "Right",
+        "longname": "Right",
+        "kind": "member",
+        "scope": "global"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                1344,
+                1360
+            ],
+            "filename": "index.js",
+            "lineno": 30,
+            "columnno": 9,
+            "path": "/Volumes/BigOne/github/fun/src",
+            "code": {
+                "id": "astnode100002596",
                 "name": "exports.empty",
                 "type": "Identifier"
             }
@@ -6576,15 +6614,15 @@
         "comment": "",
         "meta": {
             "range": [
-                11069,
-                11086
+                1387,
+                1404
             ],
             "filename": "index.js",
-            "lineno": 223,
+            "lineno": 31,
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002591",
+                "id": "astnode100002601",
                 "name": "exports.equals",
                 "type": "Identifier"
             }
@@ -6599,15 +6637,15 @@
         "comment": "",
         "meta": {
             "range": [
-                11114,
-                11131
+                1432,
+                1449
             ],
             "filename": "index.js",
-            "lineno": 224,
+            "lineno": 32,
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002596",
+                "id": "astnode100002606",
                 "name": "exports.exists",
                 "type": "Identifier"
             }
@@ -6622,15 +6660,15 @@
         "comment": "",
         "meta": {
             "range": [
-                11159,
-                11171
+                1477,
+                1489
             ],
             "filename": "index.js",
-            "lineno": 225,
+            "lineno": 33,
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002601",
+                "id": "astnode100002611",
                 "name": "exports.F",
                 "type": "Identifier"
             }
@@ -6645,15 +6683,15 @@
         "comment": "",
         "meta": {
             "range": [
-                11202,
-                11219
+                1520,
+                1537
             ],
             "filename": "index.js",
-            "lineno": 226,
+            "lineno": 34,
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002606",
+                "id": "astnode100002616",
                 "name": "exports.filter",
                 "type": "Identifier"
             }
@@ -6668,15 +6706,15 @@
         "comment": "",
         "meta": {
             "range": [
-                11247,
-                11267
+                1565,
+                1585
             ],
             "filename": "index.js",
-            "lineno": 227,
+            "lineno": 35,
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002611",
+                "id": "astnode100002621",
                 "name": "exports.findIndex",
                 "type": "Identifier"
             }
@@ -6691,15 +6729,15 @@
         "comment": "",
         "meta": {
             "range": [
-                11298,
-                11314
+                1616,
+                1632
             ],
             "filename": "index.js",
-            "lineno": 228,
+            "lineno": 36,
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002616",
+                "id": "astnode100002626",
                 "name": "exports.first",
                 "type": "Identifier"
             }
@@ -6714,15 +6752,15 @@
         "comment": "",
         "meta": {
             "range": [
-                11341,
-                11359
+                1659,
+                1677
             ],
             "filename": "index.js",
-            "lineno": 229,
+            "lineno": 37,
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002621",
+                "id": "astnode100002631",
                 "name": "exports.flatMap",
                 "type": "Identifier"
             }
@@ -6737,15 +6775,15 @@
         "comment": "",
         "meta": {
             "range": [
-                11388,
-                11403
+                1706,
+                1721
             ],
             "filename": "index.js",
-            "lineno": 230,
+            "lineno": 38,
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002626",
+                "id": "astnode100002636",
                 "name": "exports.fold",
                 "type": "Identifier"
             }
@@ -6760,15 +6798,15 @@
         "comment": "",
         "meta": {
             "range": [
-                11429,
-                11452
+                1747,
+                1770
             ],
             "filename": "index.js",
-            "lineno": 231,
+            "lineno": 39,
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002631",
+                "id": "astnode100002641",
                 "name": "exports.formatString",
                 "type": "Identifier"
             }
@@ -6783,15 +6821,15 @@
         "comment": "",
         "meta": {
             "range": [
-                11493,
-                11507
+                1811,
+                1825
             ],
             "filename": "index.js",
-            "lineno": 232,
+            "lineno": 40,
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002636",
+                "id": "astnode100002646",
                 "name": "exports.has",
                 "type": "Identifier"
             }
@@ -6806,15 +6844,15 @@
         "comment": "",
         "meta": {
             "range": [
-                11539,
-                11555
+                1857,
+                1873
             ],
             "filename": "index.js",
-            "lineno": 233,
+            "lineno": 41,
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002641",
+                "id": "astnode100002651",
                 "name": "exports.hasIn",
                 "type": "Identifier"
             }
@@ -6829,15 +6867,15 @@
         "comment": "",
         "meta": {
             "range": [
-                11589,
-                11609
+                1907,
+                1927
             ],
             "filename": "index.js",
-            "lineno": 234,
+            "lineno": 42,
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002646",
+                "id": "astnode100002656",
                 "name": "exports.identical",
                 "type": "Identifier"
             }
@@ -6852,15 +6890,15 @@
         "comment": "",
         "meta": {
             "range": [
-                11640,
-                11659
+                1958,
+                1977
             ],
             "filename": "index.js",
-            "lineno": 235,
+            "lineno": 43,
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002651",
+                "id": "astnode100002661",
                 "name": "exports.identity",
                 "type": "Identifier"
             }
@@ -6875,15 +6913,15 @@
         "comment": "",
         "meta": {
             "range": [
-                11689,
-                11702
+                2007,
+                2020
             ],
             "filename": "index.js",
-            "lineno": 236,
+            "lineno": 44,
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002656",
+                "id": "astnode100002666",
                 "name": "exports.is",
                 "type": "Identifier"
             }
@@ -6898,15 +6936,15 @@
         "comment": "",
         "meta": {
             "range": [
-                11726,
-                11744
+                2044,
+                2062
             ],
             "filename": "index.js",
-            "lineno": 237,
+            "lineno": 45,
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002661",
+                "id": "astnode100002671",
                 "name": "exports.isArray",
                 "type": "Identifier"
             }
@@ -6921,15 +6959,15 @@
         "comment": "",
         "meta": {
             "range": [
-                11774,
-                11794
+                2092,
+                2112
             ],
             "filename": "index.js",
-            "lineno": 238,
+            "lineno": 46,
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002666",
+                "id": "astnode100002676",
                 "name": "exports.isBoolean",
                 "type": "Identifier"
             }
@@ -6944,15 +6982,15 @@
         "comment": "",
         "meta": {
             "range": [
-                11826,
-                11843
+                2144,
+                2161
             ],
             "filename": "index.js",
-            "lineno": 239,
+            "lineno": 47,
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002671",
+                "id": "astnode100002681",
                 "name": "exports.isDate",
                 "type": "Identifier"
             }
@@ -6967,15 +7005,15 @@
         "comment": "",
         "meta": {
             "range": [
-                11872,
-                11890
+                2190,
+                2208
             ],
             "filename": "index.js",
-            "lineno": 240,
+            "lineno": 48,
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002676",
+                "id": "astnode100002686",
                 "name": "exports.isEmpty",
                 "type": "Identifier"
             }
@@ -6990,15 +7028,15 @@
         "comment": "",
         "meta": {
             "range": [
-                11919,
-                11942
+                2237,
+                2260
             ],
             "filename": "index.js",
-            "lineno": 241,
+            "lineno": 49,
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002681",
+                "id": "astnode100002691",
                 "name": "exports.isFutureDate",
                 "type": "Identifier"
             }
@@ -7013,15 +7051,15 @@
         "comment": "",
         "meta": {
             "range": [
-                11981,
-                11997
+                2299,
+                2315
             ],
             "filename": "index.js",
-            "lineno": 242,
+            "lineno": 50,
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002686",
+                "id": "astnode100002696",
                 "name": "exports.isMap",
                 "type": "Identifier"
             }
@@ -7036,15 +7074,15 @@
         "comment": "",
         "meta": {
             "range": [
-                12025,
-                12041
+                2343,
+                2359
             ],
             "filename": "index.js",
-            "lineno": 243,
+            "lineno": 51,
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002691",
+                "id": "astnode100002701",
                 "name": "exports.isNan",
                 "type": "Identifier"
             }
@@ -7059,15 +7097,15 @@
         "comment": "",
         "meta": {
             "range": [
-                12075,
-                12092
+                2393,
+                2410
             ],
             "filename": "index.js",
-            "lineno": 244,
+            "lineno": 52,
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002696",
+                "id": "astnode100002706",
                 "name": "exports.isNull",
                 "type": "Identifier"
             }
@@ -7082,15 +7120,15 @@
         "comment": "",
         "meta": {
             "range": [
-                12121,
-                12140
+                2439,
+                2458
             ],
             "filename": "index.js",
-            "lineno": 245,
+            "lineno": 53,
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002701",
+                "id": "astnode100002711",
                 "name": "exports.isNumber",
                 "type": "Identifier"
             }
@@ -7105,15 +7143,15 @@
         "comment": "",
         "meta": {
             "range": [
-                12171,
-                12190
+                2489,
+                2508
             ],
             "filename": "index.js",
-            "lineno": 246,
+            "lineno": 54,
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002706",
+                "id": "astnode100002716",
                 "name": "exports.isObject",
                 "type": "Identifier"
             }
@@ -7128,15 +7166,15 @@
         "comment": "",
         "meta": {
             "range": [
-                12221,
-                12237
+                2539,
+                2555
             ],
             "filename": "index.js",
-            "lineno": 247,
+            "lineno": 55,
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002711",
+                "id": "astnode100002721",
                 "name": "exports.isSet",
                 "type": "Identifier"
             }
@@ -7151,15 +7189,15 @@
         "comment": "",
         "meta": {
             "range": [
-                12265,
-                12284
+                2583,
+                2602
             ],
             "filename": "index.js",
-            "lineno": 248,
+            "lineno": 56,
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002716",
+                "id": "astnode100002726",
                 "name": "exports.isString",
                 "type": "Identifier"
             }
@@ -7174,15 +7212,15 @@
         "comment": "",
         "meta": {
             "range": [
-                12315,
-                12337
+                2633,
+                2655
             ],
             "filename": "index.js",
-            "lineno": 249,
+            "lineno": 57,
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002721",
+                "id": "astnode100002731",
                 "name": "exports.isUndefined",
                 "type": "Identifier"
             }
@@ -7197,15 +7235,15 @@
         "comment": "",
         "meta": {
             "range": [
-                12371,
-                12393
+                2689,
+                2711
             ],
             "filename": "index.js",
-            "lineno": 250,
+            "lineno": 58,
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002726",
+                "id": "astnode100002736",
                 "name": "exports.isValidDate",
                 "type": "Identifier"
             }
@@ -7220,15 +7258,15 @@
         "comment": "",
         "meta": {
             "range": [
-                12427,
-                12442
+                2745,
+                2760
             ],
             "filename": "index.js",
-            "lineno": 251,
+            "lineno": 59,
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002731",
+                "id": "astnode100002741",
                 "name": "exports.Just",
                 "type": "Identifier"
             }
@@ -7243,15 +7281,15 @@
         "comment": "",
         "meta": {
             "range": [
-                12475,
-                12490
+                2793,
+                2808
             ],
             "filename": "index.js",
-            "lineno": 252,
+            "lineno": 60,
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002736",
+                "id": "astnode100002746",
                 "name": "exports.keys",
                 "type": "Identifier"
             }
@@ -7266,15 +7304,15 @@
         "comment": "",
         "meta": {
             "range": [
-                12516,
-                12533
+                2834,
+                2851
             ],
             "filename": "index.js",
-            "lineno": 253,
+            "lineno": 61,
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002741",
+                "id": "astnode100002751",
                 "name": "exports.keysIn",
                 "type": "Identifier"
             }
@@ -7289,15 +7327,15 @@
         "comment": "",
         "meta": {
             "range": [
-                12568,
-                12583
+                2886,
+                2901
             ],
             "filename": "index.js",
-            "lineno": 254,
+            "lineno": 62,
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002746",
+                "id": "astnode100002756",
                 "name": "exports.last",
                 "type": "Identifier"
             }
@@ -7312,15 +7350,15 @@
         "comment": "",
         "meta": {
             "range": [
-                12609,
-                12624
+                2927,
+                2942
             ],
             "filename": "index.js",
-            "lineno": 255,
+            "lineno": 63,
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002751",
+                "id": "astnode100002761",
                 "name": "exports.lift",
                 "type": "Identifier"
             }
@@ -7335,15 +7373,15 @@
         "comment": "",
         "meta": {
             "range": [
-                12650,
-                12664
+                2968,
+                2982
             ],
             "filename": "index.js",
-            "lineno": 256,
+            "lineno": 64,
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002756",
+                "id": "astnode100002766",
                 "name": "exports.map",
                 "type": "Identifier"
             }
@@ -7358,15 +7396,15 @@
         "comment": "",
         "meta": {
             "range": [
-                12689,
-                12703
+                3007,
+                3021
             ],
             "filename": "index.js",
-            "lineno": 257,
+            "lineno": 65,
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002761",
+                "id": "astnode100002771",
                 "name": "exports.max",
                 "type": "Identifier"
             }
@@ -7381,15 +7419,15 @@
         "comment": "",
         "meta": {
             "range": [
-                12728,
-                12744
+                3046,
+                3062
             ],
             "filename": "index.js",
-            "lineno": 258,
+            "lineno": 66,
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002766",
+                "id": "astnode100002776",
                 "name": "exports.Maybe",
                 "type": "Identifier"
             }
@@ -7404,15 +7442,15 @@
         "comment": "",
         "meta": {
             "range": [
-                12778,
-                12794
+                3096,
+                3112
             ],
             "filename": "index.js",
-            "lineno": 259,
+            "lineno": 67,
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002771",
+                "id": "astnode100002781",
                 "name": "exports.merge",
                 "type": "Identifier"
             }
@@ -7427,15 +7465,38 @@
         "comment": "",
         "meta": {
             "range": [
-                12828,
-                12847
+                3146,
+                3160
             ],
             "filename": "index.js",
-            "lineno": 260,
+            "lineno": 68,
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002776",
+                "id": "astnode100002786",
+                "name": "exports.min",
+                "type": "Identifier"
+            }
+        },
+        "undocumented": true,
+        "name": "min",
+        "longname": "min",
+        "kind": "member",
+        "scope": "global"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                3185,
+                3204
+            ],
+            "filename": "index.js",
+            "lineno": 69,
+            "columnno": 9,
+            "path": "/Volumes/BigOne/github/fun/src",
+            "code": {
+                "id": "astnode100002791",
                 "name": "exports.multiply",
                 "type": "Identifier"
             }
@@ -7450,15 +7511,15 @@
         "comment": "",
         "meta": {
             "range": [
-                12884,
-                12898
+                3241,
+                3255
             ],
             "filename": "index.js",
-            "lineno": 261,
+            "lineno": 70,
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002781",
+                "id": "astnode100002796",
                 "name": "exports.not",
                 "type": "Identifier"
             }
@@ -7473,15 +7534,15 @@
         "comment": "",
         "meta": {
             "range": [
-                12923,
-                12941
+                3280,
+                3298
             ],
             "filename": "index.js",
-            "lineno": 262,
+            "lineno": 71,
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002786",
+                "id": "astnode100002801",
                 "name": "exports.Nothing",
                 "type": "Identifier"
             }
@@ -7496,15 +7557,15 @@
         "comment": "",
         "meta": {
             "range": [
-                12977,
-                12992
+                3334,
+                3349
             ],
             "filename": "index.js",
-            "lineno": 263,
+            "lineno": 72,
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002791",
+                "id": "astnode100002806",
                 "name": "exports.omit",
                 "type": "Identifier"
             }
@@ -7519,15 +7580,15 @@
         "comment": "",
         "meta": {
             "range": [
-                13025,
-                13038
+                3382,
+                3395
             ],
             "filename": "index.js",
-            "lineno": 264,
+            "lineno": 73,
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002796",
+                "id": "astnode100002811",
                 "name": "exports.or",
                 "type": "Identifier"
             }
@@ -7542,15 +7603,15 @@
         "comment": "",
         "meta": {
             "range": [
-                13062,
-                13077
+                3419,
+                3434
             ],
             "filename": "index.js",
-            "lineno": 265,
+            "lineno": 74,
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002801",
+                "id": "astnode100002816",
                 "name": "exports.path",
                 "type": "Identifier"
             }
@@ -7565,15 +7626,15 @@
         "comment": "",
         "meta": {
             "range": [
-                13110,
-                13125
+                3467,
+                3482
             ],
             "filename": "index.js",
-            "lineno": 266,
+            "lineno": 75,
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002806",
+                "id": "astnode100002821",
                 "name": "exports.pick",
                 "type": "Identifier"
             }
@@ -7588,15 +7649,15 @@
         "comment": "",
         "meta": {
             "range": [
-                13158,
-                13173
+                3515,
+                3530
             ],
             "filename": "index.js",
-            "lineno": 267,
+            "lineno": 76,
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002811",
+                "id": "astnode100002826",
                 "name": "exports.prop",
                 "type": "Identifier"
             }
@@ -7611,15 +7672,61 @@
         "comment": "",
         "meta": {
             "range": [
-                13206,
-                13220
+                3563,
+                3580
             ],
             "filename": "index.js",
-            "lineno": 268,
+            "lineno": 77,
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002816",
+                "id": "astnode100002831",
+                "name": "exports.reduce",
+                "type": "Identifier"
+            }
+        },
+        "undocumented": true,
+        "name": "reduce",
+        "longname": "reduce",
+        "kind": "member",
+        "scope": "global"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                3608,
+                3623
+            ],
+            "filename": "index.js",
+            "lineno": 78,
+            "columnno": 9,
+            "path": "/Volumes/BigOne/github/fun/src",
+            "code": {
+                "id": "astnode100002836",
+                "name": "exports.sort",
+                "type": "Identifier"
+            }
+        },
+        "undocumented": true,
+        "name": "sort",
+        "longname": "sort",
+        "kind": "member",
+        "scope": "global"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                3649,
+                3663
+            ],
+            "filename": "index.js",
+            "lineno": 79,
+            "columnno": 9,
+            "path": "/Volumes/BigOne/github/fun/src",
+            "code": {
+                "id": "astnode100002841",
                 "name": "exports.sum",
                 "type": "Identifier"
             }
@@ -7634,15 +7741,15 @@
         "comment": "",
         "meta": {
             "range": [
-                13252,
-                13264
+                3695,
+                3707
             ],
             "filename": "index.js",
-            "lineno": 269,
+            "lineno": 80,
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002821",
+                "id": "astnode100002846",
                 "name": "exports.T",
                 "type": "Identifier"
             }
@@ -7657,15 +7764,15 @@
         "comment": "",
         "meta": {
             "range": [
-                13295,
-                13311
+                3738,
+                3754
             ],
             "filename": "index.js",
-            "lineno": 270,
+            "lineno": 81,
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002826",
+                "id": "astnode100002851",
                 "name": "exports.toDay",
                 "type": "Identifier"
             }
@@ -7680,15 +7787,15 @@
         "comment": "",
         "meta": {
             "range": [
-                13343,
-                13360
+                3786,
+                3803
             ],
             "filename": "index.js",
-            "lineno": 271,
+            "lineno": 82,
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002831",
+                "id": "astnode100002856",
                 "name": "exports.toHour",
                 "type": "Identifier"
             }
@@ -7703,15 +7810,15 @@
         "comment": "",
         "meta": {
             "range": [
-                13393,
-                13413
+                3836,
+                3856
             ],
             "filename": "index.js",
-            "lineno": 272,
+            "lineno": 83,
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002836",
+                "id": "astnode100002861",
                 "name": "exports.toMinutes",
                 "type": "Identifier"
             }
@@ -7726,15 +7833,15 @@
         "comment": "",
         "meta": {
             "range": [
-                13449,
-                13469
+                3892,
+                3912
             ],
             "filename": "index.js",
-            "lineno": 273,
+            "lineno": 84,
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002841",
+                "id": "astnode100002866",
                 "name": "exports.toSeconds",
                 "type": "Identifier"
             }
@@ -7749,15 +7856,15 @@
         "comment": "",
         "meta": {
             "range": [
-                13505,
-                13522
+                3948,
+                3965
             ],
             "filename": "index.js",
-            "lineno": 274,
+            "lineno": 85,
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002846",
+                "id": "astnode100002871",
                 "name": "exports.truthy",
                 "type": "Identifier"
             }
@@ -7772,15 +7879,15 @@
         "comment": "",
         "meta": {
             "range": [
-                13550,
-                13565
+                3993,
+                4008
             ],
             "filename": "index.js",
-            "lineno": 275,
+            "lineno": 86,
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002851",
+                "id": "astnode100002876",
                 "name": "exports.type",
                 "type": "Identifier"
             }
@@ -7795,15 +7902,15 @@
         "comment": "",
         "meta": {
             "range": [
-                13591,
-                13607
+                4034,
+                4050
             ],
             "filename": "index.js",
-            "lineno": 276,
+            "lineno": 87,
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002856",
+                "id": "astnode100002881",
                 "name": "exports.union",
                 "type": "Identifier"
             }
@@ -7818,15 +7925,15 @@
         "comment": "",
         "meta": {
             "range": [
-                13640,
-                13657
+                4083,
+                4100
             ],
             "filename": "index.js",
-            "lineno": 277,
+            "lineno": 88,
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002861",
+                "id": "astnode100002886",
                 "name": "exports.values",
                 "type": "Identifier"
             }
@@ -7841,15 +7948,15 @@
         "comment": "",
         "meta": {
             "range": [
-                13692,
-                13706
+                4135,
+                4149
             ],
             "filename": "index.js",
-            "lineno": 278,
+            "lineno": 89,
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002866",
+                "id": "astnode100002891",
                 "name": "exports.zip",
                 "type": "Identifier"
             }
@@ -7864,15 +7971,38 @@
         "comment": "",
         "meta": {
             "range": [
-                13731,
-                13749
+                4174,
+                4191
             ],
             "filename": "index.js",
-            "lineno": 279,
+            "lineno": 90,
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002871",
+                "id": "astnode100002896",
+                "name": "exports.zipObj",
+                "type": "Identifier"
+            }
+        },
+        "undocumented": true,
+        "name": "zipObj",
+        "longname": "zipObj",
+        "kind": "member",
+        "scope": "global"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                4219,
+                4237
+            ],
+            "filename": "index.js",
+            "lineno": 91,
+            "columnno": 9,
+            "path": "/Volumes/BigOne/github/fun/src",
+            "code": {
+                "id": "astnode100002901",
                 "name": "exports.zipWith",
                 "type": "Identifier"
             }
@@ -7910,7 +8040,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002885",
+                "id": "astnode100002915",
                 "name": "module.exports",
                 "type": "CallExpression"
             }
@@ -7949,7 +8079,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002913",
+                "id": "astnode100002943",
                 "name": "module.exports",
                 "type": "FunctionDeclaration",
                 "paramnames": [
@@ -7976,7 +8106,7 @@
             "columnno": 15,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002914",
+                "id": "astnode100002944",
                 "name": "isEmpty",
                 "type": "FunctionDeclaration",
                 "paramnames": [
@@ -8003,7 +8133,7 @@
             "columnno": 6,
             "path": "/Volumes/BigOne/github/fun/src/iterator",
             "code": {
-                "id": "astnode100002937",
+                "id": "astnode100002967",
                 "name": "isFunction",
                 "type": "CallExpression",
                 "value": ""
@@ -8028,7 +8158,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/iterator",
             "code": {
-                "id": "astnode100002942",
+                "id": "astnode100002972",
                 "name": "module.exports",
                 "type": "FunctionDeclaration",
                 "paramnames": [
@@ -8055,7 +8185,7 @@
             "columnno": 15,
             "path": "/Volumes/BigOne/github/fun/src/iterator",
             "code": {
-                "id": "astnode100002943",
+                "id": "astnode100002973",
                 "name": "isIter",
                 "type": "FunctionDeclaration",
                 "paramnames": [
@@ -8082,7 +8212,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/iterator",
             "code": {
-                "id": "astnode100002961",
+                "id": "astnode100002991",
                 "name": "module.exports",
                 "type": "CallExpression"
             }
@@ -8106,7 +8236,7 @@
             "columnno": 6,
             "path": "/Volumes/BigOne/github/fun/src/iterator",
             "code": {
-                "id": "astnode100002970",
+                "id": "astnode100003000",
                 "name": "r",
                 "type": "ArrayExpression",
                 "value": "[]"
@@ -8132,7 +8262,7 @@
             "columnno": 11,
             "path": "/Volumes/BigOne/github/fun/src/iterator",
             "code": {
-                "id": "astnode100002975",
+                "id": "astnode100003005",
                 "name": "nextValue",
                 "type": "CallExpression",
                 "value": ""
@@ -8158,7 +8288,7 @@
             "columnno": 65,
             "path": "/Volumes/BigOne/github/fun/src/iterator",
             "code": {
-                "id": "astnode100002986",
+                "id": "astnode100003016",
                 "name": "nextValue",
                 "type": "CallExpression",
                 "funcscope": "<anonymous>",
@@ -8229,7 +8359,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100003024",
+                "id": "astnode100003054",
                 "name": "module.exports",
                 "type": "CallExpression"
             }
@@ -8278,7 +8408,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100003052",
+                "id": "astnode100003082",
                 "name": "module.exports",
                 "type": "CallExpression"
             }
@@ -8326,7 +8456,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100003096",
+                "id": "astnode100003126",
                 "name": "module.exports",
                 "type": "CallExpression"
             }
@@ -8350,7 +8480,7 @@
             "columnno": 8,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100003104",
+                "id": "astnode100003134",
                 "name": "lifted",
                 "type": "CallExpression",
                 "value": ""
@@ -8391,7 +8521,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/map",
             "code": {
-                "id": "astnode100003143",
+                "id": "astnode100003173",
                 "name": "module.exports",
                 "type": "CallExpression"
             }
@@ -8415,7 +8545,7 @@
             "columnno": 6,
             "path": "/Volumes/BigOne/github/fun/src/map",
             "code": {
-                "id": "astnode100003152",
+                "id": "astnode100003182",
                 "name": "r",
                 "type": "NewExpression",
                 "value": ""
@@ -8441,7 +8571,7 @@
             "columnno": 6,
             "path": "/Volumes/BigOne/github/fun/src/map",
             "code": {
-                "id": "astnode100003157",
+                "id": "astnode100003187",
                 "name": "it",
                 "type": "CallExpression",
                 "value": ""
@@ -8467,7 +8597,7 @@
             "columnno": 6,
             "path": "/Volumes/BigOne/github/fun/src/map",
             "code": {
-                "id": "astnode100003164",
+                "id": "astnode100003194",
                 "name": "result",
                 "type": "CallExpression",
                 "value": ""
@@ -8493,7 +8623,7 @@
             "columnno": 10,
             "path": "/Volumes/BigOne/github/fun/src/map",
             "code": {
-                "id": "astnode100003177",
+                "id": "astnode100003207",
                 "name": "k",
                 "type": "MemberExpression",
                 "value": "result.value[0]"
@@ -8519,7 +8649,7 @@
             "columnno": 10,
             "path": "/Volumes/BigOne/github/fun/src/map",
             "code": {
-                "id": "astnode100003185",
+                "id": "astnode100003215",
                 "name": "v",
                 "type": "MemberExpression",
                 "value": "result.value[1]"
@@ -8545,7 +8675,7 @@
             "columnno": 4,
             "path": "/Volumes/BigOne/github/fun/src/map",
             "code": {
-                "id": "astnode100003205",
+                "id": "astnode100003235",
                 "name": "result",
                 "type": "CallExpression",
                 "funcscope": "<anonymous>",
@@ -8572,7 +8702,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/map",
             "code": {
-                "id": "astnode100003219",
+                "id": "astnode100003249",
                 "name": "module.exports",
                 "type": "CallExpression"
             }
@@ -8596,7 +8726,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/map",
             "code": {
-                "id": "astnode100003229",
+                "id": "astnode100003259",
                 "name": "module.exports",
                 "type": "CallExpression"
             }
@@ -8620,7 +8750,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/map",
             "code": {
-                "id": "astnode100003251",
+                "id": "astnode100003281",
                 "name": "module.exports",
                 "type": "CallExpression"
             }
@@ -8644,7 +8774,7 @@
             "columnno": 8,
             "path": "/Volumes/BigOne/github/fun/src/map",
             "code": {
-                "id": "astnode100003260",
+                "id": "astnode100003290",
                 "name": "r",
                 "type": "CallExpression",
                 "value": ""
@@ -8721,7 +8851,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100003322",
+                "id": "astnode100003352",
                 "name": "module.exports",
                 "type": "CallExpression"
             }
@@ -8788,7 +8918,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100003401",
+                "id": "astnode100003431",
                 "name": "module.exports",
                 "type": "CallExpression"
             }
@@ -8801,16 +8931,551 @@
         "scope": "static"
     },
     {
-        "comment": "/**\n * @function Just\n * @param val\n * @returns {Just}\n * @constructor\n */",
+        "comment": "/**\n * Returns the smallest of the 2 arguments provided\n *\n * @function min\n * @desc Returns the smallest of the 2 arguments provided\n * @since v1.0.4\n * @param {*} a\n * @param {*} b\n * @return {*}\n **/",
         "meta": {
-            "filename": "Just.js",
+            "filename": "min.js",
             "lineno": 1,
+            "columnno": 0,
+            "path": "/Volumes/BigOne/github/fun/src",
+            "code": {}
+        },
+        "description": "Returns the smallest of the 2 arguments provided",
+        "kind": "function",
+        "name": "min",
+        "since": "v1.0.4",
+        "params": [
+            {
+                "type": {
+                    "names": [
+                        "*"
+                    ]
+                },
+                "name": "a"
+            },
+            {
+                "type": {
+                    "names": [
+                        "*"
+                    ]
+                },
+                "name": "b"
+            }
+        ],
+        "returns": [
+            {
+                "type": {
+                    "names": [
+                        "*"
+                    ]
+                }
+            }
+        ],
+        "longname": "min",
+        "scope": "global"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                232,
+                300
+            ],
+            "filename": "min.js",
+            "lineno": 13,
+            "columnno": 0,
+            "path": "/Volumes/BigOne/github/fun/src",
+            "code": {
+                "id": "astnode100003452",
+                "name": "module.exports",
+                "type": "CallExpression"
+            }
+        },
+        "undocumented": true,
+        "name": "exports",
+        "longname": "module.exports",
+        "kind": "member",
+        "memberof": "module",
+        "scope": "static"
+    },
+    {
+        "comment": "/**\n * @class Either\n * @desc Either monad\n * @param {*} val - Value to be validated\n * @constructor\n * @example\n *\n * const m = Either.of(props.customers).map(contract => customer[0]).getOrElse('No customer found')\n */",
+        "meta": {
+            "range": [
+                279,
+                331
+            ],
+            "filename": "Either.js",
+            "lineno": 13,
+            "columnno": 4,
+            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "code": {
+                "id": "astnode100003478",
+                "name": "Either",
+                "type": "FunctionExpression"
+            }
+        },
+        "kind": "class",
+        "classdesc": "Either",
+        "description": "Either monad",
+        "params": [
+            {
+                "type": {
+                    "names": [
+                        "*"
+                    ]
+                },
+                "description": "Value to be validated",
+                "name": "val"
+            }
+        ],
+        "examples": [
+            "const m = Either.of(props.customers).map(contract => customer[0]).getOrElse('No customer found')"
+        ],
+        "name": "Either",
+        "longname": "Either",
+        "scope": "global"
+    },
+    {
+        "comment": "/**\n * @memberOf Either\n * @function Either.of\n * @desc Creates a Either monad from the provided argument\n * @param {*} val - Val to turn in to a Either monad, can be a function\n * @returns {Either}\n * @example\n *\n * const m = Either.of(props.customers).map(customer => customer[0]).getOrElse('No customer found')\n */",
+        "meta": {
+            "filename": "Either.js",
+            "lineno": 17,
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/monads",
             "code": {}
         },
+        "memberof": "Either",
+        "kind": "function",
+        "name": "of",
+        "description": "Creates a Either monad from the provided argument",
+        "params": [
+            {
+                "type": {
+                    "names": [
+                        "*"
+                    ]
+                },
+                "description": "Val to turn in to a Either monad, can be a function",
+                "name": "val"
+            }
+        ],
+        "returns": [
+            {
+                "type": {
+                    "names": [
+                        "Either"
+                    ]
+                }
+            }
+        ],
+        "examples": [
+            "const m = Either.of(props.customers).map(customer => customer[0]).getOrElse('No customer found')"
+        ],
+        "longname": "Either.of",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                652,
+                810
+            ],
+            "filename": "Either.js",
+            "lineno": 28,
+            "columnno": 0,
+            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "code": {
+                "id": "astnode100003490",
+                "name": "Either.of",
+                "type": "FunctionExpression",
+                "paramnames": [
+                    "val"
+                ]
+            }
+        },
+        "undocumented": true,
+        "name": "of",
+        "longname": "Either.of",
+        "kind": "function",
+        "memberof": "Either",
+        "scope": "static"
+    },
+    {
+        "comment": "/**\n * @memberOf Either\n * @property {String} type - Returns the string 'Either' for all Either objects\n * @type {String}\n * @example\n *\n * const m =  Either.of([[1,2],[2,3],[4,5]])\n * m.type === 'Either'\n */",
+        "meta": {
+            "range": [
+                1021,
+                1053
+            ],
+            "filename": "Either.js",
+            "lineno": 45,
+            "columnno": 0,
+            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "code": {
+                "id": "astnode100003519",
+                "name": "Either.prototype.type",
+                "type": "Literal",
+                "value": "Either",
+                "paramnames": []
+            }
+        },
+        "memberof": "Either",
+        "properties": [
+            {
+                "type": {
+                    "names": [
+                        "String"
+                    ]
+                },
+                "description": "Returns the string 'Either' for all Either objects",
+                "name": "type"
+            }
+        ],
+        "type": {
+            "names": [
+                "String"
+            ]
+        },
+        "examples": [
+            "const m =  Either.of([[1,2],[2,3],[4,5]])\nm.type === 'Either'"
+        ],
+        "name": "type",
+        "longname": "Either#type",
+        "kind": "member",
+        "scope": "instance"
+    },
+    {
+        "comment": "/**\n * @memberOf Either\n * @property Either#isLeft\n * @returns {boolean}\n */",
+        "meta": {
+            "range": [
+                1132,
+                1163
+            ],
+            "filename": "Either.js",
+            "lineno": 52,
+            "columnno": 0,
+            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "code": {
+                "id": "astnode100003527",
+                "name": "Either.prototype.isLeft",
+                "type": "Literal",
+                "value": false,
+                "paramnames": []
+            }
+        },
+        "memberof": "Either",
+        "properties": [
+            {
+                "name": "Either#isLeft"
+            }
+        ],
+        "returns": [
+            {
+                "type": {
+                    "names": [
+                        "boolean"
+                    ]
+                }
+            }
+        ],
+        "name": "isLeft",
+        "longname": "Either#isLeft",
+        "kind": "member",
+        "scope": "instance"
+    },
+    {
+        "comment": "/**\n * @memberOf Either\n * @property Either#isRight\n * @returns {boolean}\n */",
+        "meta": {
+            "range": [
+                1243,
+                1275
+            ],
+            "filename": "Either.js",
+            "lineno": 59,
+            "columnno": 0,
+            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "code": {
+                "id": "astnode100003535",
+                "name": "Either.prototype.isRight",
+                "type": "Literal",
+                "value": false,
+                "paramnames": []
+            }
+        },
+        "memberof": "Either",
+        "properties": [
+            {
+                "name": "Either#isRight"
+            }
+        ],
+        "returns": [
+            {
+                "type": {
+                    "names": [
+                        "boolean"
+                    ]
+                }
+            }
+        ],
+        "name": "isRight",
+        "longname": "Either#isRight",
+        "kind": "member",
+        "scope": "instance"
+    },
+    {
+        "comment": "/**\n * @memberOf Either\n * @function Either#Left\n * @returns {Left}\n */",
+        "meta": {
+            "filename": "Either.js",
+            "lineno": 61,
+            "columnno": 0,
+            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "code": {}
+        },
+        "memberof": "Either",
+        "kind": "function",
+        "name": "Left",
+        "returns": [
+            {
+                "type": {
+                    "names": [
+                        "Left"
+                    ]
+                }
+            }
+        ],
+        "longname": "Either#Left",
+        "scope": "instance"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                1349,
+                1414
+            ],
+            "filename": "Either.js",
+            "lineno": 66,
+            "columnno": 0,
+            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "code": {
+                "id": "astnode100003543",
+                "name": "Either.prototype.Left",
+                "type": "FunctionExpression",
+                "paramnames": [
+                    "val"
+                ]
+            }
+        },
+        "undocumented": true,
+        "name": "Left",
+        "longname": "Either#Left",
+        "kind": "function",
+        "memberof": "Either",
+        "scope": "instance"
+    },
+    {
+        "comment": "/**\n * @private\n * @memberOf Either\n * @function Either.Left\n * @returns {Left}\n */",
+        "meta": {
+            "filename": "Either.js",
+            "lineno": 70,
+            "columnno": 0,
+            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "code": {}
+        },
+        "access": "private",
+        "memberof": "Either",
+        "kind": "function",
+        "name": "Left",
+        "returns": [
+            {
+                "type": {
+                    "names": [
+                        "Left"
+                    ]
+                }
+            }
+        ],
+        "longname": "Either.Left",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                1500,
+                1555
+            ],
+            "filename": "Either.js",
+            "lineno": 76,
+            "columnno": 0,
+            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "code": {
+                "id": "astnode100003557",
+                "name": "Either.Left",
+                "type": "FunctionExpression",
+                "paramnames": [
+                    "val"
+                ]
+            }
+        },
+        "undocumented": true,
+        "name": "Left",
+        "longname": "Either.Left",
+        "kind": "function",
+        "memberof": "Either",
+        "scope": "static"
+    },
+    {
+        "comment": "/**\n * @private\n * @memberOf Either\n * @function Either#Right\n * @returns {Right}\n */",
+        "meta": {
+            "filename": "Either.js",
+            "lineno": 80,
+            "columnno": 0,
+            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "code": {}
+        },
+        "access": "private",
+        "memberof": "Either",
+        "kind": "function",
+        "name": "Right",
+        "returns": [
+            {
+                "type": {
+                    "names": [
+                        "Right"
+                    ]
+                }
+            }
+        ],
+        "longname": "Either#Right",
+        "scope": "instance"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                1643,
+                1710
+            ],
+            "filename": "Either.js",
+            "lineno": 86,
+            "columnno": 0,
+            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "code": {
+                "id": "astnode100003569",
+                "name": "Either.prototype.Right",
+                "type": "FunctionExpression",
+                "paramnames": [
+                    "val"
+                ]
+            }
+        },
+        "undocumented": true,
+        "name": "Right",
+        "longname": "Either#Right",
+        "kind": "function",
+        "memberof": "Either",
+        "scope": "instance"
+    },
+    {
+        "comment": "/**\n * @private\n * @memberOf Either\n * @function Either.Right\n * @returns {Right}\n */",
+        "meta": {
+            "filename": "Either.js",
+            "lineno": 90,
+            "columnno": 0,
+            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "code": {}
+        },
+        "access": "private",
+        "memberof": "Either",
+        "kind": "function",
+        "name": "Right",
+        "returns": [
+            {
+                "type": {
+                    "names": [
+                        "Right"
+                    ]
+                }
+            }
+        ],
+        "longname": "Either.Right",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                1798,
+                1855
+            ],
+            "filename": "Either.js",
+            "lineno": 96,
+            "columnno": 0,
+            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "code": {
+                "id": "astnode100003583",
+                "name": "Either.Right",
+                "type": "FunctionExpression",
+                "paramnames": [
+                    "val"
+                ]
+            }
+        },
+        "undocumented": true,
+        "name": "Right",
+        "longname": "Either.Right",
+        "kind": "function",
+        "memberof": "Either",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                1857,
+                1878
+            ],
+            "filename": "Either.js",
+            "lineno": 100,
+            "columnno": 0,
+            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "code": {
+                "id": "astnode100003594",
+                "name": "module.exports",
+                "type": "Identifier"
+            }
+        },
+        "undocumented": true,
+        "name": "exports",
+        "longname": "module.exports",
+        "kind": "member",
+        "memberof": "module",
+        "scope": "static"
+    },
+    {
+        "comment": "/**\n * @class Just\n * @param val\n * @returns {Just}\n * @constructor\n */",
+        "meta": {
+            "range": [
+                76,
+                136
+            ],
+            "filename": "Just.js",
+            "lineno": 7,
+            "columnno": 4,
+            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "code": {
+                "id": "astnode100003599",
+                "name": "Just",
+                "type": "FunctionExpression"
+            },
+            "vars": {
+                "this.__value": "Just#__value"
+            }
+        },
         "kind": "class",
-        "name": "Just",
+        "classdesc": "Just",
         "params": [
             {
                 "name": "val"
@@ -8825,6 +9490,7 @@
                 }
             }
         ],
+        "name": "Just",
         "longname": "Just",
         "scope": "global"
     },
@@ -8832,56 +9498,30 @@
         "comment": "",
         "meta": {
             "range": [
-                79,
-                138
-            ],
-            "filename": "Just.js",
-            "lineno": 7,
-            "columnno": 4,
-            "path": "/Volumes/BigOne/github/fun/src/monads",
-            "code": {
-                "id": "astnode100003419",
-                "name": "Just",
-                "type": "FunctionExpression"
-            },
-            "vars": {
-                "this._value": null
-            }
-        },
-        "undocumented": true,
-        "name": "Just",
-        "longname": "Just",
-        "kind": "function",
-        "scope": "global",
-        "params": []
-    },
-    {
-        "comment": "",
-        "meta": {
-            "range": [
-                105,
-                122
+                102,
+                120
             ],
             "filename": "Just.js",
             "lineno": 8,
             "columnno": 2,
             "path": "/Volumes/BigOne/github/fun/src/monads",
             "code": {
-                "id": "astnode100003425",
-                "name": "this._value",
+                "id": "astnode100003605",
+                "name": "this.__value",
                 "type": "Identifier",
                 "value": "val",
                 "paramnames": []
             }
         },
         "undocumented": true,
-        "name": "_value",
-        "longname": "_value",
+        "name": "__value",
+        "longname": "Just#__value",
         "kind": "member",
-        "scope": "global"
+        "memberof": "Just",
+        "scope": "instance"
     },
     {
-        "comment": "/**\n * @memberOf Just\n * @function isJust\n * @returns {boolean}\n */",
+        "comment": "/**\n * @memberOf Just\n * @function Just#isJust\n * @returns {boolean}\n */",
         "meta": {
             "filename": "Just.js",
             "lineno": 12,
@@ -8901,22 +9541,22 @@
                 }
             }
         ],
-        "scope": "static",
-        "longname": "Just.isJust"
+        "longname": "Just#isJust",
+        "scope": "instance"
     },
     {
         "comment": "",
         "meta": {
             "range": [
-                208,
-                261
+                211,
+                264
             ],
             "filename": "Just.js",
             "lineno": 17,
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/monads",
             "code": {
-                "id": "astnode100003433",
+                "id": "astnode100003613",
                 "name": "Just.prototype.isJust",
                 "type": "FunctionExpression",
                 "paramnames": []
@@ -8930,7 +9570,7 @@
         "scope": "instance"
     },
     {
-        "comment": "/**\n * @memberOf Just\n * @function isNothing\n * @returns {boolean}\n */",
+        "comment": "/**\n * @memberOf Just\n * @function Just#isNothing\n * @returns {boolean}\n */",
         "meta": {
             "filename": "Just.js",
             "lineno": 21,
@@ -8950,22 +9590,22 @@
                 }
             }
         ],
-        "scope": "static",
-        "longname": "Just.isNothing"
+        "longname": "Just#isNothing",
+        "scope": "instance"
     },
     {
         "comment": "",
         "meta": {
             "range": [
-                334,
-                391
+                342,
+                399
             ],
             "filename": "Just.js",
             "lineno": 26,
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/monads",
             "code": {
-                "id": "astnode100003444",
+                "id": "astnode100003624",
                 "name": "Just.prototype.isNothing",
                 "type": "FunctionExpression",
                 "paramnames": []
@@ -8982,15 +9622,15 @@
         "comment": "",
         "meta": {
             "range": [
-                393,
-                412
+                401,
+                420
             ],
             "filename": "Just.js",
             "lineno": 30,
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/monads",
             "code": {
-                "id": "astnode100003454",
+                "id": "astnode100003634",
                 "name": "module.exports",
                 "type": "Identifier"
             }
@@ -9003,16 +9643,671 @@
         "scope": "static"
     },
     {
-        "comment": "/**\n * @function Maybe\n * @desc Maybe monad provides a way to safely wrap null values\n * @param {*} val - Value to be wrapped\n * @constructor\n * @example\n *\n * const m = Maybe.of(props.customers).map(contract => customer[0]).getOrElse('No customer found')\n */",
+        "comment": "/**\n * @class Left\n * @param val\n * @returns {Left}\n * @constructor\n */",
         "meta": {
-            "filename": "Maybe.js",
-            "lineno": 4,
+            "range": [
+                76,
+                136
+            ],
+            "filename": "Left.js",
+            "lineno": 7,
+            "columnno": 4,
+            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "code": {
+                "id": "astnode100003639",
+                "name": "Left",
+                "type": "FunctionExpression"
+            },
+            "vars": {
+                "this.__value": "Left#__value"
+            }
+        },
+        "kind": "class",
+        "classdesc": "Left",
+        "params": [
+            {
+                "name": "val"
+            }
+        ],
+        "returns": [
+            {
+                "type": {
+                    "names": [
+                        "Left"
+                    ]
+                }
+            }
+        ],
+        "name": "Left",
+        "longname": "Left",
+        "scope": "global"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                102,
+                120
+            ],
+            "filename": "Left.js",
+            "lineno": 8,
+            "columnno": 2,
+            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "code": {
+                "id": "astnode100003645",
+                "name": "this.__value",
+                "type": "Identifier",
+                "value": "val",
+                "paramnames": []
+            }
+        },
+        "undocumented": true,
+        "name": "__value",
+        "longname": "Left#__value",
+        "kind": "member",
+        "memberof": "Left",
+        "scope": "instance"
+    },
+    {
+        "comment": "/**\n * @memberOf Left\n * @property {String} type - Returns the string 'Left' for all Either objects\n * @type {String}\n * @example\n *\n * const m =  Either.of([[1,2],[2,3],[4,5]])\n * m.type === 'Left'\n */",
+        "meta": {
+            "range": [
+                341,
+                369
+            ],
+            "filename": "Left.js",
+            "lineno": 21,
+            "columnno": 0,
+            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "code": {
+                "id": "astnode100003653",
+                "name": "Left.prototype.type",
+                "type": "Literal",
+                "value": "Left",
+                "paramnames": []
+            }
+        },
+        "memberof": "Left",
+        "properties": [
+            {
+                "type": {
+                    "names": [
+                        "String"
+                    ]
+                },
+                "description": "Returns the string 'Left' for all Either objects",
+                "name": "type"
+            }
+        ],
+        "type": {
+            "names": [
+                "String"
+            ]
+        },
+        "examples": [
+            "const m =  Either.of([[1,2],[2,3],[4,5]])\nm.type === 'Left'"
+        ],
+        "name": "type",
+        "longname": "Left#type",
+        "kind": "member",
+        "scope": "instance"
+    },
+    {
+        "comment": "/**\n * @memberOf Left\n * @function Left#isLeft\n * @returns {boolean}\n */",
+        "meta": {
+            "filename": "Left.js",
+            "lineno": 23,
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/monads",
             "code": {}
         },
+        "memberof": "Left",
+        "kind": "function",
+        "name": "isLeft",
+        "returns": [
+            {
+                "type": {
+                    "names": [
+                        "boolean"
+                    ]
+                }
+            }
+        ],
+        "longname": "Left#isLeft",
+        "scope": "instance"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                444,
+                497
+            ],
+            "filename": "Left.js",
+            "lineno": 28,
+            "columnno": 0,
+            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "code": {
+                "id": "astnode100003661",
+                "name": "Left.prototype.isLeft",
+                "type": "FunctionExpression",
+                "paramnames": []
+            }
+        },
+        "undocumented": true,
+        "name": "isLeft",
+        "longname": "Left#isLeft",
+        "kind": "function",
+        "memberof": "Left",
+        "scope": "instance"
+    },
+    {
+        "comment": "/**\n * @memberOf Left\n * @function Left#isNothing\n * @returns {boolean}\n */",
+        "meta": {
+            "filename": "Left.js",
+            "lineno": 32,
+            "columnno": 0,
+            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "code": {}
+        },
+        "memberof": "Left",
+        "kind": "function",
+        "name": "isNothing",
+        "returns": [
+            {
+                "type": {
+                    "names": [
+                        "boolean"
+                    ]
+                }
+            }
+        ],
+        "longname": "Left#isNothing",
+        "scope": "instance"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                575,
+                630
+            ],
+            "filename": "Left.js",
+            "lineno": 37,
+            "columnno": 0,
+            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "code": {
+                "id": "astnode100003672",
+                "name": "Left.prototype.isRight",
+                "type": "FunctionExpression",
+                "paramnames": []
+            }
+        },
+        "undocumented": true,
+        "name": "isRight",
+        "longname": "Left#isRight",
+        "kind": "function",
+        "memberof": "Left",
+        "scope": "instance"
+    },
+    {
+        "comment": "/**\n * @memberOf Left\n * @function Left#ap\n * @param {*} b\n * @returns {Left}\n */",
+        "meta": {
+            "filename": "Left.js",
+            "lineno": 41,
+            "columnno": 0,
+            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "code": {}
+        },
+        "memberof": "Left",
+        "kind": "function",
+        "name": "ap",
+        "params": [
+            {
+                "type": {
+                    "names": [
+                        "*"
+                    ]
+                },
+                "name": "b"
+            }
+        ],
+        "returns": [
+            {
+                "type": {
+                    "names": [
+                        "Left"
+                    ]
+                }
+            }
+        ],
+        "longname": "Left#ap",
+        "scope": "instance"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                714,
+                764
+            ],
+            "filename": "Left.js",
+            "lineno": 47,
+            "columnno": 0,
+            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "code": {
+                "id": "astnode100003683",
+                "name": "Left.prototype.ap",
+                "type": "FunctionExpression",
+                "paramnames": [
+                    "b"
+                ]
+            }
+        },
+        "undocumented": true,
+        "name": "ap",
+        "longname": "Left#ap",
+        "kind": "function",
+        "memberof": "Left",
+        "scope": "instance"
+    },
+    {
+        "comment": "/**\n * @memberOf Left\n * @function Left#map\n * @param {Function} f\n * @returns {Left}\n */",
+        "meta": {
+            "filename": "Left.js",
+            "lineno": 51,
+            "columnno": 0,
+            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "code": {}
+        },
+        "memberof": "Left",
+        "kind": "function",
+        "name": "map",
+        "params": [
+            {
+                "type": {
+                    "names": [
+                        "function"
+                    ]
+                },
+                "name": "f"
+            }
+        ],
+        "returns": [
+            {
+                "type": {
+                    "names": [
+                        "Left"
+                    ]
+                }
+            }
+        ],
+        "longname": "Left#map",
+        "scope": "instance"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                856,
+                907
+            ],
+            "filename": "Left.js",
+            "lineno": 57,
+            "columnno": 0,
+            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "code": {
+                "id": "astnode100003695",
+                "name": "Left.prototype.map",
+                "type": "FunctionExpression",
+                "paramnames": [
+                    "f"
+                ]
+            }
+        },
+        "undocumented": true,
+        "name": "map",
+        "longname": "Left#map",
+        "kind": "function",
+        "memberof": "Left",
+        "scope": "instance"
+    },
+    {
+        "comment": "/**\n * @memberOf Left\n * @function Left#chain\n * @param {Function} f\n * @returns {Left}\n */",
+        "meta": {
+            "filename": "Left.js",
+            "lineno": 61,
+            "columnno": 0,
+            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "code": {}
+        },
+        "memberof": "Left",
+        "kind": "function",
+        "name": "chain",
+        "params": [
+            {
+                "type": {
+                    "names": [
+                        "function"
+                    ]
+                },
+                "name": "f"
+            }
+        ],
+        "returns": [
+            {
+                "type": {
+                    "names": [
+                        "Left"
+                    ]
+                }
+            }
+        ],
+        "longname": "Left#chain",
+        "scope": "instance"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                1001,
+                1054
+            ],
+            "filename": "Left.js",
+            "lineno": 67,
+            "columnno": 0,
+            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "code": {
+                "id": "astnode100003707",
+                "name": "Left.prototype.chain",
+                "type": "FunctionExpression",
+                "paramnames": [
+                    "f"
+                ]
+            }
+        },
+        "undocumented": true,
+        "name": "chain",
+        "longname": "Left#chain",
+        "kind": "function",
+        "memberof": "Left",
+        "scope": "instance"
+    },
+    {
+        "comment": "/**\n * @memberOf Left\n * @function Left#toString\n * @returns {String}\n */",
+        "meta": {
+            "filename": "Left.js",
+            "lineno": 71,
+            "columnno": 0,
+            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "code": {}
+        },
+        "memberof": "Left",
+        "kind": "function",
+        "name": "toString",
+        "returns": [
+            {
+                "type": {
+                    "names": [
+                        "String"
+                    ]
+                }
+            }
+        ],
+        "longname": "Left#toString",
+        "scope": "instance"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                1130,
+                1216
+            ],
+            "filename": "Left.js",
+            "lineno": 76,
+            "columnno": 0,
+            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "code": {
+                "id": "astnode100003719",
+                "name": "Left.prototype.toString",
+                "type": "FunctionExpression",
+                "paramnames": []
+            }
+        },
+        "undocumented": true,
+        "name": "toString",
+        "longname": "Left#toString",
+        "kind": "function",
+        "memberof": "Left",
+        "scope": "instance"
+    },
+    {
+        "comment": "/**\n * @memberOf Left\n * @function Left#cata\n * @param {Function} f\n * @param {Placeholder} _\n * @returns {*}\n */",
+        "meta": {
+            "filename": "Left.js",
+            "lineno": 80,
+            "columnno": 0,
+            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "code": {}
+        },
+        "memberof": "Left",
+        "kind": "function",
+        "name": "cata",
+        "params": [
+            {
+                "type": {
+                    "names": [
+                        "function"
+                    ]
+                },
+                "name": "f"
+            },
+            {
+                "type": {
+                    "names": [
+                        "Placeholder"
+                    ]
+                },
+                "name": "_"
+            }
+        ],
+        "returns": [
+            {
+                "type": {
+                    "names": [
+                        "*"
+                    ]
+                }
+            }
+        ],
+        "longname": "Left#cata",
+        "scope": "instance"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                1332,
+                1398
+            ],
+            "filename": "Left.js",
+            "lineno": 87,
+            "columnno": 0,
+            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "code": {
+                "id": "astnode100003736",
+                "name": "Left.prototype.cata",
+                "type": "FunctionExpression",
+                "paramnames": [
+                    "f",
+                    "_"
+                ]
+            }
+        },
+        "undocumented": true,
+        "name": "cata",
+        "longname": "Left#cata",
+        "kind": "function",
+        "memberof": "Left",
+        "scope": "instance"
+    },
+    {
+        "comment": "/**\n * @memberOf Left\n * @function Left#get\n * @throws {TypeError}\n */",
+        "meta": {
+            "filename": "Left.js",
+            "lineno": 91,
+            "columnno": 0,
+            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "code": {}
+        },
+        "memberof": "Left",
+        "kind": "function",
+        "name": "get",
+        "exceptions": [
+            {
+                "type": {
+                    "names": [
+                        "TypeError"
+                    ]
+                }
+            }
+        ],
+        "longname": "Left#get",
+        "scope": "instance"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                1471,
+                1570
+            ],
+            "filename": "Left.js",
+            "lineno": 96,
+            "columnno": 0,
+            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "code": {
+                "id": "astnode100003753",
+                "name": "Left.prototype.get",
+                "type": "FunctionExpression",
+                "paramnames": []
+            }
+        },
+        "undocumented": true,
+        "name": "get",
+        "longname": "Left#get",
+        "kind": "function",
+        "memberof": "Left",
+        "scope": "instance"
+    },
+    {
+        "comment": "/**\n * @memberOf Left\n * @function Left#getOrElse\n * @param {*} a\n * @returns {*}\n */",
+        "meta": {
+            "filename": "Left.js",
+            "lineno": 100,
+            "columnno": 0,
+            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "code": {}
+        },
+        "memberof": "Left",
+        "kind": "function",
+        "name": "getOrElse",
+        "params": [
+            {
+                "type": {
+                    "names": [
+                        "*"
+                    ]
+                },
+                "name": "a"
+            }
+        ],
+        "returns": [
+            {
+                "type": {
+                    "names": [
+                        "*"
+                    ]
+                }
+            }
+        ],
+        "longname": "Left#getOrElse",
+        "scope": "instance"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                1658,
+                1712
+            ],
+            "filename": "Left.js",
+            "lineno": 106,
+            "columnno": 0,
+            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "code": {
+                "id": "astnode100003766",
+                "name": "Left.prototype.getOrElse",
+                "type": "FunctionExpression",
+                "paramnames": [
+                    "a"
+                ]
+            }
+        },
+        "undocumented": true,
+        "name": "getOrElse",
+        "longname": "Left#getOrElse",
+        "kind": "function",
+        "memberof": "Left",
+        "scope": "instance"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                1714,
+                1733
+            ],
+            "filename": "Left.js",
+            "lineno": 110,
+            "columnno": 0,
+            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "code": {
+                "id": "astnode100003777",
+                "name": "module.exports",
+                "type": "Identifier"
+            }
+        },
+        "undocumented": true,
+        "name": "exports",
+        "longname": "module.exports",
+        "kind": "member",
+        "memberof": "module",
+        "scope": "static"
+    },
+    {
+        "comment": "/**\n * @class Maybe\n * @desc Maybe monad provides a way to safely wrap null values\n * @param {*} val - Value to be wrapped\n * @constructor\n * @example\n *\n * const m = Maybe.of(props.customers).map(contract => customer[0]).getOrElse('No customer found')\n */",
+        "meta": {
+            "range": [
+                320,
+                367
+            ],
+            "filename": "Maybe.js",
+            "lineno": 13,
+            "columnno": 4,
+            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "code": {
+                "id": "astnode100003790",
+                "name": "Maybe",
+                "type": "FunctionExpression"
+            },
+            "vars": {
+                "this.__value": "Maybe#__value"
+            }
+        },
         "kind": "class",
-        "name": "Maybe",
+        "classdesc": "Maybe",
         "description": "Maybe monad provides a way to safely wrap null values",
         "params": [
             {
@@ -9028,6 +10323,7 @@
         "examples": [
             "const m = Maybe.of(props.customers).map(contract => customer[0]).getOrElse('No customer found')"
         ],
+        "name": "Maybe",
         "longname": "Maybe",
         "scope": "global"
     },
@@ -9035,42 +10331,15 @@
         "comment": "",
         "meta": {
             "range": [
-                323,
-                370
-            ],
-            "filename": "Maybe.js",
-            "lineno": 13,
-            "columnno": 4,
-            "path": "/Volumes/BigOne/github/fun/src/monads",
-            "code": {
-                "id": "astnode100003467",
-                "name": "Maybe",
-                "type": "FunctionExpression"
-            },
-            "vars": {
-                "this.__value": null
-            }
-        },
-        "undocumented": true,
-        "name": "Maybe",
-        "longname": "Maybe",
-        "kind": "function",
-        "scope": "global",
-        "params": []
-    },
-    {
-        "comment": "",
-        "meta": {
-            "range": [
-                350,
-                368
+                347,
+                365
             ],
             "filename": "Maybe.js",
             "lineno": 14,
             "columnno": 2,
             "path": "/Volumes/BigOne/github/fun/src/monads",
             "code": {
-                "id": "astnode100003473",
+                "id": "astnode100003796",
                 "name": "this.__value",
                 "type": "Identifier",
                 "value": "val",
@@ -9079,12 +10348,13 @@
         },
         "undocumented": true,
         "name": "__value",
-        "longname": "__value",
+        "longname": "Maybe#__value",
         "kind": "member",
-        "scope": "global"
+        "memberof": "Maybe",
+        "scope": "instance"
     },
     {
-        "comment": "/**\n * @memberOf Maybe\n * @function of\n * @desc Creates a Maybe monad from the provided argument\n * @param val\n * @returns {Maybe}\n * @example\n *\n * const m = Maybe.of(props.customers).map(customer => customer[0]).getOrElse('No customer found')\n */",
+        "comment": "/**\n * @memberOf Maybe\n * @function Maybe.of\n * @desc Creates a Maybe monad from the provided argument\n * @param {*} val - Val to turn in to a Maybe monad, can be a function\n * @returns {Maybe}\n * @example\n *\n * const m = Maybe.of(props.customers).map(customer => customer[0]).getOrElse('No customer found')\n */",
         "meta": {
             "filename": "Maybe.js",
             "lineno": 17,
@@ -9098,6 +10368,12 @@
         "description": "Creates a Maybe monad from the provided argument",
         "params": [
             {
+                "type": {
+                    "names": [
+                        "*"
+                    ]
+                },
+                "description": "Val to turn in to a Maybe monad, can be a function",
                 "name": "val"
             }
         ],
@@ -9113,22 +10389,22 @@
         "examples": [
             "const m = Maybe.of(props.customers).map(customer => customer[0]).getOrElse('No customer found')"
         ],
-        "scope": "static",
-        "longname": "Maybe.of"
+        "longname": "Maybe.of",
+        "scope": "static"
     },
     {
         "comment": "",
         "meta": {
             "range": [
-                622,
-                788
+                682,
+                848
             ],
             "filename": "Maybe.js",
             "lineno": 28,
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/monads",
             "code": {
-                "id": "astnode100003479",
+                "id": "astnode100003802",
                 "name": "Maybe.of",
                 "type": "FunctionExpression",
                 "paramnames": [
@@ -9150,15 +10426,15 @@
         "comment": "",
         "meta": {
             "range": [
-                724,
-                742
+                784,
+                802
             ],
             "filename": "Maybe.js",
             "lineno": 31,
             "columnno": 4,
             "path": "/Volumes/BigOne/github/fun/src/monads",
             "code": {
-                "id": "astnode100003498",
+                "id": "astnode100003821",
                 "name": "this.__value",
                 "type": "Identifier",
                 "value": "val",
@@ -9173,10 +10449,54 @@
         "scope": "instance"
     },
     {
-        "comment": "/**\n * @memberOf Maybe\n * @function getOrElse\n * @desc Evaluates the Maybe monad and returns either the value from the Maybe or the default value\n * @param {*} n - Default value to return if the Maybe evaluates to undefined or null\n * @returns {*}\n * @example\n *\n * // Get customer from component props\n * const m = Maybe.of(props.customers).map(customer => customer.filter(custObj => custObj.id = 'c001112')).getOrElse([])\n * // Map over the provided array\n * m.map(x => <div>Customer ID: {x.id} </div>)\n *\n */",
+        "comment": "/**\n * @memberOf Maybe\n * @property {String} type - Returns the string 'Maybe' for all Maybe objects\n * @type {String}\n * @example\n *\n * const m =  Maybe.of([[1,2],[2,3],[4,5]])\n * m.type === 'Maybe'\n */",
+        "meta": {
+            "range": [
+                1054,
+                1084
+            ],
+            "filename": "Maybe.js",
+            "lineno": 46,
+            "columnno": 0,
+            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "code": {
+                "id": "astnode100003833",
+                "name": "Maybe.prototype.type",
+                "type": "Literal",
+                "value": "Maybe",
+                "paramnames": []
+            }
+        },
+        "memberof": "Maybe",
+        "properties": [
+            {
+                "type": {
+                    "names": [
+                        "String"
+                    ]
+                },
+                "description": "Returns the string 'Maybe' for all Maybe objects",
+                "name": "type"
+            }
+        ],
+        "type": {
+            "names": [
+                "String"
+            ]
+        },
+        "examples": [
+            "const m =  Maybe.of([[1,2],[2,3],[4,5]])\nm.type === 'Maybe'"
+        ],
+        "name": "type",
+        "longname": "Maybe#type",
+        "kind": "member",
+        "scope": "instance"
+    },
+    {
+        "comment": "/**\n * @memberOf Maybe\n * @function Maybe#getOrElse\n * @desc Evaluates the Maybe monad and returns either the value from the Maybe or the default value\n * @param {*} n - Default value to return if the Maybe evaluates to undefined or null\n * @returns {*}\n * @example\n *\n * // Get customer from component props\n * const m = Maybe.of(props.customers).map(customer => customer.filter(custObj => custObj.id = 'c001112')).getOrElse([])\n * // Map over the provided array\n * m.map(x => <div>Customer ID: {x.id} </div>)\n *\n */",
         "meta": {
             "filename": "Maybe.js",
-            "lineno": 37,
+            "lineno": 48,
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/monads",
             "code": {}
@@ -9208,22 +10528,22 @@
         "examples": [
             "// Get customer from component props\nconst m = Maybe.of(props.customers).map(customer => customer.filter(custObj => custObj.id = 'c001112')).getOrElse([])\n// Map over the provided array\nm.map(x => <div>Customer ID: {x.id} </div>)"
         ],
-        "scope": "static",
-        "longname": "Maybe.getOrElse"
+        "longname": "Maybe#getOrElse",
+        "scope": "instance"
     },
     {
         "comment": "",
         "meta": {
             "range": [
-                1302,
-                1391
+                1604,
+                1693
             ],
             "filename": "Maybe.js",
-            "lineno": 51,
+            "lineno": 62,
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/monads",
             "code": {
-                "id": "astnode100003510",
+                "id": "astnode100003841",
                 "name": "Maybe.prototype.getOrElse",
                 "type": "FunctionExpression",
                 "paramnames": [
@@ -9239,10 +10559,10 @@
         "scope": "instance"
     },
     {
-        "comment": "/**\n * @memberOf Maybe\n * @function map\n * @param f\n * @returns {Maybe}\n */",
+        "comment": "/**\n * @memberOf Maybe\n * @function Maybe#map\n * @param {Function} f\n * @returns {Maybe}\n */",
         "meta": {
             "filename": "Maybe.js",
-            "lineno": 55,
+            "lineno": 66,
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/monads",
             "code": {}
@@ -9252,6 +10572,11 @@
         "name": "map",
         "params": [
             {
+                "type": {
+                    "names": [
+                        "function"
+                    ]
+                },
                 "name": "f"
             }
         ],
@@ -9264,22 +10589,22 @@
                 }
             }
         ],
-        "scope": "static",
-        "longname": "Maybe.map"
+        "longname": "Maybe#map",
+        "scope": "instance"
     },
     {
         "comment": "",
         "meta": {
             "range": [
-                1469,
-                1598
+                1788,
+                1917
             ],
             "filename": "Maybe.js",
-            "lineno": 61,
+            "lineno": 72,
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/monads",
             "code": {
-                "id": "astnode100003530",
+                "id": "astnode100003861",
                 "name": "Maybe.prototype.map",
                 "type": "FunctionExpression",
                 "paramnames": [
@@ -9295,10 +10620,10 @@
         "scope": "instance"
     },
     {
-        "comment": "/**\n * @memberOf Maybe\n * @function flatMap\n * @param f\n * @returns {Maybe}\n */",
+        "comment": "/**\n * @memberOf Maybe\n * @function Maybe#flatMap\n * @param {Function} f\n * @returns {Maybe}\n */",
         "meta": {
             "filename": "Maybe.js",
-            "lineno": 68,
+            "lineno": 79,
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/monads",
             "code": {}
@@ -9308,6 +10633,11 @@
         "name": "flatMap",
         "params": [
             {
+                "type": {
+                    "names": [
+                        "function"
+                    ]
+                },
                 "name": "f"
             }
         ],
@@ -9320,22 +10650,22 @@
                 }
             }
         ],
-        "scope": "static",
-        "longname": "Maybe.flatMap"
+        "longname": "Maybe#flatMap",
+        "scope": "instance"
     },
     {
         "comment": "",
         "meta": {
             "range": [
-                1680,
-                1743
+                2016,
+                2079
             ],
             "filename": "Maybe.js",
-            "lineno": 74,
+            "lineno": 85,
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/monads",
             "code": {
-                "id": "astnode100003562",
+                "id": "astnode100003893",
                 "name": "Maybe.prototype.flatMap",
                 "type": "FunctionExpression",
                 "paramnames": [
@@ -9351,19 +10681,24 @@
         "scope": "instance"
     },
     {
-        "comment": "/**\n * @memberOf Maybe\n * @function ap\n * @param m\n * @returns {Maybe}\n */",
+        "comment": "/**\n * @memberOf Maybe\n * @function Mayeb#ap\n * @param {Maybe} m\n * @returns {Maybe}\n */",
         "meta": {
             "filename": "Maybe.js",
-            "lineno": 78,
+            "lineno": 89,
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/monads",
             "code": {}
         },
-        "memberof": "Maybe",
+        "memberof": "Maybe.Mayeb",
         "kind": "function",
         "name": "ap",
         "params": [
             {
+                "type": {
+                    "names": [
+                        "Maybe"
+                    ]
+                },
                 "name": "m"
             }
         ],
@@ -9376,22 +10711,22 @@
                 }
             }
         ],
-        "scope": "static",
-        "longname": "Maybe.ap"
+        "scope": "instance",
+        "longname": "Maybe.Mayeb#ap"
     },
     {
         "comment": "",
         "meta": {
             "range": [
-                1820,
-                1896
+                2170,
+                2246
             ],
             "filename": "Maybe.js",
-            "lineno": 84,
+            "lineno": 95,
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/monads",
             "code": {
-                "id": "astnode100003578",
+                "id": "astnode100003909",
                 "name": "Maybe.prototype.ap",
                 "type": "FunctionExpression",
                 "paramnames": [
@@ -9407,10 +10742,10 @@
         "scope": "instance"
     },
     {
-        "comment": "/**\n * @memberOf Maybe\n * @function isNothing\n * @returns {boolean}\n */",
+        "comment": "/**\n * @memberOf Maybe\n * @function Maybe#isNothing\n * @returns {boolean}\n */",
         "meta": {
             "filename": "Maybe.js",
-            "lineno": 88,
+            "lineno": 99,
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/monads",
             "code": {}
@@ -9427,22 +10762,22 @@
                 }
             }
         ],
-        "scope": "static",
-        "longname": "Maybe.isNothing"
+        "longname": "Maybe#isNothing",
+        "scope": "instance"
     },
     {
         "comment": "",
         "meta": {
             "range": [
-                1970,
-                2045
+                2326,
+                2401
             ],
             "filename": "Maybe.js",
-            "lineno": 93,
+            "lineno": 104,
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/monads",
             "code": {
-                "id": "astnode100003600",
+                "id": "astnode100003931",
                 "name": "Maybe.prototype.isNothing",
                 "type": "FunctionExpression",
                 "paramnames": []
@@ -9456,22 +10791,15 @@
         "scope": "instance"
     },
     {
-        "comment": "/**\n * @methodOf Maybe\n * @method isJust\n * @returns {boolean}\n */",
+        "comment": "/**\n * @memberOf Maybe\n * @function Maybe#isJust\n * @returns {boolean}\n */",
         "meta": {
             "filename": "Maybe.js",
-            "lineno": 97,
+            "lineno": 108,
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/monads",
             "code": {}
         },
-        "tags": [
-            {
-                "originalTitle": "methodOf",
-                "title": "methodof",
-                "text": "Maybe",
-                "value": "Maybe"
-            }
-        ],
+        "memberof": "Maybe",
         "kind": "function",
         "name": "isJust",
         "returns": [
@@ -9483,22 +10811,22 @@
                 }
             }
         ],
-        "longname": "isJust",
-        "scope": "global"
+        "longname": "Maybe#isJust",
+        "scope": "instance"
     },
     {
         "comment": "",
         "meta": {
             "range": [
-                2114,
-                2181
+                2478,
+                2545
             ],
             "filename": "Maybe.js",
-            "lineno": 102,
+            "lineno": 113,
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/monads",
             "code": {
-                "id": "astnode100003615",
+                "id": "astnode100003946",
                 "name": "Maybe.prototype.isJust",
                 "type": "FunctionExpression",
                 "paramnames": []
@@ -9512,25 +10840,17 @@
         "scope": "instance"
     },
     {
-        "comment": "/**\n * @private\n * @memberOf Maybe\n * @returns {Nothing}\n * @constructor\n */",
+        "comment": "/**\n * @memberOf Maybe\n * @function Maybe#Nothing\n * @returns {Nothing}\n * @constructor\n */",
         "meta": {
-            "range": [
-                2260,
-                2324
-            ],
             "filename": "Maybe.js",
-            "lineno": 112,
+            "lineno": 117,
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/monads",
-            "code": {
-                "id": "astnode100003630",
-                "name": "Maybe.prototype.Nothing",
-                "type": "FunctionExpression",
-                "paramnames": []
-            }
+            "code": {}
         },
-        "access": "private",
         "memberof": "Maybe",
+        "kind": "class",
+        "name": "Nothing",
         "returns": [
             {
                 "type": {
@@ -9540,31 +10860,61 @@
                 }
             }
         ],
-        "kind": "class",
-        "name": "Nothing",
         "longname": "Maybe#Nothing",
         "scope": "instance"
     },
     {
-        "comment": "/**\n * @private\n * @memberOf Maybe\n * @returns {Just}\n * @constructor\n */",
+        "comment": "",
         "meta": {
             "range": [
-                2400,
-                2469
+                2639,
+                2703
             ],
             "filename": "Maybe.js",
-            "lineno": 122,
+            "lineno": 123,
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/monads",
             "code": {
-                "id": "astnode100003642",
+                "id": "astnode100003961",
+                "name": "Maybe.prototype.Nothing",
+                "type": "FunctionExpression",
+                "paramnames": []
+            }
+        },
+        "undocumented": true,
+        "name": "Nothing",
+        "longname": "Maybe#Nothing",
+        "kind": "function",
+        "memberof": "Maybe",
+        "scope": "instance"
+    },
+    {
+        "comment": "/**\n * @memberOf Maybe\n * @fucntion Maybe#Just\n * @returns {Just}\n * @constructor\n */",
+        "meta": {
+            "range": [
+                2791,
+                2860
+            ],
+            "filename": "Maybe.js",
+            "lineno": 133,
+            "columnno": 0,
+            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "code": {
+                "id": "astnode100003973",
                 "name": "Maybe.prototype.Just",
                 "type": "FunctionExpression",
                 "paramnames": []
             }
         },
-        "access": "private",
         "memberof": "Maybe",
+        "tags": [
+            {
+                "originalTitle": "fucntion",
+                "title": "fucntion",
+                "text": "Maybe#Just",
+                "value": "Maybe#Just"
+            }
+        ],
         "returns": [
             {
                 "type": {
@@ -9583,15 +10933,15 @@
         "comment": "",
         "meta": {
             "range": [
-                2471,
-                2491
+                2862,
+                2882
             ],
             "filename": "Maybe.js",
-            "lineno": 126,
+            "lineno": 137,
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/monads",
             "code": {
-                "id": "astnode100003656",
+                "id": "astnode100003987",
                 "name": "module.exports",
                 "type": "Identifier"
             }
@@ -9604,45 +10954,31 @@
         "scope": "static"
     },
     {
-        "comment": "/**\n * @function Nothing\n * @constructor\n */",
-        "meta": {
-            "filename": "Nothing.js",
-            "lineno": 1,
-            "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/monads",
-            "code": {}
-        },
-        "kind": "class",
-        "name": "Nothing",
-        "longname": "Nothing",
-        "scope": "global"
-    },
-    {
-        "comment": "",
+        "comment": "/**\n * @class Nothing\n * @constructor\n */",
         "meta": {
             "range": [
-                49,
-                74
+                46,
+                71
             ],
             "filename": "Nothing.js",
             "lineno": 5,
             "columnno": 4,
             "path": "/Volumes/BigOne/github/fun/src/monads",
             "code": {
-                "id": "astnode100003661",
+                "id": "astnode100003992",
                 "name": "Nothing",
                 "type": "FunctionExpression"
             }
         },
-        "undocumented": true,
+        "kind": "class",
+        "classdesc": "Nothing",
         "name": "Nothing",
         "longname": "Nothing",
-        "kind": "function",
         "scope": "global",
         "params": []
     },
     {
-        "comment": "/**\n * @memberOf Nothing\n * @function isJust\n * @returns {boolean}\n */",
+        "comment": "/**\n * @memberOf Nothing\n * @function Nothing#isJust\n * @returns {boolean}\n */",
         "meta": {
             "filename": "Nothing.js",
             "lineno": 8,
@@ -9662,22 +10998,22 @@
                 }
             }
         ],
-        "scope": "static",
-        "longname": "Nothing.isJust"
+        "longname": "Nothing#isJust",
+        "scope": "instance"
     },
     {
         "comment": "",
         "meta": {
             "range": [
-                147,
-                204
+                152,
+                209
             ],
             "filename": "Nothing.js",
             "lineno": 13,
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/monads",
             "code": {
-                "id": "astnode100003666",
+                "id": "astnode100003997",
                 "name": "Nothing.prototype.isJust",
                 "type": "FunctionExpression",
                 "paramnames": []
@@ -9691,7 +11027,7 @@
         "scope": "instance"
     },
     {
-        "comment": "/**\n * @memberOf Nothing\n * @function isNothing\n * @returns {boolean}\n */",
+        "comment": "/**\n * @memberOf Nothing\n * @function Nothing#isNothing\n * @returns {boolean}\n */",
         "meta": {
             "filename": "Nothing.js",
             "lineno": 17,
@@ -9711,22 +11047,22 @@
                 }
             }
         ],
-        "scope": "static",
-        "longname": "Nothing.isNothing"
+        "longname": "Nothing#isNothing",
+        "scope": "instance"
     },
     {
         "comment": "",
         "meta": {
             "range": [
-                280,
-                339
+                293,
+                352
             ],
             "filename": "Nothing.js",
             "lineno": 22,
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/monads",
             "code": {
-                "id": "astnode100003677",
+                "id": "astnode100004008",
                 "name": "Nothing.prototype.isNothing",
                 "type": "FunctionExpression",
                 "paramnames": []
@@ -9743,15 +11079,654 @@
         "comment": "",
         "meta": {
             "range": [
-                341,
-                363
+                354,
+                376
             ],
             "filename": "Nothing.js",
             "lineno": 26,
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/monads",
             "code": {
-                "id": "astnode100003687",
+                "id": "astnode100004018",
+                "name": "module.exports",
+                "type": "Identifier"
+            }
+        },
+        "undocumented": true,
+        "name": "exports",
+        "longname": "module.exports",
+        "kind": "member",
+        "memberof": "module",
+        "scope": "static"
+    },
+    {
+        "comment": "/**\n * @class Right\n * @param val\n * @returns {Right}\n * @constructor\n */",
+        "meta": {
+            "range": [
+                78,
+                139
+            ],
+            "filename": "Right.js",
+            "lineno": 7,
+            "columnno": 4,
+            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "code": {
+                "id": "astnode100004023",
+                "name": "Right",
+                "type": "FunctionExpression"
+            },
+            "vars": {
+                "this.__value": "Right#__value"
+            }
+        },
+        "kind": "class",
+        "classdesc": "Right",
+        "params": [
+            {
+                "name": "val"
+            }
+        ],
+        "returns": [
+            {
+                "type": {
+                    "names": [
+                        "Right"
+                    ]
+                }
+            }
+        ],
+        "name": "Right",
+        "longname": "Right",
+        "scope": "global"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                105,
+                123
+            ],
+            "filename": "Right.js",
+            "lineno": 8,
+            "columnno": 2,
+            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "code": {
+                "id": "astnode100004029",
+                "name": "this.__value",
+                "type": "Identifier",
+                "value": "val",
+                "paramnames": []
+            }
+        },
+        "undocumented": true,
+        "name": "__value",
+        "longname": "Right#__value",
+        "kind": "member",
+        "memberof": "Right",
+        "scope": "instance"
+    },
+    {
+        "comment": "/**\n * @memberOf Right\n * @property {String} type - Returns the string 'Right' for all Either objects\n * @type {String}\n * @example\n *\n * const m =  Either.of([[1,2],[2,3],[4,5]])\n * m.type === 'Right'\n */",
+        "meta": {
+            "range": [
+                347,
+                377
+            ],
+            "filename": "Right.js",
+            "lineno": 21,
+            "columnno": 0,
+            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "code": {
+                "id": "astnode100004037",
+                "name": "Right.prototype.type",
+                "type": "Literal",
+                "value": "Right",
+                "paramnames": []
+            }
+        },
+        "memberof": "Right",
+        "properties": [
+            {
+                "type": {
+                    "names": [
+                        "String"
+                    ]
+                },
+                "description": "Returns the string 'Right' for all Either objects",
+                "name": "type"
+            }
+        ],
+        "type": {
+            "names": [
+                "String"
+            ]
+        },
+        "examples": [
+            "const m =  Either.of([[1,2],[2,3],[4,5]])\nm.type === 'Right'"
+        ],
+        "name": "type",
+        "longname": "Right#type",
+        "kind": "member",
+        "scope": "instance"
+    },
+    {
+        "comment": "/**\n * @memberOf Right\n * @function Right#isRight\n * @returns {boolean}\n */",
+        "meta": {
+            "filename": "Right.js",
+            "lineno": 23,
+            "columnno": 0,
+            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "code": {}
+        },
+        "memberof": "Right",
+        "kind": "function",
+        "name": "isRight",
+        "returns": [
+            {
+                "type": {
+                    "names": [
+                        "boolean"
+                    ]
+                }
+            }
+        ],
+        "longname": "Right#isRight",
+        "scope": "instance"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                455,
+                510
+            ],
+            "filename": "Right.js",
+            "lineno": 28,
+            "columnno": 0,
+            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "code": {
+                "id": "astnode100004045",
+                "name": "Right.prototype.isRight",
+                "type": "FunctionExpression",
+                "paramnames": []
+            }
+        },
+        "undocumented": true,
+        "name": "isRight",
+        "longname": "Right#isRight",
+        "kind": "function",
+        "memberof": "Right",
+        "scope": "instance"
+    },
+    {
+        "comment": "/**\n * @memberOf Right\n * @function Right#isLeft\n * @returns {boolean}\n */",
+        "meta": {
+            "filename": "Right.js",
+            "lineno": 32,
+            "columnno": 0,
+            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "code": {}
+        },
+        "memberof": "Right",
+        "kind": "function",
+        "name": "isLeft",
+        "returns": [
+            {
+                "type": {
+                    "names": [
+                        "boolean"
+                    ]
+                }
+            }
+        ],
+        "longname": "Right#isLeft",
+        "scope": "instance"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                587,
+                642
+            ],
+            "filename": "Right.js",
+            "lineno": 37,
+            "columnno": 0,
+            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "code": {
+                "id": "astnode100004056",
+                "name": "Right.prototype.isLeft",
+                "type": "FunctionExpression",
+                "paramnames": []
+            }
+        },
+        "undocumented": true,
+        "name": "isLeft",
+        "longname": "Right#isLeft",
+        "kind": "function",
+        "memberof": "Right",
+        "scope": "instance"
+    },
+    {
+        "comment": "/**\n * @memberOf Right\n * @function Right#ap\n * @param a\n * @returns {Right}\n */",
+        "meta": {
+            "filename": "Right.js",
+            "lineno": 41,
+            "columnno": 0,
+            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "code": {}
+        },
+        "memberof": "Right",
+        "kind": "function",
+        "name": "ap",
+        "params": [
+            {
+                "name": "a"
+            }
+        ],
+        "returns": [
+            {
+                "type": {
+                    "names": [
+                        "Right"
+                    ]
+                }
+            }
+        ],
+        "longname": "Right#ap",
+        "scope": "instance"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                725,
+                791
+            ],
+            "filename": "Right.js",
+            "lineno": 47,
+            "columnno": 0,
+            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "code": {
+                "id": "astnode100004067",
+                "name": "Right.prototype.ap",
+                "type": "FunctionExpression",
+                "paramnames": [
+                    "b"
+                ]
+            }
+        },
+        "undocumented": true,
+        "name": "ap",
+        "longname": "Right#ap",
+        "kind": "function",
+        "memberof": "Right",
+        "scope": "instance"
+    },
+    {
+        "comment": "/**\n * @memberOf Right\n * @function Right#map\n * @param {Function} f\n * @returns {*}\n */",
+        "meta": {
+            "filename": "Right.js",
+            "lineno": 51,
+            "columnno": 0,
+            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "code": {}
+        },
+        "memberof": "Right",
+        "kind": "function",
+        "name": "map",
+        "params": [
+            {
+                "type": {
+                    "names": [
+                        "function"
+                    ]
+                },
+                "name": "f"
+            }
+        ],
+        "returns": [
+            {
+                "type": {
+                    "names": [
+                        "*"
+                    ]
+                }
+            }
+        ],
+        "longname": "Right#map",
+        "scope": "instance"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                882,
+                956
+            ],
+            "filename": "Right.js",
+            "lineno": 57,
+            "columnno": 0,
+            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "code": {
+                "id": "astnode100004085",
+                "name": "Right.prototype.map",
+                "type": "FunctionExpression",
+                "paramnames": [
+                    "f"
+                ]
+            }
+        },
+        "undocumented": true,
+        "name": "map",
+        "longname": "Right#map",
+        "kind": "function",
+        "memberof": "Right",
+        "scope": "instance"
+    },
+    {
+        "comment": "/**\n * @memberOf Right\n * @function Right#chain\n * @param {Function} f\n * @returns {*}\n */",
+        "meta": {
+            "filename": "Right.js",
+            "lineno": 61,
+            "columnno": 0,
+            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "code": {}
+        },
+        "memberof": "Right",
+        "kind": "function",
+        "name": "chain",
+        "params": [
+            {
+                "type": {
+                    "names": [
+                        "function"
+                    ]
+                },
+                "name": "f"
+            }
+        ],
+        "returns": [
+            {
+                "type": {
+                    "names": [
+                        "*"
+                    ]
+                }
+            }
+        ],
+        "longname": "Right#chain",
+        "scope": "instance"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                1049,
+                1114
+            ],
+            "filename": "Right.js",
+            "lineno": 67,
+            "columnno": 0,
+            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "code": {
+                "id": "astnode100004103",
+                "name": "Right.prototype.chain",
+                "type": "FunctionExpression",
+                "paramnames": [
+                    "f"
+                ]
+            }
+        },
+        "undocumented": true,
+        "name": "chain",
+        "longname": "Right#chain",
+        "kind": "function",
+        "memberof": "Right",
+        "scope": "instance"
+    },
+    {
+        "comment": "/**\n * @memberOf Right\n * @function Right#toString\n * @returns {string}\n */",
+        "meta": {
+            "filename": "Right.js",
+            "lineno": 71,
+            "columnno": 0,
+            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "code": {}
+        },
+        "memberof": "Right",
+        "kind": "function",
+        "name": "toString",
+        "returns": [
+            {
+                "type": {
+                    "names": [
+                        "string"
+                    ]
+                }
+            }
+        ],
+        "longname": "Right#toString",
+        "scope": "instance"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                1192,
+                1280
+            ],
+            "filename": "Right.js",
+            "lineno": 76,
+            "columnno": 0,
+            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "code": {
+                "id": "astnode100004119",
+                "name": "Right.prototype.toString",
+                "type": "FunctionExpression",
+                "paramnames": []
+            }
+        },
+        "undocumented": true,
+        "name": "toString",
+        "longname": "Right#toString",
+        "kind": "function",
+        "memberof": "Right",
+        "scope": "instance"
+    },
+    {
+        "comment": "/**\n * @memberOf Right\n * @function Right#cata\n * @param {Placeholder} _\n * @param {Function} g\n * @returns {*}\n */",
+        "meta": {
+            "filename": "Right.js",
+            "lineno": 80,
+            "columnno": 0,
+            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "code": {}
+        },
+        "memberof": "Right",
+        "kind": "function",
+        "name": "cata",
+        "params": [
+            {
+                "type": {
+                    "names": [
+                        "Placeholder"
+                    ]
+                },
+                "name": "_"
+            },
+            {
+                "type": {
+                    "names": [
+                        "function"
+                    ]
+                },
+                "name": "g"
+            }
+        ],
+        "returns": [
+            {
+                "type": {
+                    "names": [
+                        "*"
+                    ]
+                }
+            }
+        ],
+        "longname": "Right#cata",
+        "scope": "instance"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                1398,
+                1465
+            ],
+            "filename": "Right.js",
+            "lineno": 87,
+            "columnno": 0,
+            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "code": {
+                "id": "astnode100004136",
+                "name": "Right.prototype.cata",
+                "type": "FunctionExpression",
+                "paramnames": [
+                    "_",
+                    "g"
+                ]
+            }
+        },
+        "undocumented": true,
+        "name": "cata",
+        "longname": "Right#cata",
+        "kind": "function",
+        "memberof": "Right",
+        "scope": "instance"
+    },
+    {
+        "comment": "/**\n * @memberOf Right\n * @function Right#get\n * @returns {*}\n */",
+        "meta": {
+            "filename": "Right.js",
+            "lineno": 91,
+            "columnno": 0,
+            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "code": {}
+        },
+        "memberof": "Right",
+        "kind": "function",
+        "name": "get",
+        "returns": [
+            {
+                "type": {
+                    "names": [
+                        "*"
+                    ]
+                }
+            }
+        ],
+        "longname": "Right#get",
+        "scope": "instance"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                1533,
+                1592
+            ],
+            "filename": "Right.js",
+            "lineno": 96,
+            "columnno": 0,
+            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "code": {
+                "id": "astnode100004153",
+                "name": "Right.prototype.get",
+                "type": "FunctionExpression",
+                "paramnames": []
+            }
+        },
+        "undocumented": true,
+        "name": "get",
+        "longname": "Right#get",
+        "kind": "function",
+        "memberof": "Right",
+        "scope": "instance"
+    },
+    {
+        "comment": "/**\n * @memberOf Right\n * @function Right#get\n * @param {Function} f\n * @returns {*}\n */",
+        "meta": {
+            "filename": "Right.js",
+            "lineno": 100,
+            "columnno": 0,
+            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "code": {}
+        },
+        "memberof": "Right",
+        "kind": "function",
+        "name": "get",
+        "params": [
+            {
+                "type": {
+                    "names": [
+                        "function"
+                    ]
+                },
+                "name": "f"
+            }
+        ],
+        "returns": [
+            {
+                "type": {
+                    "names": [
+                        "*"
+                    ]
+                }
+            }
+        ],
+        "longname": "Right#get",
+        "scope": "instance"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                1684,
+                1750
+            ],
+            "filename": "Right.js",
+            "lineno": 107,
+            "columnno": 0,
+            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "code": {
+                "id": "astnode100004166",
+                "name": "Right.prototype.getOrElse",
+                "type": "FunctionExpression",
+                "paramnames": [
+                    "f"
+                ]
+            }
+        },
+        "undocumented": true,
+        "name": "getOrElse",
+        "longname": "Right#getOrElse",
+        "kind": "function",
+        "memberof": "Right",
+        "scope": "instance"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                1752,
+                1772
+            ],
+            "filename": "Right.js",
+            "lineno": 111,
+            "columnno": 0,
+            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "code": {
+                "id": "astnode100004179",
                 "name": "module.exports",
                 "type": "Identifier"
             }
@@ -9789,7 +11764,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100003695",
+                "id": "astnode100004187",
                 "name": "module.exports",
                 "type": "CallExpression"
             }
@@ -9813,7 +11788,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/null",
             "code": {
-                "id": "astnode100003711",
+                "id": "astnode100004203",
                 "name": "module.exports",
                 "type": "CallExpression"
             }
@@ -9888,7 +11863,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/number",
             "code": {
-                "id": "astnode100003721",
+                "id": "astnode100004213",
                 "name": "module.exports",
                 "type": "CallExpression"
             }
@@ -9963,7 +11938,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/number",
             "code": {
-                "id": "astnode100003741",
+                "id": "astnode100004233",
                 "name": "module.exports",
                 "type": "CallExpression"
             }
@@ -9987,7 +11962,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/number",
             "code": {
-                "id": "astnode100003761",
+                "id": "astnode100004253",
                 "name": "module.exports",
                 "type": "CallExpression"
             }
@@ -10026,7 +12001,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/number",
             "code": {
-                "id": "astnode100003775",
+                "id": "astnode100004267",
                 "name": "module.exports",
                 "type": "FunctionDeclaration",
                 "paramnames": [
@@ -10053,7 +12028,7 @@
             "columnno": 15,
             "path": "/Volumes/BigOne/github/fun/src/number",
             "code": {
-                "id": "astnode100003776",
+                "id": "astnode100004268",
                 "name": "isNan",
                 "type": "FunctionDeclaration",
                 "paramnames": [
@@ -10080,7 +12055,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/number",
             "code": {
-                "id": "astnode100003796",
+                "id": "astnode100004288",
                 "name": "module.exports",
                 "type": "CallExpression"
             }
@@ -10104,7 +12079,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/number",
             "code": {
-                "id": "astnode100003824",
+                "id": "astnode100004316",
                 "name": "module.exports",
                 "type": "CallExpression"
             }
@@ -10128,7 +12103,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100003855",
+                "id": "astnode100004347",
                 "name": "module.exports",
                 "type": "CallExpression"
             }
@@ -10152,7 +12127,7 @@
             "columnno": 11,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100003864",
+                "id": "astnode100004356",
                 "name": "keyX"
             }
         },
@@ -10176,7 +12151,7 @@
             "columnno": 11,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100003883",
+                "id": "astnode100004375",
                 "name": "keyY"
             }
         },
@@ -10215,7 +12190,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100003915",
+                "id": "astnode100004407",
                 "name": "module.exports",
                 "type": "CallExpression"
             }
@@ -10239,7 +12214,7 @@
             "columnno": 6,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100003924",
+                "id": "astnode100004416",
                 "name": "r",
                 "type": "ObjectExpression",
                 "value": "{}"
@@ -10265,7 +12240,7 @@
             "columnno": 8,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100003928",
+                "id": "astnode100004420",
                 "name": "k",
                 "type": "CallExpression",
                 "value": ""
@@ -10291,7 +12266,7 @@
             "columnno": 11,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100003935",
+                "id": "astnode100004427",
                 "name": "i",
                 "type": "Literal",
                 "value": 0
@@ -10317,7 +12292,7 @@
             "columnno": 21,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100003955",
+                "id": "astnode100004447",
                 "name": "r[undefined]",
                 "type": "MemberExpression",
                 "funcscope": "<anonymous>",
@@ -10359,7 +12334,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100003978",
+                "id": "astnode100004470",
                 "name": "module.exports",
                 "type": "CallExpression"
             }
@@ -10383,7 +12358,7 @@
             "columnno": 8,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100003988",
+                "id": "astnode100004480",
                 "name": "k",
                 "type": "CallExpression",
                 "value": ""
@@ -10409,7 +12384,7 @@
             "columnno": 6,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100003994",
+                "id": "astnode100004486",
                 "name": "i",
                 "type": "UnaryExpression",
                 "value": -1
@@ -10435,7 +12410,7 @@
             "columnno": 8,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100003999",
+                "id": "astnode100004491",
                 "name": "l",
                 "type": "MemberExpression",
                 "value": "k.length"
@@ -10461,7 +12436,7 @@
             "columnno": 6,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100004005",
+                "id": "astnode100004497",
                 "name": "r",
                 "type": "CallExpression",
                 "value": ""
@@ -10487,7 +12462,7 @@
             "columnno": 4,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100004017",
+                "id": "astnode100004509",
                 "name": "r",
                 "type": "CallExpression",
                 "funcscope": "<anonymous>",
@@ -10514,7 +12489,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100004039",
+                "id": "astnode100004531",
                 "name": "module.exports",
                 "type": "CallExpression"
             }
@@ -10538,7 +12513,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100004064",
+                "id": "astnode100004556",
                 "name": "module.exports",
                 "type": "CallExpression"
             }
@@ -10562,7 +12537,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100004082",
+                "id": "astnode100004574",
                 "name": "module.exports",
                 "type": "CallExpression"
             }
@@ -10586,7 +12561,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100004092",
+                "id": "astnode100004584",
                 "name": "module.exports",
                 "type": "CallExpression"
             }
@@ -10610,7 +12585,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100004113",
+                "id": "astnode100004605",
                 "name": "module.exports",
                 "type": "CallExpression"
             }
@@ -10634,7 +12609,7 @@
             "columnno": 8,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100004121",
+                "id": "astnode100004613",
                 "name": "r",
                 "type": "ArrayExpression",
                 "value": "[]"
@@ -10660,7 +12635,7 @@
             "columnno": 13,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100004126",
+                "id": "astnode100004618",
                 "name": "k"
             }
         },
@@ -10684,7 +12659,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100004152",
+                "id": "astnode100004644",
                 "name": "module.exports",
                 "type": "CallExpression"
             }
@@ -10708,7 +12683,7 @@
             "columnno": 8,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100004161",
+                "id": "astnode100004653",
                 "name": "k",
                 "type": "CallExpression",
                 "value": ""
@@ -10734,7 +12709,7 @@
             "columnno": 6,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100004167",
+                "id": "astnode100004659",
                 "name": "i",
                 "type": "UnaryExpression",
                 "value": -1
@@ -10760,7 +12735,7 @@
             "columnno": 8,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100004172",
+                "id": "astnode100004664",
                 "name": "l",
                 "type": "MemberExpression",
                 "value": "k.length"
@@ -10786,7 +12761,7 @@
             "columnno": 8,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100004178",
+                "id": "astnode100004670",
                 "name": "r",
                 "type": "CallExpression",
                 "value": ""
@@ -10812,7 +12787,7 @@
             "columnno": 4,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100004190",
+                "id": "astnode100004682",
                 "name": "r[undefined]",
                 "type": "CallExpression",
                 "funcscope": "<anonymous>",
@@ -10839,7 +12814,7 @@
             "columnno": 6,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100004232",
+                "id": "astnode100004724",
                 "name": "merge",
                 "type": "CallExpression",
                 "value": ""
@@ -10864,7 +12839,7 @@
             "columnno": 6,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100004241",
+                "id": "astnode100004733",
                 "name": "result",
                 "type": "CallExpression",
                 "value": ""
@@ -10890,7 +12865,7 @@
             "columnno": 11,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100004264",
+                "id": "astnode100004756",
                 "name": "key"
             }
         },
@@ -10914,7 +12889,7 @@
             "columnno": 10,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100004283",
+                "id": "astnode100004775",
                 "name": "oldValue",
                 "type": "MemberExpression",
                 "value": "objR[undefined]"
@@ -10940,7 +12915,7 @@
             "columnno": 10,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100004289",
+                "id": "astnode100004781",
                 "name": "newValue",
                 "type": "MemberExpression",
                 "value": "objL[undefined]"
@@ -10966,7 +12941,7 @@
             "columnno": 6,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100004304",
+                "id": "astnode100004796",
                 "name": "result[undefined]",
                 "type": "CallExpression",
                 "funcscope": "<anonymous>",
@@ -10993,7 +12968,7 @@
             "columnno": 6,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100004318",
+                "id": "astnode100004810",
                 "name": "result[undefined]",
                 "type": "CallExpression",
                 "funcscope": "<anonymous>",
@@ -11020,7 +12995,7 @@
             "columnno": 6,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100004328",
+                "id": "astnode100004820",
                 "name": "result[undefined]",
                 "type": "Identifier",
                 "funcscope": "<anonymous>",
@@ -11047,7 +13022,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100004335",
+                "id": "astnode100004827",
                 "name": "module.exports",
                 "type": "Identifier"
             }
@@ -11071,7 +13046,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100004343",
+                "id": "astnode100004835",
                 "name": "module.exports",
                 "type": "CallExpression"
             }
@@ -11095,7 +13070,7 @@
             "columnno": 6,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100004351",
+                "id": "astnode100004843",
                 "name": "result",
                 "type": "ObjectExpression",
                 "value": "{}"
@@ -11121,7 +13096,7 @@
             "columnno": 4,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100004382",
+                "id": "astnode100004874",
                 "name": "result[undefined]",
                 "type": "MemberExpression",
                 "funcscope": "<anonymous>",
@@ -11162,7 +13137,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100004397",
+                "id": "astnode100004889",
                 "name": "module.exports",
                 "type": "CallExpression"
             }
@@ -11186,7 +13161,7 @@
             "columnno": 6,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100004406",
+                "id": "astnode100004898",
                 "name": "val",
                 "type": "Identifier",
                 "value": "obj"
@@ -11212,7 +13187,7 @@
             "columnno": 6,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100004410",
+                "id": "astnode100004902",
                 "name": "idx",
                 "type": "Literal",
                 "value": 0
@@ -11238,7 +13213,7 @@
             "columnno": 6,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100004414",
+                "id": "astnode100004906",
                 "name": "p"
             }
         },
@@ -11262,7 +13237,7 @@
             "columnno": 4,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100004430",
+                "id": "astnode100004922",
                 "name": "p",
                 "type": "MemberExpression",
                 "funcscope": "<anonymous>",
@@ -11289,7 +13264,7 @@
             "columnno": 4,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100004436",
+                "id": "astnode100004928",
                 "name": "val",
                 "type": "ConditionalExpression",
                 "funcscope": "<anonymous>",
@@ -11316,7 +13291,7 @@
             "columnno": 4,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100004462",
+                "id": "astnode100004954",
                 "name": "idx",
                 "type": "Literal",
                 "funcscope": "<anonymous>",
@@ -11387,7 +13362,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100004473",
+                "id": "astnode100004965",
                 "name": "module.exports",
                 "type": "CallExpression"
             }
@@ -11411,7 +13386,7 @@
             "columnno": 8,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100004482",
+                "id": "astnode100004974",
                 "name": "r",
                 "type": "ObjectExpression",
                 "value": "{}"
@@ -11437,7 +13412,7 @@
             "columnno": 6,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100004486",
+                "id": "astnode100004978",
                 "name": "i",
                 "type": "Literal",
                 "value": 0
@@ -11463,7 +13438,7 @@
             "columnno": 6,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100004504",
+                "id": "astnode100004996",
                 "name": "r[undefined]",
                 "type": "MemberExpression",
                 "funcscope": "<anonymous>",
@@ -11490,7 +13465,7 @@
             "columnno": 4,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100004516",
+                "id": "astnode100005008",
                 "name": "i",
                 "type": "Literal",
                 "funcscope": "<anonymous>",
@@ -11531,7 +13506,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100004527",
+                "id": "astnode100005019",
                 "name": "module.exports",
                 "type": "CallExpression"
             }
@@ -11589,7 +13564,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100004549",
+                "id": "astnode100005041",
                 "name": "module.exports",
                 "type": "CallExpression"
             }
@@ -11613,7 +13588,7 @@
             "columnno": 8,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100004557",
+                "id": "astnode100005049",
                 "name": "k",
                 "type": "CallExpression",
                 "value": ""
@@ -11639,7 +13614,7 @@
             "columnno": 8,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100004563",
+                "id": "astnode100005055",
                 "name": "l",
                 "type": "MemberExpression",
                 "value": "k.length"
@@ -11665,7 +13640,7 @@
             "columnno": 8,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100004569",
+                "id": "astnode100005061",
                 "name": "r",
                 "type": "ArrayExpression",
                 "value": "[]"
@@ -11691,7 +13666,7 @@
             "columnno": 6,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100004573",
+                "id": "astnode100005065",
                 "name": "i",
                 "type": "Literal",
                 "value": 0
@@ -11717,7 +13692,7 @@
             "columnno": 4,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100004582",
+                "id": "astnode100005074",
                 "name": "r[undefined]",
                 "type": "MemberExpression",
                 "funcscope": "<anonymous>",
@@ -11744,7 +13719,7 @@
             "columnno": 4,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100004592",
+                "id": "astnode100005084",
                 "name": "i",
                 "type": "Literal",
                 "funcscope": "<anonymous>",
@@ -11786,7 +13761,76 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100004603",
+                "id": "astnode100005095",
+                "name": "module.exports",
+                "type": "CallExpression"
+            }
+        },
+        "undocumented": true,
+        "name": "exports",
+        "longname": "module.exports",
+        "kind": "member",
+        "memberof": "module",
+        "scope": "static"
+    },
+    {
+        "comment": "/**\n * Returns a single item by iterating over an array like object and call a function on each item, starting from the first item in the iterator\n * The initial value is taken from the iterator.\n * Reduce works only on Arrays and returns a valueof the type of the first element in the Array\n *\n * @function reduce\n * @desc Returns a single item by iterating over an array like object and call a function on each item, starting from the first item in the iterator\n * @since v1.0.4\n * @param {Function} cb - receives 4 values: the accumulator, the item, the index, and the initial value.\n * @param {Array} a - The iterator to apply the function\n * @return {*}\n **/",
+        "meta": {
+            "filename": "reduce.js",
+            "lineno": 1,
+            "columnno": 0,
+            "path": "/Volumes/BigOne/github/fun/src",
+            "code": {}
+        },
+        "description": "Returns a single item by iterating over an array like object and call a function on each item, starting from the first item in the iterator",
+        "kind": "function",
+        "name": "reduce",
+        "since": "v1.0.4",
+        "params": [
+            {
+                "type": {
+                    "names": [
+                        "function"
+                    ]
+                },
+                "description": "receives 4 values: the accumulator, the item, the index, and the initial value.",
+                "name": "cb"
+            },
+            {
+                "type": {
+                    "names": [
+                        "Array"
+                    ]
+                },
+                "description": "The iterator to apply the function",
+                "name": "a"
+            }
+        ],
+        "returns": [
+            {
+                "type": {
+                    "names": [
+                        "*"
+                    ]
+                }
+            }
+        ],
+        "longname": "reduce",
+        "scope": "global"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                725,
+                854
+            ],
+            "filename": "reduce.js",
+            "lineno": 16,
+            "columnno": 0,
+            "path": "/Volumes/BigOne/github/fun/src",
+            "code": {
+                "id": "astnode100005117",
                 "name": "module.exports",
                 "type": "CallExpression"
             }
@@ -11802,6 +13846,58 @@
         "comment": "",
         "meta": {
             "range": [
+                780,
+                795
+            ],
+            "filename": "reduce.js",
+            "lineno": 17,
+            "columnno": 8,
+            "path": "/Volumes/BigOne/github/fun/src",
+            "code": {
+                "id": "astnode100005126",
+                "name": "arr",
+                "type": "CallExpression",
+                "value": ""
+            }
+        },
+        "undocumented": true,
+        "name": "arr",
+        "longname": "<anonymous>~arr",
+        "kind": "constant",
+        "memberof": "<anonymous>",
+        "scope": "inner",
+        "params": []
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                804,
+                822
+            ],
+            "filename": "reduce.js",
+            "lineno": 18,
+            "columnno": 8,
+            "path": "/Volumes/BigOne/github/fun/src",
+            "code": {
+                "id": "astnode100005133",
+                "name": "init",
+                "type": "CallExpression",
+                "value": ""
+            }
+        },
+        "undocumented": true,
+        "name": "init",
+        "longname": "<anonymous>~init",
+        "kind": "constant",
+        "memberof": "<anonymous>",
+        "scope": "inner",
+        "params": []
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
                 74,
                 98
             ],
@@ -11810,7 +13906,80 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/set",
             "code": {
-                "id": "astnode100004623",
+                "id": "astnode100005153",
+                "name": "module.exports",
+                "type": "CallExpression"
+            }
+        },
+        "undocumented": true,
+        "name": "exports",
+        "longname": "module.exports",
+        "kind": "member",
+        "memberof": "module",
+        "scope": "static"
+    },
+    {
+        "comment": "/**\n * Returns a copy of the list, sorted according to the function.\n *\n * @func sort\n * @since v1.0.4\n * @param {Function} comp - A sorting function\n * @param {Array} a - The list to sort\n * @return {Array} a new array with its elements sorted by the comp function.\n * @example\n *\n *      const diff = function(a, b) { return a - b; };\n *      sort(diff, [4,2,7,5]); //=> [2, 4, 5, 7]\n */",
+        "meta": {
+            "filename": "sort.js",
+            "lineno": 1,
+            "columnno": 0,
+            "path": "/Volumes/BigOne/github/fun/src",
+            "code": {}
+        },
+        "description": "Returns a copy of the list, sorted according to the function.",
+        "kind": "function",
+        "name": "sort",
+        "since": "v1.0.4",
+        "params": [
+            {
+                "type": {
+                    "names": [
+                        "function"
+                    ]
+                },
+                "description": "A sorting function",
+                "name": "comp"
+            },
+            {
+                "type": {
+                    "names": [
+                        "Array"
+                    ]
+                },
+                "description": "The list to sort",
+                "name": "a"
+            }
+        ],
+        "returns": [
+            {
+                "type": {
+                    "names": [
+                        "Array"
+                    ]
+                },
+                "description": "a new array with its elements sorted by the comp function."
+            }
+        ],
+        "examples": [
+            "const diff = function(a, b) { return a - b; };\n     sort(diff, [4,2,7,5]); //=> [2, 4, 5, 7]"
+        ],
+        "longname": "sort",
+        "scope": "global"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                419,
+                521
+            ],
+            "filename": "sort.js",
+            "lineno": 16,
+            "columnno": 0,
+            "path": "/Volumes/BigOne/github/fun/src",
+            "code": {
+                "id": "astnode100005163",
                 "name": "module.exports",
                 "type": "CallExpression"
             }
@@ -11849,7 +14018,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/string",
             "code": {
-                "id": "astnode100004629",
+                "id": "astnode100005188",
                 "name": "module.exports",
                 "type": "FunctionDeclaration",
                 "paramnames": [
@@ -11877,7 +14046,7 @@
             "columnno": 15,
             "path": "/Volumes/BigOne/github/fun/src/string",
             "code": {
-                "id": "astnode100004630",
+                "id": "astnode100005189",
                 "name": "concat",
                 "type": "FunctionDeclaration",
                 "paramnames": [
@@ -11905,7 +14074,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/string",
             "code": {
-                "id": "astnode100004657",
+                "id": "astnode100005216",
                 "name": "module.exports",
                 "type": "FunctionDeclaration",
                 "paramnames": [
@@ -11932,7 +14101,7 @@
             "columnno": 15,
             "path": "/Volumes/BigOne/github/fun/src/string",
             "code": {
-                "id": "astnode100004658",
+                "id": "astnode100005217",
                 "name": "formatString",
                 "type": "FunctionDeclaration",
                 "paramnames": [
@@ -11963,7 +14132,7 @@
             "columnno": 6,
             "path": "/Volumes/BigOne/github/fun/src/string",
             "code": {
-                "id": "astnode100004663",
+                "id": "astnode100005222",
                 "name": "args",
                 "type": "CallExpression",
                 "value": ""
@@ -11989,7 +14158,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/string",
             "code": {
-                "id": "astnode100004703",
+                "id": "astnode100005262",
                 "name": "module.exports",
                 "type": "CallExpression"
             }
@@ -12013,7 +14182,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/string",
             "code": {
-                "id": "astnode100004713",
+                "id": "astnode100005272",
                 "name": "module.exports",
                 "type": "CallExpression"
             }
@@ -12037,7 +14206,7 @@
             "columnno": 6,
             "path": "/Volumes/BigOne/github/fun/src/string",
             "code": {
-                "id": "astnode100004722",
+                "id": "astnode100005281",
                 "name": "i",
                 "type": "UnaryExpression",
                 "value": -1
@@ -12063,7 +14232,7 @@
             "columnno": 8,
             "path": "/Volumes/BigOne/github/fun/src/string",
             "code": {
-                "id": "astnode100004727",
+                "id": "astnode100005286",
                 "name": "l",
                 "type": "MemberExpression",
                 "value": "a.length"
@@ -12089,7 +14258,7 @@
             "columnno": 6,
             "path": "/Volumes/BigOne/github/fun/src/string",
             "code": {
-                "id": "astnode100004733",
+                "id": "astnode100005292",
                 "name": "r",
                 "type": "Literal",
                 "value": ""
@@ -12115,7 +14284,7 @@
             "columnno": 4,
             "path": "/Volumes/BigOne/github/fun/src/string",
             "code": {
-                "id": "astnode100004743",
+                "id": "astnode100005302",
                 "name": "r",
                 "type": "CallExpression",
                 "funcscope": "<anonymous>",
@@ -12156,7 +14325,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100004762",
+                "id": "astnode100005321",
                 "name": "module.exports",
                 "type": "FunctionDeclaration",
                 "paramnames": [
@@ -12183,7 +14352,7 @@
             "columnno": 15,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100004763",
+                "id": "astnode100005322",
                 "name": "truthy",
                 "type": "FunctionDeclaration",
                 "paramnames": [
@@ -12224,7 +14393,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100004782",
+                "id": "astnode100005341",
                 "name": "module.exports",
                 "type": "CallExpression"
             }
@@ -12248,7 +14417,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/undefined",
             "code": {
-                "id": "astnode100004811",
+                "id": "astnode100005370",
                 "name": "module.exports",
                 "type": "CallExpression"
             }
@@ -12287,7 +14456,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100004825",
+                "id": "astnode100005384",
                 "name": "module.exports",
                 "type": "CallExpression"
             }
@@ -12352,7 +14521,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100004853",
+                "id": "astnode100005412",
                 "name": "module.exports",
                 "type": "CallExpression"
             }
@@ -12376,7 +14545,7 @@
             "columnno": 6,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100004862",
+                "id": "astnode100005421",
                 "name": "i",
                 "type": "Literal",
                 "value": 0
@@ -12402,7 +14571,7 @@
             "columnno": 6,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100004866",
+                "id": "astnode100005425",
                 "name": "l",
                 "type": "CallExpression",
                 "value": ""
@@ -12428,7 +14597,7 @@
             "columnno": 6,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100004879",
+                "id": "astnode100005438",
                 "name": "r",
                 "type": "ObjectExpression",
                 "value": "{}"
@@ -12454,7 +14623,7 @@
             "columnno": 4,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100004888",
+                "id": "astnode100005447",
                 "name": "r[undefined]",
                 "type": "MemberExpression",
                 "funcscope": "<anonymous>",
@@ -12481,7 +14650,7 @@
             "columnno": 4,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100004898",
+                "id": "astnode100005457",
                 "name": "i",
                 "type": "Literal",
                 "funcscope": "<anonymous>",
@@ -12523,7 +14692,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100004909",
+                "id": "astnode100005468",
                 "name": "module.exports",
                 "type": "CallExpression"
             }
@@ -12547,7 +14716,7 @@
             "columnno": 8,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100004919",
+                "id": "astnode100005478",
                 "name": "arr",
                 "type": "ArrayExpression",
                 "value": "[]"
@@ -12573,7 +14742,7 @@
             "columnno": 8,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100004923",
+                "id": "astnode100005482",
                 "name": "len",
                 "type": "CallExpression",
                 "value": ""
@@ -12599,7 +14768,7 @@
             "columnno": 6,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100004936",
+                "id": "astnode100005495",
                 "name": "i",
                 "type": "Literal",
                 "value": 0
@@ -12625,7 +14794,7 @@
             "columnno": 7,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100004940",
+                "id": "astnode100005499",
                 "name": "i",
                 "type": "Literal",
                 "funcscope": "<anonymous>",
@@ -12716,9 +14885,13 @@
             "/Volumes/BigOne/github/fun/src/map/map.js",
             "/Volumes/BigOne/github/fun/src/map.js",
             "/Volumes/BigOne/github/fun/src/max.js",
+            "/Volumes/BigOne/github/fun/src/min.js",
+            "/Volumes/BigOne/github/fun/src/monads/Either.js",
             "/Volumes/BigOne/github/fun/src/monads/Just.js",
+            "/Volumes/BigOne/github/fun/src/monads/Left.js",
             "/Volumes/BigOne/github/fun/src/monads/Maybe.js",
             "/Volumes/BigOne/github/fun/src/monads/Nothing.js",
+            "/Volumes/BigOne/github/fun/src/monads/Right.js",
             "/Volumes/BigOne/github/fun/src/not.js",
             "/Volumes/BigOne/github/fun/src/null/is.js",
             "/Volumes/BigOne/github/fun/src/number/add.js",
@@ -12743,8 +14916,10 @@
             "/Volumes/BigOne/github/fun/src/object/prop.js",
             "/Volumes/BigOne/github/fun/src/object/values.js",
             "/Volumes/BigOne/github/fun/src/or.js",
+            "/Volumes/BigOne/github/fun/src/reduce.js",
             "/Volumes/BigOne/github/fun/src/set/filter.js",
             "/Volumes/BigOne/github/fun/src/set/is.js",
+            "/Volumes/BigOne/github/fun/src/sort.js",
             "/Volumes/BigOne/github/fun/src/string/concat.js",
             "/Volumes/BigOne/github/fun/src/string/formatString.js",
             "/Volumes/BigOne/github/fun/src/string/is.js",

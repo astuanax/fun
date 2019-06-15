@@ -1,5 +1,5 @@
 /**
- * @function Nothing
+ * @class Nothing
  * @constructor
  */
 let Nothing = function () {
@@ -7,7 +7,7 @@ let Nothing = function () {
 
 /**
  * @memberOf Nothing
- * @function isJust
+ * @function Nothing#isJust
  * @returns {boolean}
  */
 Nothing.prototype.isJust = function () {
@@ -16,7 +16,7 @@ Nothing.prototype.isJust = function () {
 
 /**
  * @memberOf Nothing
- * @function isNothing
+ * @function Nothing#isNothing
  * @returns {boolean}
  */
 Nothing.prototype.isNothing = function () {
