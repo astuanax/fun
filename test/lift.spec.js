@@ -3,13 +3,7 @@
  */
 
 import chai from 'chai'
-import { curry } from '../lib/fun'
-import { lift } from '../lib/fun'
-import { not } from '../lib/fun'
-import { always } from '../lib/fun'
-import { type } from '../lib/fun'
-import { add } from '../lib/fun'
-import { Maybe } from '../lib/fun'
+import { curry, lift, add, Maybe, Either } from '../lib/fun'
 
 describe('lift', function () {
   const add3 = curry(function add3 (a, b, c) {
@@ -46,8 +40,8 @@ describe('lift', function () {
     chai.expect(madd5([1, 10], [2], [3], [40], [500, 1000])).to.deep.equal([546, 1046, 555, 1055])
   })
 
-  it('works with other functors such as "Maybe"', function () {
+  it('works with other functors such as "Either"', function () {
     const addM = lift(add)
-    chai.expect(addM(Maybe.of(3), Maybe.of(5)), Maybe.of(8))
+    chai.expect(addM(Either.of(3), Either.of(5)), Either.of(8))
   })
 })

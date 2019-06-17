@@ -9224,7 +9224,7 @@
         "scope": "instance"
     },
     {
-        "comment": "/**\n * @memberOf Either\n * @function Either#Left\n * @returns {Left}\n */",
+        "comment": "/**\n * @private\n * @memberOf Either\n * @function Either#Left\n * @returns {Left}\n */",
         "meta": {
             "filename": "Either.js",
             "lineno": 61,
@@ -9232,6 +9232,7 @@
             "path": "/Volumes/BigOne/github/fun/src/monads",
             "code": {}
         },
+        "access": "private",
         "memberof": "Either",
         "kind": "function",
         "name": "Left",
@@ -9251,11 +9252,11 @@
         "comment": "",
         "meta": {
             "range": [
-                1349,
-                1414
+                1361,
+                1426
             ],
             "filename": "Either.js",
-            "lineno": 66,
+            "lineno": 67,
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/monads",
             "code": {
@@ -9278,7 +9279,7 @@
         "comment": "/**\n * @private\n * @memberOf Either\n * @function Either.Left\n * @returns {Left}\n */",
         "meta": {
             "filename": "Either.js",
-            "lineno": 70,
+            "lineno": 71,
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/monads",
             "code": {}
@@ -9303,11 +9304,11 @@
         "comment": "",
         "meta": {
             "range": [
-                1500,
-                1555
+                1512,
+                1567
             ],
             "filename": "Either.js",
-            "lineno": 76,
+            "lineno": 77,
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/monads",
             "code": {
@@ -9330,7 +9331,7 @@
         "comment": "/**\n * @private\n * @memberOf Either\n * @function Either#Right\n * @returns {Right}\n */",
         "meta": {
             "filename": "Either.js",
-            "lineno": 80,
+            "lineno": 81,
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/monads",
             "code": {}
@@ -9355,11 +9356,11 @@
         "comment": "",
         "meta": {
             "range": [
-                1643,
-                1710
+                1655,
+                1722
             ],
             "filename": "Either.js",
-            "lineno": 86,
+            "lineno": 87,
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/monads",
             "code": {
@@ -9382,7 +9383,7 @@
         "comment": "/**\n * @private\n * @memberOf Either\n * @function Either.Right\n * @returns {Right}\n */",
         "meta": {
             "filename": "Either.js",
-            "lineno": 90,
+            "lineno": 91,
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/monads",
             "code": {}
@@ -9407,11 +9408,11 @@
         "comment": "",
         "meta": {
             "range": [
-                1798,
-                1855
+                1810,
+                1867
             ],
             "filename": "Either.js",
-            "lineno": 96,
+            "lineno": 97,
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/monads",
             "code": {
@@ -9434,11 +9435,11 @@
         "comment": "",
         "meta": {
             "range": [
-                1857,
-                1878
+                1869,
+                1890
             ],
             "filename": "Either.js",
-            "lineno": 100,
+            "lineno": 101,
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/monads",
             "code": {
@@ -9802,7 +9803,7 @@
         "scope": "instance"
     },
     {
-        "comment": "/**\n * @memberOf Left\n * @function Left#isNothing\n * @returns {boolean}\n */",
+        "comment": "/**\n * @memberOf Left\n * @function Left#isRight\n * @returns {boolean}\n */",
         "meta": {
             "filename": "Left.js",
             "lineno": 32,
@@ -9812,7 +9813,7 @@
         },
         "memberof": "Left",
         "kind": "function",
-        "name": "isNothing",
+        "name": "isRight",
         "returns": [
             {
                 "type": {
@@ -9822,15 +9823,15 @@
                 }
             }
         ],
-        "longname": "Left#isNothing",
+        "longname": "Left#isRight",
         "scope": "instance"
     },
     {
         "comment": "",
         "meta": {
             "range": [
-                575,
-                630
+                573,
+                628
             ],
             "filename": "Left.js",
             "lineno": 37,
@@ -9888,8 +9889,8 @@
         "comment": "",
         "meta": {
             "range": [
-                714,
-                764
+                712,
+                762
             ],
             "filename": "Left.js",
             "lineno": 47,
@@ -9949,8 +9950,8 @@
         "comment": "",
         "meta": {
             "range": [
-                856,
-                907
+                854,
+                905
             ],
             "filename": "Left.js",
             "lineno": 57,
@@ -10010,8 +10011,8 @@
         "comment": "",
         "meta": {
             "range": [
-                1001,
-                1054
+                999,
+                1052
             ],
             "filename": "Left.js",
             "lineno": 67,
@@ -10061,8 +10062,8 @@
         "comment": "",
         "meta": {
             "range": [
-                1130,
-                1216
+                1128,
+                1214
             ],
             "filename": "Left.js",
             "lineno": 76,
@@ -10128,8 +10129,8 @@
         "comment": "",
         "meta": {
             "range": [
-                1332,
-                1398
+                1330,
+                1396
             ],
             "filename": "Left.js",
             "lineno": 87,
@@ -10180,8 +10181,8 @@
         "comment": "",
         "meta": {
             "range": [
-                1471,
-                1570
+                1469,
+                1568
             ],
             "filename": "Left.js",
             "lineno": 96,
@@ -10239,8 +10240,8 @@
         "comment": "",
         "meta": {
             "range": [
-                1658,
-                1712
+                1656,
+                1710
             ],
             "filename": "Left.js",
             "lineno": 106,
@@ -10266,8 +10267,8 @@
         "comment": "",
         "meta": {
             "range": [
-                1714,
-                1733
+                1712,
+                1731
             ],
             "filename": "Left.js",
             "lineno": 110,
@@ -10840,7 +10841,7 @@
         "scope": "instance"
     },
     {
-        "comment": "/**\n * @memberOf Maybe\n * @function Maybe#Nothing\n * @returns {Nothing}\n * @constructor\n */",
+        "comment": "/**\n * @private\n * @memberOf Maybe\n * @function Maybe#Nothing\n * @returns {Nothing}\n * @constructor\n */",
         "meta": {
             "filename": "Maybe.js",
             "lineno": 117,
@@ -10848,6 +10849,7 @@
             "path": "/Volumes/BigOne/github/fun/src/monads",
             "code": {}
         },
+        "access": "private",
         "memberof": "Maybe",
         "kind": "class",
         "name": "Nothing",
@@ -10867,11 +10869,11 @@
         "comment": "",
         "meta": {
             "range": [
-                2639,
-                2703
+                2651,
+                2715
             ],
             "filename": "Maybe.js",
-            "lineno": 123,
+            "lineno": 124,
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/monads",
             "code": {
@@ -10889,14 +10891,14 @@
         "scope": "instance"
     },
     {
-        "comment": "/**\n * @memberOf Maybe\n * @fucntion Maybe#Just\n * @returns {Just}\n * @constructor\n */",
+        "comment": "/**\n * @private\n * @memberOf Maybe\n * @fucntion Maybe#Just\n * @returns {Just}\n * @constructor\n */",
         "meta": {
             "range": [
-                2791,
-                2860
+                2815,
+                2884
             ],
             "filename": "Maybe.js",
-            "lineno": 133,
+            "lineno": 135,
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/monads",
             "code": {
@@ -10906,6 +10908,7 @@
                 "paramnames": []
             }
         },
+        "access": "private",
         "memberof": "Maybe",
         "tags": [
             {
@@ -10933,11 +10936,11 @@
         "comment": "",
         "meta": {
             "range": [
-                2862,
-                2882
+                2886,
+                2906
             ],
             "filename": "Maybe.js",
-            "lineno": 137,
+            "lineno": 139,
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/monads",
             "code": {
@@ -11654,7 +11657,7 @@
         "scope": "instance"
     },
     {
-        "comment": "/**\n * @memberOf Right\n * @function Right#get\n * @param {Function} f\n * @returns {*}\n */",
+        "comment": "/**\n * @memberOf Right\n * @function Right#getOrElse\n * @param {Function} f\n * @returns {*}\n */",
         "meta": {
             "filename": "Right.js",
             "lineno": 100,
@@ -11664,7 +11667,7 @@
         },
         "memberof": "Right",
         "kind": "function",
-        "name": "get",
+        "name": "getOrElse",
         "params": [
             {
                 "type": {
@@ -11684,15 +11687,15 @@
                 }
             }
         ],
-        "longname": "Right#get",
+        "longname": "Right#getOrElse",
         "scope": "instance"
     },
     {
         "comment": "",
         "meta": {
             "range": [
-                1684,
-                1750
+                1690,
+                1756
             ],
             "filename": "Right.js",
             "lineno": 107,
@@ -11718,8 +11721,8 @@
         "comment": "",
         "meta": {
             "range": [
-                1752,
-                1772
+                1758,
+                1778
             ],
             "filename": "Right.js",
             "lineno": 111,

@@ -1,5 +1,5 @@
 import chai from 'chai'
-import { Either, compose, filter, map, cond, equals, T } from '../lib/fun'
+import { Either, compose, filter, map, cond, equals, T, lift, add } from '../lib/fun'
 
 describe('Either', function () {
   it('creates an Either', function () {
@@ -32,6 +32,11 @@ describe('Either', function () {
 
     const l = Either.Left(new Error('This is an error'))
     chai.expect(l.map(x => x)).to.deep.equal(l)
+  })
+
+  it('works with other functors such as "Either"', function () {
+    const addM = lift(add)
+    chai.expect(addM(Either.of(3), Either.of(5)), Either.of(8))
   })
 
   it('handles catamorphism', function () {
