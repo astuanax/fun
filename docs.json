@@ -1335,7 +1335,7 @@
         "scope": "static"
     },
     {
-        "comment": "/**\n * @function arrayConcat\n * @desc Autocurried concatenation function using native concat\n * @param {Array} a1 - Left side of the concatenation\n * @param {Array} a2 - Right side of the concatenation\n * @returns {T[]}\n */",
+        "comment": "/**\n * @function arrayConcat\n * @desc Autocurried concatenation function using native concat\n * @param {Array} a1 - Left side of the concatenation\n * @param {Array} a2 - Right side of the concatenation\n * @returns {T[]}\n * @example\n *\n * const startsWithZero = concat([0])\n *const OneTwoThree = startsWithZero([1, 2, 3])\n * // [0, 1, 2, 3]\n */",
         "meta": {
             "filename": "concat.js",
             "lineno": 1,
@@ -1375,6 +1375,9 @@
                 }
             }
         ],
+        "examples": [
+            "const startsWithZero = concat([0])\nconst OneTwoThree = startsWithZero([1, 2, 3])\n// [0, 1, 2, 3]"
+        ],
         "longname": "arrayConcat",
         "scope": "global"
     },
@@ -1382,11 +1385,11 @@
         "comment": "",
         "meta": {
             "range": [
-                254,
-                340
+                374,
+                460
             ],
             "filename": "concat.js",
-            "lineno": 10,
+            "lineno": 15,
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/array",
             "code": {
@@ -14473,17 +14476,49 @@
         "scope": "static"
     },
     {
-        "comment": "/**\n\n * zip\n *\n * @function zip\n */",
+        "comment": "/**\n * @function zip\n * @desc Autocurried function that zips 2 arrays into an Array of pairs\n * @param {Array} a - Array to zip\n * @param {Array} b - Array to zip\n * @returns {Array}\n * @example\n *\n * const a = [1, 2, 3]\n * const b = [100, 200, 300]\n * zip(a, b) // [[100, 1], [200, 2], [300, 3]]\n *\n */",
         "meta": {
             "filename": "zip.js",
-            "lineno": 1,
+            "lineno": 3,
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {}
         },
-        "description": "zip",
         "kind": "function",
         "name": "zip",
+        "description": "Autocurried function that zips 2 arrays into an Array of pairs",
+        "params": [
+            {
+                "type": {
+                    "names": [
+                        "Array"
+                    ]
+                },
+                "description": "Array to zip",
+                "name": "a"
+            },
+            {
+                "type": {
+                    "names": [
+                        "Array"
+                    ]
+                },
+                "description": "Array to zip",
+                "name": "b"
+            }
+        ],
+        "returns": [
+            {
+                "type": {
+                    "names": [
+                        "Array"
+                    ]
+                }
+            }
+        ],
+        "examples": [
+            "const a = [1, 2, 3]\nconst b = [100, 200, 300]\nzip(a, b) // [[100, 1], [200, 2], [300, 3]]"
+        ],
         "longname": "zip",
         "scope": "global"
     },
@@ -14491,11 +14526,11 @@
         "comment": "",
         "meta": {
             "range": [
-                97,
-                209
+                365,
+                477
             ],
             "filename": "zip.js",
-            "lineno": 10,
+            "lineno": 17,
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
@@ -14512,7 +14547,7 @@
         "scope": "static"
     },
     {
-        "comment": "/**\n * @function zipObj\n * @param {array} a\n * @param {array} b\n * @return {object}\n */",
+        "comment": "/**\n * @function zipObj\n * @desc Autocurried function that zips 2 Arrays into 1 Object\n * @param {Array} a - Array containing the keys of the returned object\n * @param {Array} b - Array containing the values of the returned object\n * @return {Object}\n * @example\n *\n * const keys = ['a', 'b', 'c']\n * const values = [0, 1, 2]\n * zipObj(keys, values // {'a': 0, 'b': 1, 'c': 2}\n *\n */",
         "meta": {
             "filename": "zipObj.js",
             "lineno": 3,
@@ -14522,21 +14557,24 @@
         },
         "kind": "function",
         "name": "zipObj",
+        "description": "Autocurried function that zips 2 Arrays into 1 Object",
         "params": [
             {
                 "type": {
                     "names": [
-                        "array"
+                        "Array"
                     ]
                 },
+                "description": "Array containing the keys of the returned object",
                 "name": "a"
             },
             {
                 "type": {
                     "names": [
-                        "array"
+                        "Array"
                     ]
                 },
+                "description": "Array containing the values of the returned object",
                 "name": "b"
             }
         ],
@@ -14544,10 +14582,13 @@
             {
                 "type": {
                     "names": [
-                        "object"
+                        "Object"
                     ]
                 }
             }
+        ],
+        "examples": [
+            "const keys = ['a', 'b', 'c']\nconst values = [0, 1, 2]\nzipObj(keys, values // {'a': 0, 'b': 1, 'c': 2}"
         ],
         "longname": "zipObj",
         "scope": "global"
@@ -14556,11 +14597,11 @@
         "comment": "",
         "meta": {
             "range": [
-                117,
-                292
+                414,
+                589
             ],
             "filename": "zipObj.js",
-            "lineno": 9,
+            "lineno": 17,
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
@@ -14580,11 +14621,11 @@
         "comment": "",
         "meta": {
             "range": [
-                169,
-                174
+                466,
+                471
             ],
             "filename": "zipObj.js",
-            "lineno": 10,
+            "lineno": 18,
             "columnno": 6,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
@@ -14606,11 +14647,11 @@
         "comment": "",
         "meta": {
             "range": [
-                181,
-                213
+                478,
+                510
             ],
             "filename": "zipObj.js",
-            "lineno": 11,
+            "lineno": 19,
             "columnno": 6,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
@@ -14632,11 +14673,11 @@
         "comment": "",
         "meta": {
             "range": [
-                220,
-                226
+                517,
+                523
             ],
             "filename": "zipObj.js",
-            "lineno": 12,
+            "lineno": 20,
             "columnno": 6,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
@@ -14658,11 +14699,11 @@
         "comment": "",
         "meta": {
             "range": [
-                249,
-                263
+                546,
+                560
             ],
             "filename": "zipObj.js",
-            "lineno": 14,
+            "lineno": 22,
             "columnno": 4,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
@@ -14685,11 +14726,11 @@
         "comment": "",
         "meta": {
             "range": [
-                268,
-                274
+                565,
+                571
             ],
             "filename": "zipObj.js",
-            "lineno": 15,
+            "lineno": 23,
             "columnno": 4,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
@@ -14709,17 +14750,58 @@
         "scope": "inner"
     },
     {
-        "comment": "/**\n\n * zipWith\n *\n *  @function zipWith\n */",
+        "comment": "/**\n * @function zipWith\n * @desc Combines the values of 2 arrays into 1 array using a callback function\n * @param {Function} cb - Callback function accepting 2 parameters\n * @param {Array} a - Array to zip\n * @param {Array} b - Array to zip\n * @returns {Array}\n * @example\n *\n * const a = [1, 2, 3]\n * const b = [100, 200, 300]\n * zipWith(add, a, b) // [101, 202, 303]\n *\n */",
         "meta": {
             "filename": "zipWith.js",
-            "lineno": 1,
+            "lineno": 2,
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {}
         },
-        "description": "zipWith",
         "kind": "function",
         "name": "zipWith",
+        "description": "Combines the values of 2 arrays into 1 array using a callback function",
+        "params": [
+            {
+                "type": {
+                    "names": [
+                        "function"
+                    ]
+                },
+                "description": "Callback function accepting 2 parameters",
+                "name": "cb"
+            },
+            {
+                "type": {
+                    "names": [
+                        "Array"
+                    ]
+                },
+                "description": "Array to zip",
+                "name": "a"
+            },
+            {
+                "type": {
+                    "names": [
+                        "Array"
+                    ]
+                },
+                "description": "Array to zip",
+                "name": "b"
+            }
+        ],
+        "returns": [
+            {
+                "type": {
+                    "names": [
+                        "Array"
+                    ]
+                }
+            }
+        ],
+        "examples": [
+            "const a = [1, 2, 3]\nconst b = [100, 200, 300]\nzipWith(add, a, b) // [101, 202, 303]"
+        ],
         "longname": "zipWith",
         "scope": "global"
     },
@@ -14727,11 +14809,11 @@
         "comment": "",
         "meta": {
             "range": [
-                74,
-                275
+                406,
+                607
             ],
             "filename": "zipWith.js",
-            "lineno": 9,
+            "lineno": 17,
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
@@ -14751,11 +14833,11 @@
         "comment": "",
         "meta": {
             "range": [
-                133,
-                141
+                465,
+                473
             ],
             "filename": "zipWith.js",
-            "lineno": 10,
+            "lineno": 18,
             "columnno": 8,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
@@ -14777,11 +14859,11 @@
         "comment": "",
         "meta": {
             "range": [
-                150,
-                184
+                482,
+                516
             ],
             "filename": "zipWith.js",
-            "lineno": 11,
+            "lineno": 19,
             "columnno": 8,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
@@ -14803,11 +14885,11 @@
         "comment": "",
         "meta": {
             "range": [
-                191,
-                196
+                523,
+                528
             ],
             "filename": "zipWith.js",
-            "lineno": 12,
+            "lineno": 20,
             "columnno": 6,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
@@ -14829,11 +14911,11 @@
         "comment": "",
         "meta": {
             "range": [
-                204,
-                209
+                536,
+                541
             ],
             "filename": "zipWith.js",
-            "lineno": 13,
+            "lineno": 21,
             "columnno": 7,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
