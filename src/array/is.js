@@ -1,11 +1,8 @@
 /**
- * Checks if the provided object is an array, autocurried function
- *
- * @private
  * @function isArray
- * @description Checks if the provided object is an array, autocurried function
+ * @description Function Checks if the provided object is an array
  * @param {*} Object to verifiy
- * @return {boolean}
+ * @return {Boolean}
  * @since 1.0.2
  * @example
  *

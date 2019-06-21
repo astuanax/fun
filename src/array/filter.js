@@ -1,6 +1,9 @@
 /**
  * @function arrayFilter
- * @private
+ * @desc Autocurried function to filter an array
+ * @param {Function} fn - Predicate function
+ * @param {Array} a - Array to filter
+ * @returns {Array}
  *
  */
 import curry from '../curry'

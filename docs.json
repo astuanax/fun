@@ -1335,7 +1335,7 @@
         "scope": "static"
     },
     {
-        "comment": "/**\n * @private\n * @function arrayConcat\n * @param a1\n * @param a2\n * @returns {T[]}\n */",
+        "comment": "/**\n * @function arrayConcat\n * @desc Autocurried concatenation function using native concat\n * @param {Array} a1 - Left side of the concatenation\n * @param {Array} a2 - Right side of the concatenation\n * @returns {T[]}\n */",
         "meta": {
             "filename": "concat.js",
             "lineno": 1,
@@ -1343,14 +1343,26 @@
             "path": "/Volumes/BigOne/github/fun/src/array",
             "code": {}
         },
-        "access": "private",
         "kind": "function",
         "name": "arrayConcat",
+        "description": "Autocurried concatenation function using native concat",
         "params": [
             {
+                "type": {
+                    "names": [
+                        "Array"
+                    ]
+                },
+                "description": "Left side of the concatenation",
                 "name": "a1"
             },
             {
+                "type": {
+                    "names": [
+                        "Array"
+                    ]
+                },
+                "description": "Right side of the concatenation",
                 "name": "a2"
             }
         ],
@@ -1370,8 +1382,8 @@
         "comment": "",
         "meta": {
             "range": [
-                119,
-                205
+                254,
+                340
             ],
             "filename": "concat.js",
             "lineno": 10,
@@ -1391,7 +1403,7 @@
         "scope": "static"
     },
     {
-        "comment": "/**\n * @private\n * @function equalsArray\n * @description Autocurried function for deep comparison of arrays\n * @param {a} x - Object to compare of type a\n * @param {a} y - Object x to compare with object x\n * @return {boolean}\n */",
+        "comment": "/**\n * @function equalsArray\n * @description Autocurried function for deep comparison of arrays\n * @param {a} x - Object to compare of type a\n * @param {a} y - Object x to compare with object x\n * @return {boolean}\n */",
         "meta": {
             "filename": "equals.js",
             "lineno": 1,
@@ -1399,7 +1411,6 @@
             "path": "/Volumes/BigOne/github/fun/src/array",
             "code": {}
         },
-        "access": "private",
         "kind": "function",
         "name": "equalsArray",
         "description": "Autocurried function for deep comparison of arrays",
@@ -1439,11 +1450,11 @@
         "comment": "",
         "meta": {
             "range": [
-                317,
-                525
+                305,
+                513
             ],
             "filename": "equals.js",
-            "lineno": 13,
+            "lineno": 12,
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/array",
             "code": {
@@ -1463,11 +1474,11 @@
         "comment": "",
         "meta": {
             "range": [
-                431,
-                436
+                419,
+                424
             ],
             "filename": "equals.js",
-            "lineno": 17,
+            "lineno": 16,
             "columnno": 11,
             "path": "/Volumes/BigOne/github/fun/src/array",
             "code": {
@@ -1486,7 +1497,7 @@
         "params": []
     },
     {
-        "comment": "/**\n * @function arrayFilter\n * @private\n *\n */",
+        "comment": "/**\n * @function arrayFilter\n * @desc Autocurried function to filter an array\n * @param {Function} fn - Predicate function\n * @param {Array} a - Array to filter\n * @returns {Array}\n *\n */",
         "meta": {
             "filename": "filter.js",
             "lineno": 1,
@@ -1496,7 +1507,36 @@
         },
         "kind": "function",
         "name": "arrayFilter",
-        "access": "private",
+        "description": "Autocurried function to filter an array",
+        "params": [
+            {
+                "type": {
+                    "names": [
+                        "function"
+                    ]
+                },
+                "description": "Predicate function",
+                "name": "fn"
+            },
+            {
+                "type": {
+                    "names": [
+                        "Array"
+                    ]
+                },
+                "description": "Array to filter",
+                "name": "a"
+            }
+        ],
+        "returns": [
+            {
+                "type": {
+                    "names": [
+                        "Array"
+                    ]
+                }
+            }
+        ],
         "longname": "arrayFilter",
         "scope": "global"
     },
@@ -1504,11 +1544,11 @@
         "comment": "",
         "meta": {
             "range": [
-                78,
-                230
+                218,
+                370
             ],
             "filename": "filter.js",
-            "lineno": 8,
+            "lineno": 11,
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/array",
             "code": {
@@ -1528,11 +1568,11 @@
         "comment": "",
         "meta": {
             "range": [
-                136,
-                142
+                276,
+                282
             ],
             "filename": "filter.js",
-            "lineno": 9,
+            "lineno": 12,
             "columnno": 6,
             "path": "/Volumes/BigOne/github/fun/src/array",
             "code": {
@@ -1554,11 +1594,11 @@
         "comment": "",
         "meta": {
             "range": [
-                154,
-                159
+                294,
+                299
             ],
             "filename": "filter.js",
-            "lineno": 10,
+            "lineno": 13,
             "columnno": 11,
             "path": "/Volumes/BigOne/github/fun/src/array",
             "code": {
@@ -1577,7 +1617,7 @@
         "params": []
     },
     {
-        "comment": "/**\n * @private\n * @function fold\n * @description Returns a single item by mapping over the provided array and calling an iterator function\n * @param {cbFunction} cb - Callback function to modify the item\n * @param {*} init - Initial value\n * @param {Array} a - Array with items to modify by the cb function\n * @return {Array}\n * @alias reduce\n * @since 1.0.2\n * @example\n *\n * const result = fold(add, 0, [1,1,1])\n * // result = 3\n */",
+        "comment": "/**\n * @function fold\n * @description Autocurried function which returns a single item by mapping over the provided array and calls an iterator function\n * @param {cbFunction} cb - Callback function to modify the item\n * @param {*} init - Initial value\n * @param {Array} a - Array with items to modify by the cb function\n * @returns {Array}\n * @see reduce\n * @since 1.0.2\n * @example\n *\n * const result = fold(add, 0, [1,1,1])\n * // result = 3\n */",
         "meta": {
             "filename": "fold.js",
             "lineno": 1,
@@ -1585,10 +1625,9 @@
             "path": "/Volumes/BigOne/github/fun/src/array",
             "code": {}
         },
-        "access": "private",
         "kind": "function",
         "name": "fold",
-        "description": "Returns a single item by mapping over the provided array and calling an iterator function",
+        "description": "Autocurried function which returns a single item by mapping over the provided array and calls an iterator function",
         "params": [
             {
                 "type": {
@@ -1627,7 +1666,9 @@
                 }
             }
         ],
-        "alias": "reduce",
+        "see": [
+            "reduce"
+        ],
         "since": "1.0.2",
         "examples": [
             "const result = fold(add, 0, [1,1,1])\n// result = 3"
@@ -1639,7 +1680,7 @@
         "comment": "/**\n * @callback cbFunction\n * @param {*} r - Accumulator which accumulates the callback's return values\n * @param {*} item - the current element being processed\n * @param {number} index - the indey of the item being processed\n * @param {Array} a - The initial array\n * @return {*}\n */",
         "meta": {
             "filename": "fold.js",
-            "lineno": 17,
+            "lineno": 16,
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/array",
             "code": {}
@@ -1705,11 +1746,11 @@
         "comment": "",
         "meta": {
             "range": [
-                753,
-                916
+                765,
+                928
             ],
             "filename": "fold.js",
-            "lineno": 27,
+            "lineno": 26,
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/array",
             "code": {
@@ -1729,11 +1770,11 @@
         "comment": "",
         "meta": {
             "range": [
-                810,
-                816
+                822,
+                828
             ],
             "filename": "fold.js",
-            "lineno": 28,
+            "lineno": 27,
             "columnno": 6,
             "path": "/Volumes/BigOne/github/fun/src/array",
             "code": {
@@ -1755,11 +1796,11 @@
         "comment": "",
         "meta": {
             "range": [
-                825,
-                837
+                837,
+                849
             ],
             "filename": "fold.js",
-            "lineno": 29,
+            "lineno": 28,
             "columnno": 8,
             "path": "/Volumes/BigOne/github/fun/src/array",
             "code": {
@@ -1781,11 +1822,11 @@
         "comment": "",
         "meta": {
             "range": [
-                844,
-                852
+                856,
+                864
             ],
             "filename": "fold.js",
-            "lineno": 30,
+            "lineno": 29,
             "columnno": 6,
             "path": "/Volumes/BigOne/github/fun/src/array",
             "code": {
@@ -1807,11 +1848,11 @@
         "comment": "",
         "meta": {
             "range": [
-                877,
-                898
+                889,
+                910
             ],
             "filename": "fold.js",
-            "lineno": 32,
+            "lineno": 31,
             "columnno": 4,
             "path": "/Volumes/BigOne/github/fun/src/array",
             "code": {
@@ -1831,7 +1872,7 @@
         "scope": "inner"
     },
     {
-        "comment": "/**\n * Checks if the provided object is an array, autocurried function\n *\n * @private\n * @function isArray\n * @description Checks if the provided object is an array, autocurried function\n * @param {*} Object to verifiy\n * @return {boolean}\n * @since 1.0.2\n * @example\n *\n * const result = isArray([1,1,1])\n * // result = true\n */",
+        "comment": "/**\n * @function isArray\n * @description Function Checks if the provided object is an array\n * @param {*} Object to verifiy\n * @return {Boolean}\n * @since 1.0.2\n * @example\n *\n * const result = isArray([1,1,1])\n * // result = true\n */",
         "meta": {
             "filename": "is.js",
             "lineno": 1,
@@ -1839,10 +1880,9 @@
             "path": "/Volumes/BigOne/github/fun/src/array",
             "code": {}
         },
-        "description": "Checks if the provided object is an array, autocurried function",
-        "access": "private",
         "kind": "function",
         "name": "isArray",
+        "description": "Function Checks if the provided object is an array",
         "params": [
             {
                 "type": {
@@ -1858,7 +1898,7 @@
             {
                 "type": {
                     "names": [
-                        "boolean"
+                        "Boolean"
                     ]
                 }
             }
@@ -1874,11 +1914,11 @@
         "comment": "",
         "meta": {
             "range": [
-                355,
-                381
+                260,
+                286
             ],
             "filename": "is.js",
-            "lineno": 18,
+            "lineno": 15,
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/array",
             "code": {

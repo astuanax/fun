@@ -20,6 +20,21 @@ The documentation is done using jsdocs and can be found in the /docs folder or a
 The fun.js is a functional library which supports monads and follows mostly he ramda specifications but tries to keep the bite size down.
 The focus is to provide helpful functions for react development with a small footprint. 
 
+## Autocurried ?
+
+Most if not all functions are autocurried, which means they can have any arity and you can still use default parameters in your function parameters.
+
+Neat. 
+
+`````
+const abc = curry((a, b, c = [1, 2, 3]) => concat(a, b, c))
+
+const add1 = abc(['tss tss'])
+add1(['check']) // ['tss tss', 'check', 1, 2, 3]
+
+`````
+
+
 
 ## Examples
 

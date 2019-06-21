@@ -1,12 +1,11 @@
 /**
- * @private
  * @function fold
- * @description Returns a single item by mapping over the provided array and calling an iterator function
+ * @description Autocurried function which returns a single item by mapping over the provided array and calls an iterator function
  * @param {cbFunction} cb - Callback function to modify the item
  * @param {*} init - Initial value
  * @param {Array} a - Array with items to modify by the cb function
- * @return {Array}
- * @alias reduce
+ * @returns {Array}
+ * @see reduce
  * @since 1.0.2
  * @example
  *
