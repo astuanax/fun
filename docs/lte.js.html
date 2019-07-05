@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>sort.js - Documentation</title>
+    <title>lte.js - Documentation</title>
 
     <script src="scripts/prettify/prettify.js"></script>
     <script src="scripts/prettify/lang-css.js"></script>
@@ -29,7 +29,7 @@
 
 <div id="main">
     
-    <h1 class="page-title">sort.js</h1>
+    <h1 class="page-title">lte.js</h1>
     
 
     
@@ -39,23 +39,24 @@
     
     <section>
         <article>
-            <pre class="prettyprint source linenums"><code>/**
- * Returns a copy of the list, sorted according to the function.
- *
- * @func sort
- * @since v1.0.4
- * @param {Function} comp - A sorting function
- * @param {Array} a - The list to sort
- * @return {Array} a new array with its elements sorted by the comp function.
+            <pre class="prettyprint source linenums"><code>import curry from './curry'
+/**
+ * @function lte
+ * @desc Returns a Boolean indicating one value is larger than or equal to the other
+ * @param {*} a - Any valid Javascript value
+ * @param {*} b - Any valid Javascript value
+ * @returns {Boolean}
  * @example
  *
- *      const diff = function(a, b) { return a - b; };
- *      sort(diff, [4,2,7,5]); //=> [2, 4, 5, 7]
+ * lte(0, 10)  // true
+ * const lte0 = lte(0)
+ * lt0(10) // false
+ * lt0(0) // true
+ *
  */
-import curry from './curry'
 
-export default curry(function sort (comp, a) {
-  return Array.prototype.slice.call(a, 0).sort(comp)
+export default curry(function lte (a, b) {
+  return a &lt;= b
 })
 </code></pre>
         </article>
