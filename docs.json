@@ -5314,16 +5314,31 @@
         "scope": "static"
     },
     {
-        "comment": "/**\n * @function exists\n */",
+        "comment": "/**\n * @function exists\n * @desc Validates if a value is not null or undefined\n * @param {*} x - any valid Javascript value\n * @example\n *\n * exists(null) // false\n * exists([] // true\n *\n */",
         "meta": {
             "filename": "exists.js",
-            "lineno": 1,
+            "lineno": 2,
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {}
         },
         "kind": "function",
         "name": "exists",
+        "description": "Validates if a value is not null or undefined",
+        "params": [
+            {
+                "type": {
+                    "names": [
+                        "*"
+                    ]
+                },
+                "description": "any valid Javascript value",
+                "name": "x"
+            }
+        ],
+        "examples": [
+            "exists(null) // false\nexists([] // true"
+        ],
         "longname": "exists",
         "scope": "global"
     },
@@ -5331,55 +5346,25 @@
         "comment": "",
         "meta": {
             "range": [
-                28,
-                88
+                231,
+                299
             ],
             "filename": "exists.js",
-            "lineno": 4,
+            "lineno": 12,
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002125",
+                "id": "astnode100002129",
                 "name": "module.exports",
-                "type": "FunctionDeclaration",
-                "paramnames": [
-                    "x"
-                ]
+                "type": "CallExpression"
             }
         },
         "undocumented": true,
         "name": "exports",
         "longname": "module.exports",
-        "kind": "function",
+        "kind": "member",
         "memberof": "module",
         "scope": "static"
-    },
-    {
-        "comment": "",
-        "meta": {
-            "range": [
-                43,
-                88
-            ],
-            "filename": "exists.js",
-            "lineno": 4,
-            "columnno": 15,
-            "path": "/Volumes/BigOne/github/fun/src",
-            "code": {
-                "id": "astnode100002126",
-                "name": "exists",
-                "type": "FunctionDeclaration",
-                "paramnames": [
-                    "x"
-                ]
-            }
-        },
-        "undocumented": true,
-        "name": "exists",
-        "longname": "exists",
-        "kind": "function",
-        "scope": "global",
-        "params": []
     },
     {
         "comment": "/**\n * @function filter\n * @description Autocurried fucntion that filters Objects, Arrays and Maps\n *\n */",
@@ -5408,7 +5393,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002158",
+                "id": "astnode100002163",
                 "name": "module.exports",
                 "type": "CallExpression"
             }
@@ -5485,7 +5470,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002196",
+                "id": "astnode100002201",
                 "name": "module.exports",
                 "type": "CallExpression"
             }
@@ -5509,7 +5494,7 @@
             "columnno": 6,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002205",
+                "id": "astnode100002210",
                 "name": "i",
                 "type": "Literal",
                 "value": 0
@@ -5535,7 +5520,7 @@
             "columnno": 8,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002209",
+                "id": "astnode100002214",
                 "name": "l",
                 "type": "MemberExpression",
                 "value": "a.length"
@@ -5561,7 +5546,7 @@
             "columnno": 4,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002229",
+                "id": "astnode100002234",
                 "name": "i",
                 "type": "Literal",
                 "funcscope": "<anonymous>",
@@ -5616,7 +5601,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002241",
+                "id": "astnode100002246",
                 "name": "module.exports",
                 "type": "CallExpression"
             }
@@ -5640,7 +5625,7 @@
             "columnno": 6,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002282",
+                "id": "astnode100002287",
                 "name": "isFunction",
                 "type": "CallExpression",
                 "value": ""
@@ -5687,7 +5672,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002287",
+                "id": "astnode100002292",
                 "name": "module.exports",
                 "type": "CallExpression"
             }
@@ -5767,7 +5752,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002359",
+                "id": "astnode100002364",
                 "name": "module.exports",
                 "type": "CallExpression"
             }
@@ -5791,7 +5776,7 @@
             "columnno": 8,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002369",
+                "id": "astnode100002374",
                 "name": "typeMap",
                 "type": "ObjectExpression",
                 "value": "{\"undefined\":\"\"}"
@@ -5817,7 +5802,7 @@
             "columnno": 4,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002372",
+                "id": "astnode100002377",
                 "name": "Object",
                 "type": "Identifier",
                 "value": "objectFold"
@@ -5842,7 +5827,7 @@
             "columnno": 4,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002374",
+                "id": "astnode100002379",
                 "name": "Array",
                 "type": "Identifier",
                 "value": "arrayFold"
@@ -5882,7 +5867,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002396",
+                "id": "astnode100002401",
                 "name": "module.exports",
                 "type": "CallExpression"
             }
@@ -5921,7 +5906,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002440",
+                "id": "astnode100002445",
                 "name": "module.exports",
                 "type": "FunctionDeclaration",
                 "paramnames": [
@@ -5948,7 +5933,7 @@
             "columnno": 15,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002441",
+                "id": "astnode100002446",
                 "name": "identity",
                 "type": "FunctionDeclaration",
                 "paramnames": [
@@ -5975,7 +5960,7 @@
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002451",
+                "id": "astnode100002456",
                 "name": "exports.add",
                 "type": "Identifier"
             }
@@ -5998,7 +5983,7 @@
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002456",
+                "id": "astnode100002461",
                 "name": "exports.addIndex",
                 "type": "Identifier"
             }
@@ -6021,7 +6006,7 @@
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002461",
+                "id": "astnode100002466",
                 "name": "exports.adjust",
                 "type": "Identifier"
             }
@@ -6044,7 +6029,7 @@
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002466",
+                "id": "astnode100002471",
                 "name": "exports.adjustWith",
                 "type": "Identifier"
             }
@@ -6067,7 +6052,7 @@
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002471",
+                "id": "astnode100002476",
                 "name": "exports.all",
                 "type": "Identifier"
             }
@@ -6090,7 +6075,7 @@
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002476",
+                "id": "astnode100002481",
                 "name": "exports.allPass",
                 "type": "Identifier"
             }
@@ -6113,7 +6098,7 @@
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002481",
+                "id": "astnode100002486",
                 "name": "exports.always",
                 "type": "Identifier"
             }
@@ -6136,7 +6121,7 @@
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002486",
+                "id": "astnode100002491",
                 "name": "exports.and",
                 "type": "Identifier"
             }
@@ -6159,7 +6144,7 @@
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002491",
+                "id": "astnode100002496",
                 "name": "exports.any",
                 "type": "Identifier"
             }
@@ -6182,7 +6167,7 @@
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002496",
+                "id": "astnode100002501",
                 "name": "exports.anyPass",
                 "type": "Identifier"
             }
@@ -6205,7 +6190,7 @@
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002501",
+                "id": "astnode100002506",
                 "name": "exports.ap",
                 "type": "Identifier"
             }
@@ -6228,7 +6213,7 @@
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002506",
+                "id": "astnode100002511",
                 "name": "exports.aperture",
                 "type": "Identifier"
             }
@@ -6251,7 +6236,7 @@
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002511",
+                "id": "astnode100002516",
                 "name": "exports.append",
                 "type": "Identifier"
             }
@@ -6274,7 +6259,7 @@
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002516",
+                "id": "astnode100002521",
                 "name": "exports.apply",
                 "type": "Identifier"
             }
@@ -6297,7 +6282,7 @@
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002521",
+                "id": "astnode100002526",
                 "name": "exports.binary",
                 "type": "Identifier"
             }
@@ -6320,7 +6305,7 @@
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002526",
+                "id": "astnode100002531",
                 "name": "exports.bind",
                 "type": "Identifier"
             }
@@ -6343,7 +6328,7 @@
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002531",
+                "id": "astnode100002536",
                 "name": "exports.both",
                 "type": "Identifier"
             }
@@ -6366,7 +6351,7 @@
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002536",
+                "id": "astnode100002541",
                 "name": "exports.call",
                 "type": "Identifier"
             }
@@ -6389,7 +6374,7 @@
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002541",
+                "id": "astnode100002546",
                 "name": "exports.complement",
                 "type": "Identifier"
             }
@@ -6412,7 +6397,7 @@
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002546",
+                "id": "astnode100002551",
                 "name": "exports.compose",
                 "type": "Identifier"
             }
@@ -6435,7 +6420,7 @@
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002551",
+                "id": "astnode100002556",
                 "name": "exports.concat",
                 "type": "Identifier"
             }
@@ -6458,7 +6443,7 @@
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002556",
+                "id": "astnode100002561",
                 "name": "exports.cond",
                 "type": "Identifier"
             }
@@ -6481,7 +6466,7 @@
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002561",
+                "id": "astnode100002566",
                 "name": "exports.curry",
                 "type": "Identifier"
             }
@@ -6504,7 +6489,7 @@
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002566",
+                "id": "astnode100002571",
                 "name": "exports.defaultTo",
                 "type": "Identifier"
             }
@@ -6527,7 +6512,7 @@
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002571",
+                "id": "astnode100002576",
                 "name": "exports.diffDate",
                 "type": "Identifier"
             }
@@ -6550,7 +6535,7 @@
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002576",
+                "id": "astnode100002581",
                 "name": "exports.divide",
                 "type": "Identifier"
             }
@@ -6573,7 +6558,7 @@
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002581",
+                "id": "astnode100002586",
                 "name": "exports.Either",
                 "type": "Identifier"
             }
@@ -6596,7 +6581,7 @@
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002586",
+                "id": "astnode100002591",
                 "name": "exports.Left",
                 "type": "Identifier"
             }
@@ -6619,7 +6604,7 @@
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002591",
+                "id": "astnode100002596",
                 "name": "exports.Right",
                 "type": "Identifier"
             }
@@ -6642,7 +6627,7 @@
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002596",
+                "id": "astnode100002601",
                 "name": "exports.empty",
                 "type": "Identifier"
             }
@@ -6665,7 +6650,7 @@
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002601",
+                "id": "astnode100002606",
                 "name": "exports.equals",
                 "type": "Identifier"
             }
@@ -6688,7 +6673,7 @@
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002606",
+                "id": "astnode100002611",
                 "name": "exports.exists",
                 "type": "Identifier"
             }
@@ -6711,7 +6696,7 @@
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002611",
+                "id": "astnode100002616",
                 "name": "exports.F",
                 "type": "Identifier"
             }
@@ -6734,7 +6719,7 @@
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002616",
+                "id": "astnode100002621",
                 "name": "exports.filter",
                 "type": "Identifier"
             }
@@ -6757,7 +6742,7 @@
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002621",
+                "id": "astnode100002626",
                 "name": "exports.findIndex",
                 "type": "Identifier"
             }
@@ -6780,7 +6765,7 @@
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002626",
+                "id": "astnode100002631",
                 "name": "exports.first",
                 "type": "Identifier"
             }
@@ -6803,7 +6788,7 @@
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002631",
+                "id": "astnode100002636",
                 "name": "exports.flatMap",
                 "type": "Identifier"
             }
@@ -6826,7 +6811,7 @@
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002636",
+                "id": "astnode100002641",
                 "name": "exports.fold",
                 "type": "Identifier"
             }
@@ -6849,7 +6834,7 @@
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002641",
+                "id": "astnode100002646",
                 "name": "exports.formatString",
                 "type": "Identifier"
             }
@@ -6872,7 +6857,7 @@
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002646",
+                "id": "astnode100002651",
                 "name": "exports.has",
                 "type": "Identifier"
             }
@@ -6895,7 +6880,7 @@
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002651",
+                "id": "astnode100002656",
                 "name": "exports.hasIn",
                 "type": "Identifier"
             }
@@ -6918,7 +6903,7 @@
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002656",
+                "id": "astnode100002661",
                 "name": "exports.identical",
                 "type": "Identifier"
             }
@@ -6941,7 +6926,7 @@
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002661",
+                "id": "astnode100002666",
                 "name": "exports.identity",
                 "type": "Identifier"
             }
@@ -6964,7 +6949,7 @@
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002666",
+                "id": "astnode100002671",
                 "name": "exports.is",
                 "type": "Identifier"
             }
@@ -6987,7 +6972,7 @@
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002671",
+                "id": "astnode100002676",
                 "name": "exports.isArray",
                 "type": "Identifier"
             }
@@ -7010,7 +6995,7 @@
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002676",
+                "id": "astnode100002681",
                 "name": "exports.isBoolean",
                 "type": "Identifier"
             }
@@ -7033,7 +7018,7 @@
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002681",
+                "id": "astnode100002686",
                 "name": "exports.isDate",
                 "type": "Identifier"
             }
@@ -7056,7 +7041,7 @@
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002686",
+                "id": "astnode100002691",
                 "name": "exports.isEmpty",
                 "type": "Identifier"
             }
@@ -7079,7 +7064,7 @@
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002691",
+                "id": "astnode100002696",
                 "name": "exports.isFutureDate",
                 "type": "Identifier"
             }
@@ -7102,7 +7087,7 @@
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002696",
+                "id": "astnode100002701",
                 "name": "exports.isMap",
                 "type": "Identifier"
             }
@@ -7125,7 +7110,7 @@
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002701",
+                "id": "astnode100002706",
                 "name": "exports.isNan",
                 "type": "Identifier"
             }
@@ -7148,7 +7133,7 @@
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002706",
+                "id": "astnode100002711",
                 "name": "exports.isNull",
                 "type": "Identifier"
             }
@@ -7171,7 +7156,7 @@
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002711",
+                "id": "astnode100002716",
                 "name": "exports.isNumber",
                 "type": "Identifier"
             }
@@ -7194,7 +7179,7 @@
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002716",
+                "id": "astnode100002721",
                 "name": "exports.isObject",
                 "type": "Identifier"
             }
@@ -7217,7 +7202,7 @@
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002721",
+                "id": "astnode100002726",
                 "name": "exports.isSet",
                 "type": "Identifier"
             }
@@ -7240,7 +7225,7 @@
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002726",
+                "id": "astnode100002731",
                 "name": "exports.isString",
                 "type": "Identifier"
             }
@@ -7263,7 +7248,7 @@
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002731",
+                "id": "astnode100002736",
                 "name": "exports.isUndefined",
                 "type": "Identifier"
             }
@@ -7286,7 +7271,7 @@
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002736",
+                "id": "astnode100002741",
                 "name": "exports.isValidDate",
                 "type": "Identifier"
             }
@@ -7309,7 +7294,7 @@
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002741",
+                "id": "astnode100002746",
                 "name": "exports.Just",
                 "type": "Identifier"
             }
@@ -7332,7 +7317,7 @@
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002746",
+                "id": "astnode100002751",
                 "name": "exports.keys",
                 "type": "Identifier"
             }
@@ -7355,7 +7340,7 @@
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002751",
+                "id": "astnode100002756",
                 "name": "exports.keysIn",
                 "type": "Identifier"
             }
@@ -7378,7 +7363,7 @@
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002756",
+                "id": "astnode100002761",
                 "name": "exports.last",
                 "type": "Identifier"
             }
@@ -7401,7 +7386,7 @@
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002761",
+                "id": "astnode100002766",
                 "name": "exports.lift",
                 "type": "Identifier"
             }
@@ -7424,7 +7409,7 @@
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002766",
+                "id": "astnode100002771",
                 "name": "exports.map",
                 "type": "Identifier"
             }
@@ -7447,7 +7432,7 @@
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002771",
+                "id": "astnode100002776",
                 "name": "exports.max",
                 "type": "Identifier"
             }
@@ -7470,7 +7455,7 @@
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002776",
+                "id": "astnode100002781",
                 "name": "exports.Maybe",
                 "type": "Identifier"
             }
@@ -7493,7 +7478,7 @@
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002781",
+                "id": "astnode100002786",
                 "name": "exports.merge",
                 "type": "Identifier"
             }
@@ -7516,7 +7501,7 @@
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002786",
+                "id": "astnode100002791",
                 "name": "exports.min",
                 "type": "Identifier"
             }
@@ -7539,7 +7524,7 @@
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002791",
+                "id": "astnode100002796",
                 "name": "exports.multiply",
                 "type": "Identifier"
             }
@@ -7562,7 +7547,7 @@
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002796",
+                "id": "astnode100002801",
                 "name": "exports.not",
                 "type": "Identifier"
             }
@@ -7585,7 +7570,7 @@
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002801",
+                "id": "astnode100002806",
                 "name": "exports.Nothing",
                 "type": "Identifier"
             }
@@ -7608,7 +7593,7 @@
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002806",
+                "id": "astnode100002811",
                 "name": "exports.omit",
                 "type": "Identifier"
             }
@@ -7631,7 +7616,7 @@
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002811",
+                "id": "astnode100002816",
                 "name": "exports.or",
                 "type": "Identifier"
             }
@@ -7654,7 +7639,7 @@
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002816",
+                "id": "astnode100002821",
                 "name": "exports.path",
                 "type": "Identifier"
             }
@@ -7677,7 +7662,7 @@
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002821",
+                "id": "astnode100002826",
                 "name": "exports.pick",
                 "type": "Identifier"
             }
@@ -7700,7 +7685,7 @@
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002826",
+                "id": "astnode100002831",
                 "name": "exports.prop",
                 "type": "Identifier"
             }
@@ -7723,7 +7708,7 @@
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002831",
+                "id": "astnode100002836",
                 "name": "exports.reduce",
                 "type": "Identifier"
             }
@@ -7746,7 +7731,7 @@
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002836",
+                "id": "astnode100002841",
                 "name": "exports.sort",
                 "type": "Identifier"
             }
@@ -7769,7 +7754,7 @@
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002841",
+                "id": "astnode100002846",
                 "name": "exports.sum",
                 "type": "Identifier"
             }
@@ -7792,7 +7777,7 @@
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002846",
+                "id": "astnode100002851",
                 "name": "exports.T",
                 "type": "Identifier"
             }
@@ -7815,7 +7800,7 @@
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002851",
+                "id": "astnode100002856",
                 "name": "exports.toDay",
                 "type": "Identifier"
             }
@@ -7838,7 +7823,7 @@
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002856",
+                "id": "astnode100002861",
                 "name": "exports.toHour",
                 "type": "Identifier"
             }
@@ -7861,7 +7846,7 @@
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002861",
+                "id": "astnode100002866",
                 "name": "exports.toMinutes",
                 "type": "Identifier"
             }
@@ -7884,7 +7869,7 @@
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002866",
+                "id": "astnode100002871",
                 "name": "exports.toSeconds",
                 "type": "Identifier"
             }
@@ -7907,7 +7892,7 @@
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002871",
+                "id": "astnode100002876",
                 "name": "exports.truthy",
                 "type": "Identifier"
             }
@@ -7930,7 +7915,7 @@
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002876",
+                "id": "astnode100002881",
                 "name": "exports.type",
                 "type": "Identifier"
             }
@@ -7953,7 +7938,7 @@
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002881",
+                "id": "astnode100002886",
                 "name": "exports.union",
                 "type": "Identifier"
             }
@@ -7976,7 +7961,7 @@
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002886",
+                "id": "astnode100002891",
                 "name": "exports.values",
                 "type": "Identifier"
             }
@@ -7999,7 +7984,7 @@
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002891",
+                "id": "astnode100002896",
                 "name": "exports.zip",
                 "type": "Identifier"
             }
@@ -8022,7 +8007,7 @@
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002896",
+                "id": "astnode100002901",
                 "name": "exports.zipObj",
                 "type": "Identifier"
             }
@@ -8045,7 +8030,7 @@
             "columnno": 9,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002901",
+                "id": "astnode100002906",
                 "name": "exports.zipWith",
                 "type": "Identifier"
             }
@@ -8083,7 +8068,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002915",
+                "id": "astnode100002920",
                 "name": "module.exports",
                 "type": "CallExpression"
             }
@@ -8122,7 +8107,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002943",
+                "id": "astnode100002948",
                 "name": "module.exports",
                 "type": "FunctionDeclaration",
                 "paramnames": [
@@ -8149,7 +8134,7 @@
             "columnno": 15,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100002944",
+                "id": "astnode100002949",
                 "name": "isEmpty",
                 "type": "FunctionDeclaration",
                 "paramnames": [
@@ -8176,7 +8161,7 @@
             "columnno": 6,
             "path": "/Volumes/BigOne/github/fun/src/iterator",
             "code": {
-                "id": "astnode100002967",
+                "id": "astnode100002972",
                 "name": "isFunction",
                 "type": "CallExpression",
                 "value": ""
@@ -8201,7 +8186,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/iterator",
             "code": {
-                "id": "astnode100002972",
+                "id": "astnode100002977",
                 "name": "module.exports",
                 "type": "FunctionDeclaration",
                 "paramnames": [
@@ -8228,7 +8213,7 @@
             "columnno": 15,
             "path": "/Volumes/BigOne/github/fun/src/iterator",
             "code": {
-                "id": "astnode100002973",
+                "id": "astnode100002978",
                 "name": "isIter",
                 "type": "FunctionDeclaration",
                 "paramnames": [
@@ -8255,7 +8240,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/iterator",
             "code": {
-                "id": "astnode100002991",
+                "id": "astnode100002996",
                 "name": "module.exports",
                 "type": "CallExpression"
             }
@@ -8279,7 +8264,7 @@
             "columnno": 6,
             "path": "/Volumes/BigOne/github/fun/src/iterator",
             "code": {
-                "id": "astnode100003000",
+                "id": "astnode100003005",
                 "name": "r",
                 "type": "ArrayExpression",
                 "value": "[]"
@@ -8305,7 +8290,7 @@
             "columnno": 11,
             "path": "/Volumes/BigOne/github/fun/src/iterator",
             "code": {
-                "id": "astnode100003005",
+                "id": "astnode100003010",
                 "name": "nextValue",
                 "type": "CallExpression",
                 "value": ""
@@ -8331,7 +8316,7 @@
             "columnno": 65,
             "path": "/Volumes/BigOne/github/fun/src/iterator",
             "code": {
-                "id": "astnode100003016",
+                "id": "astnode100003021",
                 "name": "nextValue",
                 "type": "CallExpression",
                 "funcscope": "<anonymous>",
@@ -8402,7 +8387,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100003054",
+                "id": "astnode100003059",
                 "name": "module.exports",
                 "type": "CallExpression"
             }
@@ -8451,7 +8436,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100003082",
+                "id": "astnode100003087",
                 "name": "module.exports",
                 "type": "CallExpression"
             }
@@ -8499,7 +8484,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100003126",
+                "id": "astnode100003131",
                 "name": "module.exports",
                 "type": "CallExpression"
             }
@@ -8523,7 +8508,7 @@
             "columnno": 8,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100003134",
+                "id": "astnode100003139",
                 "name": "lifted",
                 "type": "CallExpression",
                 "value": ""
@@ -8564,7 +8549,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/map",
             "code": {
-                "id": "astnode100003173",
+                "id": "astnode100003178",
                 "name": "module.exports",
                 "type": "CallExpression"
             }
@@ -8588,7 +8573,7 @@
             "columnno": 6,
             "path": "/Volumes/BigOne/github/fun/src/map",
             "code": {
-                "id": "astnode100003182",
+                "id": "astnode100003187",
                 "name": "r",
                 "type": "NewExpression",
                 "value": ""
@@ -8614,7 +8599,7 @@
             "columnno": 6,
             "path": "/Volumes/BigOne/github/fun/src/map",
             "code": {
-                "id": "astnode100003187",
+                "id": "astnode100003192",
                 "name": "it",
                 "type": "CallExpression",
                 "value": ""
@@ -8640,7 +8625,7 @@
             "columnno": 6,
             "path": "/Volumes/BigOne/github/fun/src/map",
             "code": {
-                "id": "astnode100003194",
+                "id": "astnode100003199",
                 "name": "result",
                 "type": "CallExpression",
                 "value": ""
@@ -8666,7 +8651,7 @@
             "columnno": 10,
             "path": "/Volumes/BigOne/github/fun/src/map",
             "code": {
-                "id": "astnode100003207",
+                "id": "astnode100003212",
                 "name": "k",
                 "type": "MemberExpression",
                 "value": "result.value[0]"
@@ -8692,7 +8677,7 @@
             "columnno": 10,
             "path": "/Volumes/BigOne/github/fun/src/map",
             "code": {
-                "id": "astnode100003215",
+                "id": "astnode100003220",
                 "name": "v",
                 "type": "MemberExpression",
                 "value": "result.value[1]"
@@ -8718,7 +8703,7 @@
             "columnno": 4,
             "path": "/Volumes/BigOne/github/fun/src/map",
             "code": {
-                "id": "astnode100003235",
+                "id": "astnode100003240",
                 "name": "result",
                 "type": "CallExpression",
                 "funcscope": "<anonymous>",
@@ -8745,7 +8730,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/map",
             "code": {
-                "id": "astnode100003249",
+                "id": "astnode100003254",
                 "name": "module.exports",
                 "type": "CallExpression"
             }
@@ -8769,7 +8754,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/map",
             "code": {
-                "id": "astnode100003259",
+                "id": "astnode100003264",
                 "name": "module.exports",
                 "type": "CallExpression"
             }
@@ -8793,7 +8778,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/map",
             "code": {
-                "id": "astnode100003281",
+                "id": "astnode100003286",
                 "name": "module.exports",
                 "type": "CallExpression"
             }
@@ -8817,7 +8802,7 @@
             "columnno": 8,
             "path": "/Volumes/BigOne/github/fun/src/map",
             "code": {
-                "id": "astnode100003290",
+                "id": "astnode100003295",
                 "name": "r",
                 "type": "CallExpression",
                 "value": ""
@@ -8894,7 +8879,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100003352",
+                "id": "astnode100003357",
                 "name": "module.exports",
                 "type": "CallExpression"
             }
@@ -8961,7 +8946,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100003431",
+                "id": "astnode100003436",
                 "name": "module.exports",
                 "type": "CallExpression"
             }
@@ -9028,7 +9013,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100003452",
+                "id": "astnode100003457",
                 "name": "module.exports",
                 "type": "CallExpression"
             }
@@ -9052,7 +9037,7 @@
             "columnno": 4,
             "path": "/Volumes/BigOne/github/fun/src/monads",
             "code": {
-                "id": "astnode100003478",
+                "id": "astnode100003483",
                 "name": "Either",
                 "type": "FunctionExpression"
             }
@@ -9129,7 +9114,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/monads",
             "code": {
-                "id": "astnode100003490",
+                "id": "astnode100003495",
                 "name": "Either.of",
                 "type": "FunctionExpression",
                 "paramnames": [
@@ -9156,7 +9141,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/monads",
             "code": {
-                "id": "astnode100003519",
+                "id": "astnode100003524",
                 "name": "Either.prototype.type",
                 "type": "Literal",
                 "value": "Either",
@@ -9200,7 +9185,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/monads",
             "code": {
-                "id": "astnode100003527",
+                "id": "astnode100003532",
                 "name": "Either.prototype.isLeft",
                 "type": "Literal",
                 "value": false,
@@ -9239,7 +9224,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/monads",
             "code": {
-                "id": "astnode100003535",
+                "id": "astnode100003540",
                 "name": "Either.prototype.isRight",
                 "type": "Literal",
                 "value": false,
@@ -9303,7 +9288,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/monads",
             "code": {
-                "id": "astnode100003543",
+                "id": "astnode100003548",
                 "name": "Either.prototype.Left",
                 "type": "FunctionExpression",
                 "paramnames": [
@@ -9355,7 +9340,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/monads",
             "code": {
-                "id": "astnode100003557",
+                "id": "astnode100003562",
                 "name": "Either.Left",
                 "type": "FunctionExpression",
                 "paramnames": [
@@ -9407,7 +9392,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/monads",
             "code": {
-                "id": "astnode100003569",
+                "id": "astnode100003574",
                 "name": "Either.prototype.Right",
                 "type": "FunctionExpression",
                 "paramnames": [
@@ -9459,7 +9444,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/monads",
             "code": {
-                "id": "astnode100003583",
+                "id": "astnode100003588",
                 "name": "Either.Right",
                 "type": "FunctionExpression",
                 "paramnames": [
@@ -9486,7 +9471,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/monads",
             "code": {
-                "id": "astnode100003594",
+                "id": "astnode100003599",
                 "name": "module.exports",
                 "type": "Identifier"
             }
@@ -9510,7 +9495,7 @@
             "columnno": 4,
             "path": "/Volumes/BigOne/github/fun/src/monads",
             "code": {
-                "id": "astnode100003599",
+                "id": "astnode100003604",
                 "name": "Just",
                 "type": "FunctionExpression"
             },
@@ -9550,7 +9535,7 @@
             "columnno": 2,
             "path": "/Volumes/BigOne/github/fun/src/monads",
             "code": {
-                "id": "astnode100003605",
+                "id": "astnode100003610",
                 "name": "this.__value",
                 "type": "Identifier",
                 "value": "val",
@@ -9600,7 +9585,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/monads",
             "code": {
-                "id": "astnode100003613",
+                "id": "astnode100003618",
                 "name": "Just.prototype.isJust",
                 "type": "FunctionExpression",
                 "paramnames": []
@@ -9649,7 +9634,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/monads",
             "code": {
-                "id": "astnode100003624",
+                "id": "astnode100003629",
                 "name": "Just.prototype.isNothing",
                 "type": "FunctionExpression",
                 "paramnames": []
@@ -9674,7 +9659,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/monads",
             "code": {
-                "id": "astnode100003634",
+                "id": "astnode100003639",
                 "name": "module.exports",
                 "type": "Identifier"
             }
@@ -9698,7 +9683,7 @@
             "columnno": 4,
             "path": "/Volumes/BigOne/github/fun/src/monads",
             "code": {
-                "id": "astnode100003639",
+                "id": "astnode100003644",
                 "name": "Left",
                 "type": "FunctionExpression"
             },
@@ -9738,7 +9723,7 @@
             "columnno": 2,
             "path": "/Volumes/BigOne/github/fun/src/monads",
             "code": {
-                "id": "astnode100003645",
+                "id": "astnode100003650",
                 "name": "this.__value",
                 "type": "Identifier",
                 "value": "val",
@@ -9764,7 +9749,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/monads",
             "code": {
-                "id": "astnode100003653",
+                "id": "astnode100003658",
                 "name": "Left.prototype.type",
                 "type": "Literal",
                 "value": "Left",
@@ -9832,7 +9817,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/monads",
             "code": {
-                "id": "astnode100003661",
+                "id": "astnode100003666",
                 "name": "Left.prototype.isLeft",
                 "type": "FunctionExpression",
                 "paramnames": []
@@ -9881,7 +9866,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/monads",
             "code": {
-                "id": "astnode100003672",
+                "id": "astnode100003677",
                 "name": "Left.prototype.isRight",
                 "type": "FunctionExpression",
                 "paramnames": []
@@ -9940,7 +9925,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/monads",
             "code": {
-                "id": "astnode100003683",
+                "id": "astnode100003688",
                 "name": "Left.prototype.ap",
                 "type": "FunctionExpression",
                 "paramnames": [
@@ -10001,7 +9986,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/monads",
             "code": {
-                "id": "astnode100003695",
+                "id": "astnode100003700",
                 "name": "Left.prototype.map",
                 "type": "FunctionExpression",
                 "paramnames": [
@@ -10062,7 +10047,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/monads",
             "code": {
-                "id": "astnode100003707",
+                "id": "astnode100003712",
                 "name": "Left.prototype.chain",
                 "type": "FunctionExpression",
                 "paramnames": [
@@ -10113,7 +10098,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/monads",
             "code": {
-                "id": "astnode100003719",
+                "id": "astnode100003724",
                 "name": "Left.prototype.toString",
                 "type": "FunctionExpression",
                 "paramnames": []
@@ -10180,7 +10165,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/monads",
             "code": {
-                "id": "astnode100003736",
+                "id": "astnode100003741",
                 "name": "Left.prototype.cata",
                 "type": "FunctionExpression",
                 "paramnames": [
@@ -10232,7 +10217,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/monads",
             "code": {
-                "id": "astnode100003753",
+                "id": "astnode100003758",
                 "name": "Left.prototype.get",
                 "type": "FunctionExpression",
                 "paramnames": []
@@ -10291,7 +10276,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/monads",
             "code": {
-                "id": "astnode100003766",
+                "id": "astnode100003771",
                 "name": "Left.prototype.getOrElse",
                 "type": "FunctionExpression",
                 "paramnames": [
@@ -10318,7 +10303,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/monads",
             "code": {
-                "id": "astnode100003777",
+                "id": "astnode100003782",
                 "name": "module.exports",
                 "type": "Identifier"
             }
@@ -10342,7 +10327,7 @@
             "columnno": 4,
             "path": "/Volumes/BigOne/github/fun/src/monads",
             "code": {
-                "id": "astnode100003790",
+                "id": "astnode100003795",
                 "name": "Maybe",
                 "type": "FunctionExpression"
             },
@@ -10383,7 +10368,7 @@
             "columnno": 2,
             "path": "/Volumes/BigOne/github/fun/src/monads",
             "code": {
-                "id": "astnode100003796",
+                "id": "astnode100003801",
                 "name": "this.__value",
                 "type": "Identifier",
                 "value": "val",
@@ -10448,7 +10433,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/monads",
             "code": {
-                "id": "astnode100003802",
+                "id": "astnode100003807",
                 "name": "Maybe.of",
                 "type": "FunctionExpression",
                 "paramnames": [
@@ -10478,7 +10463,7 @@
             "columnno": 4,
             "path": "/Volumes/BigOne/github/fun/src/monads",
             "code": {
-                "id": "astnode100003821",
+                "id": "astnode100003826",
                 "name": "this.__value",
                 "type": "Identifier",
                 "value": "val",
@@ -10504,7 +10489,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/monads",
             "code": {
-                "id": "astnode100003833",
+                "id": "astnode100003838",
                 "name": "Maybe.prototype.type",
                 "type": "Literal",
                 "value": "Maybe",
@@ -10587,7 +10572,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/monads",
             "code": {
-                "id": "astnode100003841",
+                "id": "astnode100003846",
                 "name": "Maybe.prototype.getOrElse",
                 "type": "FunctionExpression",
                 "paramnames": [
@@ -10648,7 +10633,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/monads",
             "code": {
-                "id": "astnode100003861",
+                "id": "astnode100003866",
                 "name": "Maybe.prototype.map",
                 "type": "FunctionExpression",
                 "paramnames": [
@@ -10709,7 +10694,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/monads",
             "code": {
-                "id": "astnode100003893",
+                "id": "astnode100003898",
                 "name": "Maybe.prototype.flatMap",
                 "type": "FunctionExpression",
                 "paramnames": [
@@ -10770,7 +10755,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/monads",
             "code": {
-                "id": "astnode100003909",
+                "id": "astnode100003914",
                 "name": "Maybe.prototype.ap",
                 "type": "FunctionExpression",
                 "paramnames": [
@@ -10821,7 +10806,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/monads",
             "code": {
-                "id": "astnode100003931",
+                "id": "astnode100003936",
                 "name": "Maybe.prototype.isNothing",
                 "type": "FunctionExpression",
                 "paramnames": []
@@ -10870,7 +10855,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/monads",
             "code": {
-                "id": "astnode100003946",
+                "id": "astnode100003951",
                 "name": "Maybe.prototype.isJust",
                 "type": "FunctionExpression",
                 "paramnames": []
@@ -10920,7 +10905,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/monads",
             "code": {
-                "id": "astnode100003961",
+                "id": "astnode100003966",
                 "name": "Maybe.prototype.Nothing",
                 "type": "FunctionExpression",
                 "paramnames": []
@@ -10945,7 +10930,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/monads",
             "code": {
-                "id": "astnode100003973",
+                "id": "astnode100003978",
                 "name": "Maybe.prototype.Just",
                 "type": "FunctionExpression",
                 "paramnames": []
@@ -10987,7 +10972,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/monads",
             "code": {
-                "id": "astnode100003987",
+                "id": "astnode100003992",
                 "name": "module.exports",
                 "type": "Identifier"
             }
@@ -11011,7 +10996,7 @@
             "columnno": 4,
             "path": "/Volumes/BigOne/github/fun/src/monads",
             "code": {
-                "id": "astnode100003992",
+                "id": "astnode100003997",
                 "name": "Nothing",
                 "type": "FunctionExpression"
             }
@@ -11059,7 +11044,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/monads",
             "code": {
-                "id": "astnode100003997",
+                "id": "astnode100004002",
                 "name": "Nothing.prototype.isJust",
                 "type": "FunctionExpression",
                 "paramnames": []
@@ -11108,7 +11093,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/monads",
             "code": {
-                "id": "astnode100004008",
+                "id": "astnode100004013",
                 "name": "Nothing.prototype.isNothing",
                 "type": "FunctionExpression",
                 "paramnames": []
@@ -11133,7 +11118,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/monads",
             "code": {
-                "id": "astnode100004018",
+                "id": "astnode100004023",
                 "name": "module.exports",
                 "type": "Identifier"
             }
@@ -11157,7 +11142,7 @@
             "columnno": 4,
             "path": "/Volumes/BigOne/github/fun/src/monads",
             "code": {
-                "id": "astnode100004023",
+                "id": "astnode100004028",
                 "name": "Right",
                 "type": "FunctionExpression"
             },
@@ -11197,7 +11182,7 @@
             "columnno": 2,
             "path": "/Volumes/BigOne/github/fun/src/monads",
             "code": {
-                "id": "astnode100004029",
+                "id": "astnode100004034",
                 "name": "this.__value",
                 "type": "Identifier",
                 "value": "val",
@@ -11223,7 +11208,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/monads",
             "code": {
-                "id": "astnode100004037",
+                "id": "astnode100004042",
                 "name": "Right.prototype.type",
                 "type": "Literal",
                 "value": "Right",
@@ -11291,7 +11276,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/monads",
             "code": {
-                "id": "astnode100004045",
+                "id": "astnode100004050",
                 "name": "Right.prototype.isRight",
                 "type": "FunctionExpression",
                 "paramnames": []
@@ -11340,7 +11325,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/monads",
             "code": {
-                "id": "astnode100004056",
+                "id": "astnode100004061",
                 "name": "Right.prototype.isLeft",
                 "type": "FunctionExpression",
                 "paramnames": []
@@ -11394,7 +11379,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/monads",
             "code": {
-                "id": "astnode100004067",
+                "id": "astnode100004072",
                 "name": "Right.prototype.ap",
                 "type": "FunctionExpression",
                 "paramnames": [
@@ -11455,7 +11440,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/monads",
             "code": {
-                "id": "astnode100004085",
+                "id": "astnode100004090",
                 "name": "Right.prototype.map",
                 "type": "FunctionExpression",
                 "paramnames": [
@@ -11516,7 +11501,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/monads",
             "code": {
-                "id": "astnode100004103",
+                "id": "astnode100004108",
                 "name": "Right.prototype.chain",
                 "type": "FunctionExpression",
                 "paramnames": [
@@ -11567,7 +11552,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/monads",
             "code": {
-                "id": "astnode100004119",
+                "id": "astnode100004124",
                 "name": "Right.prototype.toString",
                 "type": "FunctionExpression",
                 "paramnames": []
@@ -11634,7 +11619,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/monads",
             "code": {
-                "id": "astnode100004136",
+                "id": "astnode100004141",
                 "name": "Right.prototype.cata",
                 "type": "FunctionExpression",
                 "paramnames": [
@@ -11686,7 +11671,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/monads",
             "code": {
-                "id": "astnode100004153",
+                "id": "astnode100004158",
                 "name": "Right.prototype.get",
                 "type": "FunctionExpression",
                 "paramnames": []
@@ -11745,7 +11730,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/monads",
             "code": {
-                "id": "astnode100004166",
+                "id": "astnode100004171",
                 "name": "Right.prototype.getOrElse",
                 "type": "FunctionExpression",
                 "paramnames": [
@@ -11772,7 +11757,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/monads",
             "code": {
-                "id": "astnode100004179",
+                "id": "astnode100004184",
                 "name": "module.exports",
                 "type": "Identifier"
             }
@@ -11810,7 +11795,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100004187",
+                "id": "astnode100004192",
                 "name": "module.exports",
                 "type": "CallExpression"
             }
@@ -11834,7 +11819,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/null",
             "code": {
-                "id": "astnode100004203",
+                "id": "astnode100004208",
                 "name": "module.exports",
                 "type": "CallExpression"
             }
@@ -11909,7 +11894,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/number",
             "code": {
-                "id": "astnode100004213",
+                "id": "astnode100004218",
                 "name": "module.exports",
                 "type": "CallExpression"
             }
@@ -11984,7 +11969,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/number",
             "code": {
-                "id": "astnode100004233",
+                "id": "astnode100004238",
                 "name": "module.exports",
                 "type": "CallExpression"
             }
@@ -12008,7 +11993,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/number",
             "code": {
-                "id": "astnode100004253",
+                "id": "astnode100004258",
                 "name": "module.exports",
                 "type": "CallExpression"
             }
@@ -12047,7 +12032,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/number",
             "code": {
-                "id": "astnode100004267",
+                "id": "astnode100004272",
                 "name": "module.exports",
                 "type": "FunctionDeclaration",
                 "paramnames": [
@@ -12074,7 +12059,7 @@
             "columnno": 15,
             "path": "/Volumes/BigOne/github/fun/src/number",
             "code": {
-                "id": "astnode100004268",
+                "id": "astnode100004273",
                 "name": "isNan",
                 "type": "FunctionDeclaration",
                 "paramnames": [
@@ -12101,7 +12086,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/number",
             "code": {
-                "id": "astnode100004288",
+                "id": "astnode100004293",
                 "name": "module.exports",
                 "type": "CallExpression"
             }
@@ -12125,7 +12110,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/number",
             "code": {
-                "id": "astnode100004316",
+                "id": "astnode100004321",
                 "name": "module.exports",
                 "type": "CallExpression"
             }
@@ -12149,7 +12134,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100004347",
+                "id": "astnode100004352",
                 "name": "module.exports",
                 "type": "CallExpression"
             }
@@ -12173,7 +12158,7 @@
             "columnno": 11,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100004356",
+                "id": "astnode100004361",
                 "name": "keyX"
             }
         },
@@ -12197,7 +12182,7 @@
             "columnno": 11,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100004375",
+                "id": "astnode100004380",
                 "name": "keyY"
             }
         },
@@ -12236,7 +12221,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100004407",
+                "id": "astnode100004412",
                 "name": "module.exports",
                 "type": "CallExpression"
             }
@@ -12260,7 +12245,7 @@
             "columnno": 6,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100004416",
+                "id": "astnode100004421",
                 "name": "r",
                 "type": "ObjectExpression",
                 "value": "{}"
@@ -12286,7 +12271,7 @@
             "columnno": 8,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100004420",
+                "id": "astnode100004425",
                 "name": "k",
                 "type": "CallExpression",
                 "value": ""
@@ -12312,7 +12297,7 @@
             "columnno": 11,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100004427",
+                "id": "astnode100004432",
                 "name": "i",
                 "type": "Literal",
                 "value": 0
@@ -12338,7 +12323,7 @@
             "columnno": 21,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100004447",
+                "id": "astnode100004452",
                 "name": "r[undefined]",
                 "type": "MemberExpression",
                 "funcscope": "<anonymous>",
@@ -12380,7 +12365,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100004470",
+                "id": "astnode100004475",
                 "name": "module.exports",
                 "type": "CallExpression"
             }
@@ -12404,7 +12389,7 @@
             "columnno": 8,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100004480",
+                "id": "astnode100004485",
                 "name": "k",
                 "type": "CallExpression",
                 "value": ""
@@ -12430,7 +12415,7 @@
             "columnno": 6,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100004486",
+                "id": "astnode100004491",
                 "name": "i",
                 "type": "UnaryExpression",
                 "value": -1
@@ -12456,7 +12441,7 @@
             "columnno": 8,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100004491",
+                "id": "astnode100004496",
                 "name": "l",
                 "type": "MemberExpression",
                 "value": "k.length"
@@ -12482,7 +12467,7 @@
             "columnno": 6,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100004497",
+                "id": "astnode100004502",
                 "name": "r",
                 "type": "CallExpression",
                 "value": ""
@@ -12508,7 +12493,7 @@
             "columnno": 4,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100004509",
+                "id": "astnode100004514",
                 "name": "r",
                 "type": "CallExpression",
                 "funcscope": "<anonymous>",
@@ -12535,7 +12520,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100004531",
+                "id": "astnode100004536",
                 "name": "module.exports",
                 "type": "CallExpression"
             }
@@ -12559,7 +12544,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100004556",
+                "id": "astnode100004561",
                 "name": "module.exports",
                 "type": "CallExpression"
             }
@@ -12583,7 +12568,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100004574",
+                "id": "astnode100004579",
                 "name": "module.exports",
                 "type": "CallExpression"
             }
@@ -12607,7 +12592,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100004584",
+                "id": "astnode100004589",
                 "name": "module.exports",
                 "type": "CallExpression"
             }
@@ -12631,7 +12616,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100004605",
+                "id": "astnode100004610",
                 "name": "module.exports",
                 "type": "CallExpression"
             }
@@ -12655,7 +12640,7 @@
             "columnno": 8,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100004613",
+                "id": "astnode100004618",
                 "name": "r",
                 "type": "ArrayExpression",
                 "value": "[]"
@@ -12681,7 +12666,7 @@
             "columnno": 13,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100004618",
+                "id": "astnode100004623",
                 "name": "k"
             }
         },
@@ -12705,7 +12690,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100004644",
+                "id": "astnode100004649",
                 "name": "module.exports",
                 "type": "CallExpression"
             }
@@ -12729,7 +12714,7 @@
             "columnno": 8,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100004653",
+                "id": "astnode100004658",
                 "name": "k",
                 "type": "CallExpression",
                 "value": ""
@@ -12755,7 +12740,7 @@
             "columnno": 6,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100004659",
+                "id": "astnode100004664",
                 "name": "i",
                 "type": "UnaryExpression",
                 "value": -1
@@ -12781,7 +12766,7 @@
             "columnno": 8,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100004664",
+                "id": "astnode100004669",
                 "name": "l",
                 "type": "MemberExpression",
                 "value": "k.length"
@@ -12807,7 +12792,7 @@
             "columnno": 8,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100004670",
+                "id": "astnode100004675",
                 "name": "r",
                 "type": "CallExpression",
                 "value": ""
@@ -12833,7 +12818,7 @@
             "columnno": 4,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100004682",
+                "id": "astnode100004687",
                 "name": "r[undefined]",
                 "type": "CallExpression",
                 "funcscope": "<anonymous>",
@@ -12860,7 +12845,7 @@
             "columnno": 6,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100004724",
+                "id": "astnode100004729",
                 "name": "merge",
                 "type": "CallExpression",
                 "value": ""
@@ -12885,7 +12870,7 @@
             "columnno": 6,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100004733",
+                "id": "astnode100004738",
                 "name": "result",
                 "type": "CallExpression",
                 "value": ""
@@ -12911,7 +12896,7 @@
             "columnno": 11,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100004756",
+                "id": "astnode100004761",
                 "name": "key"
             }
         },
@@ -12935,7 +12920,7 @@
             "columnno": 10,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100004775",
+                "id": "astnode100004780",
                 "name": "oldValue",
                 "type": "MemberExpression",
                 "value": "objR[undefined]"
@@ -12961,7 +12946,7 @@
             "columnno": 10,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100004781",
+                "id": "astnode100004786",
                 "name": "newValue",
                 "type": "MemberExpression",
                 "value": "objL[undefined]"
@@ -12987,7 +12972,7 @@
             "columnno": 6,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100004796",
+                "id": "astnode100004801",
                 "name": "result[undefined]",
                 "type": "CallExpression",
                 "funcscope": "<anonymous>",
@@ -13014,7 +12999,7 @@
             "columnno": 6,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100004810",
+                "id": "astnode100004815",
                 "name": "result[undefined]",
                 "type": "CallExpression",
                 "funcscope": "<anonymous>",
@@ -13041,7 +13026,7 @@
             "columnno": 6,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100004820",
+                "id": "astnode100004825",
                 "name": "result[undefined]",
                 "type": "Identifier",
                 "funcscope": "<anonymous>",
@@ -13068,7 +13053,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100004827",
+                "id": "astnode100004832",
                 "name": "module.exports",
                 "type": "Identifier"
             }
@@ -13092,7 +13077,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100004835",
+                "id": "astnode100004840",
                 "name": "module.exports",
                 "type": "CallExpression"
             }
@@ -13116,7 +13101,7 @@
             "columnno": 6,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100004843",
+                "id": "astnode100004848",
                 "name": "result",
                 "type": "ObjectExpression",
                 "value": "{}"
@@ -13142,7 +13127,7 @@
             "columnno": 4,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100004874",
+                "id": "astnode100004879",
                 "name": "result[undefined]",
                 "type": "MemberExpression",
                 "funcscope": "<anonymous>",
@@ -13183,7 +13168,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100004889",
+                "id": "astnode100004894",
                 "name": "module.exports",
                 "type": "CallExpression"
             }
@@ -13207,7 +13192,7 @@
             "columnno": 6,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100004898",
+                "id": "astnode100004903",
                 "name": "val",
                 "type": "Identifier",
                 "value": "obj"
@@ -13233,7 +13218,7 @@
             "columnno": 6,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100004902",
+                "id": "astnode100004907",
                 "name": "idx",
                 "type": "Literal",
                 "value": 0
@@ -13259,7 +13244,7 @@
             "columnno": 6,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100004906",
+                "id": "astnode100004911",
                 "name": "p"
             }
         },
@@ -13283,7 +13268,7 @@
             "columnno": 4,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100004922",
+                "id": "astnode100004927",
                 "name": "p",
                 "type": "MemberExpression",
                 "funcscope": "<anonymous>",
@@ -13310,7 +13295,7 @@
             "columnno": 4,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100004928",
+                "id": "astnode100004933",
                 "name": "val",
                 "type": "ConditionalExpression",
                 "funcscope": "<anonymous>",
@@ -13337,7 +13322,7 @@
             "columnno": 4,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100004954",
+                "id": "astnode100004959",
                 "name": "idx",
                 "type": "Literal",
                 "funcscope": "<anonymous>",
@@ -13408,7 +13393,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100004965",
+                "id": "astnode100004970",
                 "name": "module.exports",
                 "type": "CallExpression"
             }
@@ -13432,7 +13417,7 @@
             "columnno": 8,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100004974",
+                "id": "astnode100004979",
                 "name": "r",
                 "type": "ObjectExpression",
                 "value": "{}"
@@ -13458,7 +13443,7 @@
             "columnno": 6,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100004978",
+                "id": "astnode100004983",
                 "name": "i",
                 "type": "Literal",
                 "value": 0
@@ -13484,7 +13469,7 @@
             "columnno": 6,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100004996",
+                "id": "astnode100005001",
                 "name": "r[undefined]",
                 "type": "MemberExpression",
                 "funcscope": "<anonymous>",
@@ -13511,7 +13496,7 @@
             "columnno": 4,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100005008",
+                "id": "astnode100005013",
                 "name": "i",
                 "type": "Literal",
                 "funcscope": "<anonymous>",
@@ -13552,7 +13537,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100005019",
+                "id": "astnode100005024",
                 "name": "module.exports",
                 "type": "CallExpression"
             }
@@ -13610,7 +13595,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100005041",
+                "id": "astnode100005046",
                 "name": "module.exports",
                 "type": "CallExpression"
             }
@@ -13634,7 +13619,7 @@
             "columnno": 8,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100005049",
+                "id": "astnode100005054",
                 "name": "k",
                 "type": "CallExpression",
                 "value": ""
@@ -13660,7 +13645,7 @@
             "columnno": 8,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100005055",
+                "id": "astnode100005060",
                 "name": "l",
                 "type": "MemberExpression",
                 "value": "k.length"
@@ -13686,7 +13671,7 @@
             "columnno": 8,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100005061",
+                "id": "astnode100005066",
                 "name": "r",
                 "type": "ArrayExpression",
                 "value": "[]"
@@ -13712,7 +13697,7 @@
             "columnno": 6,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100005065",
+                "id": "astnode100005070",
                 "name": "i",
                 "type": "Literal",
                 "value": 0
@@ -13738,7 +13723,7 @@
             "columnno": 4,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100005074",
+                "id": "astnode100005079",
                 "name": "r[undefined]",
                 "type": "MemberExpression",
                 "funcscope": "<anonymous>",
@@ -13765,7 +13750,7 @@
             "columnno": 4,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {
-                "id": "astnode100005084",
+                "id": "astnode100005089",
                 "name": "i",
                 "type": "Literal",
                 "funcscope": "<anonymous>",
@@ -13807,7 +13792,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100005095",
+                "id": "astnode100005100",
                 "name": "module.exports",
                 "type": "CallExpression"
             }
@@ -13876,7 +13861,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100005117",
+                "id": "astnode100005122",
                 "name": "module.exports",
                 "type": "CallExpression"
             }
@@ -13900,7 +13885,7 @@
             "columnno": 8,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100005126",
+                "id": "astnode100005131",
                 "name": "arr",
                 "type": "CallExpression",
                 "value": ""
@@ -13926,7 +13911,7 @@
             "columnno": 8,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100005133",
+                "id": "astnode100005138",
                 "name": "init",
                 "type": "CallExpression",
                 "value": ""
@@ -13952,7 +13937,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/set",
             "code": {
-                "id": "astnode100005153",
+                "id": "astnode100005158",
                 "name": "module.exports",
                 "type": "CallExpression"
             }
@@ -14025,7 +14010,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100005163",
+                "id": "astnode100005168",
                 "name": "module.exports",
                 "type": "CallExpression"
             }
@@ -14064,7 +14049,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/string",
             "code": {
-                "id": "astnode100005188",
+                "id": "astnode100005193",
                 "name": "module.exports",
                 "type": "FunctionDeclaration",
                 "paramnames": [
@@ -14092,7 +14077,7 @@
             "columnno": 15,
             "path": "/Volumes/BigOne/github/fun/src/string",
             "code": {
-                "id": "astnode100005189",
+                "id": "astnode100005194",
                 "name": "concat",
                 "type": "FunctionDeclaration",
                 "paramnames": [
@@ -14120,7 +14105,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/string",
             "code": {
-                "id": "astnode100005216",
+                "id": "astnode100005221",
                 "name": "module.exports",
                 "type": "FunctionDeclaration",
                 "paramnames": [
@@ -14147,7 +14132,7 @@
             "columnno": 15,
             "path": "/Volumes/BigOne/github/fun/src/string",
             "code": {
-                "id": "astnode100005217",
+                "id": "astnode100005222",
                 "name": "formatString",
                 "type": "FunctionDeclaration",
                 "paramnames": [
@@ -14178,7 +14163,7 @@
             "columnno": 6,
             "path": "/Volumes/BigOne/github/fun/src/string",
             "code": {
-                "id": "astnode100005222",
+                "id": "astnode100005227",
                 "name": "args",
                 "type": "CallExpression",
                 "value": ""
@@ -14204,7 +14189,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/string",
             "code": {
-                "id": "astnode100005262",
+                "id": "astnode100005267",
                 "name": "module.exports",
                 "type": "CallExpression"
             }
@@ -14228,7 +14213,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/string",
             "code": {
-                "id": "astnode100005272",
+                "id": "astnode100005277",
                 "name": "module.exports",
                 "type": "CallExpression"
             }
@@ -14252,7 +14237,7 @@
             "columnno": 6,
             "path": "/Volumes/BigOne/github/fun/src/string",
             "code": {
-                "id": "astnode100005281",
+                "id": "astnode100005286",
                 "name": "i",
                 "type": "UnaryExpression",
                 "value": -1
@@ -14278,7 +14263,7 @@
             "columnno": 8,
             "path": "/Volumes/BigOne/github/fun/src/string",
             "code": {
-                "id": "astnode100005286",
+                "id": "astnode100005291",
                 "name": "l",
                 "type": "MemberExpression",
                 "value": "a.length"
@@ -14304,7 +14289,7 @@
             "columnno": 6,
             "path": "/Volumes/BigOne/github/fun/src/string",
             "code": {
-                "id": "astnode100005292",
+                "id": "astnode100005297",
                 "name": "r",
                 "type": "Literal",
                 "value": ""
@@ -14330,7 +14315,7 @@
             "columnno": 4,
             "path": "/Volumes/BigOne/github/fun/src/string",
             "code": {
-                "id": "astnode100005302",
+                "id": "astnode100005307",
                 "name": "r",
                 "type": "CallExpression",
                 "funcscope": "<anonymous>",
@@ -14346,16 +14331,31 @@
         "scope": "inner"
     },
     {
-        "comment": "/**\n * @function truthy\n */",
+        "comment": "/**\n * @function truthy\n * @desc Validates if a value exists and is not false\n * @param {*} x - Any valid javascript value\n * @example\n *\n * truthy([])        // true\n * truthy(0)         // true\n * truthy(-1)        // true\n * truthy(false)     // false\n * truthy(null)      // false\n * truthy(undefined) // false\n *\n */",
         "meta": {
             "filename": "truthy.js",
-            "lineno": 1,
+            "lineno": 4,
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {}
         },
         "kind": "function",
         "name": "truthy",
+        "description": "Validates if a value exists and is not false",
+        "params": [
+            {
+                "type": {
+                    "names": [
+                        "*"
+                    ]
+                },
+                "description": "Any valid javascript value",
+                "name": "x"
+            }
+        ],
+        "examples": [
+            "truthy([])        // true\ntruthy(0)         // true\ntruthy(-1)        // true\ntruthy(false)     // false\ntruthy(null)      // false\ntruthy(undefined) // false"
+        ],
         "longname": "truthy",
         "scope": "global"
     },
@@ -14363,67 +14363,64 @@
         "comment": "",
         "meta": {
             "range": [
-                59,
-                133
+                393,
+                475
             ],
             "filename": "truthy.js",
-            "lineno": 6,
+            "lineno": 19,
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100005321",
+                "id": "astnode100005330",
                 "name": "module.exports",
-                "type": "FunctionDeclaration",
-                "paramnames": [
-                    "x"
-                ]
+                "type": "CallExpression"
             }
         },
         "undocumented": true,
         "name": "exports",
         "longname": "module.exports",
-        "kind": "function",
+        "kind": "member",
         "memberof": "module",
         "scope": "static"
     },
     {
-        "comment": "",
-        "meta": {
-            "range": [
-                74,
-                133
-            ],
-            "filename": "truthy.js",
-            "lineno": 6,
-            "columnno": 15,
-            "path": "/Volumes/BigOne/github/fun/src",
-            "code": {
-                "id": "astnode100005322",
-                "name": "truthy",
-                "type": "FunctionDeclaration",
-                "paramnames": [
-                    "x"
-                ]
-            }
-        },
-        "undocumented": true,
-        "name": "truthy",
-        "longname": "truthy",
-        "kind": "function",
-        "scope": "global",
-        "params": []
-    },
-    {
-        "comment": "/**\n * @function type\n */",
+        "comment": "/**\n * @function type\n * @desc Returns the type of the passed value\n * @param {*} a - Any valid javascript value\n * @return {Boolean}\n * @see is\n * @example\n *\n * const isArray = (arr) => type(arr) === 'Array'\n * isArray([]) // true\n *\n */",
         "meta": {
             "filename": "type.js",
-            "lineno": 1,
+            "lineno": 2,
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {}
         },
         "kind": "function",
         "name": "type",
+        "description": "Returns the type of the passed value",
+        "params": [
+            {
+                "type": {
+                    "names": [
+                        "*"
+                    ]
+                },
+                "description": "Any valid javascript value",
+                "name": "a"
+            }
+        ],
+        "returns": [
+            {
+                "type": {
+                    "names": [
+                        "Boolean"
+                    ]
+                }
+            }
+        ],
+        "see": [
+            "is"
+        ],
+        "examples": [
+            "const isArray = (arr) => type(arr) === 'Array'\nisArray([]) // true"
+        ],
         "longname": "type",
         "scope": "global"
     },
@@ -14431,15 +14428,15 @@
         "comment": "",
         "meta": {
             "range": [
-                66,
-                166
+                280,
+                380
             ],
             "filename": "type.js",
-            "lineno": 6,
+            "lineno": 15,
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100005341",
+                "id": "astnode100005351",
                 "name": "module.exports",
                 "type": "CallExpression"
             }
@@ -14463,7 +14460,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/undefined",
             "code": {
-                "id": "astnode100005370",
+                "id": "astnode100005380",
                 "name": "module.exports",
                 "type": "CallExpression"
             }
@@ -14534,7 +14531,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100005384",
+                "id": "astnode100005394",
                 "name": "module.exports",
                 "type": "CallExpression"
             }
@@ -14605,7 +14602,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100005412",
+                "id": "astnode100005422",
                 "name": "module.exports",
                 "type": "CallExpression"
             }
@@ -14629,7 +14626,7 @@
             "columnno": 6,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100005421",
+                "id": "astnode100005431",
                 "name": "i",
                 "type": "Literal",
                 "value": 0
@@ -14655,7 +14652,7 @@
             "columnno": 6,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100005425",
+                "id": "astnode100005435",
                 "name": "l",
                 "type": "CallExpression",
                 "value": ""
@@ -14681,7 +14678,7 @@
             "columnno": 6,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100005438",
+                "id": "astnode100005448",
                 "name": "r",
                 "type": "ObjectExpression",
                 "value": "{}"
@@ -14707,7 +14704,7 @@
             "columnno": 4,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100005447",
+                "id": "astnode100005457",
                 "name": "r[undefined]",
                 "type": "MemberExpression",
                 "funcscope": "<anonymous>",
@@ -14734,7 +14731,7 @@
             "columnno": 4,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100005457",
+                "id": "astnode100005467",
                 "name": "i",
                 "type": "Literal",
                 "funcscope": "<anonymous>",
@@ -14817,7 +14814,7 @@
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100005468",
+                "id": "astnode100005478",
                 "name": "module.exports",
                 "type": "CallExpression"
             }
@@ -14841,7 +14838,7 @@
             "columnno": 8,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100005478",
+                "id": "astnode100005488",
                 "name": "arr",
                 "type": "ArrayExpression",
                 "value": "[]"
@@ -14867,7 +14864,7 @@
             "columnno": 8,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100005482",
+                "id": "astnode100005492",
                 "name": "len",
                 "type": "CallExpression",
                 "value": ""
@@ -14893,7 +14890,7 @@
             "columnno": 6,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100005495",
+                "id": "astnode100005505",
                 "name": "i",
                 "type": "Literal",
                 "value": 0
@@ -14919,7 +14916,7 @@
             "columnno": 7,
             "path": "/Volumes/BigOne/github/fun/src",
             "code": {
-                "id": "astnode100005499",
+                "id": "astnode100005509",
                 "name": "i",
                 "type": "Literal",
                 "funcscope": "<anonymous>",

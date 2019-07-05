@@ -5419,11 +5419,15 @@ equals(new Object({'a': 0, 'b': 1}), {'a': 0, 'b': 1}) // true</code></pre>
 
     
 
-    <h4 class="name" id="exists"><span class="type-signature"></span>exists<span class="signature">()</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="exists"><span class="type-signature"></span>exists<span class="signature">(x)</span><span class="type-signature"></span></h4>
 
     
 
 
+
+<div class="description">
+    Validates if a value is not null or undefined
+</div>
 
 
 
@@ -5458,7 +5462,7 @@ equals(new Object({'a': 0, 'b': 1}), {'a': 0, 'b': 1}) // true</code></pre>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="exists.js.html">exists.js</a>, <a href="exists.js.html#line1">line 1</a>
+        <a href="exists.js.html">exists.js</a>, <a href="exists.js.html#line2">line 2</a>
     </li></ul></dd>
     
 
@@ -5477,6 +5481,56 @@ equals(new Object({'a': 0, 'b': 1}), {'a': 0, 'b': 1}) // true</code></pre>
 
 
 
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>x</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>*</code></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                any valid Javascript value
+                
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
 
 
 
@@ -5490,6 +5544,16 @@ equals(new Object({'a': 0, 'b': 1}), {'a': 0, 'b': 1}) // true</code></pre>
 
 
 
+
+
+
+<div class="section-examples">
+<h5>Example</h5>
+
+    <pre class="prettyprint"><code>exists(null) // false
+exists([] // true</code></pre>
+
+</div>
 
 </div>
         
@@ -9877,11 +9941,15 @@ function () {
 
     
 
-    <h4 class="name" id="truthy"><span class="type-signature"></span>truthy<span class="signature">()</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="truthy"><span class="type-signature"></span>truthy<span class="signature">(x)</span><span class="type-signature"></span></h4>
 
     
 
 
+
+<div class="description">
+    Validates if a value exists and is not false
+</div>
 
 
 
@@ -9916,7 +9984,7 @@ function () {
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="truthy.js.html">truthy.js</a>, <a href="truthy.js.html#line1">line 1</a>
+        <a href="truthy.js.html">truthy.js</a>, <a href="truthy.js.html#line4">line 4</a>
     </li></ul></dd>
     
 
@@ -9935,6 +10003,56 @@ function () {
 
 
 
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>x</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>*</code></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                Any valid javascript value
+                
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
 
 
 
@@ -9948,6 +10066,20 @@ function () {
 
 
 
+
+
+
+<div class="section-examples">
+<h5>Example</h5>
+
+    <pre class="prettyprint"><code>truthy([])        // true
+truthy(0)         // true
+truthy(-1)        // true
+truthy(false)     // false
+truthy(null)      // false
+truthy(undefined) // false</code></pre>
+
+</div>
 
 </div>
         
@@ -9956,11 +10088,15 @@ function () {
 
     
 
-    <h4 class="name" id="type"><span class="type-signature"></span>type<span class="signature">()</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="type"><span class="type-signature"></span>type<span class="signature">(a)</span><span class="type-signature"> &rarr; {Boolean}</span></h4>
 
     
 
 
+
+<div class="description">
+    Returns the type of the passed value
+</div>
 
 
 
@@ -9995,12 +10131,19 @@ function () {
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="type.js.html">type.js</a>, <a href="type.js.html#line1">line 1</a>
+        <a href="type.js.html">type.js</a>, <a href="type.js.html#line2">line 2</a>
     </li></ul></dd>
     
 
     
 
+    
+    <dt class="tag-see">See:</dt>
+    <dd class="tag-see">
+        <ul>
+            <li><a href="global.html#is">is</a></li>
+        </ul>
+    </dd>
     
 
     
@@ -10014,6 +10157,56 @@ function () {
 
 
 
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>a</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>*</code></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                Any valid javascript value
+                
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
 
 
 
@@ -10027,6 +10220,37 @@ function () {
 
 
 
+
+<div class="section-returns">
+<h5>Returns:</h5>
+
+        
+
+<dl class="param-type">
+    <dt>
+        Type:
+    </dt>
+    <dd>
+        
+<span class="param-type"><code>Boolean</code></span>
+
+
+    </dd>
+</dl>
+
+
+    
+</div>
+
+
+
+<div class="section-examples">
+<h5>Example</h5>
+
+    <pre class="prettyprint"><code>const isArray = (arr) => type(arr) === 'Array'
+isArray([]) // true</code></pre>
+
+</div>
 
 </div>
         
@@ -11225,7 +11449,7 @@ zipWith(add, a, b) // [101, 202, 303]</code></pre>
 <br class="clear">
 
 <footer>
-    Generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Fri Jun 21 2019 21:10:31 GMT+0200 (Central European Summer Time) using the Minami theme.
+    Generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Fri Jul 05 2019 18:08:26 GMT+0200 (Central European Summer Time) using the Minami theme.
 </footer>
 
 <script>prettyPrint();</script>
