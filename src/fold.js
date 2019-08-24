@@ -12,12 +12,14 @@
 import curry from './curry'
 import arrayFold from './array/fold'
 import objectFold from './object/fold'
+import stringFold from './string/fold'
 import type from './type'
 
 export default curry(function fold (cb, init, a) {
   const typeMap = {
     'Object': objectFold,
-    'Array': arrayFold
+    'Array': arrayFold,
+    'String': stringFold
   }
   return typeMap[type(a)](cb, init, a)
 })

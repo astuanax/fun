@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>addIndex.js - Documentation</title>
+    <title>math/gcd.js - Documentation</title>
 
     <script src="scripts/prettify/prettify.js"></script>
     <script src="scripts/prettify/lang-css.js"></script>
@@ -29,7 +29,7 @@
 
 <div id="main">
     
-    <h1 class="page-title">addIndex.js</h1>
+    <h1 class="page-title">math/gcd.js</h1>
     
 
     
@@ -40,31 +40,17 @@
     <section>
         <article>
             <pre class="prettyprint source linenums"><code>/**
- * Adds a specified index to iterate a collection
+ * gcd
  *
- * @function addIndex
- * @summary Adds a specified index to iterate a collection
- * @param {Function} f Iterator function
- * @param {Function} g Function to which to add the index
- * @param {Array} a The array on which to work
- * @return {Array}
- * @since 1.0.2
- * @example
- *
- * const array = [1, 2, 3, 4]
- * addIndex(map, (v, i) => v + i, array) // [1, 3, 5, 7]
- *
+ * @function gcd
+ * @summary Recursively define the greatest common devisor
  */
-import curry from './curry'
+import curry from '../curry'
 
-export default curry(function addIndex (f, g, a) {
-  let i = 0
-  return f(
-    function (v) {
-      return g(v, i++)
-    },
-    a
-  )
+export default curry(function gcd (p, q) {
+  if (q === 0) return p
+  const r = p % q
+  return gcd(q, r)
 })
 </code></pre>
         </article>

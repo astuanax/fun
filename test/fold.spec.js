@@ -35,6 +35,21 @@ describe('fold', function () {
     chai.expect(fold(map, {})(b)).to.deep.equal(b)
     chai.expect(fold(map, {})(a)).to.deep.equal(a)
   })
+  
+  it('folds a string', function () {
+    const a = "abcdefgh"
+    
+    const map = (result, item, i, array) => {
+      result += identity(item)
+      return result
+    }
+    const filter = (result, item, i, array) => {
+      result += (item === "a" || item === "c") ? "_" : item
+      return result
+    }
+    chai.expect(fold(map, "")(a)).to.deep.equal(a)
+    chai.expect(fold(filter, "")(a)).to.deep.equal("_b_defgh")
+  })
 
   // it('reduces generators', function () {
   //   function * gen () {
