@@ -1,7 +1,7 @@
 # fun.js
 Functional javascript library / YARC (Yet Another Ramda Clone) [Fork on Github](https://github.com/astuanax/fun)
 
-[![Build Status](https://travis-ci.org/astuanax/fun.svg?branch=master)](https://travis-ci.org/astuanax/fun)  [![Code Climate](https://codeclimate.com/github/astuanax/fun/badges/gpa.svg)](https://codeclimate.com/github/astuanax/fun) ![GitHub file size in bytes](https://img.badgesize.io/astuanax/fun/master/lib/fun.min.js.svg?compression=gzip) 
+[![Build Status](https://travis-ci.org/astuanax/fun.svg?branch=master)](https://travis-ci.org/astuanax/fun) [![Test Coverage](https://api.codeclimate.com/v1/badges/40e2d49f1fb622319b08/test_coverage)](https://codeclimate.com/github/astuanax/fun/test_coverage) [![Code Climate](https://codeclimate.com/github/astuanax/fun/badges/gpa.svg)](https://codeclimate.com/github/astuanax/fun) ![GitHub file size in bytes](https://img.badgesize.io/astuanax/fun/master/lib/fun.min.js.svg?compression=gzip) 
 
 [Check bundle size on bundlephobia](https://bundlephobia.com/result?p=fun.js@1.0.3)
 

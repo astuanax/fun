@@ -19,10 +19,9 @@ if (env === 'build') {
 
 const config = {
   mode: mode,
-  entry: __dirname + '/src',
-  devtool: 'source-map',
+  entry: path.join(__dirname, 'src'),
   output: {
-    path: __dirname + '/lib',
+    path: path.join(__dirname, 'lib'),
     filename: outputFile,
     library: libraryName.split('.')[0],
     libraryTarget: 'umd',
@@ -31,6 +30,15 @@ const config = {
   },
   module: {
     rules: [
+      {
+        test: /\.js$|\.jsx$/,
+        use: {
+          loader: 'istanbul-instrumenter-loader',
+          options: { esModules: true }
+        },
+        enforce: 'post',
+        exclude: /node_modules|\.spec\.js$/,
+      },
       {
         test: /(\.jsx|\.js)$/,
         loader: 'babel-loader',
