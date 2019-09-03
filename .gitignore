@@ -29,3 +29,5 @@ node_modules
 .vscode
 
 .DS_Store
+
+cc-test-reporter
