@@ -1,6 +1,6 @@
 /**
  * @function filter
- * @description Autocurried fucntion that filters Objects, Arrays and Maps
+ * @description Autocurried function that filters Objects, Arrays and Maps
  *
  */
 import curry from './curry'

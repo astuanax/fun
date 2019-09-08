@@ -128,7 +128,7 @@ Maybe.prototype.Nothing = function () {
 /**
  * @private
  * @memberOf Maybe
- * @fucntion Maybe#Just
+ * @function Maybe#Just
  * @returns {Just}
  * @constructor
  */
