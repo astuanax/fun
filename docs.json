@@ -1205,7 +1205,7 @@
         "params": []
     },
     {
-        "comment": "/**\n * @function append\n * @description Append an elment to a list\n * @param {*} el - Element to add to a list\n * @param {array} list - List to which to add the element\n * @return {array}\n * @example\n *\n * const l = [0, 1]\n * append('a', l) // reutnr [0, 1, 'a']\n *\n **/",
+        "comment": "/**\n * @function append\n * @description Append an elment to a list\n * @param {*} el - Element to add to a list\n * @param {Array} list - List to which to add the element\n * @return {Array}\n * @example\n *\n * const l = [0, 1]\n * append('a', l) // reutnr [0, 1, 'a']\n *\n **/",
         "meta": {
             "filename": "append.js",
             "lineno": 1,
@@ -1229,7 +1229,7 @@
             {
                 "type": {
                     "names": [
-                        "array"
+                        "Array"
                     ]
                 },
                 "description": "List to which to add the element",
@@ -1240,7 +1240,7 @@
             {
                 "type": {
                     "names": [
-                        "array"
+                        "Array"
                     ]
                 }
             }
@@ -5367,7 +5367,7 @@
         "scope": "static"
     },
     {
-        "comment": "/**\n * @function filter\n * @description Autocurried fucntion that filters Objects, Arrays and Maps\n *\n */",
+        "comment": "/**\n * @function filter\n * @description Autocurried function that filters Objects, Arrays and Maps\n *\n */",
         "meta": {
             "filename": "filter.js",
             "lineno": 1,
@@ -5377,7 +5377,7 @@
         },
         "kind": "function",
         "name": "filter",
-        "description": "Autocurried fucntion that filters Objects, Arrays and Maps",
+        "description": "Autocurried function that filters Objects, Arrays and Maps",
         "longname": "filter",
         "scope": "global"
     },
@@ -11278,7 +11278,32 @@
         "scope": "instance"
     },
     {
-        "comment": "/**\n * @private\n * @memberOf Maybe\n * @fucntion Maybe#Just\n * @returns {Just}\n * @constructor\n */",
+        "comment": "/**\n * @private\n * @memberOf Maybe\n * @function Maybe#Just\n * @returns {Just}\n * @constructor\n */",
+        "meta": {
+            "filename": "Maybe.js",
+            "lineno": 128,
+            "columnno": 0,
+            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "code": {}
+        },
+        "access": "private",
+        "memberof": "Maybe",
+        "kind": "class",
+        "name": "Just",
+        "returns": [
+            {
+                "type": {
+                    "names": [
+                        "Just"
+                    ]
+                }
+            }
+        ],
+        "longname": "Maybe#Just",
+        "scope": "instance"
+    },
+    {
+        "comment": "",
         "meta": {
             "range": [
                 2815,
@@ -11295,28 +11320,11 @@
                 "paramnames": []
             }
         },
-        "access": "private",
-        "memberof": "Maybe",
-        "tags": [
-            {
-                "originalTitle": "fucntion",
-                "title": "fucntion",
-                "text": "Maybe#Just",
-                "value": "Maybe#Just"
-            }
-        ],
-        "returns": [
-            {
-                "type": {
-                    "names": [
-                        "Just"
-                    ]
-                }
-            }
-        ],
-        "kind": "class",
+        "undocumented": true,
         "name": "Just",
         "longname": "Maybe#Just",
+        "kind": "function",
+        "memberof": "Maybe",
         "scope": "instance"
     },
     {
@@ -14146,10 +14154,10 @@
         "scope": "static"
     },
     {
-        "comment": "/**\n * @function values\n * @description REturns a list of values taken from an objects own properties\n * @param {object} - obj The object from which to take the values\n * @return {array}\n *\n **/",
+        "comment": "/**\n * @function values\n * @description REturns a list of values taken from an objects own properties\n * @param {Object} - obj The object from which to take the values\n * @return {Array}\n *\n **/",
         "meta": {
             "filename": "values.js",
-            "lineno": 1,
+            "lineno": 4,
             "columnno": 0,
             "path": "/Volumes/BigOne/github/fun/src/object",
             "code": {}
@@ -14161,7 +14169,7 @@
             {
                 "type": {
                     "names": [
-                        "object"
+                        "Object"
                     ]
                 },
                 "description": "obj The object from which to take the values"
@@ -14171,7 +14179,7 @@
             {
                 "type": {
                     "names": [
-                        "array"
+                        "Array"
                     ]
                 }
             }
