@@ -59,6 +59,7 @@
     "cross-env": "^5.2.0",
     "eslint": "^5.14.1",
     "eslint-loader": "^2.1.2",
+    "istanbul-instrumenter-loader": "^3.0.1",
     "jsdom": "11.11.0",
     "jsdom-global": "3.0.2",
     "minami": "^1.2.3",

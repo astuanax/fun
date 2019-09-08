@@ -1,3 +1,5 @@
+import curry from '../curry'
+
 /**
  * @function pick
  * @description returns a new bject with only the props that are provided
@@ -5,8 +7,6 @@
  * @param {Object} obj - The object from which to take the properties
  * @return {Object}
  */
-import curry from '../curry'
-
 export default curry(function pick (props, obj) {
   const r = {}
   let i = 0

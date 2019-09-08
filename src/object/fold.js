@@ -1,11 +1,14 @@
-/**
- * @function fold
- * @private
- *
- */
 import curry from '../curry'
 import keys from './keys'
 
+/**
+ * @function objectFold
+ * @param {Function} cb
+ * @param {*} init
+ * @param {Object} o
+ * @returns {boolean}
+ * @private
+ */
 export default curry(function fold (cb, init, o) {
   const k = keys(o)
   let i = -1

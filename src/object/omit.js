@@ -1,10 +1,11 @@
-/**
-
- * equals
- * checks for equality
- */
 import curry from '../curry'
 
+/**
+ * @function omit
+ * @desc Removes one ore more properties from an object by name of the key
+ * @param {Object} obj - The object form which to remove the key value pair
+ * @param {string[]} names - an array of keys to be removed from the object
+ */
 export default curry((obj, names) => {
   let result = {}
 

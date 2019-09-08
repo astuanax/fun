@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>defaultTo.js - Documentation</title>
+    <title>object/equals.js - Documentation</title>
 
     <script src="scripts/prettify/prettify.js"></script>
     <script src="scripts/prettify/lang-css.js"></script>
@@ -29,7 +29,7 @@
 
 <div id="main">
     
-    <h1 class="page-title">defaultTo.js</h1>
+    <h1 class="page-title">object/equals.js</h1>
     
 
     
@@ -39,22 +39,27 @@
     
     <section>
         <article>
-            <pre class="prettyprint source linenums"><code>/**
- * Returns true if all items in the enumerable match the predicate
- *
- * @function defaultTo
- * @description Returns true if all items in the enumerable match the predicate
- * @since v1.0.2
- * @sig a -> b -> a | b
- * @param {a} default The default value.
- * @param {b} val `val` will be returned instead of `default` unless `val` is `null`, `undefined` or `NaN`.
- * @return {*} The second value if it is not `null`, `undefined` or `NaN`, otherwise the default value
- **/
-import curry from './curry'
+            <pre class="prettyprint source linenums"><code>import curry from '../curry'
+import exists from '../exists'
+import not from '../not'
+import equals from '../equals'
 
-export default curry(function defaultTo (d, v) {
-// eslint-disable-next-line no-self-compare
-  return v == null || v !== v ? d : v
+/**
+ * @function equals
+ * @param {Object} x
+ * @param {Object} y
+ * @returns {boolean}
+ */
+export default curry((x, y) => {
+  for (let keyX in x) {
+    if (not(equals(x[keyX], y[keyX]))) return false
+  }
+
+  for (let keyY in y) {
+    if (not(exists(x[keyY])) &amp;&amp; exists(y[keyY])) return false
+  }
+
+  return true
 })
 </code></pre>
         </article>

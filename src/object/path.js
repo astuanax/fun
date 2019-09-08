@@ -1,8 +1,22 @@
-/**
- * @function path
- */
 import curry from '../curry'
 
+/**
+ * @function path
+ * @desc Returns the value of a property identified by a number of nested key values
+ * @param {Array} path - Array of key values
+ * @param {Object|Array} An object or an array from which to retrieve the keys
+ * @example
+ *
+ * let t = {
+ *     a: {
+ *         b : [0, 1]
+ *     },
+ *     b : 1
+ * }
+ *
+ * const v = path(['a', 'b', 0], t)
+ * v === 0
+ */
 export default curry(function path (path, obj) {
   let val = obj
   let idx = 0
@@ -19,10 +33,3 @@ export default curry(function path (path, obj) {
   }
   return val
 })
-// let r = obj
-// for (let i = 0; i < path.length; i++) {
-//   if (r == null) return undefined
-//   r = r[path[i]]
-// }
-// return r
-// })

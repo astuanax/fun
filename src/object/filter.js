@@ -1,11 +1,13 @@
-/**
- * @function objectFilter
- * @private
- *
- */
 import curry from '../curry'
 import keys from './keys'
 
+/**
+ * @function objectFilter
+ * @param {Function} x
+ * @param {Object} y
+ * @returns {boolean}
+ * @private
+ */
 export default curry(function objectFilter (fn, o) {
   let r = {}
   const k = keys(o)

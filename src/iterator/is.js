@@ -4,6 +4,11 @@
 import is from '../is'
 const isFunction = is('Function')
 
-export default function isIter (iter) {
+/**
+ * @function isIterator
+ * @param {iterator} iter - Accepts an iterator which can be an array, map or any other custo, implemented iterator
+ * @returns {boolean}
+ */
+export default function isIterator (iter) {
   return isFunction(iter[Symbol.iterator])
 }

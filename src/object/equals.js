@@ -1,16 +1,16 @@
-/**
-
- * equals
- * checks for equality
- */
 import curry from '../curry'
 import exists from '../exists'
 import not from '../not'
 import equals from '../equals'
 
+/**
+ * @function equals
+ * @param {Object} x
+ * @param {Object} y
+ * @returns {boolean}
+ */
 export default curry((x, y) => {
   for (let keyX in x) {
-    // noinspection JSUnfilteredForInLoop
     if (not(equals(x[keyX], y[keyX]))) return false
   }
 

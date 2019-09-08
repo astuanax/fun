@@ -2,7 +2,7 @@
  * @function isArray
  * @description Function Checks if the provided object is an array
  * @param {*} Object to verifiy
- * @return {Boolean}
+ * @return {boolean}
  * @since 1.0.2
  * @example
  *

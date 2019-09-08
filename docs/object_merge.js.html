@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>defaultTo.js - Documentation</title>
+    <title>object/merge.js - Documentation</title>
 
     <script src="scripts/prettify/prettify.js"></script>
     <script src="scripts/prettify/lang-css.js"></script>
@@ -29,7 +29,7 @@
 
 <div id="main">
     
-    <h1 class="page-title">defaultTo.js</h1>
+    <h1 class="page-title">object/merge.js</h1>
     
 
     
@@ -39,23 +39,44 @@
     
     <section>
         <article>
-            <pre class="prettyprint source linenums"><code>/**
- * Returns true if all items in the enumerable match the predicate
- *
- * @function defaultTo
- * @description Returns true if all items in the enumerable match the predicate
- * @since v1.0.2
- * @sig a -> b -> a | b
- * @param {a} default The default value.
- * @param {b} val `val` will be returned instead of `default` unless `val` is `null`, `undefined` or `NaN`.
- * @return {*} The second value if it is not `null`, `undefined` or `NaN`, otherwise the default value
- **/
-import curry from './curry'
+            <pre class="prettyprint source linenums"><code>import curry from '../curry'
+import identical from '../identical'
+import isObject from '../object/is'
+import isArray from '../array/is'
+import union from '../array/union'
 
-export default curry(function defaultTo (d, v) {
-// eslint-disable-next-line no-self-compare
-  return v == null || v !== v ? d : v
+/**
+ * @function objectMerge
+ * @description Recursively merges 2 objects
+ * @param {Object} objL
+ * @param {Object} objR
+ * @returns {boolean}
+ */
+const merge = curry((objL, objR) => {
+  let result = Object.assign({}, objL)
+
+  if (identical(objL, objR)) {
+    return Object.assign({}, objL)
+  }
+  for (let key in objR) {
+    if (!Object.prototype.hasOwnProperty.call(objR, key)) {
+      continue
+    }
+    const oldValue = objR[key]
+    const newValue = objL[key]
+
+    if (isObject(oldValue) &amp;&amp; isObject(newValue)) {
+      result[key] = merge(oldValue, newValue)
+    } else if (isArray(newValue)) {
+      result[key] = union(newValue, oldValue)
+    } else {
+      result[key] = oldValue // TODO: this is a reference, should be clone
+    }
+  }
+  return result
 })
+
+export default merge
 </code></pre>
         </article>
     </section>

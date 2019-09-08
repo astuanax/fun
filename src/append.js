@@ -2,8 +2,8 @@
  * @function append
  * @description Append an elment to a list
  * @param {*} el - Element to add to a list
- * @param {array} list - List to which to add the element
- * @return {array}
+ * @param {Array} list - List to which to add the element
+ * @return {Array}
  * @example
  *
  * const l = [0, 1]

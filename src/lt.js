@@ -5,7 +5,7 @@ import curry from './curry'
  * @desc Returns a Boolean indicating one value is larger than the other
  * @param {*} a - Any valid Javascript value
  * @param {*} b - Any valid Javascript value
- * @returns {Boolean}
+ * @returns {boolean}
  * @example
  *
  * lt(0, 10)  // true

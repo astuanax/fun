@@ -71,7 +71,7 @@ Left.prototype.chain = function (f) {
 /**
  * @memberOf Left
  * @function Left#toString
- * @returns {String}
+ * @returns {string}
  */
 Left.prototype.toString = function () {
   return 'Either.Left(' + this.__value + ')'

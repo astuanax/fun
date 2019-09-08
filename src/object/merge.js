@@ -1,14 +1,16 @@
-/**
-
- * equals
- * checks for equality
- */
 import curry from '../curry'
 import identical from '../identical'
 import isObject from '../object/is'
 import isArray from '../array/is'
 import union from '../array/union'
 
+/**
+ * @function objectMerge
+ * @description Recursively merges 2 objects
+ * @param {Object} objL
+ * @param {Object} objR
+ * @returns {boolean}
+ */
 const merge = curry((objL, objR) => {
   let result = Object.assign({}, objL)
 
