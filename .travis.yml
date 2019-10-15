@@ -12,5 +12,5 @@ before_script:
 script:
   - npm run test:cover
 after_script:
-  - ./cc-test-reporter after-buildn --exit-code $TRAVIS_TEST_RESULT
+  - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
 
