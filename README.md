@@ -1,5 +1,5 @@
 # fun.js
-Functional javascript library / YARC (Yet Another Ramda Clone) [Fork on Github](https://github.com/astuanax/fun)
+Functional javascript library [Fork on Github](https://github.com/astuanax/fun)
 
 [![Build Status](https://travis-ci.org/astuanax/fun.svg?branch=master)](https://travis-ci.org/astuanax/fun) [![Test Coverage](https://api.codeclimate.com/v1/badges/40e2d49f1fb622319b08/test_coverage)](https://codeclimate.com/github/astuanax/fun/test_coverage) [![Code Climate](https://codeclimate.com/github/astuanax/fun/badges/gpa.svg)](https://codeclimate.com/github/astuanax/fun) ![GitHub file size in bytes](https://img.badgesize.io/astuanax/fun/master/lib/fun.min.js.svg?compression=gzip) 
 
@@ -74,4 +74,18 @@ const date2 = new Date('2000-01-01')
 diffInSeconds(date1, date2)) === -86400
 ```
 
+## Other libraries
 
+The fun.js library is used together with some other libraries:
+
+### [funmatrix](https://github.com/astuanax/funmatrix) 
+
+Matrix applicative providing standard matrix operations
+
+### [funml](https://github.com/astuanax/funml)
+
+Machine learning with functional undertones: perceptron, neural network and decision trees.
+
+### [WIP funreact](https://github.com/astuanax/funreact)
+
+WIP React library with helper function
