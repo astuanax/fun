@@ -48,40 +48,61 @@
 
 
     <section class="readme">
-        <article><h1>fun.js</h1><p>Functional javascript library <a href="https://github.com/astuanax/fun">Fork on Github</a></p>
-<p><a href="https://travis-ci.org/astuanax/fun"><img src="https://travis-ci.org/astuanax/fun.svg?branch=master" alt="Build Status"></a> <a href="https://codeclimate.com/github/astuanax/fun/test_coverage"><img src="https://api.codeclimate.com/v1/badges/40e2d49f1fb622319b08/test_coverage" alt="Test Coverage"></a> <a href="https://codeclimate.com/github/astuanax/fun"><img src="https://codeclimate.com/github/astuanax/fun/badges/gpa.svg" alt="Code Climate"></a> <img src="https://img.badgesize.io/astuanax/fun/master/lib/fun.min.js.svg?compression=gzip" alt="GitHub file size in bytes"> </p>
+        <article><h1>fun.js</h1>
+<p>Functional javascript library <a href="https://github.com/astuanax/fun">Fork on Github</a></p>
+<p><a href="https://travis-ci.org/astuanax/fun"><img src="https://travis-ci.org/astuanax/fun.svg?branch=master" alt="Build Status"></a> <a href="https://codeclimate.com/github/astuanax/fun/test_coverage"><img src="https://api.codeclimate.com/v1/badges/40e2d49f1fb622319b08/test_coverage" alt="Test Coverage"></a> <a href="https://codeclimate.com/github/astuanax/fun"><img src="https://codeclimate.com/github/astuanax/fun/badges/gpa.svg" alt="Code Climate"></a> <img src="https://img.badgesize.io/astuanax/fun/master/lib/fun.min.js.svg?compression=gzip" alt="GitHub file size in bytes"></p>
 <p><a href="https://bundlephobia.com/result?p=fun.js@1.0.3">Check bundle size on bundlephobia</a></p>
-<h2>Install fun.js</h2><p><code>$ npm install fun.js --save</code> </p>
-<h2>Docs</h2><p>The documentation is done using jsdocs and can be found in the /docs folder or at the url <a href="https://astuanax.github.io/fun/">https://astuanax.github.io/fun/</a></p>
-<h2>Functional library?</h2><p>The fun.js is a functional library which supports monads and follows mostly he ramda specifications but tries to keep the bite size down.
-The focus is to provide helpful functions for react development with a small footprint. </p>
-<h2>Autocurried ?</h2><p>Most if not all functions are autocurried, which means they can have any arity and you can still use default parameters in your function parameters.</p>
-<p>Neat. </p>
+<h2>Install fun.js</h2>
+<p><code>$ npm install fun.js --save</code></p>
+<h2>Docs</h2>
+<p>The documentation is done using jsdocs and can be found in the /docs folder or at the url <a href="https://astuanax.github.io/fun/">https://astuanax.github.io/fun/</a></p>
+<h2>Functional library?</h2>
+<p>The fun.js is a functional library which supports monads and follows mostly he ramda specifications but tries to keep the bite size down.
+The focus is to provide helpful functions for react development with a small footprint.</p>
+<h2>Autocurried ?</h2>
+<p>Most if not all functions are autocurried, which means they can have any arity and you can still use default parameters in your function parameters.</p>
+<p>Neat.</p>
 <pre class="prettyprint source"><code>const abc = curry((a, b, c = [1, 2, 3]) => concat(a, b, c))
 
 const add1 = abc(['tss tss'])
 add1(['check']) // ['tss tss', 'check', 1, 2, 3]
-</code></pre><h2>Examples</h2><h4>Returning the sum of the length of all the arrays in an array</h4><pre class="prettyprint source"><code>const lengthDeep = compose(sum, map(x => x.length))
-const lengthDeep2 = fold((total, xs) => total + xs.length, 0)
 
+</code></pre>
+<h2>Examples</h2>
+<h4>Returning the sum of the length of all the arrays in an array</h4>
+<pre class="prettyprint source"><code>const lengthDeep = compose(sum, map(x => x.length))
+const lengthDeep2 = fold((total, xs) => total + xs.length, 0)
+    
 const mapReduce = curry((m, r) => (x, y) => r(x, m(y)))
 
 const deepLength = xs => fold(mapReduce(x => x.length, add), 0, xs)
 
 lengthDeep([[1], [2, 3], [4, 5, 6]]) === 6
-</code></pre><h4>Adds a number to al values of an object</h4><pre class="prettyprint source"><code>  const mapReduce = curry((m, r) => (x, y) => r(x, m(y)))
+
+</code></pre>
+<h4>Adds a number to al values of an object</h4>
+<pre class="prettyprint source"><code>  const mapReduce = curry((m, r) => (x, y) => r(x, m(y)))
 
   const omap = curry((f, o) => fold(mapReduce(k => ({ [k]: f(o[k]) }), Object.assign), {}, keys(o)))
   const omapAdd10 = omap(add(10))
   omapAdd10({ a: 1, b: 2, c: 3 })) == { 'a': 11, 'b': 12, 'c': 13 }
-</code></pre><h3>Get the difference between 2 dates in seconds</h3><pre class="prettyprint source"><code>const diffInSeconds = compose(toSeconds, diffDate)
+
+</code></pre>
+<h3>Get the difference between 2 dates in seconds</h3>
+<pre class="prettyprint source"><code>const diffInSeconds = compose(toSeconds, diffDate)
 const date1 = new Date('1999-12-31')
 const date2 = new Date('2000-01-01')
-
-diffInSeconds(date1, date2)) === -86400</code></pre><h2>Other libraries</h2><p>The fun.js library is used together with some other libraries:</p>
-<h3><a href="https://github.com/astuanax/funmatrix">funmatrix</a></h3><p>Matrix applicative providing standard matrix operations</p>
-<h3><a href="https://github.com/astuanax/funml">funml</a></h3><p>Machine learning with functional undertones: perceptron, neural network and decision trees.</p>
-<h3><a href="https://github.com/astuanax/funreact">WIP funreact</a></h3><p>WIP React library with helper function</p></article>
+   
+diffInSeconds(date1, date2)) === -86400
+</code></pre>
+<h2>Other libraries</h2>
+<p>The fun.js library is used together with some other libraries:</p>
+<h3><a href="https://github.com/astuanax/funmatrix">funmatrix</a></h3>
+<p>Matrix applicative providing standard matrix operations</p>
+<h3><a href="https://github.com/astuanax/funml">funml</a></h3>
+<p>Machine learning with functional undertones: perceptron, neural network and decision trees.</p>
+<h3><a href="https://github.com/astuanax/funreact">WIP funreact</a></h3>
+<p>WIP React library with helper function</p></article>
     </section>
 
 
@@ -94,7 +115,7 @@ diffInSeconds(date1, date2)) === -86400</code></pre><h2>Other libraries</h2><p>T
 <br class="clear">
 
 <footer>
-    Generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Sun Nov 03 2019 11:50:22 GMT+0100 (Central European Standard Time) using the Minami theme.
+    Generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.3</a> on Tue Nov 05 2019 21:17:37 GMT+0100 (GMT+01:00) using the Minami theme.
 </footer>
 
 <script>prettyPrint();</script>

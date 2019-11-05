@@ -5,7 +5,7 @@
             "filename": "addIndex.js",
             "lineno": 1,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {}
         },
         "description": "Adds a specified index to iterate a collection",
@@ -67,7 +67,7 @@
             "filename": "addIndex.js",
             "lineno": 19,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100000006",
                 "name": "module.exports",
@@ -91,7 +91,7 @@
             "filename": "addIndex.js",
             "lineno": 20,
             "columnno": 6,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100000016",
                 "name": "i",
@@ -113,7 +113,7 @@
             "filename": "adjust.js",
             "lineno": 1,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {}
         },
         "description": "Modifies an item in an array using the provided function",
@@ -175,7 +175,7 @@
             "filename": "adjust.js",
             "lineno": 21,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100000038",
                 "name": "module.exports",
@@ -199,7 +199,7 @@
             "filename": "adjust.js",
             "lineno": 22,
             "columnno": 8,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100000048",
                 "name": "r",
@@ -225,7 +225,7 @@
             "filename": "adjust.js",
             "lineno": 23,
             "columnno": 8,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100000060",
                 "name": "idx",
@@ -251,7 +251,7 @@
             "filename": "adjust.js",
             "lineno": 25,
             "columnno": 2,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100000080",
                 "name": "r[undefined]",
@@ -274,7 +274,7 @@
             "filename": "adjustWith.js",
             "lineno": 1,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {}
         },
         "description": "Modifies an item in an array using the provided function",
@@ -341,7 +341,7 @@
             "filename": "adjustWith.js",
             "lineno": 16,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100000101",
                 "name": "module.exports",
@@ -365,7 +365,7 @@
             "filename": "adjustWith.js",
             "lineno": 17,
             "columnno": 8,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100000111",
                 "name": "_fn",
@@ -386,7 +386,7 @@
             "filename": "all.js",
             "lineno": 1,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {}
         },
         "description": "Returns true if all items in the enumerable match the predicate",
@@ -441,7 +441,7 @@
             "filename": "all.js",
             "lineno": 14,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100000146",
                 "name": "module.exports",
@@ -465,7 +465,7 @@
             "filename": "all.js",
             "lineno": 15,
             "columnno": 6,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100000155",
                 "name": "res",
@@ -491,7 +491,7 @@
             "filename": "all.js",
             "lineno": 16,
             "columnno": 11,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100000160",
                 "name": "i"
@@ -515,7 +515,7 @@
             "filename": "all.js",
             "lineno": 18,
             "columnno": 6,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100000173",
                 "name": "res",
@@ -538,7 +538,7 @@
             "filename": "allPass.js",
             "lineno": 1,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {}
         },
         "description": "Applies a list of predicates to the data and returns true if all pass",
@@ -587,7 +587,7 @@
             "filename": "allPass.js",
             "lineno": 13,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100000185",
                 "name": "module.exports",
@@ -611,7 +611,7 @@
             "filename": "allPass.js",
             "lineno": 14,
             "columnno": 11,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100000195",
                 "name": "i",
@@ -633,7 +633,7 @@
             "filename": "always.js",
             "lineno": 1,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {}
         },
         "description": "Returns a function with the initial value provided",
@@ -680,7 +680,7 @@
             "filename": "always.js",
             "lineno": 13,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100000223",
                 "name": "module.exports",
@@ -700,7 +700,7 @@
             "filename": "and.js",
             "lineno": 1,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {}
         },
         "description": "Checks if both predicates are true",
@@ -757,7 +757,7 @@
             "filename": "and.js",
             "lineno": 14,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100000241",
                 "name": "module.exports",
@@ -777,7 +777,7 @@
             "filename": "any.js",
             "lineno": 1,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {}
         },
         "description": "Returns true if at least on of the items in the enumerable match the predicate",
@@ -832,7 +832,7 @@
             "filename": "any.js",
             "lineno": 14,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100000259",
                 "name": "module.exports",
@@ -856,7 +856,7 @@
             "filename": "any.js",
             "lineno": 15,
             "columnno": 6,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100000268",
                 "name": "res",
@@ -882,7 +882,7 @@
             "filename": "any.js",
             "lineno": 16,
             "columnno": 11,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100000273",
                 "name": "i"
@@ -906,7 +906,7 @@
             "filename": "any.js",
             "lineno": 18,
             "columnno": 6,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100000285",
                 "name": "res",
@@ -929,7 +929,7 @@
             "filename": "anyPass.js",
             "lineno": 1,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {}
         },
         "description": "Applies a list of predicates to the data and returns true if one passes",
@@ -978,7 +978,7 @@
             "filename": "anyPass.js",
             "lineno": 12,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100000297",
                 "name": "module.exports",
@@ -1002,7 +1002,7 @@
             "filename": "anyPass.js",
             "lineno": 13,
             "columnno": 11,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100000307",
                 "name": "i",
@@ -1024,7 +1024,7 @@
             "filename": "ap.js",
             "lineno": 1,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {}
         },
         "description": "Applies a list of functions to a list of values and returns a combined result array",
@@ -1084,7 +1084,7 @@
             "filename": "ap.js",
             "lineno": 18,
             "columnno": 6,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100000351",
                 "name": "isFunction",
@@ -1109,7 +1109,7 @@
             "filename": "ap.js",
             "lineno": 20,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100000356",
                 "name": "module.exports",
@@ -1129,7 +1129,7 @@
             "filename": "aperture.js",
             "lineno": 4,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {}
         },
         "kind": "function",
@@ -1164,7 +1164,7 @@
             "filename": "aperture.js",
             "lineno": 10,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100000420",
                 "name": "module.exports",
@@ -1188,7 +1188,7 @@
             "filename": "aperture.js",
             "lineno": 14,
             "columnno": 8,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100000438",
                 "name": "res",
@@ -1210,7 +1210,7 @@
             "filename": "append.js",
             "lineno": 1,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {}
         },
         "kind": "function",
@@ -1261,7 +1261,7 @@
             "filename": "append.js",
             "lineno": 16,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100000474",
                 "name": "module.exports",
@@ -1281,7 +1281,7 @@
             "filename": "apply.js",
             "lineno": 1,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {}
         },
         "kind": "function",
@@ -1320,7 +1320,7 @@
             "filename": "apply.js",
             "lineno": 17,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100000494",
                 "name": "module.exports",
@@ -1340,7 +1340,7 @@
             "filename": "concat.js",
             "lineno": 1,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/array",
+            "path": "/mnt/sda/git/fun/src/array",
             "code": {}
         },
         "kind": "function",
@@ -1391,7 +1391,7 @@
             "filename": "concat.js",
             "lineno": 15,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/array",
+            "path": "/mnt/sda/git/fun/src/array",
             "code": {
                 "id": "astnode100000517",
                 "name": "module.exports",
@@ -1411,7 +1411,7 @@
             "filename": "equals.js",
             "lineno": 1,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/array",
+            "path": "/mnt/sda/git/fun/src/array",
             "code": {}
         },
         "kind": "function",
@@ -1459,7 +1459,7 @@
             "filename": "equals.js",
             "lineno": 12,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/array",
+            "path": "/mnt/sda/git/fun/src/array",
             "code": {
                 "id": "astnode100000548",
                 "name": "module.exports",
@@ -1483,7 +1483,7 @@
             "filename": "equals.js",
             "lineno": 16,
             "columnno": 11,
-            "path": "/Volumes/BigOne/github/fun/src/array",
+            "path": "/mnt/sda/git/fun/src/array",
             "code": {
                 "id": "astnode100000569",
                 "name": "i",
@@ -1505,7 +1505,7 @@
             "filename": "filter.js",
             "lineno": 1,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/array",
+            "path": "/mnt/sda/git/fun/src/array",
             "code": {}
         },
         "kind": "function",
@@ -1553,7 +1553,7 @@
             "filename": "filter.js",
             "lineno": 11,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/array",
+            "path": "/mnt/sda/git/fun/src/array",
             "code": {
                 "id": "astnode100000601",
                 "name": "module.exports",
@@ -1577,7 +1577,7 @@
             "filename": "filter.js",
             "lineno": 12,
             "columnno": 6,
-            "path": "/Volumes/BigOne/github/fun/src/array",
+            "path": "/mnt/sda/git/fun/src/array",
             "code": {
                 "id": "astnode100000610",
                 "name": "r",
@@ -1603,7 +1603,7 @@
             "filename": "filter.js",
             "lineno": 13,
             "columnno": 11,
-            "path": "/Volumes/BigOne/github/fun/src/array",
+            "path": "/mnt/sda/git/fun/src/array",
             "code": {
                 "id": "astnode100000615",
                 "name": "i",
@@ -1625,7 +1625,7 @@
             "filename": "fold.js",
             "lineno": 1,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/array",
+            "path": "/mnt/sda/git/fun/src/array",
             "code": {}
         },
         "kind": "function",
@@ -1685,7 +1685,7 @@
             "filename": "fold.js",
             "lineno": 16,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/array",
+            "path": "/mnt/sda/git/fun/src/array",
             "code": {}
         },
         "kind": "typedef",
@@ -1755,7 +1755,7 @@
             "filename": "fold.js",
             "lineno": 26,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/array",
+            "path": "/mnt/sda/git/fun/src/array",
             "code": {
                 "id": "astnode100000648",
                 "name": "module.exports",
@@ -1779,7 +1779,7 @@
             "filename": "fold.js",
             "lineno": 27,
             "columnno": 6,
-            "path": "/Volumes/BigOne/github/fun/src/array",
+            "path": "/mnt/sda/git/fun/src/array",
             "code": {
                 "id": "astnode100000658",
                 "name": "i",
@@ -1805,7 +1805,7 @@
             "filename": "fold.js",
             "lineno": 28,
             "columnno": 8,
-            "path": "/Volumes/BigOne/github/fun/src/array",
+            "path": "/mnt/sda/git/fun/src/array",
             "code": {
                 "id": "astnode100000663",
                 "name": "l",
@@ -1831,7 +1831,7 @@
             "filename": "fold.js",
             "lineno": 29,
             "columnno": 6,
-            "path": "/Volumes/BigOne/github/fun/src/array",
+            "path": "/mnt/sda/git/fun/src/array",
             "code": {
                 "id": "astnode100000669",
                 "name": "r",
@@ -1857,7 +1857,7 @@
             "filename": "fold.js",
             "lineno": 31,
             "columnno": 4,
-            "path": "/Volumes/BigOne/github/fun/src/array",
+            "path": "/mnt/sda/git/fun/src/array",
             "code": {
                 "id": "astnode100000679",
                 "name": "r",
@@ -1880,7 +1880,7 @@
             "filename": "is.js",
             "lineno": 1,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/array",
+            "path": "/mnt/sda/git/fun/src/array",
             "code": {}
         },
         "kind": "function",
@@ -1923,7 +1923,7 @@
             "filename": "is.js",
             "lineno": 15,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/array",
+            "path": "/mnt/sda/git/fun/src/array",
             "code": {
                 "id": "astnode100000697",
                 "name": "module.exports",
@@ -1943,7 +1943,7 @@
             "filename": "map.js",
             "lineno": 1,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/array",
+            "path": "/mnt/sda/git/fun/src/array",
             "code": {}
         },
         "kind": "function",
@@ -1993,7 +1993,7 @@
             "filename": "map.js",
             "lineno": 18,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/array",
+            "path": "/mnt/sda/git/fun/src/array",
             "code": {
                 "id": "astnode100000707",
                 "name": "module.exports",
@@ -2017,7 +2017,7 @@
             "filename": "map.js",
             "lineno": 19,
             "columnno": 6,
-            "path": "/Volumes/BigOne/github/fun/src/array",
+            "path": "/mnt/sda/git/fun/src/array",
             "code": {
                 "id": "astnode100000716",
                 "name": "i",
@@ -2043,7 +2043,7 @@
             "filename": "map.js",
             "lineno": 20,
             "columnno": 8,
-            "path": "/Volumes/BigOne/github/fun/src/array",
+            "path": "/mnt/sda/git/fun/src/array",
             "code": {
                 "id": "astnode100000721",
                 "name": "l",
@@ -2069,7 +2069,7 @@
             "filename": "map.js",
             "lineno": 21,
             "columnno": 8,
-            "path": "/Volumes/BigOne/github/fun/src/array",
+            "path": "/mnt/sda/git/fun/src/array",
             "code": {
                 "id": "astnode100000727",
                 "name": "r",
@@ -2095,7 +2095,7 @@
             "filename": "map.js",
             "lineno": 23,
             "columnno": 4,
-            "path": "/Volumes/BigOne/github/fun/src/array",
+            "path": "/mnt/sda/git/fun/src/array",
             "code": {
                 "id": "astnode100000739",
                 "name": "r[undefined]",
@@ -2118,7 +2118,7 @@
             "filename": "to.js",
             "lineno": 1,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/array",
+            "path": "/mnt/sda/git/fun/src/array",
             "code": {}
         },
         "kind": "function",
@@ -2161,7 +2161,7 @@
             "filename": "to.js",
             "lineno": 18,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/array",
+            "path": "/mnt/sda/git/fun/src/array",
             "code": {
                 "id": "astnode100000754",
                 "name": "module.exports",
@@ -2188,7 +2188,7 @@
             "filename": "to.js",
             "lineno": 18,
             "columnno": 15,
-            "path": "/Volumes/BigOne/github/fun/src/array",
+            "path": "/mnt/sda/git/fun/src/array",
             "code": {
                 "id": "astnode100000755",
                 "name": "toArray",
@@ -2211,7 +2211,7 @@
             "filename": "union.js",
             "lineno": 1,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/array",
+            "path": "/mnt/sda/git/fun/src/array",
             "code": {}
         },
         "kind": "function",
@@ -2263,7 +2263,7 @@
             "filename": "union.js",
             "lineno": 15,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/array",
+            "path": "/mnt/sda/git/fun/src/array",
             "code": {
                 "id": "astnode100000783",
                 "name": "module.exports",
@@ -2283,7 +2283,7 @@
             "filename": "binary.js",
             "lineno": 1,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {}
         },
         "kind": "function",
@@ -2315,7 +2315,7 @@
             "filename": "binary.js",
             "lineno": 9,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100000813",
                 "name": "module.exports",
@@ -2335,7 +2335,7 @@
             "filename": "bind.js",
             "lineno": 3,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {}
         },
         "kind": "function",
@@ -2381,7 +2381,7 @@
             "filename": "bind.js",
             "lineno": 10,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100000838",
                 "name": "module.exports",
@@ -2401,7 +2401,7 @@
             "filename": "F.js",
             "lineno": 1,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/boolean",
+            "path": "/mnt/sda/git/fun/src/boolean",
             "code": {}
         },
         "description": "Always returns a function with a False boolean",
@@ -2440,7 +2440,7 @@
             "filename": "F.js",
             "lineno": 12,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/boolean",
+            "path": "/mnt/sda/git/fun/src/boolean",
             "code": {
                 "id": "astnode100000858",
                 "name": "module.exports",
@@ -2460,7 +2460,7 @@
             "filename": "T.js",
             "lineno": 1,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/boolean",
+            "path": "/mnt/sda/git/fun/src/boolean",
             "code": {}
         },
         "description": "Always returns a function with a False boolean",
@@ -2499,7 +2499,7 @@
             "filename": "T.js",
             "lineno": 12,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/boolean",
+            "path": "/mnt/sda/git/fun/src/boolean",
             "code": {
                 "id": "astnode100000868",
                 "name": "module.exports",
@@ -2523,7 +2523,7 @@
             "filename": "both.js",
             "lineno": 15,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/boolean",
+            "path": "/mnt/sda/git/fun/src/boolean",
             "code": {
                 "id": "astnode100000890",
                 "name": "module.exports",
@@ -2543,7 +2543,7 @@
             "filename": "is.js",
             "lineno": 1,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/boolean",
+            "path": "/mnt/sda/git/fun/src/boolean",
             "code": {}
         },
         "description": "Curried function that verifies of the provided argument is a boolean",
@@ -2584,7 +2584,7 @@
             "filename": "is.js",
             "lineno": 13,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/boolean",
+            "path": "/mnt/sda/git/fun/src/boolean",
             "code": {
                 "id": "astnode100000934",
                 "name": "module.exports",
@@ -2604,7 +2604,7 @@
             "filename": "call.js",
             "lineno": 1,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {}
         },
         "kind": "function",
@@ -2636,7 +2636,7 @@
             "filename": "call.js",
             "lineno": 9,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100000944",
                 "name": "module.exports",
@@ -2656,7 +2656,7 @@
             "filename": "complement.js",
             "lineno": 1,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {}
         },
         "kind": "function",
@@ -2703,7 +2703,7 @@
             "filename": "complement.js",
             "lineno": 21,
             "columnno": 6,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100000976",
                 "name": "complement",
@@ -2728,7 +2728,7 @@
             "filename": "complement.js",
             "lineno": 22,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100000981",
                 "name": "module.exports",
@@ -2748,7 +2748,7 @@
             "filename": "compose.js",
             "lineno": 1,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {}
         },
         "kind": "function",
@@ -2775,7 +2775,7 @@
             "filename": "compose.js",
             "lineno": 5,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100000985",
                 "name": "module.exports",
@@ -2800,7 +2800,7 @@
             "filename": "compose.js",
             "lineno": 5,
             "columnno": 15,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100000986",
                 "name": "compose",
@@ -2829,7 +2829,7 @@
             "filename": "compose.js",
             "lineno": 6,
             "columnno": 6,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100000990",
                 "name": "fns",
@@ -2855,7 +2855,7 @@
             "filename": "compose.js",
             "lineno": 9,
             "columnno": 8,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100001006",
                 "name": "init",
@@ -2881,7 +2881,7 @@
             "filename": "compose.js",
             "lineno": 10,
             "columnno": 8,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100001016",
                 "name": "result",
@@ -2907,7 +2907,7 @@
             "filename": "compose.js",
             "lineno": 11,
             "columnno": 8,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100001026",
                 "name": "i",
@@ -2933,7 +2933,7 @@
             "filename": "compose.js",
             "lineno": 14,
             "columnno": 12,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100001042",
                 "name": "fn",
@@ -2959,7 +2959,7 @@
             "filename": "compose.js",
             "lineno": 16,
             "columnno": 6,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100001048",
                 "name": "result",
@@ -2982,7 +2982,7 @@
             "filename": "concat.js",
             "lineno": 1,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {}
         },
         "description": "Concatenates 2 items together",
@@ -3032,7 +3032,7 @@
             "filename": "concat.js",
             "lineno": 17,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100001080",
                 "name": "module.exports",
@@ -3056,7 +3056,7 @@
             "filename": "concat.js",
             "lineno": 18,
             "columnno": 8,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100001089",
                 "name": "typeMap",
@@ -3082,7 +3082,7 @@
             "filename": "concat.js",
             "lineno": 19,
             "columnno": 4,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100001092",
                 "name": "String",
@@ -3107,7 +3107,7 @@
             "filename": "concat.js",
             "lineno": 20,
             "columnno": 4,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100001094",
                 "name": "Array",
@@ -3128,7 +3128,7 @@
             "filename": "cond.js",
             "lineno": 1,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {}
         },
         "kind": "function",
@@ -3160,7 +3160,7 @@
             "filename": "cond.js",
             "lineno": 6,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100001107",
                 "name": "module.exports",
@@ -3187,7 +3187,7 @@
             "filename": "cond.js",
             "lineno": 6,
             "columnno": 15,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100001108",
                 "name": "cond",
@@ -3217,7 +3217,7 @@
             "filename": "cond.js",
             "lineno": 8,
             "columnno": 13,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100001118",
                 "name": "i",
@@ -3243,7 +3243,7 @@
             "filename": "DATE_TOKENS.js",
             "lineno": 7,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/constants",
+            "path": "/mnt/sda/git/fun/src/constants",
             "code": {
                 "id": "astnode100001147",
                 "name": "exports.DATE_TOKENS",
@@ -3266,7 +3266,7 @@
             "filename": "DATE_TOKENS.js",
             "lineno": 7,
             "columnno": 13,
-            "path": "/Volumes/BigOne/github/fun/src/constants",
+            "path": "/mnt/sda/git/fun/src/constants",
             "code": {
                 "id": "astnode100001149",
                 "name": "DATE_TOKENS",
@@ -3291,7 +3291,7 @@
             "filename": "DATE_UNITS.js",
             "lineno": 5,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/constants",
+            "path": "/mnt/sda/git/fun/src/constants",
             "code": {
                 "id": "astnode100001154",
                 "name": "exports.DATE_UNITS",
@@ -3314,7 +3314,7 @@
             "filename": "DATE_UNITS.js",
             "lineno": 5,
             "columnno": 13,
-            "path": "/Volumes/BigOne/github/fun/src/constants",
+            "path": "/mnt/sda/git/fun/src/constants",
             "code": {
                 "id": "astnode100001156",
                 "name": "DATE_UNITS",
@@ -3339,7 +3339,7 @@
             "filename": "DATE_UNITS.js",
             "lineno": 6,
             "columnno": 2,
-            "path": "/Volumes/BigOne/github/fun/src/constants",
+            "path": "/mnt/sda/git/fun/src/constants",
             "code": {
                 "id": "astnode100001159",
                 "name": "milliseconds",
@@ -3364,7 +3364,7 @@
             "filename": "DATE_UNITS.js",
             "lineno": 7,
             "columnno": 2,
-            "path": "/Volumes/BigOne/github/fun/src/constants",
+            "path": "/mnt/sda/git/fun/src/constants",
             "code": {
                 "id": "astnode100001161",
                 "name": "seconds",
@@ -3389,7 +3389,7 @@
             "filename": "DATE_UNITS.js",
             "lineno": 8,
             "columnno": 2,
-            "path": "/Volumes/BigOne/github/fun/src/constants",
+            "path": "/mnt/sda/git/fun/src/constants",
             "code": {
                 "id": "astnode100001163",
                 "name": "minutes",
@@ -3414,7 +3414,7 @@
             "filename": "DATE_UNITS.js",
             "lineno": 9,
             "columnno": 2,
-            "path": "/Volumes/BigOne/github/fun/src/constants",
+            "path": "/mnt/sda/git/fun/src/constants",
             "code": {
                 "id": "astnode100001167",
                 "name": "hours",
@@ -3439,7 +3439,7 @@
             "filename": "DATE_UNITS.js",
             "lineno": 10,
             "columnno": 2,
-            "path": "/Volumes/BigOne/github/fun/src/constants",
+            "path": "/mnt/sda/git/fun/src/constants",
             "code": {
                 "id": "astnode100001173",
                 "name": "days",
@@ -3464,7 +3464,7 @@
             "filename": "DATE_UNITS.js",
             "lineno": 11,
             "columnno": 2,
-            "path": "/Volumes/BigOne/github/fun/src/constants",
+            "path": "/mnt/sda/git/fun/src/constants",
             "code": {
                 "id": "astnode100001181",
                 "name": "weeks",
@@ -3489,7 +3489,7 @@
             "filename": "MONTHS.js",
             "lineno": 5,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/constants",
+            "path": "/mnt/sda/git/fun/src/constants",
             "code": {
                 "id": "astnode100001193",
                 "name": "exports.MONTHS",
@@ -3512,7 +3512,7 @@
             "filename": "MONTHS.js",
             "lineno": 5,
             "columnno": 13,
-            "path": "/Volumes/BigOne/github/fun/src/constants",
+            "path": "/mnt/sda/git/fun/src/constants",
             "code": {
                 "id": "astnode100001195",
                 "name": "MONTHS",
@@ -3537,7 +3537,7 @@
             "filename": "WEEKDAYS.js",
             "lineno": 4,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/constants",
+            "path": "/mnt/sda/git/fun/src/constants",
             "code": {
                 "id": "astnode100001212",
                 "name": "exports.WEEKDAYS",
@@ -3560,7 +3560,7 @@
             "filename": "WEEKDAYS.js",
             "lineno": 4,
             "columnno": 13,
-            "path": "/Volumes/BigOne/github/fun/src/constants",
+            "path": "/mnt/sda/git/fun/src/constants",
             "code": {
                 "id": "astnode100001214",
                 "name": "WEEKDAYS",
@@ -3581,7 +3581,7 @@
             "filename": "curry.js",
             "lineno": 2,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {}
         },
         "kind": "function",
@@ -3600,7 +3600,7 @@
             "filename": "curry.js",
             "lineno": 6,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100001226",
                 "name": "module.exports",
@@ -3627,7 +3627,7 @@
             "filename": "curry.js",
             "lineno": 6,
             "columnno": 15,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100001227",
                 "name": "curry",
@@ -3659,7 +3659,7 @@
             "filename": "curry.js",
             "lineno": 7,
             "columnno": 8,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100001232",
                 "name": "argslen",
@@ -3685,7 +3685,7 @@
             "filename": "curry.js",
             "lineno": 14,
             "columnno": 2,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100001248",
                 "name": "recurse",
@@ -3717,7 +3717,7 @@
             "filename": "curry.js",
             "lineno": 15,
             "columnno": 10,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100001254",
                 "name": "_acc",
@@ -3743,7 +3743,7 @@
             "filename": "curry.js",
             "lineno": 21,
             "columnno": 2,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100001277",
                 "name": "createRecurser",
@@ -3770,7 +3770,7 @@
             "filename": "diffDate.js",
             "lineno": 1,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/date",
+            "path": "/mnt/sda/git/fun/src/date",
             "code": {}
         },
         "kind": "function",
@@ -3819,7 +3819,7 @@
             "filename": "diffDate.js",
             "lineno": 10,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/date",
+            "path": "/mnt/sda/git/fun/src/date",
             "code": {
                 "id": "astnode100001303",
                 "name": "module.exports",
@@ -3843,7 +3843,7 @@
             "filename": "formatDateTime.js",
             "lineno": 13,
             "columnno": 6,
-            "path": "/Volumes/BigOne/github/fun/src/date",
+            "path": "/mnt/sda/git/fun/src/date",
             "code": {
                 "id": "astnode100001352",
                 "name": "ZEROS",
@@ -3868,7 +3868,7 @@
             "filename": "formatDateTime.js",
             "lineno": 14,
             "columnno": 6,
-            "path": "/Volumes/BigOne/github/fun/src/date",
+            "path": "/mnt/sda/git/fun/src/date",
             "code": {
                 "id": "astnode100001356",
                 "name": "lastN",
@@ -3893,7 +3893,7 @@
             "filename": "formatDateTime.js",
             "lineno": 15,
             "columnno": 6,
-            "path": "/Volumes/BigOne/github/fun/src/date",
+            "path": "/mnt/sda/git/fun/src/date",
             "code": {
                 "id": "astnode100001376",
                 "name": "firstN",
@@ -3918,7 +3918,7 @@
             "filename": "formatDateTime.js",
             "lineno": 16,
             "columnno": 6,
-            "path": "/Volumes/BigOne/github/fun/src/date",
+            "path": "/mnt/sda/git/fun/src/date",
             "code": {
                 "id": "astnode100001390",
                 "name": "fill",
@@ -3943,7 +3943,7 @@
             "filename": "formatDateTime.js",
             "lineno": 18,
             "columnno": 6,
-            "path": "/Volumes/BigOne/github/fun/src/date",
+            "path": "/mnt/sda/git/fun/src/date",
             "code": {
                 "id": "astnode100001404",
                 "name": "modCeiling",
@@ -3967,7 +3967,7 @@
             "filename": "formatDateTime.js",
             "lineno": 21,
             "columnno": 6,
-            "path": "/Volumes/BigOne/github/fun/src/date",
+            "path": "/mnt/sda/git/fun/src/date",
             "code": {
                 "id": "astnode100001415",
                 "name": "tokens",
@@ -3992,7 +3992,7 @@
             "filename": "formatDateTime.js",
             "lineno": 22,
             "columnno": 2,
-            "path": "/Volumes/BigOne/github/fun/src/date",
+            "path": "/mnt/sda/git/fun/src/date",
             "code": {
                 "id": "astnode100001418",
                 "name": "YYYY",
@@ -4016,7 +4016,7 @@
             "filename": "formatDateTime.js",
             "lineno": 23,
             "columnno": 2,
-            "path": "/Volumes/BigOne/github/fun/src/date",
+            "path": "/mnt/sda/git/fun/src/date",
             "code": {
                 "id": "astnode100001428",
                 "name": "YY",
@@ -4040,7 +4040,7 @@
             "filename": "formatDateTime.js",
             "lineno": 24,
             "columnno": 2,
-            "path": "/Volumes/BigOne/github/fun/src/date",
+            "path": "/mnt/sda/git/fun/src/date",
             "code": {
                 "id": "astnode100001441",
                 "name": "MMMM",
@@ -4064,7 +4064,7 @@
             "filename": "formatDateTime.js",
             "lineno": 25,
             "columnno": 2,
-            "path": "/Volumes/BigOne/github/fun/src/date",
+            "path": "/mnt/sda/git/fun/src/date",
             "code": {
                 "id": "astnode100001450",
                 "name": "MMM",
@@ -4088,7 +4088,7 @@
             "filename": "formatDateTime.js",
             "lineno": 26,
             "columnno": 2,
-            "path": "/Volumes/BigOne/github/fun/src/date",
+            "path": "/mnt/sda/git/fun/src/date",
             "code": {
                 "id": "astnode100001462",
                 "name": "MM",
@@ -4112,7 +4112,7 @@
             "filename": "formatDateTime.js",
             "lineno": 27,
             "columnno": 2,
-            "path": "/Volumes/BigOne/github/fun/src/date",
+            "path": "/mnt/sda/git/fun/src/date",
             "code": {
                 "id": "astnode100001474",
                 "name": "M",
@@ -4136,7 +4136,7 @@
             "filename": "formatDateTime.js",
             "lineno": 28,
             "columnno": 2,
-            "path": "/Volumes/BigOne/github/fun/src/date",
+            "path": "/mnt/sda/git/fun/src/date",
             "code": {
                 "id": "astnode100001483",
                 "name": "w",
@@ -4160,7 +4160,7 @@
             "filename": "formatDateTime.js",
             "lineno": 29,
             "columnno": 2,
-            "path": "/Volumes/BigOne/github/fun/src/date",
+            "path": "/mnt/sda/git/fun/src/date",
             "code": {
                 "id": "astnode100001489",
                 "name": "ww",
@@ -4184,7 +4184,7 @@
             "filename": "formatDateTime.js",
             "lineno": 30,
             "columnno": 2,
-            "path": "/Volumes/BigOne/github/fun/src/date",
+            "path": "/mnt/sda/git/fun/src/date",
             "code": {
                 "id": "astnode100001498",
                 "name": "DD",
@@ -4208,7 +4208,7 @@
             "filename": "formatDateTime.js",
             "lineno": 31,
             "columnno": 2,
-            "path": "/Volumes/BigOne/github/fun/src/date",
+            "path": "/mnt/sda/git/fun/src/date",
             "code": {
                 "id": "astnode100001508",
                 "name": "D",
@@ -4232,7 +4232,7 @@
             "filename": "formatDateTime.js",
             "lineno": 32,
             "columnno": 2,
-            "path": "/Volumes/BigOne/github/fun/src/date",
+            "path": "/mnt/sda/git/fun/src/date",
             "code": {
                 "id": "astnode100001515",
                 "name": "dddd",
@@ -4256,7 +4256,7 @@
             "filename": "formatDateTime.js",
             "lineno": 33,
             "columnno": 2,
-            "path": "/Volumes/BigOne/github/fun/src/date",
+            "path": "/mnt/sda/git/fun/src/date",
             "code": {
                 "id": "astnode100001524",
                 "name": "ddd",
@@ -4280,7 +4280,7 @@
             "filename": "formatDateTime.js",
             "lineno": 34,
             "columnno": 2,
-            "path": "/Volumes/BigOne/github/fun/src/date",
+            "path": "/mnt/sda/git/fun/src/date",
             "code": {
                 "id": "astnode100001536",
                 "name": "dd",
@@ -4304,7 +4304,7 @@
             "filename": "formatDateTime.js",
             "lineno": 35,
             "columnno": 2,
-            "path": "/Volumes/BigOne/github/fun/src/date",
+            "path": "/mnt/sda/git/fun/src/date",
             "code": {
                 "id": "astnode100001548",
                 "name": "d",
@@ -4328,7 +4328,7 @@
             "filename": "formatDateTime.js",
             "lineno": 36,
             "columnno": 2,
-            "path": "/Volumes/BigOne/github/fun/src/date",
+            "path": "/mnt/sda/git/fun/src/date",
             "code": {
                 "id": "astnode100001555",
                 "name": "HH",
@@ -4352,7 +4352,7 @@
             "filename": "formatDateTime.js",
             "lineno": 37,
             "columnno": 2,
-            "path": "/Volumes/BigOne/github/fun/src/date",
+            "path": "/mnt/sda/git/fun/src/date",
             "code": {
                 "id": "astnode100001565",
                 "name": "H",
@@ -4376,7 +4376,7 @@
             "filename": "formatDateTime.js",
             "lineno": 38,
             "columnno": 2,
-            "path": "/Volumes/BigOne/github/fun/src/date",
+            "path": "/mnt/sda/git/fun/src/date",
             "code": {
                 "id": "astnode100001572",
                 "name": "hh",
@@ -4400,7 +4400,7 @@
             "filename": "formatDateTime.js",
             "lineno": 39,
             "columnno": 2,
-            "path": "/Volumes/BigOne/github/fun/src/date",
+            "path": "/mnt/sda/git/fun/src/date",
             "code": {
                 "id": "astnode100001585",
                 "name": "h",
@@ -4424,7 +4424,7 @@
             "filename": "formatDateTime.js",
             "lineno": 40,
             "columnno": 2,
-            "path": "/Volumes/BigOne/github/fun/src/date",
+            "path": "/mnt/sda/git/fun/src/date",
             "code": {
                 "id": "astnode100001595",
                 "name": "mm",
@@ -4448,7 +4448,7 @@
             "filename": "formatDateTime.js",
             "lineno": 41,
             "columnno": 2,
-            "path": "/Volumes/BigOne/github/fun/src/date",
+            "path": "/mnt/sda/git/fun/src/date",
             "code": {
                 "id": "astnode100001605",
                 "name": "m",
@@ -4472,7 +4472,7 @@
             "filename": "formatDateTime.js",
             "lineno": 42,
             "columnno": 2,
-            "path": "/Volumes/BigOne/github/fun/src/date",
+            "path": "/mnt/sda/git/fun/src/date",
             "code": {
                 "id": "astnode100001612",
                 "name": "ss",
@@ -4496,7 +4496,7 @@
             "filename": "formatDateTime.js",
             "lineno": 43,
             "columnno": 2,
-            "path": "/Volumes/BigOne/github/fun/src/date",
+            "path": "/mnt/sda/git/fun/src/date",
             "code": {
                 "id": "astnode100001622",
                 "name": "s",
@@ -4520,7 +4520,7 @@
             "filename": "formatDateTime.js",
             "lineno": 44,
             "columnno": 2,
-            "path": "/Volumes/BigOne/github/fun/src/date",
+            "path": "/mnt/sda/git/fun/src/date",
             "code": {
                 "id": "astnode100001629",
                 "name": "A",
@@ -4544,7 +4544,7 @@
             "filename": "formatDateTime.js",
             "lineno": 45,
             "columnno": 2,
-            "path": "/Volumes/BigOne/github/fun/src/date",
+            "path": "/mnt/sda/git/fun/src/date",
             "code": {
                 "id": "astnode100001641",
                 "name": "a",
@@ -4568,7 +4568,7 @@
             "filename": "formatDateTime.js",
             "lineno": 46,
             "columnno": 2,
-            "path": "/Volumes/BigOne/github/fun/src/date",
+            "path": "/mnt/sda/git/fun/src/date",
             "code": {
                 "id": "astnode100001653",
                 "name": "SSS",
@@ -4592,7 +4592,7 @@
             "filename": "formatDateTime.js",
             "lineno": 47,
             "columnno": 2,
-            "path": "/Volumes/BigOne/github/fun/src/date",
+            "path": "/mnt/sda/git/fun/src/date",
             "code": {
                 "id": "astnode100001663",
                 "name": "SS",
@@ -4616,7 +4616,7 @@
             "filename": "formatDateTime.js",
             "lineno": 48,
             "columnno": 2,
-            "path": "/Volumes/BigOne/github/fun/src/date",
+            "path": "/mnt/sda/git/fun/src/date",
             "code": {
                 "id": "astnode100001676",
                 "name": "S",
@@ -4640,7 +4640,7 @@
             "filename": "formatDateTime.js",
             "lineno": 49,
             "columnno": 2,
-            "path": "/Volumes/BigOne/github/fun/src/date",
+            "path": "/mnt/sda/git/fun/src/date",
             "code": {
                 "id": "astnode100001689",
                 "name": "Q",
@@ -4664,7 +4664,7 @@
             "filename": "formatDateTime.js",
             "lineno": 53,
             "columnno": 6,
-            "path": "/Volumes/BigOne/github/fun/src/date",
+            "path": "/mnt/sda/git/fun/src/date",
             "code": {
                 "id": "astnode100001705",
                 "name": "swapTokenWithValue",
@@ -4685,7 +4685,7 @@
             "filename": "formatDateTime.js",
             "lineno": 57,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/date",
+            "path": "/mnt/sda/git/fun/src/date",
             "code": {}
         },
         "kind": "function",
@@ -4736,7 +4736,7 @@
             "filename": "formatDateTime.js",
             "lineno": 68,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/date",
+            "path": "/mnt/sda/git/fun/src/date",
             "code": {
                 "id": "astnode100001724",
                 "name": "module.exports",
@@ -4756,7 +4756,7 @@
             "filename": "getWeek.js",
             "lineno": 1,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/date",
+            "path": "/mnt/sda/git/fun/src/date",
             "code": {}
         },
         "kind": "function",
@@ -4789,7 +4789,7 @@
             "filename": "getWeek.js",
             "lineno": 9,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/date",
+            "path": "/mnt/sda/git/fun/src/date",
             "code": {
                 "id": "astnode100001761",
                 "name": "module.exports",
@@ -4813,7 +4813,7 @@
             "filename": "getWeek.js",
             "lineno": 11,
             "columnno": 2,
-            "path": "/Volumes/BigOne/github/fun/src/date",
+            "path": "/mnt/sda/git/fun/src/date",
             "code": {
                 "id": "astnode100001769",
                 "name": "d",
@@ -4840,7 +4840,7 @@
             "filename": "getWeek.js",
             "lineno": 16,
             "columnno": 6,
-            "path": "/Volumes/BigOne/github/fun/src/date",
+            "path": "/mnt/sda/git/fun/src/date",
             "code": {
                 "id": "astnode100001808",
                 "name": "yearStart",
@@ -4866,7 +4866,7 @@
             "filename": "getWeek.js",
             "lineno": 19,
             "columnno": 6,
-            "path": "/Volumes/BigOne/github/fun/src/date",
+            "path": "/mnt/sda/git/fun/src/date",
             "code": {
                 "id": "astnode100001823",
                 "name": "weekNo",
@@ -4892,7 +4892,7 @@
             "filename": "is.js",
             "lineno": 9,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/date",
+            "path": "/mnt/sda/git/fun/src/date",
             "code": {
                 "id": "astnode100001851",
                 "name": "module.exports",
@@ -4916,7 +4916,7 @@
             "filename": "isFutureDate.js",
             "lineno": 6,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/date",
+            "path": "/mnt/sda/git/fun/src/date",
             "code": {
                 "id": "astnode100001861",
                 "name": "module.exports",
@@ -4943,7 +4943,7 @@
             "filename": "isValid.js",
             "lineno": 6,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/date",
+            "path": "/mnt/sda/git/fun/src/date",
             "code": {
                 "id": "astnode100001880",
                 "name": "module.exports",
@@ -4970,7 +4970,7 @@
             "filename": "isValid.js",
             "lineno": 6,
             "columnno": 15,
-            "path": "/Volumes/BigOne/github/fun/src/date",
+            "path": "/mnt/sda/git/fun/src/date",
             "code": {
                 "id": "astnode100001881",
                 "name": "isValid",
@@ -4997,7 +4997,7 @@
             "filename": "toDay.js",
             "lineno": 4,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/date",
+            "path": "/mnt/sda/git/fun/src/date",
             "code": {
                 "id": "astnode100001899",
                 "name": "module.exports",
@@ -5024,7 +5024,7 @@
             "filename": "toHour.js",
             "lineno": 4,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/date",
+            "path": "/mnt/sda/git/fun/src/date",
             "code": {
                 "id": "astnode100001907",
                 "name": "module.exports",
@@ -5051,7 +5051,7 @@
             "filename": "toMinutes.js",
             "lineno": 4,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/date",
+            "path": "/mnt/sda/git/fun/src/date",
             "code": {
                 "id": "astnode100001915",
                 "name": "module.exports",
@@ -5078,7 +5078,7 @@
             "filename": "toSeconds.js",
             "lineno": 4,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/date",
+            "path": "/mnt/sda/git/fun/src/date",
             "code": {
                 "id": "astnode100001923",
                 "name": "module.exports",
@@ -5101,7 +5101,7 @@
             "filename": "defaultTo.js",
             "lineno": 1,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {}
         },
         "description": "Returns true if all items in the enumerable match the predicate",
@@ -5159,7 +5159,7 @@
             "filename": "defaultTo.js",
             "lineno": 14,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100001935",
                 "name": "module.exports",
@@ -5179,7 +5179,7 @@
             "filename": "empty.js",
             "lineno": 1,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {}
         },
         "kind": "function",
@@ -5198,7 +5198,7 @@
             "filename": "empty.js",
             "lineno": 7,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100001956",
                 "name": "module.exports",
@@ -5225,7 +5225,7 @@
             "filename": "empty.js",
             "lineno": 7,
             "columnno": 15,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100001957",
                 "name": "empty",
@@ -5248,7 +5248,7 @@
             "filename": "equals.js",
             "lineno": 1,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {}
         },
         "kind": "function",
@@ -5299,7 +5299,7 @@
             "filename": "equals.js",
             "lineno": 35,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002025",
                 "name": "module.exports",
@@ -5319,7 +5319,7 @@
             "filename": "exists.js",
             "lineno": 2,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {}
         },
         "kind": "function",
@@ -5352,7 +5352,7 @@
             "filename": "exists.js",
             "lineno": 12,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002131",
                 "name": "module.exports",
@@ -5372,7 +5372,7 @@
             "filename": "filter.js",
             "lineno": 1,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {}
         },
         "kind": "function",
@@ -5391,7 +5391,7 @@
             "filename": "filter.js",
             "lineno": 14,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002165",
                 "name": "module.exports",
@@ -5411,7 +5411,7 @@
             "filename": "findIndex.js",
             "lineno": 1,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {}
         },
         "description": "Find the index matching a predicate",
@@ -5468,7 +5468,7 @@
             "filename": "findIndex.js",
             "lineno": 15,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002203",
                 "name": "module.exports",
@@ -5492,7 +5492,7 @@
             "filename": "findIndex.js",
             "lineno": 16,
             "columnno": 6,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002212",
                 "name": "i",
@@ -5518,7 +5518,7 @@
             "filename": "findIndex.js",
             "lineno": 17,
             "columnno": 8,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002216",
                 "name": "l",
@@ -5544,7 +5544,7 @@
             "filename": "findIndex.js",
             "lineno": 22,
             "columnno": 4,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002236",
                 "name": "i",
@@ -5567,7 +5567,7 @@
             "filename": "first.js",
             "lineno": 1,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {}
         },
         "kind": "function",
@@ -5599,7 +5599,7 @@
             "filename": "first.js",
             "lineno": 12,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002248",
                 "name": "module.exports",
@@ -5623,7 +5623,7 @@
             "filename": "flatMap.js",
             "lineno": 7,
             "columnno": 6,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002289",
                 "name": "isFunction",
@@ -5644,7 +5644,7 @@
             "filename": "flatMap.js",
             "lineno": 9,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {}
         },
         "kind": "function",
@@ -5670,7 +5670,7 @@
             "filename": "flatMap.js",
             "lineno": 14,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002294",
                 "name": "module.exports",
@@ -5690,7 +5690,7 @@
             "filename": "fold.js",
             "lineno": 1,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {}
         },
         "description": "Returns a single item by iterating over an array like object and call a function on each item",
@@ -5750,7 +5750,7 @@
             "filename": "fold.js",
             "lineno": 18,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002370",
                 "name": "module.exports",
@@ -5774,7 +5774,7 @@
             "filename": "fold.js",
             "lineno": 19,
             "columnno": 8,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002380",
                 "name": "typeMap",
@@ -5800,7 +5800,7 @@
             "filename": "fold.js",
             "lineno": 20,
             "columnno": 4,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002383",
                 "name": "Object",
@@ -5825,7 +5825,7 @@
             "filename": "fold.js",
             "lineno": 21,
             "columnno": 4,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002385",
                 "name": "Array",
@@ -5850,7 +5850,7 @@
             "filename": "fold.js",
             "lineno": 22,
             "columnno": 4,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002387",
                 "name": "String",
@@ -5871,7 +5871,7 @@
             "filename": "identical.js",
             "lineno": 1,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {}
         },
         "kind": "function",
@@ -5890,7 +5890,7 @@
             "filename": "identical.js",
             "lineno": 9,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002409",
                 "name": "module.exports",
@@ -5910,7 +5910,7 @@
             "filename": "identity.js",
             "lineno": 1,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {}
         },
         "kind": "function",
@@ -5929,7 +5929,7 @@
             "filename": "identity.js",
             "lineno": 7,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002453",
                 "name": "module.exports",
@@ -5956,7 +5956,7 @@
             "filename": "identity.js",
             "lineno": 7,
             "columnno": 15,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002454",
                 "name": "identity",
@@ -5983,7 +5983,7 @@
             "filename": "index.js",
             "lineno": 1,
             "columnno": 9,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002464",
                 "name": "exports.add",
@@ -6006,7 +6006,7 @@
             "filename": "index.js",
             "lineno": 2,
             "columnno": 9,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002469",
                 "name": "exports.addIndex",
@@ -6029,7 +6029,7 @@
             "filename": "index.js",
             "lineno": 3,
             "columnno": 9,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002474",
                 "name": "exports.adjust",
@@ -6052,7 +6052,7 @@
             "filename": "index.js",
             "lineno": 4,
             "columnno": 9,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002479",
                 "name": "exports.adjustWith",
@@ -6075,7 +6075,7 @@
             "filename": "index.js",
             "lineno": 5,
             "columnno": 9,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002484",
                 "name": "exports.all",
@@ -6098,7 +6098,7 @@
             "filename": "index.js",
             "lineno": 6,
             "columnno": 9,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002489",
                 "name": "exports.allPass",
@@ -6121,7 +6121,7 @@
             "filename": "index.js",
             "lineno": 7,
             "columnno": 9,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002494",
                 "name": "exports.always",
@@ -6144,7 +6144,7 @@
             "filename": "index.js",
             "lineno": 8,
             "columnno": 9,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002499",
                 "name": "exports.and",
@@ -6167,7 +6167,7 @@
             "filename": "index.js",
             "lineno": 9,
             "columnno": 9,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002504",
                 "name": "exports.any",
@@ -6190,7 +6190,7 @@
             "filename": "index.js",
             "lineno": 10,
             "columnno": 9,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002509",
                 "name": "exports.anyPass",
@@ -6213,7 +6213,7 @@
             "filename": "index.js",
             "lineno": 11,
             "columnno": 9,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002514",
                 "name": "exports.ap",
@@ -6236,7 +6236,7 @@
             "filename": "index.js",
             "lineno": 12,
             "columnno": 9,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002519",
                 "name": "exports.aperture",
@@ -6259,7 +6259,7 @@
             "filename": "index.js",
             "lineno": 13,
             "columnno": 9,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002524",
                 "name": "exports.append",
@@ -6282,7 +6282,7 @@
             "filename": "index.js",
             "lineno": 14,
             "columnno": 9,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002529",
                 "name": "exports.apply",
@@ -6305,7 +6305,7 @@
             "filename": "index.js",
             "lineno": 16,
             "columnno": 9,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002534",
                 "name": "exports.binary",
@@ -6328,7 +6328,7 @@
             "filename": "index.js",
             "lineno": 17,
             "columnno": 9,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002539",
                 "name": "exports.bind",
@@ -6351,7 +6351,7 @@
             "filename": "index.js",
             "lineno": 18,
             "columnno": 9,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002544",
                 "name": "exports.both",
@@ -6374,7 +6374,7 @@
             "filename": "index.js",
             "lineno": 19,
             "columnno": 9,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002549",
                 "name": "exports.call",
@@ -6397,7 +6397,7 @@
             "filename": "index.js",
             "lineno": 20,
             "columnno": 9,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002554",
                 "name": "exports.complement",
@@ -6420,7 +6420,7 @@
             "filename": "index.js",
             "lineno": 21,
             "columnno": 9,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002559",
                 "name": "exports.compose",
@@ -6443,7 +6443,7 @@
             "filename": "index.js",
             "lineno": 22,
             "columnno": 9,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002564",
                 "name": "exports.concat",
@@ -6466,7 +6466,7 @@
             "filename": "index.js",
             "lineno": 23,
             "columnno": 9,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002569",
                 "name": "exports.cond",
@@ -6489,7 +6489,7 @@
             "filename": "index.js",
             "lineno": 24,
             "columnno": 9,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002574",
                 "name": "exports.curry",
@@ -6512,7 +6512,7 @@
             "filename": "index.js",
             "lineno": 25,
             "columnno": 9,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002579",
                 "name": "exports.defaultTo",
@@ -6535,7 +6535,7 @@
             "filename": "index.js",
             "lineno": 26,
             "columnno": 9,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002584",
                 "name": "exports.diffDate",
@@ -6558,7 +6558,7 @@
             "filename": "index.js",
             "lineno": 27,
             "columnno": 9,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002589",
                 "name": "exports.divide",
@@ -6581,7 +6581,7 @@
             "filename": "index.js",
             "lineno": 28,
             "columnno": 9,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002594",
                 "name": "exports.Either",
@@ -6604,7 +6604,7 @@
             "filename": "index.js",
             "lineno": 29,
             "columnno": 9,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002599",
                 "name": "exports.Left",
@@ -6627,7 +6627,7 @@
             "filename": "index.js",
             "lineno": 30,
             "columnno": 9,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002604",
                 "name": "exports.Right",
@@ -6650,7 +6650,7 @@
             "filename": "index.js",
             "lineno": 31,
             "columnno": 9,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002609",
                 "name": "exports.empty",
@@ -6673,7 +6673,7 @@
             "filename": "index.js",
             "lineno": 32,
             "columnno": 9,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002614",
                 "name": "exports.equals",
@@ -6696,7 +6696,7 @@
             "filename": "index.js",
             "lineno": 33,
             "columnno": 9,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002619",
                 "name": "exports.exists",
@@ -6719,7 +6719,7 @@
             "filename": "index.js",
             "lineno": 34,
             "columnno": 9,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002624",
                 "name": "exports.F",
@@ -6742,7 +6742,7 @@
             "filename": "index.js",
             "lineno": 35,
             "columnno": 9,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002629",
                 "name": "exports.filter",
@@ -6765,7 +6765,7 @@
             "filename": "index.js",
             "lineno": 36,
             "columnno": 9,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002634",
                 "name": "exports.findIndex",
@@ -6788,7 +6788,7 @@
             "filename": "index.js",
             "lineno": 37,
             "columnno": 9,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002639",
                 "name": "exports.first",
@@ -6811,7 +6811,7 @@
             "filename": "index.js",
             "lineno": 38,
             "columnno": 9,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002644",
                 "name": "exports.flatMap",
@@ -6834,7 +6834,7 @@
             "filename": "index.js",
             "lineno": 39,
             "columnno": 9,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002649",
                 "name": "exports.fold",
@@ -6857,7 +6857,7 @@
             "filename": "index.js",
             "lineno": 40,
             "columnno": 9,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002654",
                 "name": "exports.formatString",
@@ -6880,7 +6880,7 @@
             "filename": "index.js",
             "lineno": 41,
             "columnno": 9,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002659",
                 "name": "exports.gcd",
@@ -6903,7 +6903,7 @@
             "filename": "index.js",
             "lineno": 42,
             "columnno": 9,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002664",
                 "name": "exports.has",
@@ -6926,7 +6926,7 @@
             "filename": "index.js",
             "lineno": 43,
             "columnno": 9,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002669",
                 "name": "exports.hasIn",
@@ -6949,7 +6949,7 @@
             "filename": "index.js",
             "lineno": 44,
             "columnno": 9,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002674",
                 "name": "exports.identical",
@@ -6972,7 +6972,7 @@
             "filename": "index.js",
             "lineno": 45,
             "columnno": 9,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002679",
                 "name": "exports.identity",
@@ -6995,7 +6995,7 @@
             "filename": "index.js",
             "lineno": 46,
             "columnno": 9,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002684",
                 "name": "exports.is",
@@ -7018,7 +7018,7 @@
             "filename": "index.js",
             "lineno": 47,
             "columnno": 9,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002689",
                 "name": "exports.isArray",
@@ -7041,7 +7041,7 @@
             "filename": "index.js",
             "lineno": 48,
             "columnno": 9,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002694",
                 "name": "exports.isBoolean",
@@ -7064,7 +7064,7 @@
             "filename": "index.js",
             "lineno": 49,
             "columnno": 9,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002699",
                 "name": "exports.isDate",
@@ -7087,7 +7087,7 @@
             "filename": "index.js",
             "lineno": 50,
             "columnno": 9,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002704",
                 "name": "exports.isEmpty",
@@ -7110,7 +7110,7 @@
             "filename": "index.js",
             "lineno": 51,
             "columnno": 9,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002709",
                 "name": "exports.isFutureDate",
@@ -7133,7 +7133,7 @@
             "filename": "index.js",
             "lineno": 52,
             "columnno": 9,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002714",
                 "name": "exports.isMap",
@@ -7156,7 +7156,7 @@
             "filename": "index.js",
             "lineno": 53,
             "columnno": 9,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002719",
                 "name": "exports.isNan",
@@ -7179,7 +7179,7 @@
             "filename": "index.js",
             "lineno": 54,
             "columnno": 9,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002724",
                 "name": "exports.isNull",
@@ -7202,7 +7202,7 @@
             "filename": "index.js",
             "lineno": 55,
             "columnno": 9,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002729",
                 "name": "exports.isNumber",
@@ -7225,7 +7225,7 @@
             "filename": "index.js",
             "lineno": 56,
             "columnno": 9,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002734",
                 "name": "exports.isObject",
@@ -7248,7 +7248,7 @@
             "filename": "index.js",
             "lineno": 57,
             "columnno": 9,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002739",
                 "name": "exports.isSet",
@@ -7271,7 +7271,7 @@
             "filename": "index.js",
             "lineno": 58,
             "columnno": 9,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002744",
                 "name": "exports.isString",
@@ -7294,7 +7294,7 @@
             "filename": "index.js",
             "lineno": 59,
             "columnno": 9,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002749",
                 "name": "exports.isIterator",
@@ -7317,7 +7317,7 @@
             "filename": "index.js",
             "lineno": 60,
             "columnno": 9,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002754",
                 "name": "exports.isUndefined",
@@ -7340,7 +7340,7 @@
             "filename": "index.js",
             "lineno": 61,
             "columnno": 9,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002759",
                 "name": "exports.isValidDate",
@@ -7363,7 +7363,7 @@
             "filename": "index.js",
             "lineno": 62,
             "columnno": 9,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002764",
                 "name": "exports.Just",
@@ -7386,7 +7386,7 @@
             "filename": "index.js",
             "lineno": 63,
             "columnno": 9,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002769",
                 "name": "exports.keys",
@@ -7409,7 +7409,7 @@
             "filename": "index.js",
             "lineno": 64,
             "columnno": 9,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002774",
                 "name": "exports.keysIn",
@@ -7432,7 +7432,7 @@
             "filename": "index.js",
             "lineno": 65,
             "columnno": 9,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002779",
                 "name": "exports.last",
@@ -7455,7 +7455,7 @@
             "filename": "index.js",
             "lineno": 66,
             "columnno": 9,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002784",
                 "name": "exports.lift",
@@ -7478,7 +7478,7 @@
             "filename": "index.js",
             "lineno": 67,
             "columnno": 9,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002789",
                 "name": "exports.lt",
@@ -7501,7 +7501,7 @@
             "filename": "index.js",
             "lineno": 68,
             "columnno": 9,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002794",
                 "name": "exports.lte",
@@ -7524,7 +7524,7 @@
             "filename": "index.js",
             "lineno": 69,
             "columnno": 9,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002799",
                 "name": "exports.map",
@@ -7547,7 +7547,7 @@
             "filename": "index.js",
             "lineno": 70,
             "columnno": 9,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002804",
                 "name": "exports.max",
@@ -7570,7 +7570,7 @@
             "filename": "index.js",
             "lineno": 71,
             "columnno": 9,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002809",
                 "name": "exports.Maybe",
@@ -7593,7 +7593,7 @@
             "filename": "index.js",
             "lineno": 72,
             "columnno": 9,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002814",
                 "name": "exports.merge",
@@ -7616,7 +7616,7 @@
             "filename": "index.js",
             "lineno": 73,
             "columnno": 9,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002819",
                 "name": "exports.min",
@@ -7639,7 +7639,7 @@
             "filename": "index.js",
             "lineno": 74,
             "columnno": 9,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002824",
                 "name": "exports.multiply",
@@ -7662,7 +7662,7 @@
             "filename": "index.js",
             "lineno": 75,
             "columnno": 9,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002829",
                 "name": "exports.not",
@@ -7685,7 +7685,7 @@
             "filename": "index.js",
             "lineno": 76,
             "columnno": 9,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002834",
                 "name": "exports.Nothing",
@@ -7708,7 +7708,7 @@
             "filename": "index.js",
             "lineno": 77,
             "columnno": 9,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002839",
                 "name": "exports.omit",
@@ -7731,7 +7731,7 @@
             "filename": "index.js",
             "lineno": 78,
             "columnno": 9,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002844",
                 "name": "exports.or",
@@ -7754,7 +7754,7 @@
             "filename": "index.js",
             "lineno": 79,
             "columnno": 9,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002849",
                 "name": "exports.path",
@@ -7777,7 +7777,7 @@
             "filename": "index.js",
             "lineno": 80,
             "columnno": 9,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002854",
                 "name": "exports.pick",
@@ -7800,7 +7800,7 @@
             "filename": "index.js",
             "lineno": 81,
             "columnno": 9,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002859",
                 "name": "exports.prop",
@@ -7823,7 +7823,7 @@
             "filename": "index.js",
             "lineno": 82,
             "columnno": 9,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002864",
                 "name": "exports.reduce",
@@ -7846,7 +7846,7 @@
             "filename": "index.js",
             "lineno": 83,
             "columnno": 9,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002869",
                 "name": "exports.sort",
@@ -7869,7 +7869,7 @@
             "filename": "index.js",
             "lineno": 84,
             "columnno": 9,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002874",
                 "name": "exports.sum",
@@ -7892,7 +7892,7 @@
             "filename": "index.js",
             "lineno": 85,
             "columnno": 9,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002879",
                 "name": "exports.T",
@@ -7915,7 +7915,7 @@
             "filename": "index.js",
             "lineno": 86,
             "columnno": 9,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002884",
                 "name": "exports.toDay",
@@ -7938,7 +7938,7 @@
             "filename": "index.js",
             "lineno": 87,
             "columnno": 9,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002889",
                 "name": "exports.toHour",
@@ -7961,7 +7961,7 @@
             "filename": "index.js",
             "lineno": 88,
             "columnno": 9,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002894",
                 "name": "exports.toMinutes",
@@ -7984,7 +7984,7 @@
             "filename": "index.js",
             "lineno": 89,
             "columnno": 9,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002899",
                 "name": "exports.toSeconds",
@@ -8007,7 +8007,7 @@
             "filename": "index.js",
             "lineno": 90,
             "columnno": 9,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002904",
                 "name": "exports.truthy",
@@ -8030,7 +8030,7 @@
             "filename": "index.js",
             "lineno": 91,
             "columnno": 9,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002909",
                 "name": "exports.type",
@@ -8053,7 +8053,7 @@
             "filename": "index.js",
             "lineno": 92,
             "columnno": 9,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002914",
                 "name": "exports.union",
@@ -8076,7 +8076,7 @@
             "filename": "index.js",
             "lineno": 93,
             "columnno": 9,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002919",
                 "name": "exports.values",
@@ -8099,7 +8099,7 @@
             "filename": "index.js",
             "lineno": 94,
             "columnno": 9,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002924",
                 "name": "exports.zip",
@@ -8122,7 +8122,7 @@
             "filename": "index.js",
             "lineno": 95,
             "columnno": 9,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002929",
                 "name": "exports.zipObj",
@@ -8145,7 +8145,7 @@
             "filename": "index.js",
             "lineno": 96,
             "columnno": 9,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002934",
                 "name": "exports.zipWith",
@@ -8164,7 +8164,7 @@
             "filename": "is.js",
             "lineno": 1,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {}
         },
         "kind": "function",
@@ -8183,7 +8183,7 @@
             "filename": "is.js",
             "lineno": 10,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002948",
                 "name": "module.exports",
@@ -8203,7 +8203,7 @@
             "filename": "isEmpty.js",
             "lineno": 1,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {}
         },
         "kind": "function",
@@ -8222,7 +8222,7 @@
             "filename": "isEmpty.js",
             "lineno": 10,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002976",
                 "name": "module.exports",
@@ -8249,7 +8249,7 @@
             "filename": "isEmpty.js",
             "lineno": 10,
             "columnno": 15,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100002977",
                 "name": "isEmpty",
@@ -8276,7 +8276,7 @@
             "filename": "is.js",
             "lineno": 5,
             "columnno": 6,
-            "path": "/Volumes/BigOne/github/fun/src/iterator",
+            "path": "/mnt/sda/git/fun/src/iterator",
             "code": {
                 "id": "astnode100003000",
                 "name": "isFunction",
@@ -8297,7 +8297,7 @@
             "filename": "is.js",
             "lineno": 7,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/iterator",
+            "path": "/mnt/sda/git/fun/src/iterator",
             "code": {}
         },
         "kind": "function",
@@ -8335,7 +8335,7 @@
             "filename": "is.js",
             "lineno": 12,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/iterator",
+            "path": "/mnt/sda/git/fun/src/iterator",
             "code": {
                 "id": "astnode100003005",
                 "name": "module.exports",
@@ -8362,7 +8362,7 @@
             "filename": "is.js",
             "lineno": 12,
             "columnno": 15,
-            "path": "/Volumes/BigOne/github/fun/src/iterator",
+            "path": "/mnt/sda/git/fun/src/iterator",
             "code": {
                 "id": "astnode100003006",
                 "name": "isIterator",
@@ -8389,7 +8389,7 @@
             "filename": "map.js",
             "lineno": 13,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/iterator",
+            "path": "/mnt/sda/git/fun/src/iterator",
             "code": {
                 "id": "astnode100003024",
                 "name": "module.exports",
@@ -8413,7 +8413,7 @@
             "filename": "map.js",
             "lineno": 14,
             "columnno": 6,
-            "path": "/Volumes/BigOne/github/fun/src/iterator",
+            "path": "/mnt/sda/git/fun/src/iterator",
             "code": {
                 "id": "astnode100003033",
                 "name": "r",
@@ -8439,7 +8439,7 @@
             "filename": "map.js",
             "lineno": 15,
             "columnno": 11,
-            "path": "/Volumes/BigOne/github/fun/src/iterator",
+            "path": "/mnt/sda/git/fun/src/iterator",
             "code": {
                 "id": "astnode100003038",
                 "name": "nextValue",
@@ -8465,7 +8465,7 @@
             "filename": "map.js",
             "lineno": 15,
             "columnno": 65,
-            "path": "/Volumes/BigOne/github/fun/src/iterator",
+            "path": "/mnt/sda/git/fun/src/iterator",
             "code": {
                 "id": "astnode100003049",
                 "name": "nextValue",
@@ -8488,7 +8488,7 @@
             "filename": "keys.js",
             "lineno": 1,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {}
         },
         "description": "Autocurried function which returns the keys of the provided object or iterator",
@@ -8536,7 +8536,7 @@
             "filename": "keys.js",
             "lineno": 16,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100003087",
                 "name": "module.exports",
@@ -8556,7 +8556,7 @@
             "filename": "last.js",
             "lineno": 1,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {}
         },
         "kind": "function",
@@ -8585,7 +8585,7 @@
             "filename": "last.js",
             "lineno": 8,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100003115",
                 "name": "module.exports",
@@ -8605,7 +8605,7 @@
             "filename": "lift.js",
             "lineno": 1,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {}
         },
         "description": "\"lifts\" a function of arity > 1 so that it may \"map over\" a list, Function",
@@ -8633,7 +8633,7 @@
             "filename": "lift.js",
             "lineno": 14,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100003159",
                 "name": "module.exports",
@@ -8657,7 +8657,7 @@
             "filename": "lift.js",
             "lineno": 15,
             "columnno": 8,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100003167",
                 "name": "lifted",
@@ -8679,7 +8679,7 @@
             "filename": "lt.js",
             "lineno": 3,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {}
         },
         "kind": "function",
@@ -8730,7 +8730,7 @@
             "filename": "lt.js",
             "lineno": 17,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100003206",
                 "name": "module.exports",
@@ -8750,7 +8750,7 @@
             "filename": "lte.js",
             "lineno": 2,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {}
         },
         "kind": "function",
@@ -8801,7 +8801,7 @@
             "filename": "lte.js",
             "lineno": 17,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100003224",
                 "name": "module.exports",
@@ -8821,7 +8821,7 @@
             "filename": "filter.js",
             "lineno": 1,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/map",
+            "path": "/mnt/sda/git/fun/src/map",
             "code": {}
         },
         "kind": "function",
@@ -8840,7 +8840,7 @@
             "filename": "filter.js",
             "lineno": 8,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/map",
+            "path": "/mnt/sda/git/fun/src/map",
             "code": {
                 "id": "astnode100003242",
                 "name": "module.exports",
@@ -8864,7 +8864,7 @@
             "filename": "filter.js",
             "lineno": 9,
             "columnno": 6,
-            "path": "/Volumes/BigOne/github/fun/src/map",
+            "path": "/mnt/sda/git/fun/src/map",
             "code": {
                 "id": "astnode100003251",
                 "name": "r",
@@ -8890,7 +8890,7 @@
             "filename": "filter.js",
             "lineno": 11,
             "columnno": 6,
-            "path": "/Volumes/BigOne/github/fun/src/map",
+            "path": "/mnt/sda/git/fun/src/map",
             "code": {
                 "id": "astnode100003256",
                 "name": "it",
@@ -8916,7 +8916,7 @@
             "filename": "filter.js",
             "lineno": 12,
             "columnno": 6,
-            "path": "/Volumes/BigOne/github/fun/src/map",
+            "path": "/mnt/sda/git/fun/src/map",
             "code": {
                 "id": "astnode100003263",
                 "name": "result",
@@ -8942,7 +8942,7 @@
             "filename": "filter.js",
             "lineno": 15,
             "columnno": 10,
-            "path": "/Volumes/BigOne/github/fun/src/map",
+            "path": "/mnt/sda/git/fun/src/map",
             "code": {
                 "id": "astnode100003276",
                 "name": "k",
@@ -8968,7 +8968,7 @@
             "filename": "filter.js",
             "lineno": 16,
             "columnno": 10,
-            "path": "/Volumes/BigOne/github/fun/src/map",
+            "path": "/mnt/sda/git/fun/src/map",
             "code": {
                 "id": "astnode100003284",
                 "name": "v",
@@ -8994,7 +8994,7 @@
             "filename": "filter.js",
             "lineno": 18,
             "columnno": 4,
-            "path": "/Volumes/BigOne/github/fun/src/map",
+            "path": "/mnt/sda/git/fun/src/map",
             "code": {
                 "id": "astnode100003304",
                 "name": "result",
@@ -9021,7 +9021,7 @@
             "filename": "is.js",
             "lineno": 6,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/map",
+            "path": "/mnt/sda/git/fun/src/map",
             "code": {
                 "id": "astnode100003318",
                 "name": "module.exports",
@@ -9045,7 +9045,7 @@
             "filename": "keys.js",
             "lineno": 12,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/map",
+            "path": "/mnt/sda/git/fun/src/map",
             "code": {
                 "id": "astnode100003328",
                 "name": "module.exports",
@@ -9069,7 +9069,7 @@
             "filename": "map.js",
             "lineno": 14,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/map",
+            "path": "/mnt/sda/git/fun/src/map",
             "code": {
                 "id": "astnode100003350",
                 "name": "module.exports",
@@ -9093,7 +9093,7 @@
             "filename": "map.js",
             "lineno": 15,
             "columnno": 8,
-            "path": "/Volumes/BigOne/github/fun/src/map",
+            "path": "/mnt/sda/git/fun/src/map",
             "code": {
                 "id": "astnode100003359",
                 "name": "r",
@@ -9115,7 +9115,7 @@
             "filename": "map.js",
             "lineno": 1,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {}
         },
         "description": "Autocurried function which maps over an iterable.",
@@ -9170,7 +9170,7 @@
             "filename": "map.js",
             "lineno": 21,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100003421",
                 "name": "module.exports",
@@ -9190,7 +9190,7 @@
             "filename": "gcd.js",
             "lineno": 1,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/math",
+            "path": "/mnt/sda/git/fun/src/math",
             "code": {}
         },
         "description": "gcd",
@@ -9210,7 +9210,7 @@
             "filename": "gcd.js",
             "lineno": 9,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/math",
+            "path": "/mnt/sda/git/fun/src/math",
             "code": {
                 "id": "astnode100003500",
                 "name": "module.exports",
@@ -9234,7 +9234,7 @@
             "filename": "gcd.js",
             "lineno": 11,
             "columnno": 8,
-            "path": "/Volumes/BigOne/github/fun/src/math",
+            "path": "/mnt/sda/git/fun/src/math",
             "code": {
                 "id": "astnode100003515",
                 "name": "r",
@@ -9256,7 +9256,7 @@
             "filename": "max.js",
             "lineno": 1,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {}
         },
         "description": "Returns the largest of the 2 arguments provided",
@@ -9303,7 +9303,7 @@
             "filename": "max.js",
             "lineno": 12,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100003531",
                 "name": "module.exports",
@@ -9323,7 +9323,7 @@
             "filename": "min.js",
             "lineno": 1,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {}
         },
         "description": "Returns the smallest of the 2 arguments provided",
@@ -9370,7 +9370,7 @@
             "filename": "min.js",
             "lineno": 13,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100003552",
                 "name": "module.exports",
@@ -9394,7 +9394,7 @@
             "filename": "Either.js",
             "lineno": 13,
             "columnno": 4,
-            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "path": "/mnt/sda/git/fun/src/monads",
             "code": {
                 "id": "astnode100003578",
                 "name": "Either",
@@ -9428,7 +9428,7 @@
             "filename": "Either.js",
             "lineno": 17,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "path": "/mnt/sda/git/fun/src/monads",
             "code": {}
         },
         "memberof": "Either",
@@ -9471,7 +9471,7 @@
             "filename": "Either.js",
             "lineno": 28,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "path": "/mnt/sda/git/fun/src/monads",
             "code": {
                 "id": "astnode100003590",
                 "name": "Either.of",
@@ -9498,7 +9498,7 @@
             "filename": "Either.js",
             "lineno": 45,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "path": "/mnt/sda/git/fun/src/monads",
             "code": {
                 "id": "astnode100003619",
                 "name": "Either.prototype.type",
@@ -9542,7 +9542,7 @@
             "filename": "Either.js",
             "lineno": 52,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "path": "/mnt/sda/git/fun/src/monads",
             "code": {
                 "id": "astnode100003627",
                 "name": "Either.prototype.isLeft",
@@ -9581,7 +9581,7 @@
             "filename": "Either.js",
             "lineno": 59,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "path": "/mnt/sda/git/fun/src/monads",
             "code": {
                 "id": "astnode100003635",
                 "name": "Either.prototype.isRight",
@@ -9616,7 +9616,7 @@
             "filename": "Either.js",
             "lineno": 61,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "path": "/mnt/sda/git/fun/src/monads",
             "code": {}
         },
         "access": "private",
@@ -9645,7 +9645,7 @@
             "filename": "Either.js",
             "lineno": 67,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "path": "/mnt/sda/git/fun/src/monads",
             "code": {
                 "id": "astnode100003643",
                 "name": "Either.prototype.Left",
@@ -9668,7 +9668,7 @@
             "filename": "Either.js",
             "lineno": 71,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "path": "/mnt/sda/git/fun/src/monads",
             "code": {}
         },
         "access": "private",
@@ -9697,7 +9697,7 @@
             "filename": "Either.js",
             "lineno": 77,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "path": "/mnt/sda/git/fun/src/monads",
             "code": {
                 "id": "astnode100003657",
                 "name": "Either.Left",
@@ -9720,7 +9720,7 @@
             "filename": "Either.js",
             "lineno": 81,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "path": "/mnt/sda/git/fun/src/monads",
             "code": {}
         },
         "access": "private",
@@ -9749,7 +9749,7 @@
             "filename": "Either.js",
             "lineno": 87,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "path": "/mnt/sda/git/fun/src/monads",
             "code": {
                 "id": "astnode100003669",
                 "name": "Either.prototype.Right",
@@ -9772,7 +9772,7 @@
             "filename": "Either.js",
             "lineno": 91,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "path": "/mnt/sda/git/fun/src/monads",
             "code": {}
         },
         "access": "private",
@@ -9801,7 +9801,7 @@
             "filename": "Either.js",
             "lineno": 97,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "path": "/mnt/sda/git/fun/src/monads",
             "code": {
                 "id": "astnode100003683",
                 "name": "Either.Right",
@@ -9828,7 +9828,7 @@
             "filename": "Either.js",
             "lineno": 101,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "path": "/mnt/sda/git/fun/src/monads",
             "code": {
                 "id": "astnode100003694",
                 "name": "module.exports",
@@ -9852,7 +9852,7 @@
             "filename": "Just.js",
             "lineno": 7,
             "columnno": 4,
-            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "path": "/mnt/sda/git/fun/src/monads",
             "code": {
                 "id": "astnode100003699",
                 "name": "Just",
@@ -9892,7 +9892,7 @@
             "filename": "Just.js",
             "lineno": 8,
             "columnno": 2,
-            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "path": "/mnt/sda/git/fun/src/monads",
             "code": {
                 "id": "astnode100003705",
                 "name": "this.__value",
@@ -9914,7 +9914,7 @@
             "filename": "Just.js",
             "lineno": 12,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "path": "/mnt/sda/git/fun/src/monads",
             "code": {}
         },
         "memberof": "Just",
@@ -9942,7 +9942,7 @@
             "filename": "Just.js",
             "lineno": 17,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "path": "/mnt/sda/git/fun/src/monads",
             "code": {
                 "id": "astnode100003713",
                 "name": "Just.prototype.isJust",
@@ -9963,7 +9963,7 @@
             "filename": "Just.js",
             "lineno": 21,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "path": "/mnt/sda/git/fun/src/monads",
             "code": {}
         },
         "memberof": "Just",
@@ -9991,7 +9991,7 @@
             "filename": "Just.js",
             "lineno": 26,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "path": "/mnt/sda/git/fun/src/monads",
             "code": {
                 "id": "astnode100003724",
                 "name": "Just.prototype.isNothing",
@@ -10016,7 +10016,7 @@
             "filename": "Just.js",
             "lineno": 30,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "path": "/mnt/sda/git/fun/src/monads",
             "code": {
                 "id": "astnode100003734",
                 "name": "module.exports",
@@ -10040,7 +10040,7 @@
             "filename": "Left.js",
             "lineno": 7,
             "columnno": 4,
-            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "path": "/mnt/sda/git/fun/src/monads",
             "code": {
                 "id": "astnode100003739",
                 "name": "Left",
@@ -10080,7 +10080,7 @@
             "filename": "Left.js",
             "lineno": 8,
             "columnno": 2,
-            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "path": "/mnt/sda/git/fun/src/monads",
             "code": {
                 "id": "astnode100003745",
                 "name": "this.__value",
@@ -10106,7 +10106,7 @@
             "filename": "Left.js",
             "lineno": 21,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "path": "/mnt/sda/git/fun/src/monads",
             "code": {
                 "id": "astnode100003753",
                 "name": "Left.prototype.type",
@@ -10146,7 +10146,7 @@
             "filename": "Left.js",
             "lineno": 23,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "path": "/mnt/sda/git/fun/src/monads",
             "code": {}
         },
         "memberof": "Left",
@@ -10174,7 +10174,7 @@
             "filename": "Left.js",
             "lineno": 28,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "path": "/mnt/sda/git/fun/src/monads",
             "code": {
                 "id": "astnode100003761",
                 "name": "Left.prototype.isLeft",
@@ -10195,7 +10195,7 @@
             "filename": "Left.js",
             "lineno": 32,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "path": "/mnt/sda/git/fun/src/monads",
             "code": {}
         },
         "memberof": "Left",
@@ -10223,7 +10223,7 @@
             "filename": "Left.js",
             "lineno": 37,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "path": "/mnt/sda/git/fun/src/monads",
             "code": {
                 "id": "astnode100003772",
                 "name": "Left.prototype.isRight",
@@ -10244,7 +10244,7 @@
             "filename": "Left.js",
             "lineno": 41,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "path": "/mnt/sda/git/fun/src/monads",
             "code": {}
         },
         "memberof": "Left",
@@ -10282,7 +10282,7 @@
             "filename": "Left.js",
             "lineno": 47,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "path": "/mnt/sda/git/fun/src/monads",
             "code": {
                 "id": "astnode100003783",
                 "name": "Left.prototype.ap",
@@ -10305,7 +10305,7 @@
             "filename": "Left.js",
             "lineno": 51,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "path": "/mnt/sda/git/fun/src/monads",
             "code": {}
         },
         "memberof": "Left",
@@ -10343,7 +10343,7 @@
             "filename": "Left.js",
             "lineno": 57,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "path": "/mnt/sda/git/fun/src/monads",
             "code": {
                 "id": "astnode100003795",
                 "name": "Left.prototype.map",
@@ -10366,7 +10366,7 @@
             "filename": "Left.js",
             "lineno": 61,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "path": "/mnt/sda/git/fun/src/monads",
             "code": {}
         },
         "memberof": "Left",
@@ -10404,7 +10404,7 @@
             "filename": "Left.js",
             "lineno": 67,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "path": "/mnt/sda/git/fun/src/monads",
             "code": {
                 "id": "astnode100003807",
                 "name": "Left.prototype.chain",
@@ -10427,7 +10427,7 @@
             "filename": "Left.js",
             "lineno": 71,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "path": "/mnt/sda/git/fun/src/monads",
             "code": {}
         },
         "memberof": "Left",
@@ -10455,7 +10455,7 @@
             "filename": "Left.js",
             "lineno": 76,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "path": "/mnt/sda/git/fun/src/monads",
             "code": {
                 "id": "astnode100003819",
                 "name": "Left.prototype.toString",
@@ -10476,7 +10476,7 @@
             "filename": "Left.js",
             "lineno": 80,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "path": "/mnt/sda/git/fun/src/monads",
             "code": {}
         },
         "memberof": "Left",
@@ -10522,7 +10522,7 @@
             "filename": "Left.js",
             "lineno": 87,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "path": "/mnt/sda/git/fun/src/monads",
             "code": {
                 "id": "astnode100003836",
                 "name": "Left.prototype.cata",
@@ -10546,7 +10546,7 @@
             "filename": "Left.js",
             "lineno": 91,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "path": "/mnt/sda/git/fun/src/monads",
             "code": {}
         },
         "memberof": "Left",
@@ -10574,7 +10574,7 @@
             "filename": "Left.js",
             "lineno": 96,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "path": "/mnt/sda/git/fun/src/monads",
             "code": {
                 "id": "astnode100003853",
                 "name": "Left.prototype.get",
@@ -10595,7 +10595,7 @@
             "filename": "Left.js",
             "lineno": 100,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "path": "/mnt/sda/git/fun/src/monads",
             "code": {}
         },
         "memberof": "Left",
@@ -10633,7 +10633,7 @@
             "filename": "Left.js",
             "lineno": 106,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "path": "/mnt/sda/git/fun/src/monads",
             "code": {
                 "id": "astnode100003866",
                 "name": "Left.prototype.getOrElse",
@@ -10660,7 +10660,7 @@
             "filename": "Left.js",
             "lineno": 110,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "path": "/mnt/sda/git/fun/src/monads",
             "code": {
                 "id": "astnode100003877",
                 "name": "module.exports",
@@ -10684,7 +10684,7 @@
             "filename": "Maybe.js",
             "lineno": 13,
             "columnno": 4,
-            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "path": "/mnt/sda/git/fun/src/monads",
             "code": {
                 "id": "astnode100003890",
                 "name": "Maybe",
@@ -10725,7 +10725,7 @@
             "filename": "Maybe.js",
             "lineno": 14,
             "columnno": 2,
-            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "path": "/mnt/sda/git/fun/src/monads",
             "code": {
                 "id": "astnode100003896",
                 "name": "this.__value",
@@ -10747,7 +10747,7 @@
             "filename": "Maybe.js",
             "lineno": 17,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "path": "/mnt/sda/git/fun/src/monads",
             "code": {}
         },
         "memberof": "Maybe",
@@ -10790,7 +10790,7 @@
             "filename": "Maybe.js",
             "lineno": 28,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "path": "/mnt/sda/git/fun/src/monads",
             "code": {
                 "id": "astnode100003902",
                 "name": "Maybe.of",
@@ -10820,7 +10820,7 @@
             "filename": "Maybe.js",
             "lineno": 31,
             "columnno": 4,
-            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "path": "/mnt/sda/git/fun/src/monads",
             "code": {
                 "id": "astnode100003921",
                 "name": "this.__value",
@@ -10846,7 +10846,7 @@
             "filename": "Maybe.js",
             "lineno": 46,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "path": "/mnt/sda/git/fun/src/monads",
             "code": {
                 "id": "astnode100003933",
                 "name": "Maybe.prototype.type",
@@ -10886,7 +10886,7 @@
             "filename": "Maybe.js",
             "lineno": 48,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "path": "/mnt/sda/git/fun/src/monads",
             "code": {}
         },
         "memberof": "Maybe",
@@ -10929,7 +10929,7 @@
             "filename": "Maybe.js",
             "lineno": 62,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "path": "/mnt/sda/git/fun/src/monads",
             "code": {
                 "id": "astnode100003941",
                 "name": "Maybe.prototype.getOrElse",
@@ -10952,7 +10952,7 @@
             "filename": "Maybe.js",
             "lineno": 66,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "path": "/mnt/sda/git/fun/src/monads",
             "code": {}
         },
         "memberof": "Maybe",
@@ -10990,7 +10990,7 @@
             "filename": "Maybe.js",
             "lineno": 72,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "path": "/mnt/sda/git/fun/src/monads",
             "code": {
                 "id": "astnode100003961",
                 "name": "Maybe.prototype.map",
@@ -11013,7 +11013,7 @@
             "filename": "Maybe.js",
             "lineno": 79,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "path": "/mnt/sda/git/fun/src/monads",
             "code": {}
         },
         "memberof": "Maybe",
@@ -11051,7 +11051,7 @@
             "filename": "Maybe.js",
             "lineno": 85,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "path": "/mnt/sda/git/fun/src/monads",
             "code": {
                 "id": "astnode100003993",
                 "name": "Maybe.prototype.flatMap",
@@ -11074,7 +11074,7 @@
             "filename": "Maybe.js",
             "lineno": 89,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "path": "/mnt/sda/git/fun/src/monads",
             "code": {}
         },
         "memberof": "Maybe.Mayeb",
@@ -11112,7 +11112,7 @@
             "filename": "Maybe.js",
             "lineno": 95,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "path": "/mnt/sda/git/fun/src/monads",
             "code": {
                 "id": "astnode100004009",
                 "name": "Maybe.prototype.ap",
@@ -11135,7 +11135,7 @@
             "filename": "Maybe.js",
             "lineno": 99,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "path": "/mnt/sda/git/fun/src/monads",
             "code": {}
         },
         "memberof": "Maybe",
@@ -11163,7 +11163,7 @@
             "filename": "Maybe.js",
             "lineno": 104,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "path": "/mnt/sda/git/fun/src/monads",
             "code": {
                 "id": "astnode100004031",
                 "name": "Maybe.prototype.isNothing",
@@ -11184,7 +11184,7 @@
             "filename": "Maybe.js",
             "lineno": 108,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "path": "/mnt/sda/git/fun/src/monads",
             "code": {}
         },
         "memberof": "Maybe",
@@ -11212,7 +11212,7 @@
             "filename": "Maybe.js",
             "lineno": 113,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "path": "/mnt/sda/git/fun/src/monads",
             "code": {
                 "id": "astnode100004046",
                 "name": "Maybe.prototype.isJust",
@@ -11233,7 +11233,7 @@
             "filename": "Maybe.js",
             "lineno": 117,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "path": "/mnt/sda/git/fun/src/monads",
             "code": {}
         },
         "access": "private",
@@ -11262,7 +11262,7 @@
             "filename": "Maybe.js",
             "lineno": 124,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "path": "/mnt/sda/git/fun/src/monads",
             "code": {
                 "id": "astnode100004061",
                 "name": "Maybe.prototype.Nothing",
@@ -11283,7 +11283,7 @@
             "filename": "Maybe.js",
             "lineno": 128,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "path": "/mnt/sda/git/fun/src/monads",
             "code": {}
         },
         "access": "private",
@@ -11312,7 +11312,7 @@
             "filename": "Maybe.js",
             "lineno": 135,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "path": "/mnt/sda/git/fun/src/monads",
             "code": {
                 "id": "astnode100004073",
                 "name": "Maybe.prototype.Just",
@@ -11337,7 +11337,7 @@
             "filename": "Maybe.js",
             "lineno": 139,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "path": "/mnt/sda/git/fun/src/monads",
             "code": {
                 "id": "astnode100004087",
                 "name": "module.exports",
@@ -11361,7 +11361,7 @@
             "filename": "Nothing.js",
             "lineno": 5,
             "columnno": 4,
-            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "path": "/mnt/sda/git/fun/src/monads",
             "code": {
                 "id": "astnode100004092",
                 "name": "Nothing",
@@ -11381,7 +11381,7 @@
             "filename": "Nothing.js",
             "lineno": 8,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "path": "/mnt/sda/git/fun/src/monads",
             "code": {}
         },
         "memberof": "Nothing",
@@ -11409,7 +11409,7 @@
             "filename": "Nothing.js",
             "lineno": 13,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "path": "/mnt/sda/git/fun/src/monads",
             "code": {
                 "id": "astnode100004097",
                 "name": "Nothing.prototype.isJust",
@@ -11430,7 +11430,7 @@
             "filename": "Nothing.js",
             "lineno": 17,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "path": "/mnt/sda/git/fun/src/monads",
             "code": {}
         },
         "memberof": "Nothing",
@@ -11458,7 +11458,7 @@
             "filename": "Nothing.js",
             "lineno": 22,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "path": "/mnt/sda/git/fun/src/monads",
             "code": {
                 "id": "astnode100004108",
                 "name": "Nothing.prototype.isNothing",
@@ -11483,7 +11483,7 @@
             "filename": "Nothing.js",
             "lineno": 26,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "path": "/mnt/sda/git/fun/src/monads",
             "code": {
                 "id": "astnode100004118",
                 "name": "module.exports",
@@ -11507,7 +11507,7 @@
             "filename": "Right.js",
             "lineno": 7,
             "columnno": 4,
-            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "path": "/mnt/sda/git/fun/src/monads",
             "code": {
                 "id": "astnode100004123",
                 "name": "Right",
@@ -11547,7 +11547,7 @@
             "filename": "Right.js",
             "lineno": 8,
             "columnno": 2,
-            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "path": "/mnt/sda/git/fun/src/monads",
             "code": {
                 "id": "astnode100004129",
                 "name": "this.__value",
@@ -11573,7 +11573,7 @@
             "filename": "Right.js",
             "lineno": 21,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "path": "/mnt/sda/git/fun/src/monads",
             "code": {
                 "id": "astnode100004137",
                 "name": "Right.prototype.type",
@@ -11613,7 +11613,7 @@
             "filename": "Right.js",
             "lineno": 23,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "path": "/mnt/sda/git/fun/src/monads",
             "code": {}
         },
         "memberof": "Right",
@@ -11641,7 +11641,7 @@
             "filename": "Right.js",
             "lineno": 28,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "path": "/mnt/sda/git/fun/src/monads",
             "code": {
                 "id": "astnode100004145",
                 "name": "Right.prototype.isRight",
@@ -11662,7 +11662,7 @@
             "filename": "Right.js",
             "lineno": 32,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "path": "/mnt/sda/git/fun/src/monads",
             "code": {}
         },
         "memberof": "Right",
@@ -11690,7 +11690,7 @@
             "filename": "Right.js",
             "lineno": 37,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "path": "/mnt/sda/git/fun/src/monads",
             "code": {
                 "id": "astnode100004156",
                 "name": "Right.prototype.isLeft",
@@ -11711,7 +11711,7 @@
             "filename": "Right.js",
             "lineno": 41,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "path": "/mnt/sda/git/fun/src/monads",
             "code": {}
         },
         "memberof": "Right",
@@ -11744,7 +11744,7 @@
             "filename": "Right.js",
             "lineno": 47,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "path": "/mnt/sda/git/fun/src/monads",
             "code": {
                 "id": "astnode100004167",
                 "name": "Right.prototype.ap",
@@ -11767,7 +11767,7 @@
             "filename": "Right.js",
             "lineno": 51,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "path": "/mnt/sda/git/fun/src/monads",
             "code": {}
         },
         "memberof": "Right",
@@ -11805,7 +11805,7 @@
             "filename": "Right.js",
             "lineno": 57,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "path": "/mnt/sda/git/fun/src/monads",
             "code": {
                 "id": "astnode100004185",
                 "name": "Right.prototype.map",
@@ -11828,7 +11828,7 @@
             "filename": "Right.js",
             "lineno": 61,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "path": "/mnt/sda/git/fun/src/monads",
             "code": {}
         },
         "memberof": "Right",
@@ -11866,7 +11866,7 @@
             "filename": "Right.js",
             "lineno": 67,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "path": "/mnt/sda/git/fun/src/monads",
             "code": {
                 "id": "astnode100004203",
                 "name": "Right.prototype.chain",
@@ -11889,7 +11889,7 @@
             "filename": "Right.js",
             "lineno": 71,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "path": "/mnt/sda/git/fun/src/monads",
             "code": {}
         },
         "memberof": "Right",
@@ -11917,7 +11917,7 @@
             "filename": "Right.js",
             "lineno": 76,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "path": "/mnt/sda/git/fun/src/monads",
             "code": {
                 "id": "astnode100004219",
                 "name": "Right.prototype.toString",
@@ -11938,7 +11938,7 @@
             "filename": "Right.js",
             "lineno": 80,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "path": "/mnt/sda/git/fun/src/monads",
             "code": {}
         },
         "memberof": "Right",
@@ -11984,7 +11984,7 @@
             "filename": "Right.js",
             "lineno": 87,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "path": "/mnt/sda/git/fun/src/monads",
             "code": {
                 "id": "astnode100004236",
                 "name": "Right.prototype.cata",
@@ -12008,7 +12008,7 @@
             "filename": "Right.js",
             "lineno": 91,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "path": "/mnt/sda/git/fun/src/monads",
             "code": {}
         },
         "memberof": "Right",
@@ -12036,7 +12036,7 @@
             "filename": "Right.js",
             "lineno": 96,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "path": "/mnt/sda/git/fun/src/monads",
             "code": {
                 "id": "astnode100004253",
                 "name": "Right.prototype.get",
@@ -12057,7 +12057,7 @@
             "filename": "Right.js",
             "lineno": 100,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "path": "/mnt/sda/git/fun/src/monads",
             "code": {}
         },
         "memberof": "Right",
@@ -12095,7 +12095,7 @@
             "filename": "Right.js",
             "lineno": 107,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "path": "/mnt/sda/git/fun/src/monads",
             "code": {
                 "id": "astnode100004266",
                 "name": "Right.prototype.getOrElse",
@@ -12122,7 +12122,7 @@
             "filename": "Right.js",
             "lineno": 111,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/monads",
+            "path": "/mnt/sda/git/fun/src/monads",
             "code": {
                 "id": "astnode100004279",
                 "name": "module.exports",
@@ -12142,7 +12142,7 @@
             "filename": "not.js",
             "lineno": 1,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {}
         },
         "kind": "function",
@@ -12160,7 +12160,7 @@
             "filename": "not.js",
             "lineno": 6,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100004287",
                 "name": "module.exports",
@@ -12184,7 +12184,7 @@
             "filename": "is.js",
             "lineno": 6,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/null",
+            "path": "/mnt/sda/git/fun/src/null",
             "code": {
                 "id": "astnode100004303",
                 "name": "module.exports",
@@ -12204,7 +12204,7 @@
             "filename": "add.js",
             "lineno": 1,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/number",
+            "path": "/mnt/sda/git/fun/src/number",
             "code": {}
         },
         "description": "Returns the sum of the 2 arguments",
@@ -12259,7 +12259,7 @@
             "filename": "add.js",
             "lineno": 14,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/number",
+            "path": "/mnt/sda/git/fun/src/number",
             "code": {
                 "id": "astnode100004313",
                 "name": "module.exports",
@@ -12279,7 +12279,7 @@
             "filename": "divide.js",
             "lineno": 1,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/number",
+            "path": "/mnt/sda/git/fun/src/number",
             "code": {}
         },
         "kind": "function",
@@ -12334,7 +12334,7 @@
             "filename": "divide.js",
             "lineno": 14,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/number",
+            "path": "/mnt/sda/git/fun/src/number",
             "code": {
                 "id": "astnode100004333",
                 "name": "module.exports",
@@ -12358,7 +12358,7 @@
             "filename": "is.js",
             "lineno": 6,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/number",
+            "path": "/mnt/sda/git/fun/src/number",
             "code": {
                 "id": "astnode100004353",
                 "name": "module.exports",
@@ -12378,7 +12378,7 @@
             "filename": "isNan.js",
             "lineno": 1,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/number",
+            "path": "/mnt/sda/git/fun/src/number",
             "code": {}
         },
         "kind": "function",
@@ -12397,7 +12397,7 @@
             "filename": "isNan.js",
             "lineno": 9,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/number",
+            "path": "/mnt/sda/git/fun/src/number",
             "code": {
                 "id": "astnode100004367",
                 "name": "module.exports",
@@ -12424,7 +12424,7 @@
             "filename": "isNan.js",
             "lineno": 9,
             "columnno": 15,
-            "path": "/Volumes/BigOne/github/fun/src/number",
+            "path": "/mnt/sda/git/fun/src/number",
             "code": {
                 "id": "astnode100004368",
                 "name": "isNan",
@@ -12451,7 +12451,7 @@
             "filename": "multiply.js",
             "lineno": 13,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/number",
+            "path": "/mnt/sda/git/fun/src/number",
             "code": {
                 "id": "astnode100004388",
                 "name": "module.exports",
@@ -12475,7 +12475,7 @@
             "filename": "sum.js",
             "lineno": 14,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/number",
+            "path": "/mnt/sda/git/fun/src/number",
             "code": {
                 "id": "astnode100004416",
                 "name": "module.exports",
@@ -12495,7 +12495,7 @@
             "filename": "equals.js",
             "lineno": 6,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/object",
+            "path": "/mnt/sda/git/fun/src/object",
             "code": {}
         },
         "kind": "function",
@@ -12540,7 +12540,7 @@
             "filename": "equals.js",
             "lineno": 12,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/object",
+            "path": "/mnt/sda/git/fun/src/object",
             "code": {
                 "id": "astnode100004447",
                 "name": "module.exports",
@@ -12564,7 +12564,7 @@
             "filename": "equals.js",
             "lineno": 13,
             "columnno": 11,
-            "path": "/Volumes/BigOne/github/fun/src/object",
+            "path": "/mnt/sda/git/fun/src/object",
             "code": {
                 "id": "astnode100004456",
                 "name": "keyX"
@@ -12588,7 +12588,7 @@
             "filename": "equals.js",
             "lineno": 17,
             "columnno": 11,
-            "path": "/Volumes/BigOne/github/fun/src/object",
+            "path": "/mnt/sda/git/fun/src/object",
             "code": {
                 "id": "astnode100004475",
                 "name": "keyY"
@@ -12608,7 +12608,7 @@
             "filename": "filter.js",
             "lineno": 4,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/object",
+            "path": "/mnt/sda/git/fun/src/object",
             "code": {}
         },
         "kind": "function",
@@ -12654,7 +12654,7 @@
             "filename": "filter.js",
             "lineno": 11,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/object",
+            "path": "/mnt/sda/git/fun/src/object",
             "code": {
                 "id": "astnode100004507",
                 "name": "module.exports",
@@ -12678,7 +12678,7 @@
             "filename": "filter.js",
             "lineno": 12,
             "columnno": 6,
-            "path": "/Volumes/BigOne/github/fun/src/object",
+            "path": "/mnt/sda/git/fun/src/object",
             "code": {
                 "id": "astnode100004516",
                 "name": "r",
@@ -12704,7 +12704,7 @@
             "filename": "filter.js",
             "lineno": 13,
             "columnno": 8,
-            "path": "/Volumes/BigOne/github/fun/src/object",
+            "path": "/mnt/sda/git/fun/src/object",
             "code": {
                 "id": "astnode100004520",
                 "name": "k",
@@ -12730,7 +12730,7 @@
             "filename": "filter.js",
             "lineno": 14,
             "columnno": 11,
-            "path": "/Volumes/BigOne/github/fun/src/object",
+            "path": "/mnt/sda/git/fun/src/object",
             "code": {
                 "id": "astnode100004527",
                 "name": "i",
@@ -12756,7 +12756,7 @@
             "filename": "filter.js",
             "lineno": 15,
             "columnno": 21,
-            "path": "/Volumes/BigOne/github/fun/src/object",
+            "path": "/mnt/sda/git/fun/src/object",
             "code": {
                 "id": "astnode100004547",
                 "name": "r[undefined]",
@@ -12779,7 +12779,7 @@
             "filename": "fold.js",
             "lineno": 4,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/object",
+            "path": "/mnt/sda/git/fun/src/object",
             "code": {}
         },
         "kind": "function",
@@ -12833,7 +12833,7 @@
             "filename": "fold.js",
             "lineno": 12,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/object",
+            "path": "/mnt/sda/git/fun/src/object",
             "code": {
                 "id": "astnode100004570",
                 "name": "module.exports",
@@ -12857,7 +12857,7 @@
             "filename": "fold.js",
             "lineno": 13,
             "columnno": 8,
-            "path": "/Volumes/BigOne/github/fun/src/object",
+            "path": "/mnt/sda/git/fun/src/object",
             "code": {
                 "id": "astnode100004580",
                 "name": "k",
@@ -12883,7 +12883,7 @@
             "filename": "fold.js",
             "lineno": 14,
             "columnno": 6,
-            "path": "/Volumes/BigOne/github/fun/src/object",
+            "path": "/mnt/sda/git/fun/src/object",
             "code": {
                 "id": "astnode100004586",
                 "name": "i",
@@ -12909,7 +12909,7 @@
             "filename": "fold.js",
             "lineno": 15,
             "columnno": 8,
-            "path": "/Volumes/BigOne/github/fun/src/object",
+            "path": "/mnt/sda/git/fun/src/object",
             "code": {
                 "id": "astnode100004591",
                 "name": "l",
@@ -12935,7 +12935,7 @@
             "filename": "fold.js",
             "lineno": 16,
             "columnno": 6,
-            "path": "/Volumes/BigOne/github/fun/src/object",
+            "path": "/mnt/sda/git/fun/src/object",
             "code": {
                 "id": "astnode100004597",
                 "name": "r",
@@ -12961,7 +12961,7 @@
             "filename": "fold.js",
             "lineno": 18,
             "columnno": 4,
-            "path": "/Volumes/BigOne/github/fun/src/object",
+            "path": "/mnt/sda/git/fun/src/object",
             "code": {
                 "id": "astnode100004609",
                 "name": "r",
@@ -12988,7 +12988,7 @@
             "filename": "has.js",
             "lineno": 13,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/object",
+            "path": "/mnt/sda/git/fun/src/object",
             "code": {
                 "id": "astnode100004631",
                 "name": "module.exports",
@@ -13012,7 +13012,7 @@
             "filename": "hasIn.js",
             "lineno": 13,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/object",
+            "path": "/mnt/sda/git/fun/src/object",
             "code": {
                 "id": "astnode100004656",
                 "name": "module.exports",
@@ -13032,7 +13032,7 @@
             "filename": "is.js",
             "lineno": 3,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/object",
+            "path": "/mnt/sda/git/fun/src/object",
             "code": {}
         },
         "kind": "function",
@@ -13068,7 +13068,7 @@
             "filename": "is.js",
             "lineno": 8,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/object",
+            "path": "/mnt/sda/git/fun/src/object",
             "code": {
                 "id": "astnode100004674",
                 "name": "module.exports",
@@ -13092,7 +13092,7 @@
             "filename": "keys.js",
             "lineno": 12,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/object",
+            "path": "/mnt/sda/git/fun/src/object",
             "code": {
                 "id": "astnode100004684",
                 "name": "module.exports",
@@ -13116,7 +13116,7 @@
             "filename": "keysIn.js",
             "lineno": 12,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/object",
+            "path": "/mnt/sda/git/fun/src/object",
             "code": {
                 "id": "astnode100004705",
                 "name": "module.exports",
@@ -13140,7 +13140,7 @@
             "filename": "keysIn.js",
             "lineno": 13,
             "columnno": 8,
-            "path": "/Volumes/BigOne/github/fun/src/object",
+            "path": "/mnt/sda/git/fun/src/object",
             "code": {
                 "id": "astnode100004713",
                 "name": "r",
@@ -13166,7 +13166,7 @@
             "filename": "keysIn.js",
             "lineno": 14,
             "columnno": 13,
-            "path": "/Volumes/BigOne/github/fun/src/object",
+            "path": "/mnt/sda/git/fun/src/object",
             "code": {
                 "id": "astnode100004718",
                 "name": "k"
@@ -13190,7 +13190,7 @@
             "filename": "map.js",
             "lineno": 15,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/object",
+            "path": "/mnt/sda/git/fun/src/object",
             "code": {
                 "id": "astnode100004744",
                 "name": "module.exports",
@@ -13214,7 +13214,7 @@
             "filename": "map.js",
             "lineno": 16,
             "columnno": 8,
-            "path": "/Volumes/BigOne/github/fun/src/object",
+            "path": "/mnt/sda/git/fun/src/object",
             "code": {
                 "id": "astnode100004753",
                 "name": "k",
@@ -13240,7 +13240,7 @@
             "filename": "map.js",
             "lineno": 17,
             "columnno": 6,
-            "path": "/Volumes/BigOne/github/fun/src/object",
+            "path": "/mnt/sda/git/fun/src/object",
             "code": {
                 "id": "astnode100004759",
                 "name": "i",
@@ -13266,7 +13266,7 @@
             "filename": "map.js",
             "lineno": 18,
             "columnno": 8,
-            "path": "/Volumes/BigOne/github/fun/src/object",
+            "path": "/mnt/sda/git/fun/src/object",
             "code": {
                 "id": "astnode100004764",
                 "name": "l",
@@ -13292,7 +13292,7 @@
             "filename": "map.js",
             "lineno": 19,
             "columnno": 8,
-            "path": "/Volumes/BigOne/github/fun/src/object",
+            "path": "/mnt/sda/git/fun/src/object",
             "code": {
                 "id": "astnode100004770",
                 "name": "r",
@@ -13318,7 +13318,7 @@
             "filename": "map.js",
             "lineno": 21,
             "columnno": 4,
-            "path": "/Volumes/BigOne/github/fun/src/object",
+            "path": "/mnt/sda/git/fun/src/object",
             "code": {
                 "id": "astnode100004782",
                 "name": "r[undefined]",
@@ -13341,7 +13341,7 @@
             "filename": "merge.js",
             "lineno": 7,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/object",
+            "path": "/mnt/sda/git/fun/src/object",
             "code": {}
         },
         "kind": "function",
@@ -13387,7 +13387,7 @@
             "filename": "merge.js",
             "lineno": 14,
             "columnno": 6,
-            "path": "/Volumes/BigOne/github/fun/src/object",
+            "path": "/mnt/sda/git/fun/src/object",
             "code": {
                 "id": "astnode100004824",
                 "name": "merge",
@@ -13412,7 +13412,7 @@
             "filename": "merge.js",
             "lineno": 15,
             "columnno": 6,
-            "path": "/Volumes/BigOne/github/fun/src/object",
+            "path": "/mnt/sda/git/fun/src/object",
             "code": {
                 "id": "astnode100004833",
                 "name": "result",
@@ -13438,7 +13438,7 @@
             "filename": "merge.js",
             "lineno": 20,
             "columnno": 11,
-            "path": "/Volumes/BigOne/github/fun/src/object",
+            "path": "/mnt/sda/git/fun/src/object",
             "code": {
                 "id": "astnode100004856",
                 "name": "key"
@@ -13462,7 +13462,7 @@
             "filename": "merge.js",
             "lineno": 24,
             "columnno": 10,
-            "path": "/Volumes/BigOne/github/fun/src/object",
+            "path": "/mnt/sda/git/fun/src/object",
             "code": {
                 "id": "astnode100004875",
                 "name": "oldValue",
@@ -13488,7 +13488,7 @@
             "filename": "merge.js",
             "lineno": 25,
             "columnno": 10,
-            "path": "/Volumes/BigOne/github/fun/src/object",
+            "path": "/mnt/sda/git/fun/src/object",
             "code": {
                 "id": "astnode100004881",
                 "name": "newValue",
@@ -13514,7 +13514,7 @@
             "filename": "merge.js",
             "lineno": 28,
             "columnno": 6,
-            "path": "/Volumes/BigOne/github/fun/src/object",
+            "path": "/mnt/sda/git/fun/src/object",
             "code": {
                 "id": "astnode100004896",
                 "name": "result[undefined]",
@@ -13541,7 +13541,7 @@
             "filename": "merge.js",
             "lineno": 30,
             "columnno": 6,
-            "path": "/Volumes/BigOne/github/fun/src/object",
+            "path": "/mnt/sda/git/fun/src/object",
             "code": {
                 "id": "astnode100004910",
                 "name": "result[undefined]",
@@ -13568,7 +13568,7 @@
             "filename": "merge.js",
             "lineno": 32,
             "columnno": 6,
-            "path": "/Volumes/BigOne/github/fun/src/object",
+            "path": "/mnt/sda/git/fun/src/object",
             "code": {
                 "id": "astnode100004920",
                 "name": "result[undefined]",
@@ -13595,7 +13595,7 @@
             "filename": "merge.js",
             "lineno": 38,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/object",
+            "path": "/mnt/sda/git/fun/src/object",
             "code": {
                 "id": "astnode100004927",
                 "name": "module.exports",
@@ -13615,7 +13615,7 @@
             "filename": "omit.js",
             "lineno": 3,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/object",
+            "path": "/mnt/sda/git/fun/src/object",
             "code": {}
         },
         "kind": "function",
@@ -13654,7 +13654,7 @@
             "filename": "omit.js",
             "lineno": 9,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/object",
+            "path": "/mnt/sda/git/fun/src/object",
             "code": {
                 "id": "astnode100004935",
                 "name": "module.exports",
@@ -13678,7 +13678,7 @@
             "filename": "omit.js",
             "lineno": 10,
             "columnno": 6,
-            "path": "/Volumes/BigOne/github/fun/src/object",
+            "path": "/mnt/sda/git/fun/src/object",
             "code": {
                 "id": "astnode100004943",
                 "name": "result",
@@ -13704,7 +13704,7 @@
             "filename": "omit.js",
             "lineno": 15,
             "columnno": 4,
-            "path": "/Volumes/BigOne/github/fun/src/object",
+            "path": "/mnt/sda/git/fun/src/object",
             "code": {
                 "id": "astnode100004974",
                 "name": "result[undefined]",
@@ -13727,7 +13727,7 @@
             "filename": "path.js",
             "lineno": 3,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/object",
+            "path": "/mnt/sda/git/fun/src/object",
             "code": {}
         },
         "kind": "function",
@@ -13770,7 +13770,7 @@
             "filename": "path.js",
             "lineno": 20,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/object",
+            "path": "/mnt/sda/git/fun/src/object",
             "code": {
                 "id": "astnode100004989",
                 "name": "module.exports",
@@ -13794,7 +13794,7 @@
             "filename": "path.js",
             "lineno": 21,
             "columnno": 6,
-            "path": "/Volumes/BigOne/github/fun/src/object",
+            "path": "/mnt/sda/git/fun/src/object",
             "code": {
                 "id": "astnode100004998",
                 "name": "val",
@@ -13820,7 +13820,7 @@
             "filename": "path.js",
             "lineno": 22,
             "columnno": 6,
-            "path": "/Volumes/BigOne/github/fun/src/object",
+            "path": "/mnt/sda/git/fun/src/object",
             "code": {
                 "id": "astnode100005002",
                 "name": "idx",
@@ -13846,7 +13846,7 @@
             "filename": "path.js",
             "lineno": 23,
             "columnno": 6,
-            "path": "/Volumes/BigOne/github/fun/src/object",
+            "path": "/mnt/sda/git/fun/src/object",
             "code": {
                 "id": "astnode100005006",
                 "name": "p"
@@ -13870,7 +13870,7 @@
             "filename": "path.js",
             "lineno": 28,
             "columnno": 4,
-            "path": "/Volumes/BigOne/github/fun/src/object",
+            "path": "/mnt/sda/git/fun/src/object",
             "code": {
                 "id": "astnode100005022",
                 "name": "p",
@@ -13897,7 +13897,7 @@
             "filename": "path.js",
             "lineno": 29,
             "columnno": 4,
-            "path": "/Volumes/BigOne/github/fun/src/object",
+            "path": "/mnt/sda/git/fun/src/object",
             "code": {
                 "id": "astnode100005028",
                 "name": "val",
@@ -13924,7 +13924,7 @@
             "filename": "path.js",
             "lineno": 32,
             "columnno": 4,
-            "path": "/Volumes/BigOne/github/fun/src/object",
+            "path": "/mnt/sda/git/fun/src/object",
             "code": {
                 "id": "astnode100005054",
                 "name": "idx",
@@ -13947,7 +13947,7 @@
             "filename": "pick.js",
             "lineno": 3,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/object",
+            "path": "/mnt/sda/git/fun/src/object",
             "code": {}
         },
         "kind": "function",
@@ -13995,7 +13995,7 @@
             "filename": "pick.js",
             "lineno": 10,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/object",
+            "path": "/mnt/sda/git/fun/src/object",
             "code": {
                 "id": "astnode100005065",
                 "name": "module.exports",
@@ -14019,7 +14019,7 @@
             "filename": "pick.js",
             "lineno": 11,
             "columnno": 8,
-            "path": "/Volumes/BigOne/github/fun/src/object",
+            "path": "/mnt/sda/git/fun/src/object",
             "code": {
                 "id": "astnode100005074",
                 "name": "r",
@@ -14045,7 +14045,7 @@
             "filename": "pick.js",
             "lineno": 12,
             "columnno": 6,
-            "path": "/Volumes/BigOne/github/fun/src/object",
+            "path": "/mnt/sda/git/fun/src/object",
             "code": {
                 "id": "astnode100005078",
                 "name": "i",
@@ -14071,7 +14071,7 @@
             "filename": "pick.js",
             "lineno": 15,
             "columnno": 6,
-            "path": "/Volumes/BigOne/github/fun/src/object",
+            "path": "/mnt/sda/git/fun/src/object",
             "code": {
                 "id": "astnode100005096",
                 "name": "r[undefined]",
@@ -14098,7 +14098,7 @@
             "filename": "pick.js",
             "lineno": 17,
             "columnno": 4,
-            "path": "/Volumes/BigOne/github/fun/src/object",
+            "path": "/mnt/sda/git/fun/src/object",
             "code": {
                 "id": "astnode100005108",
                 "name": "i",
@@ -14121,7 +14121,7 @@
             "filename": "prop.js",
             "lineno": 4,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/object",
+            "path": "/mnt/sda/git/fun/src/object",
             "code": {}
         },
         "kind": "function",
@@ -14139,7 +14139,7 @@
             "filename": "prop.js",
             "lineno": 7,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/object",
+            "path": "/mnt/sda/git/fun/src/object",
             "code": {
                 "id": "astnode100005123",
                 "name": "module.exports",
@@ -14159,7 +14159,7 @@
             "filename": "values.js",
             "lineno": 4,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/object",
+            "path": "/mnt/sda/git/fun/src/object",
             "code": {}
         },
         "kind": "function",
@@ -14197,7 +14197,7 @@
             "filename": "values.js",
             "lineno": 11,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/object",
+            "path": "/mnt/sda/git/fun/src/object",
             "code": {
                 "id": "astnode100005147",
                 "name": "module.exports",
@@ -14221,7 +14221,7 @@
             "filename": "values.js",
             "lineno": 12,
             "columnno": 8,
-            "path": "/Volumes/BigOne/github/fun/src/object",
+            "path": "/mnt/sda/git/fun/src/object",
             "code": {
                 "id": "astnode100005155",
                 "name": "k",
@@ -14247,7 +14247,7 @@
             "filename": "values.js",
             "lineno": 13,
             "columnno": 8,
-            "path": "/Volumes/BigOne/github/fun/src/object",
+            "path": "/mnt/sda/git/fun/src/object",
             "code": {
                 "id": "astnode100005161",
                 "name": "l",
@@ -14273,7 +14273,7 @@
             "filename": "values.js",
             "lineno": 14,
             "columnno": 8,
-            "path": "/Volumes/BigOne/github/fun/src/object",
+            "path": "/mnt/sda/git/fun/src/object",
             "code": {
                 "id": "astnode100005167",
                 "name": "r",
@@ -14299,7 +14299,7 @@
             "filename": "values.js",
             "lineno": 15,
             "columnno": 6,
-            "path": "/Volumes/BigOne/github/fun/src/object",
+            "path": "/mnt/sda/git/fun/src/object",
             "code": {
                 "id": "astnode100005171",
                 "name": "i",
@@ -14325,7 +14325,7 @@
             "filename": "values.js",
             "lineno": 17,
             "columnno": 4,
-            "path": "/Volumes/BigOne/github/fun/src/object",
+            "path": "/mnt/sda/git/fun/src/object",
             "code": {
                 "id": "astnode100005180",
                 "name": "r[undefined]",
@@ -14352,7 +14352,7 @@
             "filename": "values.js",
             "lineno": 18,
             "columnno": 4,
-            "path": "/Volumes/BigOne/github/fun/src/object",
+            "path": "/mnt/sda/git/fun/src/object",
             "code": {
                 "id": "astnode100005190",
                 "name": "i",
@@ -14375,7 +14375,7 @@
             "filename": "or.js",
             "lineno": 1,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {}
         },
         "kind": "function",
@@ -14394,7 +14394,7 @@
             "filename": "or.js",
             "lineno": 7,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100005201",
                 "name": "module.exports",
@@ -14414,7 +14414,7 @@
             "filename": "reduce.js",
             "lineno": 1,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {}
         },
         "description": "Returns a single item by iterating over an array like object and call a function on each item, starting from the first item in the iterator",
@@ -14463,7 +14463,7 @@
             "filename": "reduce.js",
             "lineno": 16,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100005223",
                 "name": "module.exports",
@@ -14487,7 +14487,7 @@
             "filename": "reduce.js",
             "lineno": 17,
             "columnno": 8,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100005232",
                 "name": "arr",
@@ -14513,7 +14513,7 @@
             "filename": "reduce.js",
             "lineno": 18,
             "columnno": 8,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100005239",
                 "name": "init",
@@ -14539,7 +14539,7 @@
             "filename": "is.js",
             "lineno": 6,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/set",
+            "path": "/mnt/sda/git/fun/src/set",
             "code": {
                 "id": "astnode100005259",
                 "name": "module.exports",
@@ -14559,7 +14559,7 @@
             "filename": "sort.js",
             "lineno": 1,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {}
         },
         "description": "Returns a copy of the list, sorted according to the function.",
@@ -14612,7 +14612,7 @@
             "filename": "sort.js",
             "lineno": 16,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100005269",
                 "name": "module.exports",
@@ -14632,7 +14632,7 @@
             "filename": "concat.js",
             "lineno": 1,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/string",
+            "path": "/mnt/sda/git/fun/src/string",
             "code": {}
         },
         "access": "private",
@@ -14651,7 +14651,7 @@
             "filename": "concat.js",
             "lineno": 6,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/string",
+            "path": "/mnt/sda/git/fun/src/string",
             "code": {
                 "id": "astnode100005294",
                 "name": "module.exports",
@@ -14679,7 +14679,7 @@
             "filename": "concat.js",
             "lineno": 6,
             "columnno": 15,
-            "path": "/Volumes/BigOne/github/fun/src/string",
+            "path": "/mnt/sda/git/fun/src/string",
             "code": {
                 "id": "astnode100005295",
                 "name": "concat",
@@ -14703,7 +14703,7 @@
             "filename": "fold.js",
             "lineno": 1,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/string",
+            "path": "/mnt/sda/git/fun/src/string",
             "code": {}
         },
         "kind": "function",
@@ -14763,7 +14763,7 @@
             "filename": "fold.js",
             "lineno": 16,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/string",
+            "path": "/mnt/sda/git/fun/src/string",
             "code": {}
         },
         "kind": "typedef",
@@ -14833,7 +14833,7 @@
             "filename": "fold.js",
             "lineno": 26,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/string",
+            "path": "/mnt/sda/git/fun/src/string",
             "code": {
                 "id": "astnode100005314",
                 "name": "module.exports",
@@ -14857,7 +14857,7 @@
             "filename": "fold.js",
             "lineno": 27,
             "columnno": 6,
-            "path": "/Volumes/BigOne/github/fun/src/string",
+            "path": "/mnt/sda/git/fun/src/string",
             "code": {
                 "id": "astnode100005324",
                 "name": "i",
@@ -14883,7 +14883,7 @@
             "filename": "fold.js",
             "lineno": 28,
             "columnno": 8,
-            "path": "/Volumes/BigOne/github/fun/src/string",
+            "path": "/mnt/sda/git/fun/src/string",
             "code": {
                 "id": "astnode100005329",
                 "name": "l",
@@ -14909,7 +14909,7 @@
             "filename": "fold.js",
             "lineno": 29,
             "columnno": 6,
-            "path": "/Volumes/BigOne/github/fun/src/string",
+            "path": "/mnt/sda/git/fun/src/string",
             "code": {
                 "id": "astnode100005335",
                 "name": "r",
@@ -14935,7 +14935,7 @@
             "filename": "fold.js",
             "lineno": 31,
             "columnno": 4,
-            "path": "/Volumes/BigOne/github/fun/src/string",
+            "path": "/mnt/sda/git/fun/src/string",
             "code": {
                 "id": "astnode100005345",
                 "name": "r",
@@ -14962,7 +14962,7 @@
             "filename": "formatString.js",
             "lineno": 8,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/string",
+            "path": "/mnt/sda/git/fun/src/string",
             "code": {
                 "id": "astnode100005373",
                 "name": "module.exports",
@@ -14989,7 +14989,7 @@
             "filename": "formatString.js",
             "lineno": 8,
             "columnno": 15,
-            "path": "/Volumes/BigOne/github/fun/src/string",
+            "path": "/mnt/sda/git/fun/src/string",
             "code": {
                 "id": "astnode100005374",
                 "name": "formatString",
@@ -15020,7 +15020,7 @@
             "filename": "formatString.js",
             "lineno": 9,
             "columnno": 6,
-            "path": "/Volumes/BigOne/github/fun/src/string",
+            "path": "/mnt/sda/git/fun/src/string",
             "code": {
                 "id": "astnode100005379",
                 "name": "args",
@@ -15046,7 +15046,7 @@
             "filename": "is.js",
             "lineno": 6,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/string",
+            "path": "/mnt/sda/git/fun/src/string",
             "code": {
                 "id": "astnode100005419",
                 "name": "module.exports",
@@ -15070,7 +15070,7 @@
             "filename": "map.js",
             "lineno": 13,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/string",
+            "path": "/mnt/sda/git/fun/src/string",
             "code": {
                 "id": "astnode100005429",
                 "name": "module.exports",
@@ -15094,7 +15094,7 @@
             "filename": "map.js",
             "lineno": 14,
             "columnno": 6,
-            "path": "/Volumes/BigOne/github/fun/src/string",
+            "path": "/mnt/sda/git/fun/src/string",
             "code": {
                 "id": "astnode100005438",
                 "name": "i",
@@ -15120,7 +15120,7 @@
             "filename": "map.js",
             "lineno": 15,
             "columnno": 8,
-            "path": "/Volumes/BigOne/github/fun/src/string",
+            "path": "/mnt/sda/git/fun/src/string",
             "code": {
                 "id": "astnode100005443",
                 "name": "l",
@@ -15146,7 +15146,7 @@
             "filename": "map.js",
             "lineno": 16,
             "columnno": 6,
-            "path": "/Volumes/BigOne/github/fun/src/string",
+            "path": "/mnt/sda/git/fun/src/string",
             "code": {
                 "id": "astnode100005449",
                 "name": "r",
@@ -15172,7 +15172,7 @@
             "filename": "map.js",
             "lineno": 18,
             "columnno": 4,
-            "path": "/Volumes/BigOne/github/fun/src/string",
+            "path": "/mnt/sda/git/fun/src/string",
             "code": {
                 "id": "astnode100005459",
                 "name": "r",
@@ -15195,7 +15195,7 @@
             "filename": "truthy.js",
             "lineno": 4,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {}
         },
         "kind": "function",
@@ -15228,7 +15228,7 @@
             "filename": "truthy.js",
             "lineno": 19,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100005482",
                 "name": "module.exports",
@@ -15248,7 +15248,7 @@
             "filename": "type.js",
             "lineno": 2,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {}
         },
         "kind": "function",
@@ -15293,7 +15293,7 @@
             "filename": "type.js",
             "lineno": 15,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100005503",
                 "name": "module.exports",
@@ -15317,7 +15317,7 @@
             "filename": "is.js",
             "lineno": 6,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src/undefined",
+            "path": "/mnt/sda/git/fun/src/undefined",
             "code": {
                 "id": "astnode100005532",
                 "name": "module.exports",
@@ -15337,7 +15337,7 @@
             "filename": "zip.js",
             "lineno": 3,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {}
         },
         "kind": "function",
@@ -15388,7 +15388,7 @@
             "filename": "zip.js",
             "lineno": 17,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100005546",
                 "name": "module.exports",
@@ -15408,7 +15408,7 @@
             "filename": "zipObj.js",
             "lineno": 3,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {}
         },
         "kind": "function",
@@ -15459,7 +15459,7 @@
             "filename": "zipObj.js",
             "lineno": 17,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100005574",
                 "name": "module.exports",
@@ -15483,7 +15483,7 @@
             "filename": "zipObj.js",
             "lineno": 18,
             "columnno": 6,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100005583",
                 "name": "i",
@@ -15509,7 +15509,7 @@
             "filename": "zipObj.js",
             "lineno": 19,
             "columnno": 6,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100005587",
                 "name": "l",
@@ -15535,7 +15535,7 @@
             "filename": "zipObj.js",
             "lineno": 20,
             "columnno": 6,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100005600",
                 "name": "r",
@@ -15561,7 +15561,7 @@
             "filename": "zipObj.js",
             "lineno": 22,
             "columnno": 4,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100005609",
                 "name": "r[undefined]",
@@ -15588,7 +15588,7 @@
             "filename": "zipObj.js",
             "lineno": 23,
             "columnno": 4,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100005619",
                 "name": "i",
@@ -15611,7 +15611,7 @@
             "filename": "zipWith.js",
             "lineno": 2,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {}
         },
         "kind": "function",
@@ -15671,7 +15671,7 @@
             "filename": "zipWith.js",
             "lineno": 17,
             "columnno": 0,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100005630",
                 "name": "module.exports",
@@ -15695,7 +15695,7 @@
             "filename": "zipWith.js",
             "lineno": 18,
             "columnno": 8,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100005640",
                 "name": "arr",
@@ -15721,7 +15721,7 @@
             "filename": "zipWith.js",
             "lineno": 19,
             "columnno": 8,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100005644",
                 "name": "len",
@@ -15747,7 +15747,7 @@
             "filename": "zipWith.js",
             "lineno": 20,
             "columnno": 6,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100005657",
                 "name": "i",
@@ -15773,7 +15773,7 @@
             "filename": "zipWith.js",
             "lineno": 21,
             "columnno": 7,
-            "path": "/Volumes/BigOne/github/fun/src",
+            "path": "/mnt/sda/git/fun/src",
             "code": {
                 "id": "astnode100005661",
                 "name": "i",
@@ -15794,128 +15794,128 @@
         "kind": "package",
         "longname": "package:undefined",
         "files": [
-            "/Volumes/BigOne/github/fun/src/addIndex.js",
-            "/Volumes/BigOne/github/fun/src/adjust.js",
-            "/Volumes/BigOne/github/fun/src/adjustWith.js",
-            "/Volumes/BigOne/github/fun/src/all.js",
-            "/Volumes/BigOne/github/fun/src/allPass.js",
-            "/Volumes/BigOne/github/fun/src/always.js",
-            "/Volumes/BigOne/github/fun/src/and.js",
-            "/Volumes/BigOne/github/fun/src/any.js",
-            "/Volumes/BigOne/github/fun/src/anyPass.js",
-            "/Volumes/BigOne/github/fun/src/ap.js",
-            "/Volumes/BigOne/github/fun/src/aperture.js",
-            "/Volumes/BigOne/github/fun/src/append.js",
-            "/Volumes/BigOne/github/fun/src/apply.js",
-            "/Volumes/BigOne/github/fun/src/applySpec.js",
-            "/Volumes/BigOne/github/fun/src/array/concat.js",
-            "/Volumes/BigOne/github/fun/src/array/equals.js",
-            "/Volumes/BigOne/github/fun/src/array/filter.js",
-            "/Volumes/BigOne/github/fun/src/array/fold.js",
-            "/Volumes/BigOne/github/fun/src/array/is.js",
-            "/Volumes/BigOne/github/fun/src/array/map.js",
-            "/Volumes/BigOne/github/fun/src/array/to.js",
-            "/Volumes/BigOne/github/fun/src/array/union.js",
-            "/Volumes/BigOne/github/fun/src/binary.js",
-            "/Volumes/BigOne/github/fun/src/bind.js",
-            "/Volumes/BigOne/github/fun/src/boolean/F.js",
-            "/Volumes/BigOne/github/fun/src/boolean/T.js",
-            "/Volumes/BigOne/github/fun/src/boolean/both.js",
-            "/Volumes/BigOne/github/fun/src/boolean/is.js",
-            "/Volumes/BigOne/github/fun/src/call.js",
-            "/Volumes/BigOne/github/fun/src/complement.js",
-            "/Volumes/BigOne/github/fun/src/compose.js",
-            "/Volumes/BigOne/github/fun/src/concat.js",
-            "/Volumes/BigOne/github/fun/src/cond.js",
-            "/Volumes/BigOne/github/fun/src/constants/DATE_TOKENS.js",
-            "/Volumes/BigOne/github/fun/src/constants/DATE_UNITS.js",
-            "/Volumes/BigOne/github/fun/src/constants/MONTHS.js",
-            "/Volumes/BigOne/github/fun/src/constants/WEEKDAYS.js",
-            "/Volumes/BigOne/github/fun/src/curry.js",
-            "/Volumes/BigOne/github/fun/src/date/diffDate.js",
-            "/Volumes/BigOne/github/fun/src/date/formatDateTime.js",
-            "/Volumes/BigOne/github/fun/src/date/getWeek.js",
-            "/Volumes/BigOne/github/fun/src/date/is.js",
-            "/Volumes/BigOne/github/fun/src/date/isFutureDate.js",
-            "/Volumes/BigOne/github/fun/src/date/isValid.js",
-            "/Volumes/BigOne/github/fun/src/date/toDay.js",
-            "/Volumes/BigOne/github/fun/src/date/toHour.js",
-            "/Volumes/BigOne/github/fun/src/date/toMinutes.js",
-            "/Volumes/BigOne/github/fun/src/date/toSeconds.js",
-            "/Volumes/BigOne/github/fun/src/defaultTo.js",
-            "/Volumes/BigOne/github/fun/src/empty.js",
-            "/Volumes/BigOne/github/fun/src/equals.js",
-            "/Volumes/BigOne/github/fun/src/exists.js",
-            "/Volumes/BigOne/github/fun/src/filter.js",
-            "/Volumes/BigOne/github/fun/src/findIndex.js",
-            "/Volumes/BigOne/github/fun/src/first.js",
-            "/Volumes/BigOne/github/fun/src/flatMap.js",
-            "/Volumes/BigOne/github/fun/src/fold.js",
-            "/Volumes/BigOne/github/fun/src/identical.js",
-            "/Volumes/BigOne/github/fun/src/identity.js",
-            "/Volumes/BigOne/github/fun/src/index.js",
-            "/Volumes/BigOne/github/fun/src/is.js",
-            "/Volumes/BigOne/github/fun/src/isEmpty.js",
-            "/Volumes/BigOne/github/fun/src/iterator/is.js",
-            "/Volumes/BigOne/github/fun/src/iterator/map.js",
-            "/Volumes/BigOne/github/fun/src/keys.js",
-            "/Volumes/BigOne/github/fun/src/last.js",
-            "/Volumes/BigOne/github/fun/src/lift.js",
-            "/Volumes/BigOne/github/fun/src/lt.js",
-            "/Volumes/BigOne/github/fun/src/lte.js",
-            "/Volumes/BigOne/github/fun/src/map/filter.js",
-            "/Volumes/BigOne/github/fun/src/map/is.js",
-            "/Volumes/BigOne/github/fun/src/map/keys.js",
-            "/Volumes/BigOne/github/fun/src/map/map.js",
-            "/Volumes/BigOne/github/fun/src/map.js",
-            "/Volumes/BigOne/github/fun/src/math/gcd.js",
-            "/Volumes/BigOne/github/fun/src/max.js",
-            "/Volumes/BigOne/github/fun/src/min.js",
-            "/Volumes/BigOne/github/fun/src/monads/Either.js",
-            "/Volumes/BigOne/github/fun/src/monads/Just.js",
-            "/Volumes/BigOne/github/fun/src/monads/Left.js",
-            "/Volumes/BigOne/github/fun/src/monads/Maybe.js",
-            "/Volumes/BigOne/github/fun/src/monads/Nothing.js",
-            "/Volumes/BigOne/github/fun/src/monads/Right.js",
-            "/Volumes/BigOne/github/fun/src/not.js",
-            "/Volumes/BigOne/github/fun/src/null/is.js",
-            "/Volumes/BigOne/github/fun/src/number/add.js",
-            "/Volumes/BigOne/github/fun/src/number/divide.js",
-            "/Volumes/BigOne/github/fun/src/number/is.js",
-            "/Volumes/BigOne/github/fun/src/number/isNan.js",
-            "/Volumes/BigOne/github/fun/src/number/multiply.js",
-            "/Volumes/BigOne/github/fun/src/number/sum.js",
-            "/Volumes/BigOne/github/fun/src/object/equals.js",
-            "/Volumes/BigOne/github/fun/src/object/filter.js",
-            "/Volumes/BigOne/github/fun/src/object/fold.js",
-            "/Volumes/BigOne/github/fun/src/object/has.js",
-            "/Volumes/BigOne/github/fun/src/object/hasIn.js",
-            "/Volumes/BigOne/github/fun/src/object/is.js",
-            "/Volumes/BigOne/github/fun/src/object/keys.js",
-            "/Volumes/BigOne/github/fun/src/object/keysIn.js",
-            "/Volumes/BigOne/github/fun/src/object/map.js",
-            "/Volumes/BigOne/github/fun/src/object/merge.js",
-            "/Volumes/BigOne/github/fun/src/object/omit.js",
-            "/Volumes/BigOne/github/fun/src/object/path.js",
-            "/Volumes/BigOne/github/fun/src/object/pick.js",
-            "/Volumes/BigOne/github/fun/src/object/prop.js",
-            "/Volumes/BigOne/github/fun/src/object/values.js",
-            "/Volumes/BigOne/github/fun/src/or.js",
-            "/Volumes/BigOne/github/fun/src/reduce.js",
-            "/Volumes/BigOne/github/fun/src/set/filter.js",
-            "/Volumes/BigOne/github/fun/src/set/is.js",
-            "/Volumes/BigOne/github/fun/src/sort.js",
-            "/Volumes/BigOne/github/fun/src/string/concat.js",
-            "/Volumes/BigOne/github/fun/src/string/fold.js",
-            "/Volumes/BigOne/github/fun/src/string/formatString.js",
-            "/Volumes/BigOne/github/fun/src/string/is.js",
-            "/Volumes/BigOne/github/fun/src/string/map.js",
-            "/Volumes/BigOne/github/fun/src/truthy.js",
-            "/Volumes/BigOne/github/fun/src/type.js",
-            "/Volumes/BigOne/github/fun/src/undefined/is.js",
-            "/Volumes/BigOne/github/fun/src/zip.js",
-            "/Volumes/BigOne/github/fun/src/zipObj.js",
-            "/Volumes/BigOne/github/fun/src/zipWith.js"
+            "/mnt/sda/git/fun/src/addIndex.js",
+            "/mnt/sda/git/fun/src/adjust.js",
+            "/mnt/sda/git/fun/src/adjustWith.js",
+            "/mnt/sda/git/fun/src/all.js",
+            "/mnt/sda/git/fun/src/allPass.js",
+            "/mnt/sda/git/fun/src/always.js",
+            "/mnt/sda/git/fun/src/and.js",
+            "/mnt/sda/git/fun/src/any.js",
+            "/mnt/sda/git/fun/src/anyPass.js",
+            "/mnt/sda/git/fun/src/ap.js",
+            "/mnt/sda/git/fun/src/aperture.js",
+            "/mnt/sda/git/fun/src/append.js",
+            "/mnt/sda/git/fun/src/apply.js",
+            "/mnt/sda/git/fun/src/applySpec.js",
+            "/mnt/sda/git/fun/src/array/concat.js",
+            "/mnt/sda/git/fun/src/array/equals.js",
+            "/mnt/sda/git/fun/src/array/filter.js",
+            "/mnt/sda/git/fun/src/array/fold.js",
+            "/mnt/sda/git/fun/src/array/is.js",
+            "/mnt/sda/git/fun/src/array/map.js",
+            "/mnt/sda/git/fun/src/array/to.js",
+            "/mnt/sda/git/fun/src/array/union.js",
+            "/mnt/sda/git/fun/src/binary.js",
+            "/mnt/sda/git/fun/src/bind.js",
+            "/mnt/sda/git/fun/src/boolean/F.js",
+            "/mnt/sda/git/fun/src/boolean/T.js",
+            "/mnt/sda/git/fun/src/boolean/both.js",
+            "/mnt/sda/git/fun/src/boolean/is.js",
+            "/mnt/sda/git/fun/src/call.js",
+            "/mnt/sda/git/fun/src/complement.js",
+            "/mnt/sda/git/fun/src/compose.js",
+            "/mnt/sda/git/fun/src/concat.js",
+            "/mnt/sda/git/fun/src/cond.js",
+            "/mnt/sda/git/fun/src/constants/DATE_TOKENS.js",
+            "/mnt/sda/git/fun/src/constants/DATE_UNITS.js",
+            "/mnt/sda/git/fun/src/constants/MONTHS.js",
+            "/mnt/sda/git/fun/src/constants/WEEKDAYS.js",
+            "/mnt/sda/git/fun/src/curry.js",
+            "/mnt/sda/git/fun/src/date/diffDate.js",
+            "/mnt/sda/git/fun/src/date/formatDateTime.js",
+            "/mnt/sda/git/fun/src/date/getWeek.js",
+            "/mnt/sda/git/fun/src/date/is.js",
+            "/mnt/sda/git/fun/src/date/isFutureDate.js",
+            "/mnt/sda/git/fun/src/date/isValid.js",
+            "/mnt/sda/git/fun/src/date/toDay.js",
+            "/mnt/sda/git/fun/src/date/toHour.js",
+            "/mnt/sda/git/fun/src/date/toMinutes.js",
+            "/mnt/sda/git/fun/src/date/toSeconds.js",
+            "/mnt/sda/git/fun/src/defaultTo.js",
+            "/mnt/sda/git/fun/src/empty.js",
+            "/mnt/sda/git/fun/src/equals.js",
+            "/mnt/sda/git/fun/src/exists.js",
+            "/mnt/sda/git/fun/src/filter.js",
+            "/mnt/sda/git/fun/src/findIndex.js",
+            "/mnt/sda/git/fun/src/first.js",
+            "/mnt/sda/git/fun/src/flatMap.js",
+            "/mnt/sda/git/fun/src/fold.js",
+            "/mnt/sda/git/fun/src/identical.js",
+            "/mnt/sda/git/fun/src/identity.js",
+            "/mnt/sda/git/fun/src/index.js",
+            "/mnt/sda/git/fun/src/is.js",
+            "/mnt/sda/git/fun/src/isEmpty.js",
+            "/mnt/sda/git/fun/src/iterator/is.js",
+            "/mnt/sda/git/fun/src/iterator/map.js",
+            "/mnt/sda/git/fun/src/keys.js",
+            "/mnt/sda/git/fun/src/last.js",
+            "/mnt/sda/git/fun/src/lift.js",
+            "/mnt/sda/git/fun/src/lt.js",
+            "/mnt/sda/git/fun/src/lte.js",
+            "/mnt/sda/git/fun/src/map/filter.js",
+            "/mnt/sda/git/fun/src/map/is.js",
+            "/mnt/sda/git/fun/src/map/keys.js",
+            "/mnt/sda/git/fun/src/map/map.js",
+            "/mnt/sda/git/fun/src/map.js",
+            "/mnt/sda/git/fun/src/math/gcd.js",
+            "/mnt/sda/git/fun/src/max.js",
+            "/mnt/sda/git/fun/src/min.js",
+            "/mnt/sda/git/fun/src/monads/Either.js",
+            "/mnt/sda/git/fun/src/monads/Just.js",
+            "/mnt/sda/git/fun/src/monads/Left.js",
+            "/mnt/sda/git/fun/src/monads/Maybe.js",
+            "/mnt/sda/git/fun/src/monads/Nothing.js",
+            "/mnt/sda/git/fun/src/monads/Right.js",
+            "/mnt/sda/git/fun/src/not.js",
+            "/mnt/sda/git/fun/src/null/is.js",
+            "/mnt/sda/git/fun/src/number/add.js",
+            "/mnt/sda/git/fun/src/number/divide.js",
+            "/mnt/sda/git/fun/src/number/is.js",
+            "/mnt/sda/git/fun/src/number/isNan.js",
+            "/mnt/sda/git/fun/src/number/multiply.js",
+            "/mnt/sda/git/fun/src/number/sum.js",
+            "/mnt/sda/git/fun/src/object/equals.js",
+            "/mnt/sda/git/fun/src/object/filter.js",
+            "/mnt/sda/git/fun/src/object/fold.js",
+            "/mnt/sda/git/fun/src/object/has.js",
+            "/mnt/sda/git/fun/src/object/hasIn.js",
+            "/mnt/sda/git/fun/src/object/is.js",
+            "/mnt/sda/git/fun/src/object/keys.js",
+            "/mnt/sda/git/fun/src/object/keysIn.js",
+            "/mnt/sda/git/fun/src/object/map.js",
+            "/mnt/sda/git/fun/src/object/merge.js",
+            "/mnt/sda/git/fun/src/object/omit.js",
+            "/mnt/sda/git/fun/src/object/path.js",
+            "/mnt/sda/git/fun/src/object/pick.js",
+            "/mnt/sda/git/fun/src/object/prop.js",
+            "/mnt/sda/git/fun/src/object/values.js",
+            "/mnt/sda/git/fun/src/or.js",
+            "/mnt/sda/git/fun/src/reduce.js",
+            "/mnt/sda/git/fun/src/set/filter.js",
+            "/mnt/sda/git/fun/src/set/is.js",
+            "/mnt/sda/git/fun/src/sort.js",
+            "/mnt/sda/git/fun/src/string/concat.js",
+            "/mnt/sda/git/fun/src/string/fold.js",
+            "/mnt/sda/git/fun/src/string/formatString.js",
+            "/mnt/sda/git/fun/src/string/is.js",
+            "/mnt/sda/git/fun/src/string/map.js",
+            "/mnt/sda/git/fun/src/truthy.js",
+            "/mnt/sda/git/fun/src/type.js",
+            "/mnt/sda/git/fun/src/undefined/is.js",
+            "/mnt/sda/git/fun/src/zip.js",
+            "/mnt/sda/git/fun/src/zipObj.js",
+            "/mnt/sda/git/fun/src/zipWith.js"
         ]
     }
 ]
