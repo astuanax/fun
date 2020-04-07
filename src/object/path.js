@@ -23,11 +23,11 @@ export default curry(function path (path, obj) {
   let p
   while (idx < path.length) {
     if (val == null) {
-      return
+      return undefined
     }
     p = path[idx]
-    val = Number.isInteger(p)
-      ? p < 0 ? val[val.length + p] : val[p]
+    val = Number.isInteger(p) && p < 0 
+      ? val[val.length + p]
       : val[p]
     idx += 1
   }
